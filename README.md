@@ -1,5 +1,5 @@
-Fundamentals of Programming/Coding for Human(s|ists)
-John Simpson and Dennis Tenen [Please click for course details.]
+# Fundamentals of Programming/Coding for Human(s|ists)
+John Simpson and Dennis Tenen 
 
 [This offering is now full (29 October)] This course is intended
 for humanities-based researchers with no programming background whatsoever who
@@ -25,13 +25,14 @@ Open Data; 3d Modelling for DH and Social Sciences; DH Databases; Creating LAMP
 Infrastructure for Digital Humanities Projects; A Collaborative Approach to
 XSLT; and more!
 
-
-Day 1 - Intro to programming concepts.  Sees participants using Scratch to
+## Day 1
+Intro to programming concepts.  Sees participants using Scratch to
 produce some programs that use these concepts.  Feed back suggested that this
 was a useful day but could have been compressed slightly, possibly pulling in
 the start of Day 2.
 
-Day 2 - Intro to the Terminal and Python Programming.  Terminal in the morning
+## Day 2
+Intro to the Terminal and Python Programming.  Terminal in the morning
 via a cheatsheet, a bit of a live demo, and then some problems that they can
 use the cheatsheet to solve.  This then moves to terminal based python
 programming and some challenges in the afternoon.  I used a live coding demo to
@@ -41,7 +42,9 @@ zodiac folder). This day was popular as the direct use of terminal and python
 gave participants a sense of control and authority that they did not previously
 have.
 
-Day 3 - Python Workbench.  There was a little bit of carry over from the
+## Day 3
+
+Python Workbench.  There was a little bit of carry over from the
 previous day and following this they were introduced to PyCharm CE (It was
 available on all the platforms and has a clean interface).  At noon they were
 given a choice of projects to work on that included projects that they may have
@@ -51,3 +54,5 @@ provide a show and tell by Friday afternoon’s show and tell.  Participants
 really liked PyCharm and having seen the command line version previously seemed
 to  help remove the mysticism that can accompany a tool like this when coming
 to programming from nothing. 
+
+## Day 4
