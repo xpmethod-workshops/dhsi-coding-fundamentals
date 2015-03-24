@@ -85,4 +85,4 @@ Lab all day.
 
 ## Day 5 (3hr)
 
-Lab all day.
+Lab all day. Where to go from here. Resources. Paths to development.
