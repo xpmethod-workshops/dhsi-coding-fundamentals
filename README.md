@@ -33,6 +33,10 @@ Lecture:
 
 Lab: Hunting the Whale. Weasel Words.
 
+Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
+demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
+activities in the afternoon that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
+
 ## Day 2 (6hr)
 
 Lecture:
@@ -44,16 +48,12 @@ Lecture:
 - Conditionals
 - Where to get help
 
-Intro to the Terminal and Python Programming. Terminal in the morning via a
-cheatsheet, a bit of a live demo, and then some problems that they can use the
-cheatsheet to solve. This then moves to terminal based python programming and
-some challenges in the afternoon. I used a live coding demo to show how to
-build an simple tool to tell you your Chinese zodiac symbol that they were able
-to follow along with (You can see the steps for this in the zodiac folder).
-This day was popular as the direct use of terminal and python gave participants
-a sense of control and authority that they did not previously have.
+Light lecture in the morning that builds on experiences the day before, focusing on
+the mindset of a programmer and important high-level programming concepts.  Following this will be a small set of activities using python solely in the terminal to give a sense of how these concepts are implemented generally.  The second part of the morning will include a live coding demo using python in the terminal and a text editor in a separate window to show how to build an simple tool (Previously this was a Chinese zodiac symbol that participants will be able to follow along with. See the zodiac folder for these steps).  This provides two essential things: observation of an actual coding process and a set of templates that they can draw on for the rest of the course (and afterwards).  
 
-Lab: Some assignment.
+The afternoon will have them carrying out a lab assignment to further hone their skills.
+
+[To consider: introducing the python workbench at the end of the afternoon to allow for the class to move forward faster on day three by allowing the focus of the afternoon to be the basics of the interface and the focus of the next morning to be some of the bells and whistles (like libraries) that have previously been ignored.]
 
 ## Day 3 (6hr)
 
@@ -77,12 +77,12 @@ to help remove the mysticism that can accompany a tool like this when coming
 to programming from nothing.
 
 Lab: Projects brainstorm. A few canned projects. Text adventure and/or twitter
-bot.
+bot.  Other classes may have work that this class can contribute to (CWRC is a likely source).  Students could also bring their own project.
 
 ## Day 4 (6hr)
 
-Lab all day.
+Project work all day.
 
 ## Day 5 (3hr)
 
-Lab all day. Where to go from here. Resources. Paths to development.
+Project word all morning and project presentations in the afternoon. Where to go from here. Resources. Paths to development.
