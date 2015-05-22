@@ -27,11 +27,24 @@ XSLT; and more!
 
 ## Day 1 (4hr)
 
-Lecture:
-- Command line basics.
-- regex
+Morning (10:15am-12:00pm)
+- Welcome (John & Dennis)
+  - Introductions
+  - Overview of week
+- Working Demo: Introduction to Terminal (John)
+  - Cheatsheet
+  - Regex
+  - Simple problems using the cheatsheet
 
-Lab: Hunting the Whale. Weasel Words.
+Afternoon (1:30pm-4:00pm)
+- Lab: Hunting the Whale. Weasel Words. (Dennis)
+- Lecture / Working Demo (Depending on progress): Thinking like a computer programmer. (John)
+  - Pseudocode
+  - Variables
+  - Data types
+  - Control structures
+  - Conditionals
+  - Where to get help
 
 Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
 demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
@@ -39,14 +52,20 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-Lecture:
-- How to think like a programmer
-- Pseudocode
-- Variables
-- Data types
-- Control structures
-- Conditionals
-- Where to get help
+Morning (9:00am-12:00pm)
+- Lecture / Working Demo (Carry over): Thinking like a computer programmer. (John)
+  - Pseudocode
+  - Variables
+  - Data types
+  - Control structures
+  - Conditionals
+  - Where to get help
+- Live programming demo (John)
+  - Zodiac Tool
+
+Afternoon (1:30pm-4:00pm)
+- Lab: NLTK and other powerful things (Dennis)
+- Working Demo (Depending on progress): Introducing A Workbench (John)
 
 Light lecture in the morning that builds on experiences the day before, focusing on
 the mindset of a programmer and important high-level programming concepts.  Following this will be a small set of activities using python solely in the terminal to give a sense of how these concepts are implemented generally.  The second part of the morning will include a live coding demo using python in the terminal and a text editor in a separate window to show how to build an simple tool (Previously this was a Chinese zodiac symbol that participants will be able to follow along with. See the zodiac folder for these steps).  This provides two essential things: observation of an actual coding process and a set of templates that they can draw on for the rest of the course (and afterwards).  
@@ -57,13 +76,13 @@ The afternoon will have them carrying out a lab assignment to further hone their
 
 ## Day 3 (6hr)
 
-Lecture:
-- PyCharm
-- methods
-- libraries
-- nltk
-- text manipulation
-- code and data
+Morning (9:00am-12:00pm)
+- Working Demo (Depending on progress): Introducing A Workbench (John)
+- Lab / Lecture: Extending the power of Python (Dennis)
+  - methods
+  - libraries
+  - text manipulation
+  - code and data
 
 Python Workbench.  There was a little bit of carry over from the
 previous day and following this they were introduced to PyCharm CE (It was
