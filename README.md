@@ -84,6 +84,11 @@ Morning (9:00am-12:00pm)
   - text manipulation
   - code and data
 
+Afternoon (1:30pm-4:00pm)
+- Begin projects.
+
+Belaid Moa (A Compute Canada Analyst) has offered to come in and do a quick "How to use our servers" which would give them the possibility of increase computing power.  It could be part of day 3.
+
 Python Workbench.  There was a little bit of carry over from the
 previous day and following this they were introduced to PyCharm CE (It was
 available on all the platforms and has a clean interface). At noon they were
@@ -104,4 +109,4 @@ Project work all day.
 
 ## Day 5 (3hr)
 
-Project word all morning and project presentations in the afternoon. Where to go from here. Resources. Paths to development.
+Project work all morning and project presentations in the afternoon. Where to go from here. Resources. Paths to development.
