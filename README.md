@@ -1,8 +1,7 @@
 # Fundamentals of Programming/Coding for Human(s|ists)
 John Simpson and Dennis Tenen
 
-## Resources 
-[Class Forum](https://piazza.com/class/ia5h507lfcr47d)
+| [Class Forum](https://piazza.com/class/ia5h507lfcr47d) |
 
 This course is intended for humanities-based researchers with no programming
 background whatsoever who would like to understand how programs work behind the
