@@ -2,7 +2,7 @@
 John Simpson and Dennis Tenen
 
 | [Class Forum](https://piazza.com/class/ia5h507lfcr47d) | [tutorials](https://github.com/denten-workshops/dh-core) | [notes](https://github.com/denten/dhnotes/wiki) |
------------------------------------------
+----------------------------------------------------------------------------------------------------------------
 
 This course is intended for humanities-based researchers with no programming
 background whatsoever who would like to understand how programs work behind the
