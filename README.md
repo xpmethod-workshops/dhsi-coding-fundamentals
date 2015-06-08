@@ -44,7 +44,10 @@ Morning (10:15am-12:00pm)
   - Simple problems using the cheatsheet
 
 Afternoon (1:30pm-4:00pm)
-- Lab: Weasel Words, Hunting the Whale. (Dennis)
+- Lab: [Weasel Words][4], [Hunting the Whale][5]. (Dennis)
+
+[4]: https://github.com/denten-courses/computing-context/blob/master/experiments/1-weasel/1-weasel-words.md
+[5]:
 
 Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
 demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
