@@ -2,7 +2,7 @@
 John Simpson and Dennis Tenen
 
 [Class Forum][1] | [tutorials][2] | [notes][3]
-------------------------------------------
+-----------------|----------------|-------
 
 [1]: https://piazza.com/class/ia5h507lfcr47d)
 [2]: https://github.com/denten-workshops/dh-core
