@@ -38,16 +38,25 @@ Morning (10:15am-12:00pm)
 - Welcome (John & Dennis)
   - Introductions
   - Overview of week
+  - [Course Philosophy][6]
+  - [Why command line?][7]
+  - Why Python?
+
 - Working Demo: Introduction to Terminal (John)
   - Cheatsheet
   - Regex
   - Simple problems using the cheatsheet
 
+[6]: https://github.com/denten-workshops/dh-core#philosophy
+[7]: https://github.com/denten/dhnotes/blob/master/cli-basics.md#why-command-line
+
 Afternoon (1:30pm-4:00pm)
+- More [CLI basics][8].
 - Lab: [Weasel Words][4], [Hunting the Whale][5]. (Dennis)
 
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
 [5]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md
+[8]: https://github.com/denten/dhnotes/blob/master/cli-basics.md#table-of-contents
 
 Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
 demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
