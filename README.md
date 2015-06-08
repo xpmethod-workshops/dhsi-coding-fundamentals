@@ -53,7 +53,7 @@ to follow along with (You can see the steps for this in the zodiac folder).
 This day was popular as the direct use of terminal and python gave participants
 a sense of control and authority that they did not previously have.
 
-Lab: Some assignment.
+Lab: Some assignment. (Take a look at the Stanford assignments.)
 
 ## Day 3 (6hr)
 
