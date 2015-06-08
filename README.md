@@ -1,7 +1,7 @@
 # Fundamentals of Programming/Coding for Human(s|ists)
 John Simpson and Dennis Tenen
 
-[Class Forum][1] | [tutorials][2] | [notes][3]
+[class forum][1] | [tutorials][2] | [notes][3]
 -----------------|----------------|-------
 
 [1]: https://piazza.com/class/ia5h507lfcr47d)
@@ -44,14 +44,7 @@ Morning (10:15am-12:00pm)
   - Simple problems using the cheatsheet
 
 Afternoon (1:30pm-4:00pm)
-- Lab: Hunting the Whale. Weasel Words. (Dennis)
-- Lecture / Working Demo (Depending on progress): Thinking like a computer programmer. (John)
-  - Pseudocode
-  - Variables
-  - Data types
-  - Control structures
-  - Conditionals
-  - Where to get help
+- Lab: Weasel Words, Hunting the Whale. (Dennis)
 
 Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
 demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
