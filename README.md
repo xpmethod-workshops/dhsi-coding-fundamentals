@@ -1,8 +1,12 @@
 # Fundamentals of Programming/Coding for Human(s|ists)
 John Simpson and Dennis Tenen
 
-| [Class Forum](https://piazza.com/class/ia5h507lfcr47d) | [tutorials](https://github.com/denten-workshops/dh-core) | [notes](https://github.com/denten/dhnotes/wiki) |
-----------------------------------------------------------------------------------------------------------------
+| [Class Forum][1] | [tutorials][2] | [notes][3] |
+-------------------------------------------------
+
+[1]: https://piazza.com/class/ia5h507lfcr47d)
+[2]: https://github.com/denten-workshops/dh-core
+[3]: https://github.com/denten/dhnotes/wiki
 
 This course is intended for humanities-based researchers with no programming
 background whatsoever who would like to understand how programs work behind the
