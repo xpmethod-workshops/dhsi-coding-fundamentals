@@ -1,6 +1,9 @@
 # Fundamentals of Programming/Coding for Human(s|ists)
 John Simpson and Dennis Tenen
 
+| [Class Forum](https://piazza.com/class/ia5h507lfcr47d) |
+---------------------------
+
 This course is intended for humanities-based researchers with no programming
 background whatsoever who would like to understand how programs work behind the
 scenes by writing some simple but useful programs of their own. Over the week
@@ -27,43 +30,67 @@ XSLT; and more!
 
 ## Day 1 (4hr)
 
-Lecture:
-- Command line basics.
-- regex
+Morning (10:15am-12:00pm)
+- Welcome (John & Dennis)
+  - Introductions
+  - Overview of week
+- Working Demo: Introduction to Terminal (John)
+  - Cheatsheet
+  - Regex
+  - Simple problems using the cheatsheet
 
-Lab: Hunting the Whale. Weasel Words.
+Afternoon (1:30pm-4:00pm)
+- Lab: Hunting the Whale. Weasel Words. (Dennis)
+- Lecture / Working Demo (Depending on progress): Thinking like a computer programmer. (John)
+  - Pseudocode
+  - Variables
+  - Data types
+  - Control structures
+  - Conditionals
+  - Where to get help
+
+Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
+demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
+activities in the afternoon that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
 
 ## Day 2 (6hr)
 
-Lecture:
-- How to think like a programmer
-- Pseudocode
-- Variables
-- Data types
-- Control structures
-- Conditionals
-- Where to get help
+Morning (9:00am-12:00pm)
+- Lecture / Working Demo (Carry over): Thinking like a computer programmer. (John)
+  - Pseudocode
+  - Variables
+  - Data types
+  - Control structures
+  - Conditionals
+  - Where to get help
+- Live programming demo (John)
+  - Zodiac Tool
 
-Intro to the Terminal and Python Programming. Terminal in the morning via a
-cheatsheet, a bit of a live demo, and then some problems that they can use the
-cheatsheet to solve. This then moves to terminal based python programming and
-some challenges in the afternoon. I used a live coding demo to show how to
-build an simple tool to tell you your Chinese zodiac symbol that they were able
-to follow along with (You can see the steps for this in the zodiac folder).
-This day was popular as the direct use of terminal and python gave participants
-a sense of control and authority that they did not previously have.
+Afternoon (1:30pm-4:00pm)
+- Lab: NLTK and other powerful things (Dennis)
+- Working Demo (Depending on progress): Introducing A Workbench (John)
 
-Lab: Some assignment. (Take a look at the Stanford assignments.)
+Light lecture in the morning that builds on experiences the day before, focusing on
+the mindset of a programmer and important high-level programming concepts.  Following this will be a small set of activities using python solely in the terminal to give a sense of how these concepts are implemented generally.  The second part of the morning will include a live coding demo using python in the terminal and a text editor in a separate window to show how to build an simple tool (Previously this was a Chinese zodiac symbol that participants will be able to follow along with. See the zodiac folder for these steps).  This provides two essential things: observation of an actual coding process and a set of templates that they can draw on for the rest of the course (and afterwards).  
+
+The afternoon will have them carrying out a lab assignment to further hone their skills.
+
+[To consider: introducing the python workbench at the end of the afternoon to allow for the class to move forward faster on day three by allowing the focus of the afternoon to be the basics of the interface and the focus of the next morning to be some of the bells and whistles (like libraries) that have previously been ignored.]
 
 ## Day 3 (6hr)
 
-Lecture:
-- PyCharm
-- methods
-- libraries
-- nltk
-- text manipulation
-- code and data
+Morning (9:00am-12:00pm)
+- Working Demo (Depending on progress): Introducing A Workbench (John)
+- Lab / Lecture: Extending the power of Python (Dennis)
+  - methods
+  - libraries
+  - text manipulation
+  - code and data
+
+Afternoon (1:30pm-4:00pm)
+- Begin projects.
+
+Belaid Moa (A Compute Canada Analyst) has offered to come in and do a quick "How to use our servers" which would give them the possibility of increase computing power.  It could be part of day 3.
 
 Python Workbench.  There was a little bit of carry over from the
 previous day and following this they were introduced to PyCharm CE (It was
@@ -77,12 +104,12 @@ to help remove the mysticism that can accompany a tool like this when coming
 to programming from nothing.
 
 Lab: Projects brainstorm. A few canned projects. Text adventure and/or twitter
-bot.
+bot.  Other classes may have work that this class can contribute to (CWRC is a likely source).  Students could also bring their own project.
 
 ## Day 4 (6hr)
 
-Lab all day.
+Project work all day.
 
 ## Day 5 (3hr)
 
-Lab all day. Where to go from here. Resources. Paths to development.
+Project work all morning and project presentations in the afternoon. Where to go from here. Resources. Paths to development.
