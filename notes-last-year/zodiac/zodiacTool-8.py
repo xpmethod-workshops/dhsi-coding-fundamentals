@@ -1,4 +1,4 @@
-#Here we package everything up into functions and set a loop so we can run it again and again.
+#Here we package everything up into functions and set a loop so we can run it again and again.  We also start using zodiacDescriptions2.txt so that descriptions of the signs are included.
 
 #Open the zodiac file
 
