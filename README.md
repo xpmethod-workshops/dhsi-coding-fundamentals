@@ -64,9 +64,9 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-[Morning Session][9] (9:00am-12:00pm)
+[Morning Session w/ Dennis][9] (9:00am-12:00pm)
 
-[9]: 
+[9]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/day-2.md
 
 Afternoon (1:30pm-4:00pm)
 - Working Demo (Depending on progress): Introducing A Workbench (John)
