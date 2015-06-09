@@ -9,6 +9,7 @@
 * Strings are sequences of characters (think of them as a special kind of ordered list).
 
       string1 = “hello world!”
+      
       print string1
 
 * As sequences we can index and slice strings.
@@ -24,17 +25,24 @@
 * Strings are immutable.  We modify them only by overwriting them.
 
       string1[0:1] = “H”
+      
       string1 = “Hello World!"
+      
       string operators + *
+      
       string2 = string1 + string1
+      
       print string2
 
 * How do we get a space? what about each on its own line?
       print string2 * 3
 
 * string methods: len, upper, lower, replace, etc.
+
       len(string1)
+      
       string1.swapcase()
+      
       string1.swapcase()
 
 * Why didn’t it go back to lowercase the second time?  We’re not modifying the string.
@@ -46,7 +54,9 @@
 * What does 1 / 2 produce?  Why?  Integer division.  Can fix this by adding decimals to the input
 
       1.0 / 2
+
       1 / 2.0
+
       1.0 / 2.0
 
 * What does the ** operator do?
@@ -66,9 +76,11 @@
 * Have them play with type.  Give them a string, an integer, a decimal. See what they can swap back and forth
 
       int1 = 5
+
       dec1 = 4.0
 
 * What is int1 * 5?
+
       str(int1)
 
 * What is int1 * 5?
@@ -87,9 +99,13 @@
 * indexing and slicing is just like strings
 
       list1[0]
+
       list1[1:2]
+
       list1[1:1]
+
       list1[0]=“Hello”
+
       list1[1]=list[1].capitalize()
 
 * Lists can hold almost any type of object and can be heterogeneous.
@@ -103,24 +119,30 @@
 * How will we capitalize the *“wow”* in list1?
 
       list1[3][2].capitalize()
+
       list1.insert(2,”two”)
 
 * What operators can we use with lists?  Try some out!
 
       list1 + list2
+
       list1 * 3
+
       list1 + string1 
 
 * *list1 + string1* fails.  Need to recast string1 as a list.  [string1] 
 * list methods. append, expand, and sort.  Note that list methods are all void.  They modify the original list and return None.
 
       list1.sort()
+
       list1.reverse
+
       list1.index(“Hello”)
 
 * deleting elements
 
       list1.pop(2)
+
       list1.remove(“wow”)
 
 * *list1.remove(“wow”)*fails.  Need to access the list in the list.
@@ -130,6 +152,7 @@
 * key : value pairs.  Use when you want to index by keys rather than locations.
 
       dict1 = {'one’:’un’,’two’:’deux’,’three’:’trois’}
+
       dict1
 
 * note how the order has 9(likely) changed!
@@ -140,23 +163,30 @@
 * *dict1[two]* fails, no variable named “two”
 
       dict1[‘two’]
+
       dict1[‘four’]
       
 * *dict1[‘four’]* fails, no index named “four”
 
 * Checking members
+
       ‘four’ in dict1
+
       ‘trois’ in dict1
 
 * *‘trois’ in dict1* fails because it is a value, not a key
 
       dict1Val = dict1.values()
+
       ‘trois’ in dict1Val
 
 * Or go straight for the throat with *‘trois’* in *dict1.values()*
 * Adding/modifying  members
+
       outFile = open(‘output.txt’, ‘r’)
+
       for line in outFile:
+
           print linedict1[four] =  ‘quatre’
 
 * Checking for inverse members.  Can’t do that yet (Dictionaries don’t work that way by default).  For that we need functions, loops, and conditionals.
@@ -166,15 +196,19 @@
 * Functions take arguments and return values.  type() was a function.  It took and object as argument and returned its type as the value.
 
       def print2x():
+
       print “hello world” * 2
 
 * Values can be passed to a function
+
       def duplicator(passedValue):
+
       print passedValue * 2
 
 * Multiple values can be passed
       
       def multiplicator(passedValue1, passedValue2):
+
           print passedValue1 * passedValue2
 
 * See what happens when you pass the wrong value
@@ -189,11 +223,17 @@
 # Loops
 
 * While
+
       fruit = ‘banana'
+
       index = 0
+
       while index < len(fruit):
+
           letter = fruit[index]
+
           print letter
+
           index = index + 1
           
 * For
@@ -205,38 +245,51 @@
 * If
 
       x = 5
+
       y = 4
+
       if x < y:
+
           print ‘x is less than y’
 
 * Else
 
       else:
+
           print ‘x is not less than y’
 
 * Elif
 
       elif x==y:
+
           print ‘x is equal to y'
 
 * conjunction with a conditional
 
       if 0 < x and x < 10:
+
           print ‘x is a positive single digit number’
 
 * In
       
       if ‘a’ in fruit:
+
           print fruit
       
 * Function with a while loop with a conditional
 
       def find(word, letter)
+
           index = 0
+
           while index < len(fruit)
+
               if word[index] == letter:
+
                   return index
+
               return -1
+
           print find(fruit, ‘a’) 
 
 # Reading and writing to files
@@ -244,6 +297,7 @@
 * Open
 
       outFile = open(‘output.txt’, ‘w’)
+
       print outFile
 
 * Write
@@ -251,6 +305,7 @@
       outText = [‘This is a test of writing to a file’, ‘This is a test of writing a second line’]
 
       for item in outText:
+
           outFile.write(item)
 
 
@@ -261,19 +316,25 @@
 * Read
 
       outFile = open(‘output.txt’, ‘r’)
+
       for line in outFile:
+
           print line
 
 * Appending
 
       outFile = open(‘output.txt’, ‘a’)
+
       for line in outFile:
+
           print line
 
 * Write
 
       outFile = open(‘output.txt’, ‘r’)
+
       for line in outFile:
+
           print line
 
 
@@ -282,11 +343,13 @@
 * Raw Input
 
       input = raw_input()
+
       print raw_input()
 
 * Help Text
 
       input = raw_input(‘What is your name? ‘)
+
       print ‘Nice to meet you ‘ + input + ‘!'
 
 
