@@ -64,12 +64,14 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-Morning Session w/ Dennis] (9:00am-12:00pm)
+Morning Session w/ Dennis (9:00am-12:00pm)
 
 - [Text Manipulation at the Command Line][9]
 - Exercise 1: Automate Moby
 - [Anatomy of a Bash program][10]
 - [Python 1][11]
+- [Python 2][12]
+- [Python 3][13]
 
 | When to use Bash?                 | When to use Python       |
 ------------------------------------|--------------------------|
@@ -84,18 +86,32 @@ Morning Session w/ Dennis] (9:00am-12:00pm)
 [9]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
 [10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
 [11]: https://github.com/denten/dhnotes/blob/master/python.md
-
-[9]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/day-2.md
+[13]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/python-2.md
+[14]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/python-3.md
 
 Afternoon (1:30pm-4:00pm)
 - Working Demo (Depending on progress): Introducing A Workbench (John)
 
-Light lecture in the morning that builds on experiences the day before, focusing on
-the mindset of a programmer and important high-level programming concepts.  Following this will be a small set of activities using python solely in the terminal to give a sense of how these concepts are implemented generally.  The second part of the morning will include a live coding demo using python in the terminal and a text editor in a separate window to show how to build an simple tool (Previously this was a Chinese zodiac symbol that participants will be able to follow along with. See the zodiac folder for these steps).  This provides two essential things: observation of an actual coding process and a set of templates that they can draw on for the rest of the course (and afterwards).  
+Light lecture in the morning that builds on experiences the day before,
+focusing on the mindset of a programmer and important high-level programming
+concepts.  Following this will be a small set of activities using python solely
+in the terminal to give a sense of how these concepts are implemented
+generally.  The second part of the morning will include a live coding demo
+using python in the terminal and a text editor in a separate window to show how
+to build an simple tool (Previously this was a Chinese zodiac symbol that
+participants will be able to follow along with. See the zodiac folder for these
+steps).  This provides two essential things: observation of an actual coding
+process and a set of templates that they can draw on for the rest of the course
+(and afterwards).
 
-The afternoon will have them carrying out a lab assignment to further hone their skills.
+The afternoon will have them carrying out a lab assignment to further hone
+their skills.
 
-[To consider: introducing the python workbench at the end of the afternoon to allow for the class to move forward faster on day three by allowing the focus of the afternoon to be the basics of the interface and the focus of the next morning to be some of the bells and whistles (like libraries) that have previously been ignored.]
+[To consider: introducing the python workbench at the end of the afternoon to
+allow for the class to move forward faster on day three by allowing the focus
+of the afternoon to be the basics of the interface and the focus of the next
+morning to be some of the bells and whistles (like libraries) that have
+previously been ignored.]
 
 ## Day 3 (6hr)
 
