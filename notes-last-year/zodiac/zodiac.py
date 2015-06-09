@@ -1,4 +1,5 @@
-# this is a program that will tell you your chinese zodiac sign
+# This is a program that will tell you your chinese zodiac sign
+# It is equivalent to zodiacTool-8.py
 # Perhaps more importantly, this is the end result of the version we built in class
 # It will differ a bit from the step by step guides which were built in advance
 
