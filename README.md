@@ -64,19 +64,11 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-Morning (9:00am-12:00pm)
-- Lecture / Working Demo (Carry over): Thinking like a computer programmer. (John)
-  - Pseudocode
-  - Variables
-  - Data types
-  - Control structures
-  - Conditionals
-  - Where to get help
-- Live programming demo (John)
-  - Zodiac Tool
+[Morning Session][9] (9:00am-12:00pm)
+
+[9]: 
 
 Afternoon (1:30pm-4:00pm)
-- Lab: NLTK and other powerful things (Dennis)
 - Working Demo (Depending on progress): Introducing A Workbench (John)
 
 Light lecture in the morning that builds on experiences the day before, focusing on
