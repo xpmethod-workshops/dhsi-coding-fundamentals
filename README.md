@@ -64,7 +64,26 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-[Morning Session w/ Dennis][9] (9:00am-12:00pm)
+Morning Session w/ Dennis] (9:00am-12:00pm)
+
+- [Text Manipulation at the Command Line][9]
+- Exercise 1: Automate Moby
+- [Anatomy of a Bash program][10]
+
+| When to use Bash?                 | When to use Python       |
+------------------------------------|--------------------------|
+| - automate daily tasks            | - data science           |
+| - manage files & folders          | - app development        |
+| - remote server admin             | - NLTK                   |
+| - data munging                    | - data visualization     |
+| - quick & dirty text manipulation | - glue code              |
+|                                   | - everything else        |
+
+- [Python 1][11]
+
+[9]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
+[10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
+[11]: https://github.com/denten/dhnotes/blob/master/python.md
 
 [9]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/day-2.md
 

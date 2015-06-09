@@ -17,4 +17,4 @@
 
 [1]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
 [2]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
-[3]:
+[3]: https://github.com/denten/dhnotes/blob/master/python.md
