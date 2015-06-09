@@ -69,6 +69,7 @@ Morning Session w/ Dennis] (9:00am-12:00pm)
 - [Text Manipulation at the Command Line][9]
 - Exercise 1: Automate Moby
 - [Anatomy of a Bash program][10]
+- [Python 1][11]
 
 | When to use Bash?                 | When to use Python       |
 ------------------------------------|--------------------------|
@@ -79,7 +80,6 @@ Morning Session w/ Dennis] (9:00am-12:00pm)
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
-- [Python 1][11]
 
 [9]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
 [10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
