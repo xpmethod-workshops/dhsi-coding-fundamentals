@@ -64,7 +64,7 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-Morning Session w/ Dennis (9:00am-12:00pm)
+### Morning Session w/ Dennis (9:00am-12:00pm)
 
 - [Text Manipulation at the Command Line][9]
 - Exercise 1: Automate Moby
@@ -89,7 +89,7 @@ Morning Session w/ Dennis (9:00am-12:00pm)
 [12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
 [13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
 
-Afternoon (1:30pm-4:00pm)
+### Afternoon (1:30pm-4:00pm)
 - Building the [Zodiac][14] I
 
 [14]: https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
@@ -111,16 +111,17 @@ their skills.
 
 ## Day 3 (6hr)
 
-Morning (9:00am-12:00pm)
+### Morning (9:00am-12:00pm)
 - Building the [Zodiac][14] II
 
-Afternoon (1:30pm-4:00pm)
+### Afternoon (1:30pm-4:00pm)
 - Project brainstorm
 
 ## Day 4 (6hr)
 
-Project work all day.
+Project work all day!
 
 ## Day 5 (3hr)
 
-Project work all morning and project presentations in the afternoon. Where to go from here. Resources. Paths to development.
+Project work all morning and project presentations in the afternoon. Where to
+go from here. Resources. Paths to development.
