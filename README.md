@@ -1,8 +1,14 @@
-# Fundamentals of Programming/Coding for Human(s|ists)
-John Simpson and Dennis Tenen
+---
+what: Coding for Human(s|ists)
+who: John Simpson and Dennis Tenen
+where: University of Victoria, BC
+when: June 8--12, 2015
+---
 
-[class forum][1] | [tutorials][2] | [notes][3]
------------------|----------------|-------
+## Resources
+- [class forum][1]
+- [tutorials][2]
+- [DHnotes][3]
 
 [1]: https://piazza.com/class/ia5h507lfcr47d
 [2]: https://github.com/denten-workshops/dh-core
