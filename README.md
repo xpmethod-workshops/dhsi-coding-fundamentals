@@ -97,7 +97,9 @@ Morning Session w/ Dennis (9:00am-12:00pm)
 [13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
 
 Afternoon (1:30pm-4:00pm)
-- Building the Zodiac
+- Building the [Zodiac][14] I
+
+[14]: https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
@@ -114,40 +116,13 @@ process and a set of templates that they can draw on for the rest of the course
 The afternoon will have them carrying out a lab assignment to further hone
 their skills.
 
-[To consider: introducing the python workbench at the end of the afternoon to
-allow for the class to move forward faster on day three by allowing the focus
-of the afternoon to be the basics of the interface and the focus of the next
-morning to be some of the bells and whistles (like libraries) that have
-previously been ignored.]
-
 ## Day 3 (6hr)
 
 Morning (9:00am-12:00pm)
-- Working Demo (Depending on progress): Introducing A Workbench (John)
-- Lab / Lecture: Extending the power of Python (Dennis)
-  - methods
-  - libraries
-  - text manipulation
-  - code and data
+- Building the [Zodiac][14] II
 
 Afternoon (1:30pm-4:00pm)
-- Begin projects.
-
-Belaid Moa (A Compute Canada Analyst) has offered to come in and do a quick "How to use our servers" which would give them the possibility of increase computing power.  It could be part of day 3.
-
-Python Workbench.  There was a little bit of carry over from the
-previous day and following this they were introduced to PyCharm CE (It was
-available on all the platforms and has a clean interface). At noon they were
-given a choice of projects to work on that included projects that they may have
-brought.  Groups would then go through the process of planning their code and
-then writing and testing sections in increments with the goal of being ready to
-provide a show and tell by Friday afternoon’s show and tell. Participants
-really liked PyCharm and having seen the command line version previously seemed
-to help remove the mysticism that can accompany a tool like this when coming
-to programming from nothing.
-
-Lab: Projects brainstorm. A few canned projects. Text adventure and/or twitter
-bot.  Other classes may have work that this class can contribute to (CWRC is a likely source).  Students could also bring their own project.
+- Project brainstorm
 
 ## Day 4 (6hr)
 
