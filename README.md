@@ -3,6 +3,7 @@ what: Coding for Human(s|ists)
 who: John Simpson and Dennis Tenen
 where: University of Victoria, BC
 when: June 8--12, 2015
+
 ---
 
 ## Resources
@@ -96,7 +97,7 @@ Morning Session w/ Dennis (9:00am-12:00pm)
 [13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
 
 Afternoon (1:30pm-4:00pm)
-- Working Demo (Depending on progress): Introducing A Workbench (John)
+- Building the Zodiac
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
