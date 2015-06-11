@@ -52,7 +52,7 @@ class.
 
 ### Afternoon (1:30pm-4:00pm)
 - More [CLI basics][8].
-- Lab: [Weasel Words][4], [Hunting the Whale][5]. (Dennis)
+- Lab: [Hunting the Whale][5]. (Dennis)
 
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
 [5]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md
