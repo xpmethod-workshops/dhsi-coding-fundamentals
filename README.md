@@ -85,9 +85,9 @@ Morning Session w/ Dennis (9:00am-12:00pm)
 
 [9]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
 [10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
-[11]: https://github.com/denten/dhnotes/blob/master/python.md
-[12]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/python-2.md
-[13]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/python-3.md
+[11]: https://github.com/denten/dhnotes/blob/master/python/python-1.md
+[12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
+[13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
 
 Afternoon (1:30pm-4:00pm)
 - Working Demo (Depending on progress): Introducing A Workbench (John)

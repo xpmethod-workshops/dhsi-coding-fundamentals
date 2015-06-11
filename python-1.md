@@ -1,8 +1,0 @@
-- Python interpreter
-- Variables
-- Data types
-- Control structures
-- Conditionals
-- Where to get help
-- Live programming demo
-- Zodiac Tool
