@@ -34,7 +34,7 @@ class.
 
 ## Day 1 (4hr)
 
-Morning (10:15am-12:00pm)
+### Morning (10:15am-12:00pm)
 - Welcome (John & Dennis)
   - Introductions
   - Overview of week
@@ -50,7 +50,7 @@ Morning (10:15am-12:00pm)
 [6]: https://github.com/denten-workshops/dh-core#philosophy
 [7]: https://github.com/denten/dhnotes/blob/master/cli-basics.md#why-command-line
 
-Afternoon (1:30pm-4:00pm)
+### Afternoon (1:30pm-4:00pm)
 - More [CLI basics][8].
 - Lab: [Weasel Words][4], [Hunting the Whale][5]. (Dennis)
 
