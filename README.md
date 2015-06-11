@@ -15,6 +15,8 @@ when: June 8--12, 2015
 [2]: https://github.com/denten-workshops/dh-core
 [3]: https://github.com/denten/dhnotes/wiki
 
+## Class Description
+
 This course is intended for humanities-based researchers with no programming
 background whatsoever who would like to understand how programs work behind the
 scenes by writing some simple but useful programs of their own. Over the week
@@ -29,15 +31,6 @@ expressions will also be emphasized. We will also spend some time taking
 glimpses at what is happening in the other DHSI courses to understand how
 reading and writing programming code goes well beyond what we touch on in this
 class.
-
-Consider this offering in complement with, and / or to be built on by:
-Out-of-the-Box Text Analysis for the Digital Humanities; Geographical
-Information Systems in the Digital Humanities; Physical Computing and Desktop
-Fabrication; Data Mining for Digital Humanists; Understanding Topic Modelling;
-Stylometry with R: Computer-Assisted Analysis of Literary Texts; RDF and Linked
-Open Data; 3d Modelling for DH and Social Sciences; DH Databases; Creating LAMP
-Infrastructure for Digital Humanities Projects; A Collaborative Approach to
-XSLT; and more!
 
 ## Day 1 (4hr)
 
