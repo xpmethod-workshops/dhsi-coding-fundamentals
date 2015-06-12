@@ -125,7 +125,9 @@ their skills.
 `IDE = interpreter + text editor + file browser`.
 
 Two approaches:
+
 1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
+
 2. ipython (interpreter) + vim (text editor) + command line (manage files)
 
 There is no wrong answer here. Chose tools that are 
