@@ -150,7 +150,7 @@ http://analytics.artsrn.ualberta.ca/digging2data/
 
 - Begin Project Work
 
-1. 1hr write a short 1-2 paragraph description of your project. Concentrate on
+  - 1hr write a short 1-2 paragraph description of your project. Concentrate on
 the goals of the *what* you are trying to accomplish, not the technical
 details. Spend some time discussing what tools and datasets you would need for
 the project. For example a simple project description may be:
@@ -159,7 +159,7 @@ the project. For example a simple project description may be:
 > would take as its input a sample essay and output a score, based on several
 > parameters like sentence length variation and richness of vocabulary.
 
-2. 1hr translate or "formalize" your goals into a series of step by step
+  - 1hr translate or "formalize" your goals into a series of step by step
 instructions in pseudocode.
 
 - [NLTK
