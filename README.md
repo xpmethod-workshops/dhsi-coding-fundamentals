@@ -126,8 +126,8 @@ their skills.
 `IDE = interpreter + text editor + file browser`
 
 Two approaches:
-  - all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
-  - ipython (interpreter) + vim (text editor) + command line (manage files)
+  1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
+  2. ipython (interpreter) + vim (text editor) + command line (manage files)
 
 There is no wrong answer here. Chose tools that are 
 [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal,
