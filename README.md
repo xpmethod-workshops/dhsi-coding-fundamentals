@@ -119,12 +119,12 @@ their skills.
 
 ## Day 4 (6hr)
 
-1. Guest Speaker (reflections from DHSI 2014 class graduate)
+- Guest Speaker (reflections from DHSI 2014 class graduate)
 
-2. Two approaches to coding environments. `IDE = interpreter + text editor +
+- Two approaches to coding environments. `IDE = interpreter + text editor +
 file browser`. Two approaches:
-  1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
-  2. ipython (interpreter) + vim (text editor) + command line (manage files)
+  - all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
+  - ipython (interpreter) + vim (text editor) + command line (manage files)
 
 There is no wrong answer here. Chose tools that are 
 [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal,
