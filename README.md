@@ -166,12 +166,20 @@ Concluding remarks. Showcase and Plenary meeting after.
 
 
 ## Where to go from here?
-### Books
-### Online
+
+- Books [Think Python](http://www.greenteapress.com/thinkpython/) 
+- [NLTK Book](http://www.nltk.org/book/)
+- [Unix and Linux: Visual QuickStart
+  Guide](http://www.amazon.com/Unix-Linux-Visual-QuickStart-Edition/dp/0321997549)
+- Python on
+  [Lynda.com](http://www.lynda.com/Python-training-tutorials/415-0.html)
+
 - [tutorials][2]
 - [DHnotes][3]
 - [TAPoR](http://www.tapor.ca/)
 
-[1]: https://piazza.com/class/ia5h507lfcr47d
-[2]: https://github.com/denten-workshops/dh-core
+[1]: https://piazza.com/class/ia5h507lfcr47d 
+
+[2]: https://github.com/denten-workshops/dh-core 
+
 [3]: https://github.com/denten/dhnotes/wiki
