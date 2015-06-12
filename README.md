@@ -122,7 +122,7 @@ their skills.
 - Guest Speaker (reflections from DHSI 2014 class graduate)
 
 - Two approaches to coding environments.  
-`IDE = interpreter + text editor + file browser`.
+`IDE = interpreter + text editor + file browser`
 
 Two approaches:
 
@@ -137,21 +137,21 @@ extensible.
 - A day in the life. What can be done with Python?
 
   - LitClock Twitter Bot ([project
-  page](http://xpmethod.plaintext.in/public-discourse/litclock.html), [twitter
-account](https://twitter.com/litclock),
+    page](http://xpmethod.plaintext.in/public-discourse/litclock.html),
+[twitter account](https://twitter.com/litclock),
 [code](https://github.com/dhcolumbia/litclock/blob/master/cron-bot.py),
-[data](https://github.com/dhcolumbia/litclock/blob/master/tweets.csv)
+[data](https://github.com/dhcolumbia/litclock/blob/master/tweets.csv))
   - [Science
-  Surveyor](http://xpmethod.plaintext.in/public-discourse/surveyor.html)
+    Surveyor](http://xpmethod.plaintext.in/public-discourse/surveyor.html)
   - [HuViz](http://alpha.orlando.dev.semandra.com/)- Alpha of the Orlando/CWRC
-  Graph / Ontology Viewer Old Bailey Data Warehouse Interface 
-  - Prototype tool for mining a copy of the Old Bailey database held on a special
-  server http://analytics.artsrn.ualberta.ca/digging2data/ 
+    Graph / Ontology Viewer Old Bailey Data Warehouse Interface, a tool
+prototype for mining a copy of the Old Bailey database held on a special server
+http://analytics.artsrn.ualberta.ca/digging2data/ 
 
-4. Begin Project Work
+- Begin Project Work
 
-- 1hr write a short 1-2 paragraph description of your project. Concentrate on
-  the goals of the *what* you are trying to accomplish, not the technical
+1. 1hr write a short 1-2 paragraph description of your project. Concentrate on
+the goals of the *what* you are trying to accomplish, not the technical
 details. Spend some time discussing what tools and datasets you would need for
 the project. For example a simple project description may be:
 
@@ -159,12 +159,10 @@ the project. For example a simple project description may be:
 > would take as its input a sample essay and output a score, based on several
 > parameters like sentence length variation and richness of vocabulary.
 
-- 1hr translate or "formalize" your goals into a series of step by step
+2. 1hr translate or "formalize" your goals into a series of step by step
 instructions in pseudocode.
 
-```
-
-5. [NLTK
+- [NLTK
 mini tutorial](https://github.com/denten/dhnotes/blob/master/python/python-4.md),
 CSV and RegEx mini tutorials
 
