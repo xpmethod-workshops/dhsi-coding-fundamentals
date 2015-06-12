@@ -146,7 +146,11 @@ account](https://twitter.com/litclock),
   Graph / Ontology Viewer Old Bailey Data Warehouse Interface 
 - Prototype tool for mining a copy of the Old Bailey database held on a special
   server http://analytics.artsrn.ualberta.ca/digging2data/ TAPoR - Great place
-to look up new tools. http://www.tapor.ca/ ## Day 5 (3hr)
+to look up new tools. http://www.tapor.ca/ 
+
+4. [NLTK Tutorial](https://github.com/denten/dhnotes/blob/master/python/python-4.md)
+
+## Day 5 (3hr)
 
 Project work all morning and project presentations in the afternoon. Where to
 go from here. Resources. Paths to development.
