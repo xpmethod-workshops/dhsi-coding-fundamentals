@@ -126,8 +126,8 @@ their skills.
 `IDE = interpreter + text editor + file browser`
 
 Two approaches:
-- all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
-- ipython (interpreter) + vim (text editor) + command line (manage files)
+  - all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
+  - ipython (interpreter) + vim (text editor) + command line (manage files)
 
 There is no wrong answer here. Chose tools that are 
 [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal,
@@ -145,12 +145,37 @@ account](https://twitter.com/litclock),
 - [HuViz](http://alpha.orlando.dev.semandra.com/)- Alpha of the Orlando/CWRC
   Graph / Ontology Viewer Old Bailey Data Warehouse Interface 
 - Prototype tool for mining a copy of the Old Bailey database held on a special
-  server http://analytics.artsrn.ualberta.ca/digging2data/ TAPoR - Great place
-to look up new tools. http://www.tapor.ca/ 
+  server http://analytics.artsrn.ualberta.ca/digging2data/ 
 
-4. [NLTK Tutorial](https://github.com/denten/dhnotes/blob/master/python/python-4.md)
+4. Begin Project Work
+
+- 1hr write a short 1-2 paragraph description of your project. Concentrate on
+  the goals of the *what* you are trying to accomplish, not the technical
+details. Spend some time discussing what tools and datasets you would need for
+the project. For example a simple project description may be:
+
+> Using Python NLTK, our group would like to build an "essay grader" which
+> would take as its input a sample essay and output a score, based on several
+> parameters like sentence length variation and richness of vocabulary.
+
+- 1hr translate or "formalize" your goals into a series of step by step
+instructions in pseudocode.
+
+```
+
+5. [NLTK
+mini tutorial](https://github.com/denten/dhnotes/blob/master/python/python-4.md),
+CSV and RegEx mini tutorials
 
 ## Day 5 (3hr)
 
 Project work all morning and project presentations in the afternoon. Where to
-go from here. Resources. Paths to development.
+go from here. 
+
+## Where to go from here?
+### Books
+### Online
+Resources. Paths to development.
+TAPoR - Great place
+to look up new tools. http://www.tapor.ca/ 
+
