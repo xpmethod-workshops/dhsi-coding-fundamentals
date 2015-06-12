@@ -113,10 +113,7 @@ their skills.
 
 ## Day 3 (6hr)
 
-### Morning (9:00am-12:00pm)
 - Building the [Zodiac][14] II
-
-### Afternoon (1:30pm-4:00pm)
 - Project brainstorm
 
 ## Day 4 (6hr)
