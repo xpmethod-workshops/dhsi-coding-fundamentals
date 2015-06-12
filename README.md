@@ -121,11 +121,8 @@ their skills.
 
 1. Guest Speaker (reflections from DHSI 2014 class graduate)
 
-2. Two approaches to coding environments.
-
-`IDE = interpreter + text editor + file browser`
-
-Two approaches:
+2. Two approaches to coding environments. `IDE = interpreter + text editor +
+file browser`. Two approaches:
   1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
   2. ipython (interpreter) + vim (text editor) + command line (manage files)
 
