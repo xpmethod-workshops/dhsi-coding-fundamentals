@@ -35,6 +35,7 @@ class.
 ## Day 1 (4hr)
 
 ### Morning (10:15am-12:00pm)
+
 - Welcome (John & Dennis)
   - Introductions
   - Overview of week
@@ -51,6 +52,7 @@ class.
 [7]: https://github.com/denten/dhnotes/blob/master/cli-basics.md#why-command-line
 
 ### Afternoon (1:30pm-4:00pm)
+
 - More [CLI basics][8].
 - Lab: [Hunting the Whale][5]. (Dennis)
 
@@ -148,9 +150,7 @@ extensible.
 prototype for mining a copy of the Old Bailey database held on a special server
 http://analytics.artsrn.ualberta.ca/digging2data/ 
 
-- Begin Project Work
-
-  - 1hr write a short 1-2 paragraph description of your project. Concentrate on
+- 1hr write a short 1-2 paragraph description of your project. Concentrate on
 the goals of the *what* you are trying to accomplish, not the technical
 details. Spend some time discussing what tools and datasets you would need for
 the project. For example a simple project description may be:
@@ -159,17 +159,26 @@ the project. For example a simple project description may be:
 > would take as its input a sample essay and output a score, based on several
 > parameters like sentence length variation and richness of vocabulary.
 
-  - 1hr translate or "formalize" your goals into a series of step by step
+- 1hr translate or "formalize" your goals into a series of step by step
 instructions in pseudocode.
 
 - [NLTK
 mini tutorial](https://github.com/denten/dhnotes/blob/master/python/python-4.md),
 CSV and RegEx mini tutorials
 
-## Day 5 (3hr)
+- project work for the rest of the day
 
-Project work all morning and project presentations in the afternoon. Where to
-go from here. 
+## Day 5 (3h)
+
+**9:30 - 11:30am**
+
+Reevaluate the scope of your project. Cut out inessential functionality. We are trying to get to
+a "minimally viable" prototype stage. Take notes via code comments throughout.
+
+**11:3 - noon**
+
+Concluding remarks. Showcase and Plenary meeting after.
+
 
 ## Where to go from here?
 ### Books
