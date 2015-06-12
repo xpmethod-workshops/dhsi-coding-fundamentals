@@ -1,6 +1,5 @@
 ---
 what: Coding for Human(s|ists)
-who: "[John Simpson](https://twitter.com/symulation)"
 where: University of Victoria, BC
 when: June 8--12, 2015
 
