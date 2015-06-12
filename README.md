@@ -121,29 +121,29 @@ their skills.
 
 - Guest Speaker (reflections from DHSI 2014 class graduate)
 
-- Two approaches to coding environments. 
-`IDE = interpreter + text editor + file browser`. 
+- Two approaches to coding environments.  
+`IDE = interpreter + text editor + file browser`.
 
 Two approaches:
-  1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
-  2. ipython (interpreter) + vim (text editor) + command line (manage files)
+1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
+2. ipython (interpreter) + vim (text editor) + command line (manage files)
 
 There is no wrong answer here. Chose tools that are 
 [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal,
 extensible.
 
-3. A day in the life. What can be done with Python?
+- A day in the life. What can be done with Python?
 
-- LitClock Twitter Bot ([project
+  - LitClock Twitter Bot ([project
   page](http://xpmethod.plaintext.in/public-discourse/litclock.html), [twitter
 account](https://twitter.com/litclock),
 [code](https://github.com/dhcolumbia/litclock/blob/master/cron-bot.py),
 [data](https://github.com/dhcolumbia/litclock/blob/master/tweets.csv)
-- [Science
+  - [Science
   Surveyor](http://xpmethod.plaintext.in/public-discourse/surveyor.html)
-- [HuViz](http://alpha.orlando.dev.semandra.com/)- Alpha of the Orlando/CWRC
+  - [HuViz](http://alpha.orlando.dev.semandra.com/)- Alpha of the Orlando/CWRC
   Graph / Ontology Viewer Old Bailey Data Warehouse Interface 
-- Prototype tool for mining a copy of the Old Bailey database held on a special
+  - Prototype tool for mining a copy of the Old Bailey database held on a special
   server http://analytics.artsrn.ualberta.ca/digging2data/ 
 
 4. Begin Project Work
