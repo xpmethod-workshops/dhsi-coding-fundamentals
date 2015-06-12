@@ -1,12 +1,12 @@
 ---
 what: Coding for Human(s|ists)
-who: [John Simpson]( @dDennis Tenen
+who: "[John Simpson](https://twitter.com/symulation)"
 where: University of Victoria, BC
 when: June 8--12, 2015
 
 ---
 
-[John Simpson](https://twitter.com/symulation)
+[John Simpson](https://twitter.com/symulation)  
 [Dennis Yi Tenen](https://twitter.com/dennistenen)
 
 ## Class Description
