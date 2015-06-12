@@ -6,15 +6,6 @@ when: June 8--12, 2015
 
 ---
 
-## Resources
-- [class forum][1]
-- [tutorials][2]
-- [DHnotes][3]
-
-[1]: https://piazza.com/class/ia5h507lfcr47d
-[2]: https://github.com/denten-workshops/dh-core
-[3]: https://github.com/denten/dhnotes/wiki
-
 ## Class Description
 
 This course is intended for humanities-based researchers with no programming
@@ -31,6 +22,8 @@ expressions will also be emphasized. We will also spend some time taking
 glimpses at what is happening in the other DHSI courses to understand how
 reading and writing programming code goes well beyond what we touch on in this
 class.
+
+Visit our [class forum here][1].
 
 ## Day 1 (4hr)
 
@@ -173,7 +166,10 @@ Concluding remarks. Showcase and Plenary meeting after.
 ## Where to go from here?
 ### Books
 ### Online
-Resources. Paths to development.
-TAPoR - Great place
-to look up new tools. http://www.tapor.ca/ 
+- [tutorials][2]
+- [DHnotes][3]
+- [TAPoR](http://www.tapor.ca/)
 
+[1]: https://piazza.com/class/ia5h507lfcr47d
+[2]: https://github.com/denten-workshops/dh-core
+[3]: https://github.com/denten/dhnotes/wiki
