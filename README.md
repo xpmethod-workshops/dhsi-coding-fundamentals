@@ -1,10 +1,13 @@
 ---
 what: Coding for Human(s|ists)
-who: John Simpson and Dennis Tenen
+who: [John Simpson]( @dDennis Tenen
 where: University of Victoria, BC
 when: June 8--12, 2015
 
 ---
+
+[John Simpson](https://twitter.com/symulation)
+[Dennis Yi Tenen](https://twitter.com/dennistenen)
 
 ## Class Description
 
