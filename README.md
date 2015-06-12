@@ -34,8 +34,6 @@ class.
 
 ## Day 1 (4hr)
 
-### Morning (10:15am-12:00pm)
-
 - Welcome (John & Dennis)
   - Introductions
   - Overview of week
@@ -51,8 +49,6 @@ class.
 [6]: https://github.com/denten-workshops/dh-core#philosophy
 [7]: https://github.com/denten/dhnotes/blob/master/cli-basics.md#why-command-line
 
-### Afternoon (1:30pm-4:00pm)
-
 - More [CLI basics][8].
 - Lab: [Hunting the Whale][5]. (Dennis)
 
@@ -66,9 +62,7 @@ activities in the afternoon that will push further into text manipulation in a U
 
 ## Day 2 (6hr)
 
-### Morning Session w/ Dennis (9:00am-12:00pm)
-
-- [Text Manipulation at the Command Line][9]
+- [Text Manipulation at the Command Line][9] w/Dennis
 - Exercise 1: Automate Moby
 - [Anatomy of a Bash program][10]
 - [Python 1][11]
@@ -91,8 +85,7 @@ activities in the afternoon that will push further into text manipulation in a U
 [12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
 [13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
 
-### Afternoon (1:30pm-4:00pm)
-- Building the [Zodiac][14] I
+- Building the [Zodiac][14] w/ John
 
 [14]: https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
 
