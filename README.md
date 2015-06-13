@@ -168,7 +168,8 @@ Concluding remarks. Showcase and Plenary meeting after.
 
 ## Project Code Share
 
-Coming Soon!
+- [imsdb scraper](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/imsdb)
+- [the extractors](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/extractors)
 
 ## Where to go from here?
 
