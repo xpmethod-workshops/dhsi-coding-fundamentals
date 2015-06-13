@@ -6,7 +6,7 @@
 import re
 
 #create a variable to hold the regular expression library
-ourSearchExpression = re.compile('de*')
+ourSearchExpression = re.compile('de.')
  
 #check the type
 print type(ourSearchExpression)
