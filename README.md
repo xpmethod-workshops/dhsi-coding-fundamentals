@@ -168,9 +168,16 @@ Concluding remarks. Showcase and Plenary meeting after.
 
 ## Project Code Share
 
-| [imsdb scraper](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/imsdb)          |
-|-----------------------------------------------------------------------------------------------------------------------|
-| [the extractors](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/extractors)    |
+- [imsdb scraper](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/imsdb)
+
+> reads a provided CSV file containing the names, authors, and URLs of film
+scripts from an online database, downloads each of them and names the file
+according to the AuthorName_FilmTitle.html conventionhh
+
+- [the extractors](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/extractors)
+
+> this program takes an HTML file and extracts only the part containing the
+> film script then strips out all HTML code and saves it as a .txt file
 
 ## Where to go from here?
 
