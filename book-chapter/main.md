@@ -7,10 +7,11 @@ authors:
 ---
 
 We write this chapter in reflection of teaching **Computing Foundations for
-Human Human(s|ists)** at the Digital Humanities Summer Institute, University of
-Victoria. This week-long course was intended for humanities-based researchers
-with no previous programming experience, and, as we wrote in the course
-description, for those who would like to understand how programs work by
+Human(s|ists)** at the Digital Humanities Summer Institute, University of
+Victoria along with several other classes that we teach separately in our home
+incitations. This week-long course was intended for humanities-based
+researchers with no previous programming experience, and, as we wrote in the
+course description, for those who would like to understand how programs work by
 writing a few simple, but useful programs of their own.[^ln-courselink] The
 topics covered included working with files and folders at the command line,
 text stream manipulation with Bash Unix Shell, regular expressions, along with
@@ -20,24 +21,24 @@ small groups to create a small web scraper, an "essay grader," a comma
 separated value file manipulator, and a program that evaluated poetry for its
 measure of similarity to Byron.
 
-Our aim in this chapter is not so much to recreate that experience (we would
-not have the space to do it here, in any case) but to reveal some of the ideas
-that went into making the course, to talk about the rationale behind our
-teaching philosophy, and, more broadly, to suggest an approach of teaching
-programming in the humanities environment.
+Our aim in this chapter is not so much to recapitulate that experience (we
+would not have the space to do it here, in any case) but rather to reveal some
+of the ideas that went into making the course, to talk about the rationale
+behind our teaching philosophy, and, more broadly, to suggest an approach of
+teaching programming in the humanities environment.
 
-## Critical Computing in the Humanities
+## Critical Computing in the Humanities, Core Principles
 
 It is our firm belief that the teaching of computational principles in the
 humanities must happen in context: that is, grounded in the practice of
 humanities-based research and answering to the values held by the academic
 community.  We call this approach critical computing, which for us involves the
-following eight principles:
+following nine principles:
 
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-1. No black boxes!
+1. No black boxes! Empowered computing.
 
 Computers are everywhere. They mediate everything from financial markets, to
 archival research, and to the way many keep in touch with their friends and
@@ -76,9 +77,9 @@ last several decades, following the same principles, *\*nix* family of
 operating systems has become the dominant platform that powers everything from
 cellular phones, to robots, drones, personal computers, and super clusters.
 This also means that our investment of time into such ubiquitous interfaces
-scales across time and devices. In helping us decide what to use and to teach,
-we seek out universal tools that underlie a variety of computing practices,
-from library infrastructure, to web design, to data science and
+scales across time and devices. In helping us decide what to use and what to
+teach, we seek out universal tools that underlie a variety of computing
+practices, from library infrastructure, to web design, to data science and
 critical-edition making.  More than anything, we want to learn tools that we
 can understand and, eventually, to extend tailor to suit our own particular
 needs.
@@ -112,7 +113,7 @@ called `cron`. The adage usually holds that if you do it more than *once*,
 automate. However, one must know exactly what to automate. When backing up your
 files, do you want to back up the whole system or a few select folders? How
 often should the backup script run? These questions become apparent after
-extensive manual use. T
+extensive manual use.
 
 5. Do it right the first time.
 
@@ -153,16 +154,90 @@ progress."
 adding, diminish the impact of persuasive writing. The "very" in the previous
 sentence, for example.
 
-8.Bootstrap and time well spent.
+7. Bootstrap and time well spent.
 
 When thinking of what to teach or where to invest our time, we look for the
-"bootstrapping" effect that comes from using powerful, universally avaialable,
+"bootstrapping" effects that come from using powerful, universally available,
 and extensible software. The command line, for example, useful at first for
-file management, becomes an important resource for remote server administration
-later, used also in physical computing, and in data ma
+file management, later becomes an important resource for remote server
+administration and web design. Skills learned in the command line transfer to
+to physical computing, fabrication, web scraping, and text analysis. Learning
+about relative and absolute paths locally, eventually helps to explain internet
+infrastructure, domain name, and resource allocation. It leads to Secure Shells
+and Pretty Good Privacy (PGP) used by activists and journalists to protect
+their communications.
 
-9. Divide big problems into small, modular components.
+It may be appealing at first, to hide computational complexity behind "simple"
+visual interfaces. Yet, these interfaces do not share a common visual language
+and they do not transfer well across software platforms. Our colleagues in
+computer science sometimes worry[^ln-observe] that introducing command line
+interfaces and raw coding environments may serve to alienate humanists. But
+limited, "dumbed-down" interface do little more than further alienate an
+audience that already feels removed from the material contexts of their daily
+knowledge work. In building the foundations, we want our students to spend
+their time well: to learn tools and skills that can support a wide variety of
+activity within diverse cultural contexts.
 
+[^ln-observe]: Mention the CS chair observation.
 
-Keep poking, get help, take notes, comment, annotate, share, remix, and train
-others.
+8. Divide big problems into small, modular components.
+
+Our goals in the classroom go beyond the instrumental. The ability to automate
+machines is merely a side effect of programmatic thinking. To learn to think
+like a programmer is useful in all contexts: it involves dividing big, complex,
+and seemingly intractable problems into small, modular, solvable components.
+Making a cake, for example, seems hard. But one can read, write, and follow a
+recipe---an exercise that we use in our teaching. Similarly, large projects
+from dissertation writing to library administration can benefit from the power
+of programmatic thinking.
+
+9. Keep poking, get help, take notes, comment, annotate, share, remix, and
+train others.
+
+Finally, and this was noticed by several course observers over the years,
+students in the humanities are sometimes curiously hesitant to explore their
+machines. In the absence of a tinkering upbringing, they might be worried of
+breaking expensive equipment or losing sensitive data. Demystifying the magical
+black box and learning some habits that prevent irrevocable loss of data,
+addresses that fear, encouraging the students to tinker and to explore.
+Researcher at the later stages of their career may be particularly reluctant to
+ask for help or to express their questions in public. Our teaching approach
+therefore encourages shared expertise. We model not being afraid to expose our
+own gaps in knowledge.  We ask students to keep copious notes, to annotate
+their code, to share and improve on each other's work. Notes grow into
+tutorials.  Tutorials into courses and workshops. Eventually, it is our hope
+for them to become catalysts in their community.
+
+## Foundational Training
+
+The perfect Digital Humanist does not exist. All are affected with "imposter
+syndrome"---there always seem to be people more technically savvy, more
+skilled, or more knowledgeable than us. Technology is complicated. Culture,
+even more so. Learning to program cultural machines---ones that deal with
+texts, images, sound, film, and archives---can be a complicated affair that
+demands patience and collaboration. Programming involves long stretches of
+frustration (Why does this not work?) punctuated by short bursts of blissful
+joy that comes with accomplishing something difficult (It works!). Rather than
+viewing their initial lack of results as failure, we attempt to channel
+frustration into a sense of problem solving and discovery, related to similarly
+difficult tasks of archival research and long-form analytical writing. Just
+like writing, coding skills fall on a spectrum of proficiency that constitutes
+a larger small, but foundational part, of a larger, variegated skill set.
+
+Depending on one's research interests and career path, a DH practitioner will
+have some mixture of the following skills:
+
+- 
+- 
+- 
+- 
+- 
+- 
+
+## Bash and Python
+
+### Why Bash?
+
+### Why Python?
+
+### When to use them?
