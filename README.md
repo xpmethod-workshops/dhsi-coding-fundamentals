@@ -1,5 +1,5 @@
 ---
-what: Coding for Human(s|ists)
+what: Computing for Human(s|ists)
 where: University of Victoria, BC
 when: June 8--12, 2015
 
