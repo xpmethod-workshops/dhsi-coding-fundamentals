@@ -6,7 +6,7 @@ authors:
 ---
 
 We write this chapter in reflection of teaching **Computing Foundations for
-Human Human(s|ists)** at Digital Humanities Summer Institute at University of
+Human Human(s|ists)** at the Digital Humanities Summer Institute, University of
 Victoria. This week-long course was intended for humanities-based researchers
 with no previous programming experience, and, as we wrote in the course
 description, for those who would like to understand how programs work by
@@ -25,8 +25,12 @@ that went into making the course, to talk about the rationale behind our
 teaching philosophy, and, more broadly, to suggest an approach of teaching
 programming in the humanities environment.
 
+## Critical Computing in the Humanities
 
-
+It is our firm belief that the teaching of computational principles in the
+humanities must happen in context, that is grounded in the practice of
+humanities-based research and answering to the values held by the community.
+We call this approach critical computing--that is computing
 
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
@@ -49,18 +53,3 @@ Bootstrap and time well spent.‡
 
 Keep poking, get help, take notes, comment, annotate, share, remix, and train
 others.
-
-This chapter is intended for humanities-based researchers with no programming
-background whatsoever who would like to understand how programs work behind the
-scenes by writing some simple but useful programs of their own. Over the week
-the emphasis will be on understanding how computer programmers think so that
-participants will be able to at least participate in high-level conceptual
-discussions in the future with more confidence. These general concepts will be
-reinforced and illustrated with hands-on development of simple programs that
-can be used to help with text-based research and analysis right away. The
-language used for most of the course will be Python because of its gentle
-syntax and powerful extensions. Using the command-line interface and regular
-expressions will also be emphasized. We will also spend some time taking
-glimpses at what is happening in the other DHSI courses to understand how
-reading and writing programming code goes well beyond what we touch on in this
-class.
