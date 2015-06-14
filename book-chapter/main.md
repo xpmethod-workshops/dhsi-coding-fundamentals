@@ -3,6 +3,7 @@ title: "Computing Foundations for Human(s|ists)"
 authors:
 - Dennis Tenen
 - John Simpson
+
 ---
 
 We write this chapter in reflection of teaching **Computing Foundations for
@@ -28,19 +29,34 @@ programming in the humanities environment.
 ## Critical Computing in the Humanities
 
 It is our firm belief that the teaching of computational principles in the
-humanities must happen in context, that is grounded in the practice of
-humanities-based research and answering to the values held by the community.
-We call this approach critical computing--that is computing
+humanities must happen in context: that is, grounded in the practice of
+humanities-based research and answering to the values held by the academic
+community.  We call this approach critical computing, which for us involves the
+following eight principles:
 
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-No black boxes!
+1. No black boxes!  
 
-Use few, small, simple, universal, and powerful tools that you can hack and
+Computers are everywhere. They mediate everything from financial markets, to
+archival research, and to the way many keep in touch with their friends and
+family. Yet, for those without computational background, these devices remain a
+source of mystery, magic, and frustration. Our course begins then with a
+process of demystification. We want our students to understand not only the
+principles of computer science, but the basics of software and electrical
+engineering. As much as possible, we would loke to reveal the innards of opaque
+computational "black boxes," empowering our students to take control of their
+everyday computational practice.
+
+2. Use few, free, small, simple, universal, and powerful tools that you can hack and
 understand.
 
-Wherever possible store data in human-readable text streams.
+Librarians, students, and faculty are faced with a bewildering array of
+software choices. Companies that promise "innovation" and "disruption" in the
+classroom routinely approach administrators with offers of
+
+3. Wherever possible store data in human-readable text streams.
 
 Do it right. Doing it badly accumulates intellectual, technological, and
 ethical debt.
