@@ -6,15 +6,27 @@ authors:
 ---
 
 We write this chapter in reflection of teaching **Computing Foundations for
-Human Human(s|ists)** at Digital Humanities Summer Institite at University of
-Victoria. The course was intended for humanities-based research with no
-previous programming experience, and as we wrote in the course description for
-those who would like to understand how programs work by writing a few simple,
-but useful programs of their own.[^ln-courselink]
+Human Human(s|ists)** at Digital Humanities Summer Institute at University of
+Victoria. This week-long course was intended for humanities-based researchers
+with no previous programming experience, and, as we wrote in the course
+description, for those who would like to understand how programs work by
+writing a few simple, but useful programs of their own.[^ln-courselink] The
+topics covered included working with files and folders at the command line,
+text stream manipulation with Bash Unix Shell, regular expressions, along with
+Python basics like native data types, variables, functions, and control
+structures. At the end of the course our students worked on their own and in
+small groups to create a small web scraper, an "essay grader," a comma
+separated value file manipulator, and a program that evaluated poetry for its
+measure of similarity to Byron.
 
-Our aim in this chapter is not so much to recreate that experience (as we would
-not have the space to do it here, in any case) but to reveal some of the
-thought that went into creating the course, and to 
+Our aim in this chapter is not so much to recreate that experience (we would
+not have the space to do it here, in any case) but to reveal some of the ideas
+that went into making the course, to talk about the rationale behind our
+teaching philosophy, and, more broadly, to suggest an approach of teaching
+programming in the humanities environment.
+
+
+
 
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
