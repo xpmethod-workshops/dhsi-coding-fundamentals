@@ -38,7 +38,7 @@ following nine principles:
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-1. No black boxes! Empowered computing.
+### 1. No black boxes! Empowered computing.
 
 Computers are everywhere. They mediate everything from financial markets, to
 archival research, and to the way many keep in touch with their friends and
@@ -50,7 +50,7 @@ engineering. As much as possible, we would like to reveal the innards of opaque
 computational "black boxes," empowering our students to take control of their
 everyday computational practice.
 
-2. Use few, free, small, simple, universal, and powerful tools that you can
+### 2. Use few, free, small, simple, universal, and powerful tools that you can
 hack and understand.
 
 Librarians, students, and faculty are faced with a bewildering array of
@@ -83,7 +83,7 @@ infrastructure, to web design, to data science and critical-edition making.
 More than anything, we seek out tools that we can understand and, if needed, to
 customize to fit our own particular needs and contexts.
 
-3. Wherever possible store data in human-readable text streams.
+### 3. Wherever possible store data in human-readable text streams.
 
 The problem of file formats relates closely to the proliferation of closed
 tools and platforms. It is most acutely felt by archivists faced with
@@ -104,7 +104,8 @@ standards. When selecting a data format, we ask: does it need special software
 to render? How long has it been around? and What organization is responsible
 for maintaining the standard?
 
-4. If you have to do something more than ~~once~~ a hundred times, automate.
+### 4. If you have to do something more than ~~once~~ a hundred times,
+automate.
 
 Programmers are lazy. After doing a task more than a few times, a good
 programmer's intuition will be to automate the task. For example, we often use
@@ -118,7 +119,7 @@ extensive manual use. As we introduce automated "daemons" that run tasks on our
 behalf, we want to make sure we think through any unintended side-effects:
 technological, social, political.
 
-5. Do it right the first time.
+### 5. Do it right the first time.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
 badly, in a haphazard fashion, accumulates technological, intellectual, and
@@ -134,7 +135,7 @@ because they "bank" against the labor of others, in the future, literally
 borrowing someone else's time. Doing things the right way now, saves
 unnecessary effort later.
 
-6. Target daily computation.
+### 6. Target daily computation.
 
 Programming classes in the sciences often begin with coding for coding's sake,
 intended an audience inherently interested in logic, math, and engineering. The
@@ -158,7 +159,7 @@ writing progress."
 adding, diminish the impact of persuasive writing. The "very" in the previous
 sentence, for example.
 
-7. Bootstrap and time well spent.
+### 7. Bootstrap and time well spent.
 
 When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
@@ -188,7 +189,7 @@ properly, without artificially hampered and patronizing simplification.
 
 [^ln-observe]: Mention the CS chair observation.
 
-8. Divide big problems into small, modular components.
+### 8. Divide big problems into small, modular components.
 
 Our goals in the classroom go beyond the instrumental. The ability to automate
 machines is merely a side effect of programmatic thinking. To learn to think
@@ -199,7 +200,7 @@ recipe---an exercise that we use in our teaching. Similarly, large projects
 from library administration to dissertation writing can benefit from the power
 of programmatic thinking.
 
-9. Keep poking, get help, take notes, comment, annotate, share, remix, and
+### 9. Keep poking, get help, take notes, comment, annotate, share, remix, and
 train others.
 
 Finally, and this was noticed by several course observers over the years,
