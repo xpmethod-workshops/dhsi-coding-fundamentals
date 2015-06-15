@@ -50,8 +50,7 @@ engineering. As much as possible, we would like to reveal the innards of opaque
 computational "black boxes," empowering our students to take control of their
 everyday computational practice.
 
-### 2. Use few, free, small, simple, universal, and powerful tools that you can
-hack and understand.
+### 2. Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
 Librarians, students, and faculty are faced with a bewildering array of
 software choices. Companies that promise "innovation" and "disruption" in the
@@ -104,8 +103,7 @@ standards. When selecting a data format, we ask: does it need special software
 to render? How long has it been around? and What organization is responsible
 for maintaining the standard?
 
-### 4. If you have to do something more than ~~once~~ a hundred times,
-automate.
+### 4. If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are lazy. After doing a task more than a few times, a good
 programmer's intuition will be to automate the task. For example, we often use
@@ -200,8 +198,7 @@ recipe---an exercise that we use in our teaching. Similarly, large projects
 from library administration to dissertation writing can benefit from the power
 of programmatic thinking.
 
-### 9. Keep poking, get help, take notes, comment, annotate, share, remix, and
-train others.
+### 9. Keep poking, get help, take notes, comment, annotate, share, remix, and train others.
 
 Finally, and this was noticed by several course observers over the years,
 students in the humanities are sometimes curiously hesitant to explore their
