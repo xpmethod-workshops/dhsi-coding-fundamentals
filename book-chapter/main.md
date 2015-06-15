@@ -318,6 +318,32 @@ larger, complicated puzzle.
 
 ## 3 Bash and Python
 
+We often begin our courses in outlining the above "big picture" principles,
+challenges, and considerations. There is no hiding the fact the programming is
+difficult and that people who do it well often have much "soft" knowledge (like
+command line expertise or game mod development), not formally taught in the
+university environment. Instead of offering quick but shallow victories, our
+approach is to engage the students intellectually. For this reason, we begin
+with the "frustration points" of everyday computing. In our experience, even
+simple tasks like saving a file from the internet browser is rife with anxiety
+and frustration. Where did that file go? How do I find it again? What type of
+file is it? Modern operating systems purposefully hide such information from
+average users. Yet our users are not average. Rather, they are students,
+faculty, and librarians who rely on documents, file systems, and datasets as a
+matter of critical importance. They have put months if not years into language
+acquisition and archive research, and can certainly rise to the challenge of
+computation. In our experience, they respond extremely well to
+the mission of reclaiming the material contexts of their daily intellectual
+practice.
+
+Guided by this approach, we have identified two core competencies from our
+"wish list"---ones that we believe can have a significant impact on "launching"
+a new student into the field of digital humanities and computational culture
+studies. The first of these is the Bash, a Unix shell and a command language
+for text-based "dialog" based interaction between humans and machines. The
+second is Python, a widely-used modern Programming language, that, like Bash,
+privileges simplicity and human readability.
+
 ### 3.0 Why Bash?
 
     core skill
@@ -327,7 +353,6 @@ larger, complicated puzzle.
     universal
     hackable
     fun
-
 
 > Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
 sh-compatible shell that incorporates useful features from the Korn shell (ksh)
@@ -353,7 +378,7 @@ Why Python
     hackable
     fun
 
-### When to use them?
+### 3.2 When to use them?
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
