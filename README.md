@@ -42,7 +42,7 @@ Visit our [class forum here][1].
   - Simple problems using the cheatsheet
 
 [6]: https://github.com/denten-workshops/dh-core#philosophy
-[7]: https://github.com/xpmethod/dhnotes/blob/master/cli-basics.md#why-command-line
+[7]: https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md
 
 - More [CLI basics][8].
 - Lab: [Hunting the Whale][5]. (Dennis)
