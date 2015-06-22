@@ -1,7 +1,7 @@
 ---
-what: Computing for Human(s|ists)
+what: Computing Fundamentals for Human(s|ists)
 where: University of Victoria, BC
-when: June 8--12, 2015
+when: 2016
 
 ---
 
