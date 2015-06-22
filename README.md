@@ -49,7 +49,7 @@ Visit our [class forum here][1].
 
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
 [5]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md
-[8]: https://github.com/xpmethod/dhnotes/blob/master/cli-basics.md#table-of-contents
+[8]:https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md#table-of-contents
 
 Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
 demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
