@@ -2,7 +2,7 @@
 
 what: Computing Fundamentals for Human(s|ists)
 where: University of Victoria, BC
-when: 2016
+when: Summer 2016
 
 ---
 
