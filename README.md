@@ -1,6 +1,5 @@
 ---
 
-[![Join the chat at https://gitter.im/denten-workshops/dhsi-coding-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denten-workshops/dhsi-coding-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 what: Computing Fundamentals for Human(s|ists)
 where: University of Victoria, BC
 when: 2016
@@ -27,7 +26,7 @@ glimpses at what is happening in the other DHSI courses to understand how
 reading and writing programming code goes well beyond what we touch on in this
 class.
 
-Visit our [class forum here][1].
+[![Join the class discussion at https://gitter.im/denten-workshops/dhsi-coding-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denten-workshops/dhsi-coding-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Day 1 (4hr)
 
