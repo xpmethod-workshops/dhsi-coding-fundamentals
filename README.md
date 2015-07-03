@@ -179,6 +179,11 @@ according to the AuthorName_FilmTitle.html conventionhh
 > this program takes an HTML file and extracts only the part containing the
 > film script then strips out all HTML code and saves it as a .txt file
 
+- [crosswalk](https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/2015-summer-dhsi/code-samples/crosswalk/Crosswalkers_FinalCode.py)
+
+> This program copies selected metadata from one .csv file to another, flagging
+> value errors with asterisks.
+
 ## Where to go from here?
 
 - [DH Notes](https://github.com/denten/dhnotes/wiki)
