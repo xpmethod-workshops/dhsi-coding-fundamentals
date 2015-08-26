@@ -9,24 +9,11 @@ bibliography: main.bib
 
 ## 0 Introduction
 
-We write this chapter in reflection of teaching computing fundamentals in the
-humanities context in general, and more specifically, in the wake of teaching
-**Computing Foundations for Human(s|ists)** at the Digital Humanities Summer
-Institute, University of Victoria.[^ln-titlelink] This week-long course was intended for
-humanities-based researchers with no previous programming experience, and, as
-we wrote in the course description, for those who would like to understand how
-programs work by writing a few simple, but useful programs of their
-own.[^ln-courselink] The topics covered included working with files and folders
-at the command line, text stream manipulation with Bash Unix Shell, regular
-expressions, along with Python basics like native data types, variables,
-functions, and control structures. At the end of the course our students worked
-on their own and in small groups to create a small web scraper, an "essay
-grader," a comma separated value file manipulator, and a program that evaluated
-poetry for its measure of similarity to Byron.
+We write this chapter in reflection of teaching computing fundamentals in the humanities context in general, and more specifically, in the wake of teaching two instances of **Computing Foundations for Human(s|ists)** at the Digital Humanities Summer Institute (DHSI), University of Victoria.[^ln-titlelink] This week-long course was intended for humanities-based researchers with no previous programming experience, and, as we wrote in the course description, for those who would like to understand how programs work by writing a few simple, but useful programs of their own.[^ln-courselink] The topics covered included working with files and folders at the command line, text stream manipulation with Bash Unix Shell, regular expressions, along with Python basics like native data types, variables, functions, and control structures. At the end of the course our students worked on their own and in small groups to create a small web scraper, an "essay grader," a comma separated value file manipulator, and a program that evaluated poetry for its measure of similarity to Byron.
 
 Our aim in this chapter is not so much to recapitulate that experience (we
-would not have the space to do it here, in any case) but rather to reveal some
-of the ideas that went into making the course, to talk about the rationale
+would not have the space to do it here, in any case) but to reveal some
+of the core principles that went into making the course, to talk about the rationale
 behind our teaching philosophy, and, more broadly, to suggest an approach of
 teaching programming in the humanities environment.
 
@@ -38,60 +25,56 @@ http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dh
 ## 1 Critical Computing in the Humanities, Core Principles
 
 It is our firm belief that the teaching of computational principles in the
-humanities must happen in context: that is grounded in the practice of
+humanities must be contextual, meaning that it must be grounded in the practice of
 humanities-based research and answering to the values held by the academic
-community.  We are not the first nor the only instructors to think about things this way, nor are we the only ones to be offering a course like this. 
+community.  We are not the first nor the only instructors to think about things this way, nor are we the only ones to be offering a course like this. For example, Software Carpentry has been advocating a similar approach since its inception, the Programming Historian is a website that aims to help users in the humanities teach themselves to program, and other courses at DHSI with technical components emphasize contextuality as well.  What we bring to this contextual approach are a set of additional principles that further promote competency by building on this contextual foundaiton. We call this approach critical computing and it involves the following ten principles:
 
-We call this approach critical computing, which for us involves the
-following ten principles:
+### 1.0 Black box unpacking: Empowered computing.
 
-### 1.0 No black boxes! Empowered computing.
+[I wonder if we should keep the "No...!" in the title but acknowledge that there are many black boxes that we don't unpack, such as the runtime compiler, etc.  Yes we start them down a path towards unlocking such things and yes, we go in at a lower level than many courses but we don't scrape bottom.  So, perhaps what we're about is black box reduction rather than elimination?
 
-[I wonder if we should keep the "No...!" in the title but acknowledge that there are many black boxes that we don't unpack, such as the run time compiler, etc.  Yes we start them down a path towards unlocking such things and yes, we go in at a lower level than many courses but we don't scrape bottom.  So, perhaps what we're about is black box reduction rather than elimination?]
+Going to try to reword this.]
 
-[There is also the *Learn X the Hard Way* movement that we should be acknowledging here.]
-
-Computers are everywhere. They mediate everything from financial markets, to
-archival research, and to the way many keep in touch with their friends and
-family. Yet, for those without computational background, these devices remain a
-source of mystery, magic, and frustration. Our course begins then with a
-process of demystification. We want our students to understand not only the
-principles of computer science, but the basics of software and electrical
+Computers are now ubiquitous. They mediate everything from financial markets, to
+archival research, and the way many keep in touch with friends and
+family. Yet, for those without computational background, the inner workings of these devices remain a source of mystery and, consequently, frustration. Recognizing this, our course makes demystification an important focus. We want our students to understand not only the principles of computer science, but the basics of software and electrical
 engineering. As much as possible, we would like to reveal the innards of opaque
 computational "black boxes," empowering our students to take control of their
 everyday computational practice.
 
-### 1.1 Plan your code to understand your code
+Of course, there is a limit to the number of black boxes that can be unpacked given the interests of the students, the knowledge of the instructors, and the timelines of the course.  The boxes that need to be opened are those that are most closely related to particular areas of fear or concern on the part of the users and which simultaneously would provide them the most empowerment.  In the case of a programming course this means spending time on the command line so that the mystery of how to work in this environment is removed.  This is important in a programming course because sooner or later it will be necessary to interact in a command line environment.  Further, the principles and approaches used in the command line environment often carryover into programming languages and environments allowing for a knowledge in each environment to reinforce the other.
 
-[I'm looking to draw on the practice of having them write the pseudo/comment code first and then fill it in with code that builds each section.  It mirrors the principles of chaining together programs that *\*nix* are based on as is mentioned elsewhere.]
+The key to unpacking black boxes for students is ensuring that they are engaged in practice at least as much as theory.  Within the context of a programming class that means writing as much working code within the context of real, functional programs, as much as possible.  In the case of the command line it means carrying out relevant tasks in that environment and being tasked with figuring out how to do more complicated tasks from the simple compontes shared previously. The *Learn X the Hard Way* movement, of which Zed A. Shaw's *Learn Python the Hard Way* is one of the most well-known, prides itself on a similar approach and for good reason.  Users end up understanding what they are doing and with the capability of solving problems outside of the classroom environment.
+
+
+### 1.1 Plain language comments from start to finish
+
+Once the course turns to programming as it is recognized by the students (it is usually a pleasant surprise to them to find out that the command line work they started with counts as programming) we begin by having them describe their program, step by step, in plain language that *they* understand.  This is crucial because it provides them a map that they can return to again and again throughout the process of developing whatever program or task that they are working on.  More than a map, this description also acts as a guide, directing the flow of their work.
+
+It is commonly regarded to be good programming practice to provide descriptive comments when coding and putting it up front gives the practice the priority that it deserves.  Additionally, students in the class come to see the importance of this particularly when they begin to work on their own projects.  Once this happens it is easy to become sidetracked and these comments provide the direction required to move forward.  They additionally make it easier for those wishing to help the students, typically either other students or the instructors, to quickly see what the overall vision is and offer assistance within the context of this vision rather than just at the level of syntax.
 
 ### 1.2 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
-[I think I have some stuff from the *GNU Manifesto* that would work well here and I'll look to add it.]
+[I think I have some stuff from the *The Cathedral and The Bazaar* that would work well here and I'll look to add it.]
 
-Librarians, students, and faculty are faced with a bewildering array of
-software choices. Companies that promise "innovation" and "disruption" in the
-classroom routinely approach administrators with offers to try and to buy
+[[Not sure this is the right place for this paragraph.  Yes, it does capture an important political position and introduce the *\*nix* family but only the latter seems particularly relevant to this subsection.] Librarians, students, and faculty are faced with a bewildering array of software choices. Companies that promise "innovation" and "disruption" in the classroom routinely approach administrators with offers to try and to buy
 software at the institutional level. The imbalance of information between the
 vendors and the users often results in wasted time and resources. In making the
 decision to invest time and resources into our own computational practice, we
 are inspired by the philosophy embodied by the *\*nix* family of operating
-systems (Unix, Linux, Arch Linux, OpenBSD, and others). The *\*nix* community
-has been advocating for the use of free (as in speech and as in beer) and open
-source software (FOSS). FOSS software works in the academic humanities context
-because free and open access code is available for inspection, and therefore,
-for interpretation, critique, and modification.
+systems (Unix, Linux, Arch Linux, OpenBSD, and others). Much of the *\*nix* community
+has been advocating for the use of free (as in "free speech" and as in "free beer") and open source software (FOSS) since Richard Stallman's *GNU Manifesto*. FOSS software works in the academic humanities context because free and open access code is available for inspection, and therefore, for interpretation, critique, and modification.]
 
-Furthermore, the *\*nix* philosophy privileges small, modular pieces of
-software that "do one thing and do it well." Such software can then be chained
-together with other small but powerful tools to achieve complex results.
-Throughout, we seek to avoid proprietary file formats, non-standard interfaces,
-and vendor lock-in. Simplicity, ease of maintenance, and transparency are key for
-creating a culture that lasts. The preference for openness and simplicity is
+We are inspired by the philosophy embodied by the *\*nix* family of operating
+systems (i.e. Unix, Linux, Arch Linux, OpenBSD, and others). Much of the *\*nix* community
+has been advocating for the use of free (as in "free speech" and as in "free beer") and open source software (FOSS) since Richard Stallman's *GNU Manifesto*. FOSS software works in the academic humanities context because free and open access code is available for inspection, and therefore, for interpretation, critique, and modification. More relevant to to teaching coding, the *\*nix* philosophy privileges small, modular pieces of
+software that "do one thing and do it well." [Source for quote?] Such software can then be chained together with other small but powerful tools to achieve complex results.  This hallmark of the *\*nix* family of operating systems is what has led Eric S. Raymond to refer to this as a "bazaar" model of software development, in contrast to a "cathedral" model [cite: Raymond's *The Cathedral and The Bazaar*].  
+
+A bazaar-style approach to coding inherently places emphasis on simplicity, ease of maintenance, and transparency.  In addition the these properties dove-tailing cleanly with the emphasis on opening black boxes they are also are key for creating a culture that builds software that will last. The appeal of this emphasis is
 not just ideological, but also practical. In the past several decades,
-following the same principles, *\*nix* family of operating systems has become
+following the same principles, the *\*nix* family of operating systems has become
 the dominant platform that powers everything from cellular phones, to robots,
-drones, personal computers, and super clusters. This also means that our
+drones, personal computers, and high-performance parallel machines. This also means that our
 investment of time into such ubiquitous interfaces can scale across time and
 devices. When deciding what to use and what to teach, we seek out universal
 tools that underlie a variety of computing practices, from library
@@ -233,6 +216,8 @@ code, to share and improve on each other's work. Notes grow into tutorials,
 tutorials into courses and workshops. Eventually, in following these
 principles, we hope for our students to become catalysts of change in their own
 communities of practice.
+
+[How to help yourself...]
 
 ## 2 Digital Humanities Core
 
