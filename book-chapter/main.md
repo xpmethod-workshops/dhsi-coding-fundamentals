@@ -12,7 +12,7 @@ bibliography: main.bib
 We write this chapter in reflection of teaching computing fundamentals in the
 humanities context in general, and more specifically, in the wake of teaching
 **Computing Foundations for Human(s|ists)** at the Digital Humanities Summer
-Institute, University of Victoria. This week-long course was intended for
+Institute, University of Victoria.[^ln-titlelink] This week-long course was intended for
 humanities-based researchers with no previous programming experience, and, as
 we wrote in the course description, for those who would like to understand how
 programs work by writing a few simple, but useful programs of their
@@ -30,16 +30,20 @@ of the ideas that went into making the course, to talk about the rationale
 behind our teaching philosophy, and, more broadly, to suggest an approach of
 teaching programming in the humanities environment.
 
+[^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to search text for specified patterns.  In this case it picks out anything starting with "Human" and ending in *either* "s" or "ists".  So, it acts as a stand-in for both "Humans" and "Humanists".  This little flourish in the title is important because it signals a number of the principles that guide the course and signal what is to come.
+
+[^ln-courselink]: An archived version of the course can be accessed at
+http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
+
 ## 1 Critical Computing in the Humanities, Core Principles
 
 It is our firm belief that the teaching of computational principles in the
 humanities must happen in context: that is grounded in the practice of
 humanities-based research and answering to the values held by the academic
-community. We call this approach critical computing, which for us involves the
-following ten principles:
+community.  We are not the first nor the only instructors to think about things this way, nor are we the only ones to be offering a course like this. 
 
-[^ln-courselink]: An archived version of the course can be accessed at
-http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
+We call this approach critical computing, which for us involves the
+following ten principles:
 
 ### 1.0 No black boxes! Empowered computing.
 
