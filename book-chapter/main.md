@@ -14,7 +14,7 @@ We write this chapter in reflection of teaching computing fundamentals in the hu
 Our aim in this chapter is not so much to recapitulate that experience (we
 would not have the space to do it here, in any case) but to reveal some
 of the core principles that went into making the course, to talk about the rationale
-behind our teaching philosophy, and, more broadly, to suggest an approach of
+behind our teaching philosophy, and, more broadly, to suggest an approach to
 teaching programming in the humanities environment.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to search text for specified patterns.  In this case it picks out anything starting with "Human" and ending in *either* "s" or "ists".  So, it acts as a stand-in for both "Humans" and "Humanists".  This little flourish in the title is important because it signals a number of the principles that guide the course and signal what is to come.
@@ -84,13 +84,16 @@ customize to fit our own particular needs and contexts.
 
 ### 1.3  Wherever possible store data in human-readable text streams.
 
-The problem of file formats relates closely to the proliferation of closed
+The file formats that we use to store data have serious implications for anyone's ability to make use of that data in the future.  As the formats chosen tend toward obscurity or opaqueness it becomes increasingly difficult for new programmers to read during development and for others to draw on them in the future.
+Choosing appropriate file formats relates closely to the proliferation of closed
 tools and platforms. It is most acutely felt by archivists faced with
 preserving short-lived data structures from obsolete platforms from recent
 past. For many humanists, who rarely work with truly large datasets or
 collections (on the order of millions documents), the real risk of rapid
 obsolescence offsets any hypothetical gains in speed or performance offered by
-a new note-taking platform or a complex database. Conveniently for us, the Unix
+a new note-taking platform or a complex database. 
+
+Conveniently for us, the Unix
 philosophy privileges inputs and outputs in plain text format, which can be
 used to store everything from personal notes, to article drafts, to huge
 datasets of metadata. Unix provides many powerful utilities that operate on
@@ -105,11 +108,13 @@ for maintaining the standard?
 
 ### 1.4 If you have to do something more than ~~once~~ a hundred times, automate.
 
-Programmers are lazy. After doing a task more than a few times, a good
+Programmers are smart and lazy. After doing a task more than a few times, a good
 programmer's intuition will be to automate the task. For example, we often use
-the `rsync` command to back up our documents. However, after a few months of
+the `rsync` command to back up our documents; however, after a few months of
 running it manually, the user can delegate that task to the built-in scheduler
-called `cron`. The saying normally goes that if you do it more than *once*,
+called `cron`. 
+
+The saying normally goes that if you do it more than *once*,
 automate. However, one must know exactly what to automate. When backing up your
 files, do you want to back up the whole system or a few select folders? How
 often should the backup script run? The answers become apparent only after
@@ -117,7 +122,7 @@ extensive manual use. As we introduce automated "daemons" that run tasks on our
 behalf, we want to make sure we think through any unintended side-effects:
 technological, social, political.
 
-### 1.5 Do it right the first time.
+### 1.5 Do it right—*the first time*.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
 badly, in a haphazard fashion, accumulates technological, intellectual, and
@@ -139,8 +144,8 @@ Programming classes in the sciences often begin with coding for coding's sake,
 intended an audience inherently interested in logic, math, and engineering. The
 humanities must find its own intrinsic motivations for learning to code, broad
 enough to appeal to the community at large. For this reason, we begin our class
-with exercises that target daily computation and writing practice, common to
-researchers at every stage of their development. We create little "experiments"
+with exercises that target daily computation and writing related tasks that are common to humanities
+researchers whatever particular research interest they may have. We create little "experiments"
 that address one's writing, for example. These include a lab session in which
 students analyze their own documents for commonly over-used "weasel
 words,"[^ln-weasel] for example. Working with one's own documents introduces
@@ -185,9 +190,11 @@ take in explaining the reasoning behind our technological choices works to
 motivate the students through any initial difficulties of learning how to code
 properly, without artificially hampered and patronizing simplification.
 
-[^ln-observe]: Mention the CS chair observation.
+[^ln-observe]: Mention the CS chair observation [???].
 
 ### 1.8 Divide big problems into small, modular components.
+
+[Seems this could be collapsed into 1.2 for the sake of simplicity.]
 
 Our goals in the classroom go beyond the instrumental. The ability to automate
 machines is merely a side effect of programmatic thinking. To learn to think
@@ -200,11 +207,12 @@ of programmatic thinking.
 
 ### 1.9 Keep poking, get help, take notes, comment, annotate, share, remix, and train others.
 
-[Iterate and Play?]
+[Could we collapse this into 1.0?]
+[Possibly add in the importance of teaching them how to help themselves...]
 
 Finally, and this was noticed by several course observers over the years,
 students in the humanities are sometimes curiously hesitant to explore their
-machines. In the absence of a tinkering upbringing, they might be worried of
+machines. In the absence of a tinkering upbringing and in the presence of cultural divides that regularly reinforce norms like "Those in the Arts and Humanities can't do programming, math, science, etc.", they might be worried of
 breaking expensive equipment or losing sensitive data. Demystifying the magical
 black box and learning some habits that prevent irrevocable loss of data
 addresses that fear, encouraging the students to tinker and to explore.
@@ -217,18 +225,12 @@ tutorials into courses and workshops. Eventually, in following these
 principles, we hope for our students to become catalysts of change in their own
 communities of practice.
 
-[How to help yourself...]
-
 ## 2 Digital Humanities Core
 
 Programming can involve long stretches of frustration (Why does this not work?)
 punctuated by short bursts of elation that comes with accomplishing something
-difficult (It works!). Rather than viewing their initial lack of results as
-failure, we attempt to channel feelings of hindrance into a sense of problem
-solving and discovery, related to similarly difficult, but more familiar to our
-students tasks of archival research and long-form analytical writing. Just like
-writing, coding skills fall on a spectrum of proficiency that constitutes a
-small, but foundational part, of a larger variegated skill set.
+difficult (It works!). Rather than allowing students to view their initial lack of results as failures, we attempt to channel feelings of hindrance into a practice of problem
+solving and discovery, related to similarly difficult, but more familiar tasks of archival research and long-form analytical writing. Just like writing, coding skills fall on a spectrum of proficiency that constitutes a small, but foundational part, of a larger variegated skill set.
 
 Depending on one's research interests and career path, a DH practitioner will
 have some mixture of the following core skills (with examples in parenthesis):
@@ -333,11 +335,10 @@ and frustration. Where did that file go? How do I find it again? What type of
 file is it? Modern operating systems purposefully hide such information from
 average users. Yet our users are not average. Rather, they are students,
 faculty, and librarians who rely on documents, file systems, and datasets as a
-matter of critical importance. They have put months if not years into language
-acquisition and archive research, and can certainly rise to the challenge of
+matter of critical importance. They have typically put years, if not decades, into acquiring expertise in academic disciplines and can certainly rise to the challenge of
 computation. In our experience, they respond extremely well to
 the mission of reclaiming the material contexts of their daily intellectual
-practice.
+practice and learning how to control more directly the computers through which they carry out much of their research.
 
 Guided by this approach, we have identified two core competencies from our
 "wish list"---ones that we believe can have a significant impact on "launching"
@@ -345,7 +346,9 @@ a new student into the field of digital humanities and computational culture
 studies. The first of these is the Bash, a Unix shell and a command language
 for text-based "dialog" based interaction between humans and machines. The
 second is Python, a widely-used modern Programming language, that, like Bash,
-privileges simplicity and human readability.
+privileges simplicity and human readability.[^ln-versionlink]
+
+[^ln-versionlink]: Given that we have looked to Software Carpentry for some of the methodology that we employ in the course it should be noted that we do not spend any time on version control via tools such as Git or Mercurial.  This was done initially so that more time could be spent on programming concepts, hands-on coding work, and unpacking the black box that is the command line.  The importance of version control for efficient and effective coding via protecting against loss and enabling collaboration with others is recognized and future versions of the course may include it as a consequence.  As with all training that is already time constrained down to the essentials, the challenge is what to take out to add this in.
 
 ### 3.0 Why Bash?
 
@@ -362,9 +365,9 @@ sh-compatible shell that incorporates useful features from the Korn shell (ksh)
 and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO
 9945.2 Shell and Tools standard. It offers functional improvements over sh for
 both programming and interactive use. In addition, most sh scripts can be run
-by Bash without modification.1
+by Bash without modification.[^ln-bashlink]
 
-http://www.gnu.org/software/bash/
+[^ln-bashlink]: http://www.gnu.org/software/bash/
 
 ### 3.1 Why Python?
 
@@ -392,6 +395,4 @@ Why Python
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
-[^ln-munge]: Data munging is a recursive computer acronym that stands for
-"Munge Until No Good," referring to a series of discrete and potentially
-destructive data transformation steps [@raymond_mung_2004].
+[^ln-munge]: Data munging is a recursive computer acronym that stands for "Munge Until No Good," referring to a series of discrete and potentially destructive data transformation steps [@raymond_mung_2004].
