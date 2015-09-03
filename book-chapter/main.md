@@ -9,7 +9,20 @@ bibliography: main.bib
 
 ## 0 Introduction
 
-We write this chapter in reflection of teaching computing fundamentals in the humanities context in general, and more specifically, in the wake of teaching two instances of **Computing Foundations for Human(s|ists)** at the Digital Humanities Summer Institute (DHSI), University of Victoria.[^ln-titlelink] This week-long course was intended for humanities-based researchers with no previous programming experience, and, as we wrote in the course description, for those who would like to understand how programs work by writing a few simple, but useful programs of their own.[^ln-courselink] The topics covered included working with files and folders at the command line, text stream manipulation with Bash Unix Shell, regular expressions, along with Python basics like native data types, variables, functions, and control structures. At the end of the course our students worked on their own and in small groups to create a small web scraper, an "essay grader," a comma separated value file manipulator, and a program that evaluated poetry for its measure of similarity to Byron.
+We write this chapter in reflection of teaching computing fundamentals in the
+humanities context in general, and more specifically, in the wake of teaching
+two instances of **Computing Foundations for Human(s|ists)** at the Digital
+Humanities Summer Institute (DHSI), University of Victoria.[^ln-titlelink] This
+week-long course was intended for humanities-based researchers with no previous
+programming experience, and, as we wrote in the course description, for those
+who would like to understand how programs work by writing a few simple, but
+useful programs of their own.[^ln-courselink] The topics covered included
+working with files and folders at the command line, text stream manipulation
+with Bash Unix Shell, regular expressions, along with Python basics like native
+data types, variables, functions, and control structures. At the end of the
+course our students worked on their own and in small groups to create a small
+web scraper, an "essay grader," a comma separated value file manipulator, and a
+program that evaluated poetry for its measure of similarity to Byron.
 
 Our aim in this chapter is not so much to recapitulate that experience (we
 would not have the space to do it here, in any case) but to reveal some
@@ -17,7 +30,12 @@ of the core principles that went into making the course, to talk about the ratio
 behind our teaching philosophy, and, more broadly, to suggest an approach to
 teaching programming in the humanities environment.
 
-[^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to search text for specified patterns.  In this case it picks out anything starting with "Human" and ending in *either* "s" or "ists".  So, it acts as a stand-in for both "Humans" and "Humanists".  This little flourish in the title is important because it signals a number of the principles that guide the course and signal what is to come.
+[^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
+search text for specified patterns.  In this case it picks out anything
+starting with "Human" and ending in *either* "s" or "ists".  So, it acts as a
+stand-in for both "Humans" and "Humanists".  This little flourish in the title
+is important because it signals a number of the principles that guide the
+course and signal what is to come.
 
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
@@ -27,102 +45,178 @@ http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dh
 ## 1 Critical Computing in the Humanities, Core Principles
 
 It is our firm belief that the teaching of computational principles in the
-humanities must be contextual, meaning that it must be grounded in the practice of
-humanities-based research and answering to the values held by the academic
-community.  We are not the first nor the only instructors to think about things this way, nor are we the only ones to be offering a course like this. For example, Software Carpentry has been advocating a similar approach since its inception, the Programming Historian is a website that aims to help users in the humanities teach themselves to program, and other courses at DHSI with technical components emphasize contextuality as well.  What we bring to this contextual approach are a set of additional principles that further promote competency by building on this contextual foundaiton. We call this approach critical computing and it involves the following ten principles:
+humanities must be contextual, meaning that it must be grounded in the practice
+of humanities-based research and answering to the values held by the academic
+community.  We are not the first nor the only instructors to think about things
+this way, nor are we the only ones to be offering a course like this. For
+example, Software Carpentry has been advocating a similar approach since its
+inception, the *Programming Historian* is a website that aims to help users in
+the humanities teach themselves to program, and other courses at DHSI with
+technical components emphasize contextuality as well. What we bring to this
+contextual approach are a set of additional principles that further promote
+competency by building on this contextual foundaiton. We call this approach
+critical computing and it involves the following ten principles:
 
 ### 1.0 Black box unpacking: Empowered computing.
 
-[I wonder if we should keep the "No...!" in the title but acknowledge that there are many black boxes that we don't unpack, such as the runtime compiler, etc.  Yes we start them down a path towards unlocking such things and yes, we go in at a lower level than many courses but we don't scrape bottom.  So, perhaps what we're about is black box reduction rather than elimination?
+[I wonder if we should keep the "No...!" in the title but acknowledge that
+there are many black boxes that we don't unpack, such as the runtime compiler,
+etc.  Yes we start them down a path towards unlocking such things and yes, we
+go in at a lower level than many courses but we don't scrape bottom.  So,
+perhaps what we're about is black box reduction rather than elimination?
 
 Going to try to reword this.]
 
-Computers are now ubiquitous. They mediate everything from financial markets, to
-archival research, and the way many keep in touch with friends and
-family. Yet, for those without computational background, the inner workings of these devices remain a source of mystery and, consequently, frustration. Recognizing this, our course makes demystification an important focus. We want our students to understand not only the principles of computer science, but the basics of software and electrical
-engineering. As much as possible, we would like to reveal the innards of opaque
-computational "black boxes," empowering our students to take control of their
-everyday computational practice.
+Computers are now ubiquitous. They mediate everything from financial markets,
+to archival research, and the way many keep in touch with friends and family.
+Yet, for those without computational background, the inner workings of these
+devices remain a source of mystery and, consequently, frustration. Recognizing
+this, our course makes demystification an important focus. We want our students
+to understand not only the principles of computer science, but the basics of
+software and electrical engineering. As much as possible, we would like to
+reveal the innards of opaque computational "black boxes," empowering our
+students to take control of their everyday computational practice.
 
-Of course, there is a limit to the number of black boxes that can be unpacked given the interests of the students, the knowledge of the instructors, and the timelines of the course.  The boxes that need to be opened are those that are most closely related to particular areas of fear or concern on the part of the users and which simultaneously would provide them the most empowerment.  In the case of a programming course this means spending time on the command line so that the mystery of how to work in this environment is removed.  This is important in a programming course because sooner or later it will be necessary to interact in a command line environment.  Further, the principles and approaches used in the command line environment often carryover into programming languages and environments allowing for a knowledge in each environment to reinforce the other.
+Of course, there is a limit to the number of black boxes that can be unpacked
+given the interests of the students, the knowledge of the instructors, and the
+timelines of the course.  The boxes that need to be opened are those that are
+most closely related to particular areas of fear or concern on the part of the
+users and which simultaneously would provide them the most empowerment.  In the
+case of a programming course this means spending time on the command line so
+that the mystery of how to work in this environment is removed.  This is
+important in a programming course because sooner or later it will be necessary
+to interact in a command line environment.  Further, the principles and
+approaches used in the command line environment often carryover into
+programming languages and environments allowing for a knowledge in each
+environment to reinforce the other.
 
-The key to unpacking black boxes for students is ensuring that they are engaged in practice at least as much as theory.  Within the context of a programming class that means writing as much working code within the context of real, functional programs, as much as possible.  In the case of the command line it means carrying out relevant tasks in that environment and being tasked with figuring out how to do more complicated tasks from the simple compontes shared previously. The *Learn X the Hard Way* movement, of which Zed A. Shaw's *Learn Python the Hard Way* is one of the most well-known, prides itself on a similar approach and for good reason.  Users end up understanding what they are doing and with the capability of solving problems outside of the classroom environment.
-
+The key to unpacking black boxes for students is ensuring that they are engaged
+in practice at least as much as theory. Within the context of a programming
+class that means writing as much working code within the context of real,
+functional programs, as much as possible. In the case of the command line it
+means carrying out relevant tasks in that environment and being tasked with
+figuring out how to do more complicated tasks from the simple compontes shared
+previously. The *Learn X the Hard Way* movement, of which Zed A. Shaw's *Learn
+Python the Hard Way* is one of the most well-known, prides itself on a similar
+approach and for good reason. Users end up understanding what they are doing
+and with the capability of solving problems outside of the classroom
+environment.
 
 ### 1.1 Plain language comments from start to finish
 
-Once the course turns to programming as it is recognized by the students (it is usually a pleasant surprise to them to find out that the command line work they started with counts as programming) we begin by having them describe their program, step by step, in plain language that *they* understand.  This is crucial because it provides them a map that they can return to again and again throughout the process of developing whatever program or task that they are working on.  More than a map, this description also acts as a guide, directing the flow of their work.
+Once the course turns to programming as it is recognized by the students (it is
+usually a pleasant surprise to them to find out that the command line work they
+started with counts as programming) we begin by having them describe their
+program, step by step, in plain language that *they* understand.  This is
+crucial because it provides them a map that they can return to again and again
+throughout the process of developing whatever program or task that they are
+working on. More than a map, this description also acts as a guide, directing
+the flow of their work.
 
-It is commonly regarded to be good programming practice to provide descriptive comments when coding and putting it up front gives the practice the priority that it deserves.  Additionally, students in the class come to see the importance of this particularly when they begin to work on their own projects.  Once this happens it is easy to become sidetracked and these comments provide the direction required to move forward.  They additionally make it easier for those wishing to help the students, typically either other students or the instructors, to quickly see what the overall vision is and offer assistance within the context of this vision rather than just at the level of syntax.
+It is commonly regarded to be good programming practice to provide descriptive
+comments when coding and putting it up front gives the practice the priority
+that it deserves.  Additionally, students in the class come to see the
+importance of this particularly when they begin to work on their own projects.
+Once this happens it is easy to become sidetracked and these comments provide
+the direction required to move forward.  They additionally make it easier for
+those wishing to help the students, typically either other students or the
+instructors, to quickly see what the overall vision is and offer assistance
+within the context of this vision rather than just at the level of syntax.
 
 ### 1.2 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
-[I think I have some stuff from the *The Cathedral and The Bazaar* that would work well here and I'll look to add it.]
+[I think I have some stuff from the *The Cathedral and The Bazaar* that would
+work well here and I'll look to add it.]
 
-[[Not sure this is the right place for this paragraph.  Yes, it does capture an important political position and introduce the *\*nix* family but only the latter seems particularly relevant to this subsection.] Librarians, students, and faculty are faced with a bewildering array of software choices. Companies that promise "innovation" and "disruption" in the classroom routinely approach administrators with offers to try and to buy
-software at the institutional level. The imbalance of information between the
-vendors and the users often results in wasted time and resources. In making the
-decision to invest time and resources into our own computational practice, we
-are inspired by the philosophy embodied by the *\*nix* family of operating
-systems (Unix, Linux, Arch Linux, OpenBSD, and others). Much of the *\*nix* community
-has been advocating for the use of free (as in "free speech" and as in "free beer") and open source software (FOSS) since Richard Stallman's *GNU Manifesto*. FOSS software works in the academic humanities context because free and open access code is available for inspection, and therefore, for interpretation, critique, and modification.]
+[[Not sure this is the right place for this paragraph.  Yes, it does capture an
+important political position and introduce the *\*nix* family but only the
+latter seems particularly relevant to this subsection.] Librarians, students,
+and faculty are faced with a bewildering array of software choices. Companies
+that promise "innovation" and "disruption" in the classroom routinely approach
+administrators with offers to try and to buy software at the institutional
+level. The imbalance of information between the vendors and the users often
+results in wasted time and resources. In making the decision to invest time and
+resources into our own computational practice, we are inspired by the
+philosophy embodied by the *\*nix* family of operating systems (Unix, Linux,
+Arch Linux, OpenBSD, and others). Much of the *\*nix* community has been
+advocating for the use of free (as in "free speech" and as in "free beer") and
+open source software (FOSS) since Richard Stallman's *GNU Manifesto*. FOSS
+software works in the academic humanities context because free and open access
+code is available for inspection, and therefore, for interpretation, critique,
+and modification.]
 
 We are inspired by the philosophy embodied by the *\*nix* family of operating
-systems (i.e. Unix, Linux, Arch Linux, OpenBSD, and others). Much of the *\*nix* community
-has been advocating for the use of free (as in "free speech" and as in "free beer") and open source software (FOSS) since Richard Stallman's *GNU Manifesto*. FOSS software works in the academic humanities context because free and open access code is available for inspection, and therefore, for interpretation, critique, and modification. More relevant to to teaching coding, the *\*nix* philosophy privileges small, modular pieces of
-software that "do one thing and do it well." [Source for quote?] Such software can then be chained together with other small but powerful tools to achieve complex results.  This hallmark of the *\*nix* family of operating systems is what has led Eric S. Raymond to refer to this as a "bazaar" model of software development, in contrast to a "cathedral" model [cite: Raymond's *The Cathedral and The Bazaar*].  
+systems (i.e. Unix, Linux, Arch Linux, OpenBSD, and others). Much of the
+*\*nix* community has been advocating for the use of free (as in "free speech"
+and as in "free beer") and open source software (FOSS) since Richard Stallman's
+*GNU Manifesto*. FOSS software works in the academic humanities context because
+free and open access code is available for inspection, and therefore, for
+interpretation, critique, and modification. More relevant to to teaching
+coding, the *\*nix* philosophy privileges small, modular pieces of software
+that "do one thing and do it well." [Source for quote?] Such software can then
+be chained together with other small but powerful tools to achieve complex
+results.  This hallmark of the *\*nix* family of operating systems is what has
+led Eric S. Raymond to refer to this as a "bazaar" model of software
+development, in contrast to a "cathedral" model [cite: Raymond's *The Cathedral
+and The Bazaar*].
 
-A bazaar-style approach to coding inherently places emphasis on simplicity, ease of maintenance, and transparency.  In addition the these properties dove-tailing cleanly with the emphasis on opening black boxes they are also are key for creating a culture that builds software that will last. The appeal of this emphasis is
-not just ideological, but also practical. In the past several decades,
-following the same principles, the *\*nix* family of operating systems has become
-the dominant platform that powers everything from cellular phones, to robots,
-drones, personal computers, and high-performance parallel machines. This also means that our
-investment of time into such ubiquitous interfaces can scale across time and
-devices. When deciding what to use and what to teach, we seek out universal
-tools that underlie a variety of computing practices, from library
-infrastructure, to web design, to data science and critical-edition making.
-More than anything, we seek out tools that we can understand and, if needed, to
-customize to fit our own particular needs and contexts.
+A bazaar-style approach to coding inherently places emphasis on simplicity,
+ease of maintenance, and transparency.  In addition the these properties
+dove-tailing cleanly with the emphasis on opening black boxes they are also are
+key for creating a culture that builds software that will last. The appeal of
+this emphasis is not just ideological, but also practical. In the past several
+decades, following the same principles, the *\*nix* family of operating systems
+has become the dominant platform that powers everything from cellular phones,
+to robots, drones, personal computers, and high-performance parallel machines.
+This also means that our investment of time into such ubiquitous interfaces can
+scale across time and devices. When deciding what to use and what to teach, we
+seek out universal tools that underlie a variety of computing practices, from
+library infrastructure, to web design, to data science and critical-edition
+making.  More than anything, we seek out tools that we can understand and, if
+needed, to customize to fit our own particular needs and contexts.
 
 ### 1.3  Wherever possible store data in human-readable text streams.
 
-The file formats that we use to store data have serious implications for anyone's ability to make use of that data in the future.  As the formats chosen tend toward obscurity or opaqueness it becomes increasingly difficult for new programmers to read during development and for others to draw on them in the future.
-Choosing appropriate file formats relates closely to the proliferation of closed
-tools and platforms. It is most acutely felt by archivists faced with
+The file formats that we use to store data have serious implications for
+anyone's ability to make use of that data in the future.  As the formats chosen
+tend toward obscurity or opaqueness it becomes increasingly difficult for new
+programmers to read during development and for others to draw on them in the
+future.  Choosing appropriate file formats relates closely to the proliferation
+of closed tools and platforms. It is most acutely felt by archivists faced with
 preserving short-lived data structures from obsolete platforms from recent
 past. For many humanists, who rarely work with truly large datasets or
 collections (on the order of millions documents), the real risk of rapid
 obsolescence offsets any hypothetical gains in speed or performance offered by
-a new note-taking platform or a complex database. 
+a new note-taking platform or a complex database.
 
-Conveniently for us, the Unix
-philosophy privileges inputs and outputs in plain text format, which can be
-used to store everything from personal notes, to article drafts, to huge
-datasets of metadata. Unix provides many powerful utilities that operate on
-plain text. In fact, a notion of human readability is encoded at the operating
-system level. When faced with a list of compromises, in the name of design,
-performance, efficacy, or legibility, we consistently prioritize legibility.
-That choice informs our practice throughout. When working with audio or visual
-material, for example, we similarly prefer widely-supported, non-proprietary
-standards. When selecting a data format, we ask: does it need special software
-to render? How long has it been around? and What organization is responsible
-for maintaining the standard?
+Conveniently for us, the Unix philosophy privileges inputs and outputs in plain
+text format, which can be used to store everything from personal notes, to
+article drafts, to huge datasets of metadata. Unix provides many powerful
+utilities that operate on plain text. In fact, a notion of human readability is
+encoded at the operating system level. When faced with a list of compromises,
+in the name of design, performance, efficacy, or legibility, we consistently
+prioritize legibility.  That choice informs our practice throughout. When
+working with audio or visual material, for example, we similarly prefer
+widely-supported, non-proprietary standards. When selecting a data format, we
+ask: does it need special software to render? How long has it been around? and
+What organization is responsible for maintaining the standard?
 
-### 1.4 If you have to do something more than ~~once~~ a hundred times, automate.
+### 1.4 If you have to do something more than ~~once~~ a hundred times,
+automate.
 
-Programmers are smart and lazy. After doing a task more than a few times, a good
-programmer's intuition will be to automate the task. For example, we often use
-the `rsync` command to back up our documents; however, after a few months of
-running it manually, the user can delegate that task to the built-in scheduler
-called `cron`. 
+Programmers are smart and lazy. After doing a task more than a few times, a
+good programmer's intuition will be to automate the task. For example, we often
+use the `rsync` command to back up our documents; however, after a few months
+of running it manually, the user can delegate that task to the built-in
+scheduler called `cron`.
 
-The saying normally goes that if you do it more than *once*,
-automate. However, one must know exactly what to automate. When backing up your
-files, do you want to back up the whole system or a few select folders? How
-often should the backup script run? The answers become apparent only after
-extensive manual use. As we introduce automated "daemons" that run tasks on our
-behalf, we want to make sure we think through any unintended side-effects:
-technological, social, political.
+The saying normally goes that if you do it more than *once*, automate. However,
+one must know exactly what to automate. When backing up your files, do you want
+to back up the whole system or a few select folders? How often should the
+backup script run? The answers become apparent only after extensive manual use.
+As we introduce automated "daemons" that run tasks on our behalf, we want to
+make sure we think through any unintended side-effects: technological, social,
+political.
 
 ### 1.5 Do it right—*the first time*.
 
@@ -146,19 +240,19 @@ Programming classes in the sciences often begin with coding for coding's sake,
 intended an audience inherently interested in logic, math, and engineering. The
 humanities must find its own intrinsic motivations for learning to code, broad
 enough to appeal to the community at large. For this reason, we begin our class
-with exercises that target daily computation and writing related tasks that are common to humanities
-researchers whatever particular research interest they may have. We create little "experiments"
-that address one's writing, for example. These include a lab session in which
-students analyze their own documents for commonly over-used "weasel
-words,"[^ln-weasel] for example. Working with one's own documents introduces
-important concepts like "relative" and "absolute" paths, file formats, and
-small shell utilities like `grep` (used to search through text files), `wc`
-(word count), `sed` (stream editor for text transformation), that can later be
-extended into more advanced concepts in system management or natural language
-processing in Python. When put together, these small utilities form the
-students' first programs, performing tasks like "safely rename all the files in
-this folder according to such-and-such rule," or "keep a daily log of my
-writing progress."
+with exercises that target daily computation and writing related tasks that are
+common to humanities researchers whatever particular research interest they may
+have. We create little "experiments" that address one's writing, for example.
+These include a lab session in which students analyze their own documents for
+commonly over-used "weasel words,"[^ln-weasel] for example. Working with one's
+own documents introduces important concepts like "relative" and "absolute"
+paths, file formats, and small shell utilities like `grep` (used to search
+through text files), `wc` (word count), `sed` (stream editor for text
+transformation), that can later be extended into more advanced concepts in
+system management or natural language processing in Python. When put together,
+these small utilities form the students' first programs, performing tasks like
+"safely rename all the files in this folder according to such-and-such rule,"
+or "keep a daily log of my writing progress."
 
 [^ln-weasel]: Weasel words are words that sound very meaningful, but instead of
 adding, diminish the impact of persuasive writing. The "very" in the previous
@@ -214,7 +308,9 @@ of programmatic thinking.
 
 Finally, and this was noticed by several course observers over the years,
 students in the humanities are sometimes curiously hesitant to explore their
-machines. In the absence of a tinkering upbringing and in the presence of cultural divides that regularly reinforce norms like "Those in the Arts and Humanities can't do programming, math, science, etc.", they might be worried of
+machines. In the absence of a tinkering upbringing and in the presence of
+cultural divides that regularly reinforce norms like "Those in the Arts and
+Humanities can't do programming, math, science, etc.", they might be worried of
 breaking expensive equipment or losing sensitive data. Demystifying the magical
 black box and learning some habits that prevent irrevocable loss of data
 addresses that fear, encouraging the students to tinker and to explore.
@@ -231,8 +327,12 @@ communities of practice.
 
 Programming can involve long stretches of frustration (Why does this not work?)
 punctuated by short bursts of elation that comes with accomplishing something
-difficult (It works!). Rather than allowing students to view their initial lack of results as failures, we attempt to channel feelings of hindrance into a practice of problem
-solving and discovery, related to similarly difficult, but more familiar tasks of archival research and long-form analytical writing. Just like writing, coding skills fall on a spectrum of proficiency that constitutes a small, but foundational part, of a larger variegated skill set.
+difficult (It works!). Rather than allowing students to view their initial lack
+of results as failures, we attempt to channel feelings of hindrance into a
+practice of problem solving and discovery, related to similarly difficult, but
+more familiar tasks of archival research and long-form analytical writing. Just
+like writing, coding skills fall on a spectrum of proficiency that constitutes
+a small, but foundational part, of a larger variegated skill set.
 
 Depending on one's research interests and career path, a DH practitioner will
 have some mixture of the following core skills (with examples in parenthesis):
@@ -321,9 +421,11 @@ competencies have "spillover" effects in "leveling up" the rest of the list.
 Our intensive, week-long class can only begin to address a small part of the
 larger, complicated puzzle.
 
-## 3 Bash and Python
+## 3 Three Locations of Computing
 
-[Our approach owes a small debt to Software Carpentry since this is what I have based a good chunk of the content on the first year and some of this got rolled into the second.  This is likely the place to acknowledge it.]
+[Our approach owes a small debt to Software Carpentry since this is what I have
+based a good chunk of the content on the first year and some of this got rolled
+into the second. This is likely the place to acknowledge it.]
 
 We often begin our courses in outlining the above "big picture" principles,
 challenges, and considerations. There is no hiding the fact the programming is
@@ -337,10 +439,12 @@ and frustration. Where did that file go? How do I find it again? What type of
 file is it? Modern operating systems purposefully hide such information from
 average users. Yet our users are not average. Rather, they are students,
 faculty, and librarians who rely on documents, file systems, and datasets as a
-matter of critical importance. They have typically put years, if not decades, into acquiring expertise in academic disciplines and can certainly rise to the challenge of
-computation. In our experience, they respond extremely well to
-the mission of reclaiming the material contexts of their daily intellectual
-practice and learning how to control more directly the computers through which they carry out much of their research.
+matter of critical importance. They have typically put years, if not decades,
+into acquiring expertise in academic disciplines and can certainly rise to the
+challenge of computation. In our experience, they respond extremely well to the
+mission of reclaiming the material contexts of their daily intellectual
+practice and learning how to control more directly the computers through which
+they carry out much of their research.
 
 Guided by this approach, we have identified two core competencies from our
 "wish list"---ones that we believe can have a significant impact on "launching"
@@ -352,7 +456,8 @@ privileges simplicity and human readability.[^ln-versionlink]
 
 [^ln-versionlink]: Given that we have looked to Software Carpentry for some of the methodology that we employ in the course it should be noted that we do not spend any time on version control via tools such as Git or Mercurial.  This was done initially so that more time could be spent on programming concepts, hands-on coding work, and unpacking the black box that is the command line.  The importance of version control for efficient and effective coding via protecting against loss and enabling collaboration with others is recognized and future versions of the course may include it as a consequence.  As with all training that is already time constrained down to the essentials, the challenge is what to take out to add this in.
 
-More directly, there are six properties that Bash and Python embody that make them particularly suitable for an introduction to coding class:
+More directly, there are six properties that Bash and Python embody that make
+them particularly suitable for an introduction to coding class:
 
 1. Simplicity. The idiosyncrasies of programming names within Bash/\*nix aside, the syntax used within both Bash and Python is relatively straightforward.  In Bash almost every task can be broken down into a series of single-line commands that could alternatively be chained together into a single line through pipes (|) and redirects (> and >>).  Python does away with much of the frustrating syntax embedded in languages that came before it, saving users from needing to remember to close anywhere near so many brackets in exchange for a format that improves readability.
 2. Power. Both Bash and Python are able to do a lot, pretty much any programming task really. Granted, they may not be well-suited to any programming task but together they can form a universal swiss army knife of coding, allowing users to get done what they need done.
@@ -361,8 +466,7 @@ More directly, there are six properties that Bash and Python embody that make th
 5. Hackability.  It is relatively straightforward to write one's own commands/methods within both Bash and Python *and to see how those that currently exist were written*.  While this is not something that we cover in our courses the possibility for end users to investigate and expand the languages that they are working on goes directly to the heart of empowering users by unlocking what would otherwise be black boxes.
 6. Fun. Packaging up the previous properties as they have been in both Bash and Python has resulted in the ability to have coding experiences that are not only effective but also fun.  Both Bash and Python invite a sort of call and response methodology that is at once engaging and interesting, drawing students forward in their learning.
 
-### 3.0 Why Bash?
-
+### 3.0 Bash?
 
 > Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
 sh-compatible shell that incorporates useful features from the Korn shell (ksh)
@@ -373,13 +477,14 @@ by Bash without modification.[^ln-bashlink]
 
 [^ln-bashlink]: http://www.gnu.org/software/bash/
 
-### 3.1 Why Python?
+### 3.1 Python?
 
 What is a programming language?
 
 control structures + data types + built-in functions + syntax + interpreter
 Why Python
 
+### 3.2 Text Editor
 ### 3.2 When to use them?
 
 | When to use Bash                  | When to use Python       |
@@ -391,4 +496,23 @@ Why Python
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
-[^ln-munge]: Data munging is a recursive computer acronym that stands for "Munge Until No Good," referring to a series of discrete and potentially destructive data transformation steps [@raymond_mung_2004].
+[^ln-munge]: Data munging is a recursive computer acronym that stands for
+"Munge Until No Good," referring to a series of discrete and potentially
+destructive data transformation steps [@raymond_mung_2004].
+
+Live coding. Conversational programming. Interactive. vs.
+
+| Interactive Programming           | Text Ed |
++-----------------------------------|--------------------------+
+| - automate daily tasks            | - data science           |
+| - manage files & folders          | - app development        |
+| - remote server administration    | - NLTK                   |
+| - data munging[^ln-munge]         | - data visualization     |
+| - quick & dirty text manipulation | - glue code              |
+|                                   | - everything else        |
+
+### Conclusion
+
+These three locations build solid foundations for critical practice in the
+digital humanities. All more advanced stuff rests on these foundations. In
+starting here we dispell anxiety and illusion.
