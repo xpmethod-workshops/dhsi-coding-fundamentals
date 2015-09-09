@@ -40,186 +40,114 @@ course and signal what is to come.
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-[Should we say something about coding vs programming here? -JS]
-[I don't have strong feelings about the distinction. Up to you. -DT]
+<!---
+Should we say something about coding vs programming here? -JS
+I don't have strong feelings about the distinction. Up to you. -DT
+--->
 
 ## 1 Critical Computing in the Humanities, Core Principles
 
 It is our firm belief that the teaching of computational principles in the
-humanities must be contextual, meaning that it must be grounded in the practice
-of humanities-based research and answering to the values held by the academic
-community.  We are not the first nor the only instructors to think about things
-this way, nor are we the only ones to be offering a course like this. For
-example, Software Carpentry has been advocating a similar approach since its
-inception, the *Programming Historian* is a website that aims to help users in
-the humanities teach themselves to program, and other courses at DHSI with
-technical components emphasize contextuality as well. What we bring to this
-contextual approach are a set of additional principles that further promote
-competency by building on this contextual foundaiton. We call this approach
-critical computing and it involves the following ten principles:
+humanities must be grounded in the practice of humanities-based research and
+answer to the values held by the academic community. Inspired by a number of
+initiatives advancing a similar philosophy, we refer to this approach as
+"critical computing."[^ln-first] The following ten principles connect key ideas
+in computation to values intrinsic to humanistic inquiry:
 
-### 1.0 Black box unpacking: Empowered computing.
+[^ln-first]: We are not the first nor the only instructors to think about
+things this way, nor are we the only ones to be offering a course like this.
+For example, Software Carpentry has been advocating a similar approach since
+its inception. Similarly, the *Programming Historian* is "an online,
+open-access, peer-reviewed suite of tutorials that help humanists learn a wide
+range of digital tools, techniques, and workflows to facilitate their
+research." See also @harrell_toward_2015.
 
-[I wonder if we should keep the "No...!" in the title but acknowledge that
-there are many black boxes that we don't unpack, such as the runtime compiler,
-etc.  Yes we start them down a path towards unlocking such things and yes, we
-go in at a lower level than many courses but we don't scrape bottom.  So,
-perhaps what we're about is black box reduction rather than elimination?
+### 1.0 Demystify the black box (as much as possible).
 
-Going to try to reword this.]
+<!---
+Let's limit these to one paragraph each. We can go into greater detail in later
+sections.
+--->
 
-Computers are now ubiquitous. They mediate everything from financial markets,
-to archival research, and the way many keep in touch with friends and family.
-Yet, for those without computational background, the inner workings of these
-devices remain a source of mystery and, consequently, frustration. Recognizing
-this, our course makes demystification an important focus. We want our students
-to understand not only the principles of computer science, but the basics of
-software and electrical engineering. As much as possible, we would like to
-reveal the innards of opaque computational "black boxes," empowering our
-students to take control of their everyday computational practice.
+Contemporary computational devices are a fact of daily life. They are involved
+in everything from financial markets, to archival research, and to the way many
+keep in touch with friends and family. Yet, for those without computational
+background, the inner workings of these devices remain a source of mystery and,
+consequently, frustration. Recognizing this, our course targets daily
+computation. We want our students to understand not only the principles of
+programming, but the basics of networking, security, and operating systems. As
+much as possible, we would like to reveal the innards of opaque computational
+"black boxes," empowering our students to take control of their everyday
+computational practice.
 
-Of course, there is a limit to the number of black boxes that can be unpacked
-given the interests of the students, the knowledge of the instructors, and the
-timelines of the course.  The boxes that need to be opened are those that are
-most closely related to particular areas of fear or concern on the part of the
-users and which simultaneously would provide them the most empowerment.  In the
-case of a programming course this means spending time on the command line so
-that the mystery of how to work in this environment is removed.  This is
-important in a programming course because sooner or later it will be necessary
-to interact in a command line environment.  Further, the principles and
-approaches used in the command line environment often carryover into
-programming languages and environments allowing for a knowledge in each
-environment to reinforce the other.
+### 1.1 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
-The key to unpacking black boxes for students is ensuring that they are engaged
-in practice at least as much as theory. Within the context of a programming
-class that means writing as much working code within the context of real,
-functional programs, as much as possible. In the case of the command line it
-means carrying out relevant tasks in that environment and being tasked with
-figuring out how to do more complicated tasks from the simple compontes shared
-previously. The *Learn X the Hard Way* movement, of which Zed A. Shaw's *Learn
-Python the Hard Way* is one of the most well-known, prides itself on a similar
-approach and for good reason. Users end up understanding what they are doing
-and with the capability of solving problems outside of the classroom
-environment.
+Researchers, librarians, students, and faculty are faced with a bewildering
+array of software choices. In making the decision to invest time and resources
+into learning a new tool or methodology, we are guided by "Unix Philosphy" and
+by the Free and Open-source Software movement (FOSS). The Unix way of computing
+privileges small, modular pieces of software that "do one thing well"
+[@mcilroy_unix_1978]. Such software can then be chained together with other
+small but powerful tools to achieve complex results. FOSS software works in the
+academic humanities context because free and open access code is available for
+inspection, and therefore, for interpretation, critique, and modification.
+More than anything, we seek out tools that we can understand and, if needed, to
+customize to fit our own particular needs and contexts. When deciding what to
+use and what to teach, we seek out universal tools that underlie a variety of
+computing practices, from library infrastructure, to web design, to data
+science and critical-edition making.
 
-### 1.1 Plain language comments from start to finish
-
-Once the course turns to programming as it is recognized by the students (it is
-usually a pleasant surprise to them to find out that the command line work they
-started with counts as programming) we begin by having them describe their
-program, step by step, in plain language that *they* understand.  This is
-crucial because it provides them a map that they can return to again and again
-throughout the process of developing whatever program or task that they are
-working on. More than a map, this description also acts as a guide, directing
-the flow of their work.
-
-It is commonly regarded to be good programming practice to provide descriptive
-comments when coding and putting it up front gives the practice the priority
-that it deserves.  Additionally, students in the class come to see the
-importance of this particularly when they begin to work on their own projects.
-Once this happens it is easy to become sidetracked and these comments provide
-the direction required to move forward.  They additionally make it easier for
-those wishing to help the students, typically either other students or the
-instructors, to quickly see what the overall vision is and offer assistance
-within the context of this vision rather than just at the level of syntax.
-
-### 1.2 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
-
-[I think I have some stuff from the *The Cathedral and The Bazaar* that would
-work well here and I'll look to add it.]
-
-[[Not sure this is the right place for this paragraph.  Yes, it does capture an
-important political position and introduce the *\*nix* family but only the
-latter seems particularly relevant to this subsection.] Librarians, students,
-and faculty are faced with a bewildering array of software choices. Companies
-that promise "innovation" and "disruption" in the classroom routinely approach
-administrators with offers to try and to buy software at the institutional
-level. The imbalance of information between the vendors and the users often
-results in wasted time and resources. In making the decision to invest time and
-resources into our own computational practice, we are inspired by the
-philosophy embodied by the *\*nix* family of operating systems (Unix, Linux,
-Arch Linux, OpenBSD, and others). Much of the *\*nix* community has been
-advocating for the use of free (as in "free speech" and as in "free beer") and
-open source software (FOSS) since Richard Stallman's *GNU Manifesto*. FOSS
-software works in the academic humanities context because free and open access
-code is available for inspection, and therefore, for interpretation, critique,
-and modification.]
-
-We are inspired by the philosophy embodied by the *\*nix* family of operating
-systems (i.e. Unix, Linux, Arch Linux, OpenBSD, and others). Much of the
-*\*nix* community has been advocating for the use of free (as in "free speech"
-and as in "free beer") and open source software (FOSS) since Richard Stallman's
-*GNU Manifesto*. FOSS software works in the academic humanities context because
-free and open access code is available for inspection, and therefore, for
-interpretation, critique, and modification. More relevant to to teaching
-coding, the *\*nix* philosophy privileges small, modular pieces of software
-that "do one thing and do it well." [Source for quote?] Such software can then
-be chained together with other small but powerful tools to achieve complex
-results.  This hallmark of the *\*nix* family of operating systems is what has
-led Eric S. Raymond to refer to this as a "bazaar" model of software
-development, in contrast to a "cathedral" model [cite: Raymond's *The Cathedral
-and The Bazaar*].
-
-A bazaar-style approach to coding inherently places emphasis on simplicity,
-ease of maintenance, and transparency.  In addition the these properties
-dove-tailing cleanly with the emphasis on opening black boxes they are also are
-key for creating a culture that builds software that will last. The appeal of
-this emphasis is not just ideological, but also practical. In the past several
-decades, following the same principles, the *\*nix* family of operating systems
-has become the dominant platform that powers everything from cellular phones,
-to robots, drones, personal computers, and high-performance parallel machines.
-This also means that our investment of time into such ubiquitous interfaces can
-scale across time and devices. When deciding what to use and what to teach, we
-seek out universal tools that underlie a variety of computing practices, from
-library infrastructure, to web design, to data science and critical-edition
-making.  More than anything, we seek out tools that we can understand and, if
-needed, to customize to fit our own particular needs and contexts.
-
-### 1.3  Wherever possible store data in human-readable text streams.
+### 1.2 Wherever possible store data in human-readable text streams.
 
 The file formats that we use to store data have serious implications for
-anyone's ability to make use of that data in the future.  As the formats chosen
+anyone's ability to make use of that data in the future. As the formats chosen
 tend toward obscurity or opaqueness it becomes increasingly difficult for new
 programmers to read during development and for others to draw on them in the
-future.  Choosing appropriate file formats relates closely to the proliferation
+future. Choosing appropriate file formats relates closely to the proliferation
 of closed tools and platforms. It is most acutely felt by archivists faced with
 preserving short-lived data structures from obsolete platforms from recent
 past. For many humanists, who rarely work with truly large datasets or
-collections (on the order of millions documents), the real risk of rapid
-obsolescence offsets any hypothetical gains in speed or performance offered by
-a new note-taking platform or a complex database.
+collections, the real risk of rapid obsolescence offsets any hypothetical gains
+in speed or performance offered by a new note-taking platform or a complex
+database.[^ln-plain] Similarly, when coding, we begin by having our students
+describe their program, step by step, in language natural to them and to their
+task. Pseudo code in plain English becomes the basis for well documented
+programs. Such programs are easy to read and to maintain. If forced to make a
+compromise, we privilege legibility and longevity over tersity of expression or
+performance.
 
-Conveniently for us, the Unix philosophy privileges inputs and outputs in plain
-text format, which can be used to store everything from personal notes, to
-article drafts, to huge datasets of metadata. Unix provides many powerful
-utilities that operate on plain text. In fact, a notion of human readability is
-encoded at the operating system level. When faced with a list of compromises,
-in the name of design, performance, efficacy, or legibility, we consistently
-prioritize legibility.  That choice informs our practice throughout. When
-working with audio or visual material, for example, we similarly prefer
-widely-supported, non-proprietary standards. When selecting a data format, we
-ask: does it need special software to render? How long has it been around? and
-What organization is responsible for maintaining the standard?
+<!---
+I moved the plain English point here.
+--->
 
-### 1.4 If you have to do something more than ~~once~~ a hundred times,
-automate.
+[^ln-plain]: Conveniently for us, the Unix philosophy privileges inputs and
+outputs in plain text format, which can be used to store everything from
+personal notes, to article drafts, to huge datasets of metadata. Unix provides
+many powerful utilities that operate on plain text. In fact, a notion of human
+readability is encoded at the operating system level. When faced with a list of
+compromises, in the name of design, performance, efficacy, or legibility, we
+consistently prioritize legibility.  That choice informs our practice
+throughout. When working with audio or visual material, for example, we
+similarly prefer widely-supported, non-proprietary standards. When selecting a
+data format, we ask: does it need special software to render? How long has it
+been around?  and What organization is responsible for maintaining the
+standard?
+
+### 1.3 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
 good programmer's intuition will be to automate the task. For example, we often
 use the `rsync` command to back up our documents; however, after a few months
 of running it manually, the user can delegate that task to the built-in
-scheduler called `cron`.
+scheduler called `cron`. The saying normally goes that if you do it more than
+*once*, automate. However, one must know exactly what to automate. When backing
+up your files, do you want to back up the whole system or a few select folders?
+How often should the backup script run? The answers become apparent only after
+extensive manual use. As we introduce automated "daemons" that run tasks on our
+behalf, we want to make sure we think through any unintended side-effects:
+technological, personal, and political.
 
-The saying normally goes that if you do it more than *once*, automate. However,
-one must know exactly what to automate. When backing up your files, do you want
-to back up the whole system or a few select folders? How often should the
-backup script run? The answers become apparent only after extensive manual use.
-As we introduce automated "daemons" that run tasks on our behalf, we want to
-make sure we think through any unintended side-effects: technological, social,
-political.
-
-### 1.5 Do it right—*the first time*.
+### 1.4 Do it right---*the first time*.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
 badly, in a haphazard fashion, accumulates technological, intellectual, and
@@ -232,10 +160,10 @@ our students against simply cutting and pasting code snippets from our
 tutorials. We want them to follow our thinking, to annotate, and to review
 their notes regularly. In the social context, lazy practices are unethical
 because they "bank" against the labor of others, in the future, literally
-borrowing someone else's time. Doing things the right way now, saves
-unnecessary effort later.
+borrowing someone else's time. Doing things the right way now saves unnecessary
+effort later.
 
-### 1.6 Target daily, real-world computation.
+### 1.5 Target daily, real-world computation.
 
 Programming classes in the sciences often begin with coding for coding's sake,
 intended an audience inherently interested in logic, math, and engineering. The
