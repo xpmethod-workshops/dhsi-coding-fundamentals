@@ -24,11 +24,11 @@ course our students worked on their own and in small groups to create a small
 web scraper, an "essay grader," a comma separated value file manipulator, and a
 program that evaluated poetry for its measure of similarity to Byron.
 
-Our aim in this chapter is not so much to recapitulate that experience (we
-would not have the space to do it here, in any case) but to reveal some
-of the core principles that went into making the course, to talk about the rationale
-behind our teaching philosophy, and, more broadly, to suggest an approach to
-teaching programming in the humanities environment.
+Our aim in this chapter is not so much to recapitulate the experience of
+teaching (we would not have the space to do it here, in any case) but to reveal
+some of the core principles that went into making the course, to talk about the
+rationale behind our teaching philosophy, and, more broadly, to suggest an
+approach to teaching programming in the humanities environment.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
 search text for specified patterns.  In this case it picks out anything
@@ -40,7 +40,8 @@ course and signal what is to come.
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-[Should we say something about coding vs programming here?]
+[Should we say something about coding vs programming here? -JS]
+[I don't have strong feelings about the distinction. Up to you. -DT]
 
 ## 1 Critical Computing in the Humanities, Core Principles
 
