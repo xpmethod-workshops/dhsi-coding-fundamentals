@@ -41,8 +41,8 @@ course and signal what is to come.
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
 <!---
-Should we say something about coding vs programming here? -JS
-I don't have strong feelings about the distinction. Up to you. -DT
+JS: Should we say something about coding vs programming here?
+DT: I don't have strong feelings about the distinction. Up to you.
 --->
 
 ## 1 Critical Computing in the Humanities, Core Principles
@@ -171,17 +171,17 @@ humanities must find its own intrinsic motivations for learning to code, broad
 enough to appeal to the community at large. For this reason, we begin our class
 with exercises that target daily computation and writing related tasks that are
 common to humanities researchers whatever particular research interest they may
-have. We create little "experiments" that address one's writing, for example.
+have. We create small "experiments" that address one's writing, for example.
 These include a lab session in which students analyze their own documents for
 commonly over-used "weasel words,"[^ln-weasel] for example. Working with one's
 own documents introduces important concepts like "relative" and "absolute"
 paths, file formats, and small shell utilities like `grep` (used to search
 through text files), `wc` (word count), `sed` (stream editor for text
 transformation), that can later be extended into more advanced concepts in
-system management or natural language processing in Python. When put together,
-these small utilities form the students' first programs, performing tasks like
-"safely rename all the files in this folder according to such-and-such rule,"
-or "keep a daily log of my writing progress."
+system administration or natural language processing. When put
+together, these small utilities form the students' first programs, performing
+tasks like "safely rename all the files in this folder according to
+such-and-such rule," or "keep a daily log of my writing progress."
 
 [^ln-weasel]: Weasel words are words that sound very meaningful, but instead of
 adding, diminish the impact of persuasive writing. The "very" in the previous
@@ -352,9 +352,12 @@ larger, complicated puzzle.
 
 ## 3 Three Locations of Computing
 
-[Our approach owes a small debt to Software Carpentry since this is what I have
-based a good chunk of the content on the first year and some of this got rolled
-into the second. This is likely the place to acknowledge it.]
+
+<!---
+JS: Our approach owes a small debt to Software Carpentry since this is what I have based a good chunk of the content on the first year and some of this got rolled
+into the second. This is likely the place to acknowledge it.
+DT: No problem. Let's do it in footnotes though.
+--->
 
 We often begin our courses in outlining the above "big picture" principles,
 challenges, and considerations. There is no hiding the fact the programming is
@@ -414,7 +417,6 @@ control structures + data types + built-in functions + syntax + interpreter
 Why Python
 
 ### 3.2 Text Editor
-### 3.2 When to use them?
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
@@ -433,12 +435,7 @@ Live coding. Conversational programming. Interactive. vs.
 
 | Interactive Programming           | Text Ed |
 +-----------------------------------|--------------------------+
-| - automate daily tasks            | - data science           |
-| - manage files & folders          | - app development        |
-| - remote server administration    | - NLTK                   |
-| - data munging[^ln-munge]         | - data visualization     |
-| - quick & dirty text manipulation | - glue code              |
-|                                   | - everything else        |
+
 
 ### Conclusion
 
