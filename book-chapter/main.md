@@ -9,19 +9,20 @@ bibliography: main.bib
 
 ## 0 Introduction
 
-We write this chapter as a general reflection on teaching computing fundamentals in the
-humanities context, and more specifically in the wake of teaching
-two instances of **Computing Foundations for Human(s|ists)** at the Digital
-Humanities Summer Institute (DHSI), University of Victoria.[^ln-titlelink] This
-week-long course was intended for humanities researchers with no previous
-programming experience who wanted to learn how programs work by writing a few
-simple, useful programs of their own.[^ln-courselink] The topics covered included
-working with files and folders at the command line, text-stream manipulation
-with the Bash Unix Shell, regular expressions, and Python basics like native
-data types, variables, functions, and control structures. At the end of the
-course, our students worked on their own and in small groups to create a small
-web scraper, an "essay grader," a comma-separated value file manipulator, and a
-program that evaluates poetry based on its measure of similarity to Byron's.
+We write this chapter as a general reflection on teaching computing
+fundamentals in the humanities context, and more specifically in the wake of
+teaching two instances of **Computing Foundations for Human(s|ists)** at the
+Digital Humanities Summer Institute (DHSI), University of
+Victoria.[^ln-titlelink] This week-long course was intended for humanities
+researchers with no previous programming experience who wanted to learn how
+programs work by writing a few simple, useful programs of their
+own.[^ln-courselink] The topics covered included working with files and folders
+at the command line, text-stream manipulation with the Bash Unix Shell, regular
+expressions, and Python basics like native data types, variables, functions,
+and control structures. At the end of the course, our students worked on their
+own and in small groups to create a small web scraper, an "essay grader," a
+comma-separated value file manipulator, and a program that evaluates poetry
+based on its measure of similarity to Byron's.
 
 Our aim in this chapter is not to recapitulate the experience of
 teaching (we would not have the space to do it here, in any case), but to reveal
@@ -57,12 +58,11 @@ in computation to values intrinsic to humanistic inquiry:
 
 [^ln-first]: We are not the first nor the only instructors to think about
 digital pedagogy this way, nor are we the only ones to be offering a course
-based on these principles.
-Software Carpentry, for example, has been advocating a similar approach since
-its inception. Similarly, the *Programming Historian* is "an online,
-open-access, peer-reviewed suite of tutorials that help humanists learn a wide
-range of digital tools, techniques, and workflows to facilitate their
-research." See also @harrell_toward_2015.
+based on these principles. Software Carpentry, for example, has been
+advocating a similar approach since its inception. Similarly, the *Programming
+Historian* is "an online, open-access, peer-reviewed suite of tutorials that
+help humanists learn a wide range of digital tools, techniques, and workflows
+to facilitate their research." See also @harrell_toward_2015.
 
 ### 1.0 Demystify the black box.
 
@@ -396,20 +396,85 @@ for text-based "dialog" based interaction between humans and machines. The
 second is Python, a widely-used modern Programming language, that, like Bash,
 privileges simplicity and human readability.[^ln-versionlink]
 
-[^ln-versionlink]: Given that we have looked to Software Carpentry for some of the methodology that we employ in the course it should be noted that we do not spend any time on version control via tools such as Git or Mercurial.  This was done initially so that more time could be spent on programming concepts, hands-on coding work, and unpacking the black box that is the command line.  The importance of version control for efficient and effective coding via protecting against loss and enabling collaboration with others is recognized and future versions of the course may include it as a consequence.  As with all training that is already time constrained down to the essentials, the challenge is what to take out to add this in.
+[^ln-versionlink]: Given that we have looked to Software Carpentry for some of
+the methodology that we employ in the course it should be noted that we do not
+spend any time on version control via tools such as Git or Mercurial.  This was
+done initially so that more time could be spent on programming concepts,
+hands-on coding work, and unpacking the black box that is the command line.
+The importance of version control for efficient and effective coding via
+protecting against loss and enabling collaboration with others is recognized
+and future versions of the course may include it as a consequence.  As with all
+training that is already time constrained down to the essentials, the challenge
+is what to take out to add this in.
 
 More directly, there are six properties that Bash and Python embody that make
 them particularly suitable for an introduction to coding class:
 
-1. Simplicity. The idiosyncrasies of programming names within Bash/\*nix aside, the syntax used within both Bash and Python is relatively straightforward.  In Bash almost every task can be broken down into a series of single-line commands that could alternatively be chained together into a single line through pipes (|) and redirects (> and >>).  Python does away with much of the frustrating syntax embedded in languages that came before it, saving users from needing to remember to close anywhere near so many brackets in exchange for a format that improves readability.
-2. Power. Both Bash and Python are able to do a lot, pretty much any programming task really. Granted, they may not be well-suited to any programming task but together they can form a universal swiss army knife of coding, allowing users to get done what they need done.
-3. Durability.  Neither Bash nor Python are going away anytime soon, making it the case that solutions that are written in either will continue to be functional beyond the foreseeable future.
-4. Universality.  Both Bash and Python are widely used.  While it is the case that Bash is confined to /*nix-style operating systems there are emulators that reproduce its functionality on most systems that a student in the class is likely to encounter.  Python, and tools that help write Python code, is likewise available on all systems that a student of the class is likely to encounter.  As a consequence of the ability to use both tools in a wide range of environments in conjunction with the other properties listed here both are used in a wide range of environments by very large user communities.  This makes it the case that help is widely available.
-5. Hackability.  It is relatively straightforward to write one's own commands/methods within both Bash and Python *and to see how those that currently exist were written*.  While this is not something that we cover in our courses the possibility for end users to investigate and expand the languages that they are working on goes directly to the heart of empowering users by unlocking what would otherwise be black boxes.
-6. Fun. Packaging up the previous properties as they have been in both Bash and Python has resulted in the ability to have coding experiences that are not only effective but also fun.  Both Bash and Python invite a sort of call and response methodology that is at once engaging and interesting, drawing students forward in their learning.
+1. Simplicity. The idiosyncrasies of programming names within Bash/\*nix aside,
+the syntax used within both Bash and Python is relatively straightforward.  In
+Bash almost every task can be broken down into a series of single-line commands
+that could alternatively be chained together into a single line through pipes
+(|) and redirects (> and >>).  Python does away with much of the frustrating
+syntax embedded in languages that came before it, saving users from needing to
+remember to close anywhere near so many brackets in exchange for a format that
+improves readability.
 
-### 3.0 Bash?
+2. Power. Both Bash and Python are able to do a lot, pretty much any
+programming task really. Granted, they may not be well-suited to any
+programming task but together they can form a universal swiss army knife of
+coding, allowing users to get done what they need done.
 
+3. Durability.  Neither Bash nor Python are going away anytime soon, making it
+the case that solutions that are written in either will continue to be
+functional beyond the foreseeable future.
+
+4. Universality.  Both Bash and Python are widely used.  While it is the case
+that Bash is confined to /*nix-style operating systems there are emulators that
+reproduce its functionality on most systems that a student in the class is
+likely to encounter.  Python, and tools that help write Python code, is
+likewise available on all systems that a student of the class is likely to
+encounter.  As a consequence of the ability to use both tools in a wide range
+of environments in conjunction with the other properties listed here both are
+used in a wide range of environments by very large user communities.  This
+makes it the case that help is widely available.
+
+5. Hackability.  It is relatively straightforward to write one's own
+commands/methods within both Bash and Python *and to see how those that
+currently exist were written*.  While this is not something that we cover in
+our courses the possibility for end users to investigate and expand the
+languages that they are working on goes directly to the heart of empowering
+users by unlocking what would otherwise be black boxes.
+
+6. Fun. Packaging up the previous properties as they have been in both Bash and
+Python has resulted in the ability to have coding experiences that are not only
+effective but also fun.  Both Bash and Python invite a sort of call and
+response methodology that is at once engaging and interesting, drawing students
+forward in their learning.
+
+### 3.0 Command Line
+
+<!---
+DT: Giving a short outline here.
+--->
+
+Explain what the command line is. Concentrate more on command line than bash
+specifically.
+
+Why is it worthwhile to learn? Stress again the universal aspect. All
+computational acitvities involve file manipulation. The command line is the
+basis for file manipulation.
+
+Unix prefers plain text input and outputs. Many build-in tools for file
+manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
+common use cases (how many words in this file, find all usages of the word,
+spotlight-like functionality of searching for files.
+
+Cover one more advanced use case. Scheduling a data pull. Getting data and
+munging. Twitter bot?
+
+In addition networking and security tools like wget, ssh, pgp.
+
+<!--- this is probably a footnote -->
 > Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
 sh-compatible shell that incorporates useful features from the Korn shell (ksh)
 and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO
@@ -419,14 +484,12 @@ by Bash without modification.[^ln-bashlink]
 
 [^ln-bashlink]: http://www.gnu.org/software/bash/
 
-### 3.1 Python?
+### 3.1 Python
 
 What is a programming language?
 
 control structures + data types + built-in functions + syntax + interpreter
 Why Python
-
-### 3.2 Text Editor
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
@@ -440,6 +503,9 @@ Why Python
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
+
+### 3.2 Text Editor
+
 
 Live coding. Conversational programming. Interactive. vs.
 
