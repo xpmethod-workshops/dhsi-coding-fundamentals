@@ -142,9 +142,9 @@ task. Pseudocode in plain English becomes the basis for well documented
 programs and readable code that can be easily maintained or adapted. We
 instruct students, if forced to choose, to privilege legibility and longevity
 over terseness of expression or performance.
-]
+
 <!---
-I moved the plain English point here. 
+I moved the plain English point here.
 PRP: trimmed for repetitiveness, moved list of qs back to paragraph
 --->
 
@@ -152,7 +152,7 @@ PRP: trimmed for repetitiveness, moved list of qs back to paragraph
 outputs in plain text format, which can be used to store everything from
 personal notes, to article drafts, to huge datasets of metadata. Unix provides
 many powerful utilities that work with plain text. In fact, the notion of human
-readability is even encoded at the operating system level. 
+readability is even encoded at the operating system level.
 
 ### 1.4 If you have to do something more than ~~once~~ a hundred times, automate.
 
@@ -258,7 +258,7 @@ Depending on one's research interests and career path, as a DH practitioner one 
 have some mixture of the following core skills (with examples in parenthesis):
 
 - Text markup (plain text, *Markdown*, *Pandoc*, *TEI*)
-- POSIX command line proficiency (*Bash*, regular expressions)
+- Command line interface proficiency (*Bash*, pipes, regular expressions)
 - Content management (*Jekyll*, *Wordpress*)
 - Version control (*Git*, *GitHub*)
 - Programming language (*Python*, *R*, *JavaScript*)
@@ -277,7 +277,7 @@ into the world of critical computing. Text transformations lead to the
 operating system and the file hierarchy. Tasks like regular backups and desktop
 organization can be used to familiarize students with foundational concepts
 like relative and absolute file paths or the distinction between plain text
-and binary formats. 
+and binary formats.
 
 Our core principle of starting with daily computation also suggests
 covering version control and content management early in the curriculum.
@@ -318,7 +318,7 @@ security, encryption---is also key to pursuing higher-level goals like preservin
 speech online, protecting a journalist's sources, or bypassing censorship
 filters. The care and maintenance of personal document archives---research
 papers, article drafts, and book manuscripts---leads naturally into server management.
-The server is where many of the skills learned earlier come to fruition. 
+The server is where many of the skills learned earlier come to fruition.
 Running websites requires a long "stack" of technological components. These
 are almost impossible to use well without knowledge of the command line, a
 programming language, and networks.
@@ -386,10 +386,10 @@ they carry out much of their research.
 Guided by this approach, we have identified two core competencies from our
 "wish list"---ones that we believe can have a significant impact on "launching"
 a new student into the field of digital humanities and computational culture
-studies. The first of these is the Bash, a Unix shell and a command language
-for text-based "dialog" based interaction between humans and machines. The
-second is Python, a widely-used modern Programming language, that, like Bash,
-privileges simplicity and human readability.[^ln-versionlink]
+studies. The first of these is the command line, a Unix shell and a command
+language for text-based "dialog" based interaction between humans and machines.
+The second is Python, a widely-used modern Programming language, that, like
+the command line, privileges simplicity and human readability.[^ln-versionlink]
 
 [^ln-versionlink]: Given that we have looked to Software Carpentry for some of
 the methodology that we employ in the course it should be noted that we do not
@@ -402,17 +402,29 @@ and future versions of the course may include it as a consequence.  As with all
 training that is already time constrained down to the essentials, the challenge
 is what to take out to add this in.
 
-More directly, there are six properties that Bash and Python embody that make
-them particularly suitable for an introduction to coding class:
+The command line and Python embody six properties that make them particularly
+suitable for an introductory computing course:
 
-1. Simplicity. The idiosyncrasies of programming names within Bash/\*nix aside,
-the syntax used within both Bash and Python is relatively straightforward.  In
-Bash almost every task can be broken down into a series of single-line commands
-that could alternatively be chained together into a single line through pipes
-(|) and redirects (> and >>).  Python does away with much of the frustrating
-syntax embedded in languages that came before it, saving users from needing to
-remember to close anywhere near so many brackets in exchange for a format that
-improves readability.
+1. Ubiquity. Command line interfaces are standard across all Unix-derived
+systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
+powering everything from Raspberry Pis to supercomputing clusters. Windows 
+
+
+Both Bash and Python are widely used.  While it is the case
+that Bash is confined to /*nix-style operating systems there are emulators that
+reproduce its functionality on most systems that a student in the class is
+likely to encounter.  Python, and tools that help write Python code, is
+likewise available on all systems that a student of the class is likely to
+encounter.  As a consequence of the ability to use both tools in a wide range
+of environments in conjunction with the other properties listed here both are
+used in a wide range of environments by very large user communities.  This
+makes it the case that help is widely available.
+1. Simplicity. Just like Python, shell programming in the command line is often
+called "glue" code. Initially, they can be treated as simple scripting
+languages: easy to use and to learn. Before 
+
+into using pipes (`|`) and redirects (`>`
+and `>>`).
 
 2. Power. Both Bash and Python are able to do a lot, pretty much any
 programming task really. Granted, they may not be well-suited to any
@@ -423,15 +435,6 @@ coding, allowing users to get done what they need done.
 the case that solutions that are written in either will continue to be
 functional beyond the foreseeable future.
 
-4. Universality.  Both Bash and Python are widely used.  While it is the case
-that Bash is confined to /*nix-style operating systems there are emulators that
-reproduce its functionality on most systems that a student in the class is
-likely to encounter.  Python, and tools that help write Python code, is
-likewise available on all systems that a student of the class is likely to
-encounter.  As a consequence of the ability to use both tools in a wide range
-of environments in conjunction with the other properties listed here both are
-used in a wide range of environments by very large user communities.  This
-makes it the case that help is widely available.
 
 5. Hackability.  It is relatively straightforward to write one's own
 commands/methods within both Bash and Python *and to see how those that
