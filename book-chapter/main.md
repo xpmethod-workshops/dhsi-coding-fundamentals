@@ -76,21 +76,17 @@ By revealing the innards of opaque computational "black boxes," we hope
 to empower our students to take control of their everyday computational
 practice.
 
-Programming classes in the sciences often begin with coding for coding's sake,
-anticipating an audience inherently interested in logic, math, and engineering.
-The humanities must find its own motivations for learning to code, broad
-enough to appeal to the community at large. For this reason, we begin our class
-with exercises that target daily computation and writing related tasks that are
-common to humanities researchers whatever particular research interest they may
-have. We create small "experiments" that address one's writing, for example.
-These include a lab session in which students analyze their own documents for
+The most universal daily computing task of the humanities, regardless of
+research interest, is writing. Our first step in addressing daily humanistic
+computing in the classroom, then, is to create small "experiments" that address 
+a student's own writing. These might include a lab session in which students analyze their own documents for
 commonly over-used "weasel words,"[^ln-weasel] for example. Working with one's
-own documents introduces important concepts like "relative" and "absolute"
-paths, file formats, and small shell utilities like `grep` (used to search
-through text files), `wc` (word count), `sed` (stream editor for text
-transformation), that can later be extended into more advanced concepts in
-system administration or natural language processing. When put
-together, these small utilities form the students' first programs, performing
+own documents introduces important concepts---like "relative" and "absolute"
+paths, file formats, character encoding, and small shell utilities like `grep` (used to search
+through text files), `wc` (word count), or `sed` (stream editor for text
+transformation)---that can later be extended into more advanced concepts in
+system administration or natural language processing. Short exercises in 
+text-based programming can be put together to form the students' first programs, performing
 tasks like "safely rename all the files in this folder according to
 such-and-such rule," or "keep a daily log of my writing progress."
 
@@ -157,14 +153,18 @@ outputs in plain text format, which can be used to store everything from
 personal notes, to article drafts, to huge datasets of metadata. Unix provides
 many powerful utilities that work with plain text. In fact, the notion of human
 readability is even encoded at the operating system level. 
+
 ### 1.4 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
 good programmer's intuition will be to automate the task. For example, we often
 use the `rsync` command to back up our documents; however, after a few months
 of running it manually, the user can delegate that task to the built-in
-scheduler called `cron`. The saying normally goes that if you do it more than
-*once*, automate. However, one must know exactly what to automate. When backing
+scheduler called `cron`. Humanists may not have the same automating impulse,
+but they can save just as much time with automation as anyone. As the daily
+computing tasks of humanists are considered in these terms, inefficiencies and causes of
+unnecessary repetition can be eliminated. The saying normally goes that if you do it more than
+*once*, automate. One must know, however, exactly *what* to automate. When backing
 up your files, do you want to back up the whole system or a few select folders?
 How often should the backup script run? The answers become apparent only after
 extensive manual use. As we introduce automated "daemons" that run tasks on our
@@ -175,17 +175,18 @@ technological, personal, and political.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
 badly, in a haphazard fashion, accumulates technological, intellectual, and
-eventually an ethical debt, to oneself and to the community. Code comments are
-the simplest example of this. It is easy to skip documenting one's code. "It
+eventually an ethical debt to oneself and one's community. Code comments (or
+the lack of them) are a common site of egregious laziness: it is easy to skip 
+documenting one's code or document insufficiently. "It
 just works, why bother?" However, a piece of code that makes perfect sense
-today, becomes obscure tomorrow. Without comments, time needs to be spent to
+today may seem impenetrable tomorrow. Without comments, time needs to be spent to
 recreate the reasoning behind the original implementation. Similarly, we advise
 our students against simply cutting and pasting code snippets from our
 tutorials. We want them to follow our thinking, to annotate, and to review
 their notes regularly. In the social context, lazy practices are unethical
-because they "bank" against the labor of others, in the future, literally
-borrowing someone else's time. Doing things the right way now saves unnecessary
-effort later.
+because they "bank" against the labor of others in the future, saving one's own
+time now at the expense of someone else's later. Doing things the right way the
+first time costs less than making up for it down the line.
 
 ### 1.6 Bootstrap and time well spent.
 
