@@ -71,33 +71,35 @@ Let's limit these to one paragraph each. We can go into greater detail in later
 sections.
 --->
 
-Contemporary computational devices are a fact of daily life. They are involved
-in everything from financial markets, to archival research, and to the way many
-keep in touch with friends and family. Yet, for those without computational
+Contemporary computational devices are a foundation of daily life. They are involved
+in everything from financial markets, to archival research, to the way many
+keep in touch with friends and family. Yet for those without computational
 background, the inner workings of these devices remain a source of mystery and,
-consequently, frustration. Recognizing this, our course targets daily
-computation. We want our students to understand not only the principles of
-programming, but the basics of networking, security, and operating systems. As
-much as possible, we would like to reveal the innards of opaque computational
-"black boxes," empowering our students to take control of their everyday
-computational practice.
+consequently, frustration. Recognizing this, our course targets the underlying
+structure of tools many rely on for their daily computation, so that our
+students know how these tools work (and not just how to use them). 
+We want our students to understand not only the principles of programming, in
+other words, but the basics of networking, security, and operating systems.
+By revealing the innards of opaque computational "black boxes," we hope 
+to empower our students to take control of their everyday computational
+practice.
 
 ### 1.1 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
 Researchers, librarians, students, and faculty are faced with a bewildering
 array of software choices. In making the decision to invest time and resources
-into learning a new tool or methodology, we are guided by "Unix Philosphy" and
-by the Free and Open-source Software movement (FOSS). The Unix way of computing
+into learning a new tool or methodology, we are guided by "Unix Philosophy" and
+the Free and Open-source Software movement (FOSS). The Unix philosophy of computing
 privileges small, modular pieces of software that "do one thing well"
 [@mcilroy_unix_1978]. Such software can then be chained together with other
-small but powerful tools to achieve complex results. FOSS software works in the
-academic humanities context because free and open access code is available for
-inspection, and therefore, for interpretation, critique, and modification.
-More than anything, we seek out tools that we can understand and, if needed, to
-customize to fit our own particular needs and contexts. When deciding what to
-use and what to teach, we seek out universal tools that underlie a variety of
-computing practices, from library infrastructure, to web design, to data
-science and critical-edition making.
+small but powerful tools to achieve complex results. FOSS software, besides
+being the most flexible and useful approach, also opens the "tool" itself to
+humanistic inquiry: free and open access code is available for
+inspection, and therefore for interpretation, critique, and modification.
+Above all, therefore, we seek out universal tools that we can understand and, where needed, 
+customize to fit our own particular needs and contexts. These tools can be
+sourced from contexts as diverse as library infrastructure, web design, data
+science, and the production of critical editions.
 
 ### 1.2 Wherever possible store data in human-readable text streams.
 
