@@ -64,7 +64,7 @@ open-access, peer-reviewed suite of tutorials that help humanists learn a wide
 range of digital tools, techniques, and workflows to facilitate their
 research." See also @harrell_toward_2015.
 
-### 1.0 Demystify the black box (as much as possible).
+### 1.0 Demystify the black box.
 
 <!---
 Let's limit these to one paragraph each. We can go into greater detail in later
@@ -101,42 +101,48 @@ customize to fit our own particular needs and contexts. These tools can be
 sourced from contexts as diverse as library infrastructure, web design, data
 science, and the production of critical editions.
 
-### 1.2 Wherever possible store data in human-readable text streams.
+### 1.2 Store data in human-readable text streams.
 
-The file formats that we use to store data have serious implications for
-anyone's ability to make use of that data in the future. As the formats chosen
-tend toward obscurity or opaqueness it becomes increasingly difficult for new
-programmers to read during development and for others to draw on them in the
-future. Choosing appropriate file formats relates closely to the proliferation
-of closed tools and platforms. It is most acutely felt by archivists faced with
-preserving short-lived data structures from obsolete platforms from recent
-past. For many humanists, who rarely work with truly large datasets or
-collections, the real risk of rapid obsolescence offsets any hypothetical gains
-in speed or performance offered by a new note-taking platform or a complex
-database.[^ln-plain] Similarly, when coding, we begin by having our students
+The file formats we use to store data have serious implications for
+anyone's ability to make use of that data in the future. As a format's 
+underlying code tends toward opacity, it becomes increasingly difficult for new
+programmers to read during development and for others to draw on files in that
+format in the future. The number and complexity of file formats relates closely to the
+proliferation of closed tools and platforms: arcane file formats inhibit
+access to their contents as raw data or, for that matter, any platform but the
+one for which it is intended. The danger of a single-platform format is most
+acutely felt by archivists faced with preserving short-lived data structures
+meant for obsolete platforms of the recent past. For humanists who rarely work
+with truly large datasets or
+collections, the risk of rapid obsolescence offsets any hypothetical gains
+in speed or performance offered by a new note-taking platform, a needlessly complex
+database, or a constantly upgrading proprietary text editor.[^ln-plain] When selecting a
+data format, we ask: does it need special software to render? How long has it
+been around? and What organization is responsible for maintaining the
+standard?
+
+[<!---this is kind of a different topic? Legibility of coding and choosing
+legible data formats are obviously related in a sense, but I think lumping them
+together muddies things. Storing in brackets for later in case this can be part
+of another topic.--->
+In teaching programming, we transmit legible coding practices to our students
+to positively influence the code of the future. We begin by having our students
 describe their program, step by step, in language natural to them and to their
-task. Pseudo code in plain English becomes the basis for well documented
-programs. Such programs are easy to read and to maintain. If forced to make a
-compromise, we privilege legibility and longevity over tersity of expression or
-performance.
-
+task. Pseudocode in plain English becomes the basis for well documented
+programs and readable code that can be easily maintained or adapted. We
+instruct students, if forced to choose, to privilege legibility and longevity
+over terseness of expression or performance.
+]
 <!---
-I moved the plain English point here.
+I moved the plain English point here. 
+PRP: trimmed for repetitiveness, moved list of qs back to paragraph
 --->
 
 [^ln-plain]: Conveniently for us, the Unix philosophy privileges inputs and
 outputs in plain text format, which can be used to store everything from
 personal notes, to article drafts, to huge datasets of metadata. Unix provides
-many powerful utilities that operate on plain text. In fact, a notion of human
-readability is encoded at the operating system level. When faced with a list of
-compromises, in the name of design, performance, efficacy, or legibility, we
-consistently prioritize legibility.  That choice informs our practice
-throughout. When working with audio or visual material, for example, we
-similarly prefer widely-supported, non-proprietary standards. When selecting a
-data format, we ask: does it need special software to render? How long has it
-been around?  and What organization is responsible for maintaining the
-standard?
-
+many powerful utilities that work with plain text. In fact, the notion of human
+readability is even encoded at the operating system level. 
 ### 1.3 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
