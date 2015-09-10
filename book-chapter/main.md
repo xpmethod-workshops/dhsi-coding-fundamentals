@@ -121,11 +121,11 @@ data format, we ask: does it need special software to render? How long has it
 been around? and What organization is responsible for maintaining the
 standard?
 
-[<!---this is kind of a different topic? Legibility of coding and choosing
+<!---this is kind of a different topic? Legibility of coding and choosing
 legible data formats are obviously related in a sense, but I think lumping them
 together muddies things. Storing in brackets for later in case this can be part
 of another topic.--->
-In teaching programming, we transmit legible coding practices to our students
+[In teaching programming, we transmit legible coding practices to our students
 to positively influence the code of the future. We begin by having our students
 describe their program, step by step, in language natural to them and to their
 task. Pseudocode in plain English becomes the basis for well documented
