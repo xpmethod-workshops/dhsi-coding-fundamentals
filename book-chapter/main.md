@@ -451,14 +451,14 @@ effective but also fun.  Both Bash and Python invite a sort of call and
 response methodology that is at once engaging and interesting, drawing students
 forward in their learning.
 
-### 3.0 Command Line
+### 3.1 Command Line
 
 <!---
 DT: Giving a short outline here.
 --->
 
 Explain what the command line is. Concentrate more on command line than bash
-specifically.
+specifically. Explain the metaphor of the interpreter.
 
 Why is it worthwhile to learn? Stress again the universal aspect. All
 computational acitvities involve file manipulation. The command line is the
@@ -468,6 +468,8 @@ Unix prefers plain text input and outputs. Many build-in tools for file
 manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
 common use cases (how many words in this file, find all usages of the word,
 spotlight-like functionality of searching for files.
+
+What we usually cover.
 
 Cover one more advanced use case. Scheduling a data pull. Getting data and
 munging. Twitter bot?
@@ -484,12 +486,21 @@ by Bash without modification.[^ln-bashlink]
 
 [^ln-bashlink]: http://www.gnu.org/software/bash/
 
-### 3.1 Python
+### 3.2 Python
 
-What is a programming language?
+Same structure as above. 
 
-control structures + data types + built-in functions + syntax + interpreter
-Why Python
+1. Explain what it is. 
+
+2. Why.
+
+3. Easy examples we cover in class (zodiac fortune teller or an choose your own
+adventure excrcise).  control structures + data types + built-in functions +
+syntax + interpreter
+
+3. A glimplse of more advanced possibilities. 
+
+4. When to use one over the other (see chart)
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
