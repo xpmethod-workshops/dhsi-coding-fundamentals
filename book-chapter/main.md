@@ -48,7 +48,7 @@ It is our firm belief that the teaching of computational principles in the
 humanities must be grounded in the practice of humanities-based research and
 answer to the values held by the academic community. Inspired by a number of
 initiatives advancing a similar philosophy, we refer to this approach as
-"critical computing."[^ln-first] The following nine principles connect key
+"critical computing."[^ln-first] The following seven principles connect key
 ideas in computation to values intrinsic to humanistic inquiry:
 
 [^ln-first]: We are not the first nor the only instructors to think about
@@ -59,12 +59,7 @@ open-access, peer-reviewed suite of tutorials that help humanists learn a wide
 range of digital tools, techniques, and workflows to facilitate their
 research." See also @harrell_toward_2015.
 
-### 1.1 Demystify the black box (as much as possible).
-
-<!---
-Let's limit these to one paragraph each. We can go into greater detail in later
-sections.
---->
+### 1.1 Target daily computation.
 
 Contemporary computational devices are a fact of daily life. They are involved
 in everything from financial markets, to archival research, and to the way many
@@ -76,8 +71,6 @@ programming, but the basics of networking, security, and operating systems. As
 much as possible, we would like to reveal the innards of opaque computational
 "black boxes," empowering our students to take control of their everyday
 computational practice.
-
-### 1.2 Target daily, real-world computation.
 
 Programming classes in the sciences often begin with coding for coding's sake,
 intended an audience inherently interested in logic, math, and engineering. The
@@ -101,8 +94,7 @@ such-and-such rule," or "keep a daily log of my writing progress."
 adding, diminish the impact of persuasive writing. The "very" in the previous
 sentence, for example.
 
-
-### 1.3 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
+### 1.2 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
 Researchers, librarians, students, and faculty are faced with a bewildering
 array of software choices. In making the decision to invest time and resources
@@ -120,7 +112,7 @@ underlie a variety of computing practices, from library infrastructure, to web
 design, to data science and critical-edition making. Both Python and Unix
 command line interfaces answer the criteria.
 
-### 1.4 Wherever possible store data in human-readable text streams.
+### 1.3 Wherever possible store data in human-readable text streams.
 
 The file formats that we use to store data have serious implications for
 anyone's ability to make use of that data in the future. As the formats chosen
@@ -156,7 +148,7 @@ data format, we ask: does it need special software to render? How long has it
 been around?  and What organization is responsible for maintaining the
 standard?
 
-### 1.5 If you have to do something more than ~~once~~ a hundred times, automate.
+### 1.4 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
 good programmer's intuition will be to automate the task. For example, we often
@@ -170,7 +162,7 @@ extensive manual use. As we introduce automated "daemons" that run tasks on our
 behalf, we want to make sure we think through any unintended side-effects:
 technological, personal, and political.
 
-### 1.6 Do it right---*the first time*.
+### 1.5 Do it right---*the first time*.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
 badly, in a haphazard fashion, accumulates technological, intellectual, and
@@ -186,7 +178,7 @@ because they "bank" against the labor of others, in the future, literally
 borrowing someone else's time. Doing things the right way now saves unnecessary
 effort later.
 
-### 1.7 Bootstrap and time well spent.
+### 1.6 Bootstrap and time well spent.
 
 When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
@@ -220,7 +212,7 @@ DT: I don't think we should mention his name. But perhaps a footnote, if you
 can find a way to phrase it.
 --->
 
-### 1.8 Divide big problems into small, modular components.
+### 1.7 Divide big problems into small, modular components (algorithmic thinking).
 
 Our goals in the classroom go beyond the instrumental. The ability to automate
 machines is merely a side effect of programmatic thinking. To learn to think
@@ -229,11 +221,12 @@ and seemingly intractable problems into small, modular, solvable components.
 Making a cake, for example, seems hard. But one can read, write, and follow a
 recipe---an exercise that we use in our teaching. Similarly, large projects
 from library administration to dissertation writing can benefit from the power
-of programmatic thinking.
+of algorithmic thinking.
 
 <!---
 JS: Seems this could be collapsed into 1.2 for the sake of simplicity
 DT: I tried it, but I think it is a good point to stand on its own.
+DT: What do you guys think of the order?
 --->
 
 ## 2 Digital Humanities Core
@@ -421,7 +414,6 @@ Live coding. Conversational programming. Interactive. vs.
 +-----------------------------------|--------------------------+
 
 
-### Conclusion
 
 These three locations build solid foundations for critical practice in the
 digital humanities. All more advanced stuff rests on these foundations. In
