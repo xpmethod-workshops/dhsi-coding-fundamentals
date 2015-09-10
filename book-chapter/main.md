@@ -229,13 +229,13 @@ can find a way to phrase it.
 ### 1.7 Divide big problems into small, modular components (algorithmic thinking).
 
 Our goals in the classroom go beyond the instrumental. The ability to automate
-machines is merely a side effect of programmatic thinking. To learn to think
-like a programmer is useful in all contexts: it involves dividing big, complex,
+machines is merely a side effect of algorithmic thinking. To learn to think
+like a programmer is useful in many contexts: it involves dividing big, complex,
 and seemingly intractable problems into small, modular, solvable components.
-Making a cake, for example, seems hard. But one can read, write, and follow a
-recipe---an exercise that we use in our teaching. Similarly, large projects
-from library administration to dissertation writing can benefit from the power
-of algorithmic thinking.
+Making a cake, for example, seems hard. But one can read and write according to
+algorithmic principles---or follow a recipe, an exercise we use in our teaching. 
+Similarly, large projects from library administration to dissertation writing
+can benefit from the power of algorithmic thinking.
 
 <!---
 JS: Seems this could be collapsed into 1.2 for the sake of simplicity
@@ -246,15 +246,15 @@ DT: What do you guys think of the order?
 ## 2 Digital Humanities Core
 
 Programming can involve long stretches of frustration (Why does this not work?)
-punctuated by short bursts of elation that comes with accomplishing something
+punctuated by the short bursts of elation that come with accomplishing something
 difficult (It works!). Rather than allowing students to view their initial lack
 of results as failures, we attempt to channel feelings of hindrance into a
-practice of problem solving and discovery, related to similarly difficult, but
+practice of problem solving and discovery, related to similarly difficult but
 more familiar tasks of archival research and long-form analytical writing. Just
-like writing, coding skills fall on a spectrum of proficiency that constitutes
-a small, but foundational part, of a larger variegated skill set.
+like writing, coding falls on a spectrum of proficiency that constitutes
+a small but foundational part of a larger, variegated skill set.
 
-Depending on one's research interests and career path, a DH practitioner will
+Depending on one's research interests and career path, as a DH practitioner one will
 have some mixture of the following core skills (with examples in parenthesis):
 
 - Text markup (plain text, *Markdown*, *Pandoc*, *TEI*)
@@ -266,30 +266,37 @@ have some mixture of the following core skills (with examples in parenthesis):
 - Security (PGP)
 - System administration (*AWS*, *Linux*, *Apache*, *MySql*)
 - Project management (*GitHub Issues*, *BaseCamp*)
-- Probability, statistics, algorithms
+- Probability, statistics, and algorithms
 
 Computational practice in the humanities begins with text. Whatever our home
 discipline, we are all involved in the reading and writing of texts. It is
-natural then to commence training with textual transformations: to understand
+natural, then, to commence training with textual transformations: to understand
 how text is produced and where it resides physically, on the machine. Learning
-to author in a mark up language like HTML or Markdown is often a first step
+to author in a markup language like HTML or Markdown is often a first step
 into the world of critical computing. Text transformations lead to the
 operating system and the file hierarchy. Tasks like regular backups and desktop
-organization can be used to familiarize the student with foundational concepts
-like relative and absolute file paths, or the distinction between plain text
-and binary formats. The idea of starting with daily computation also suggests
+organization can be used to familiarize students with foundational concepts
+like relative and absolute file paths or the distinction between plain text
+and binary formats. 
+
+Our core principle of starting with daily computation also suggests
 covering version control and content management early in the curriculum.
 Although not an easy subject, version control comes naturally to a community
 used to thinking about drafts, manuscripts, and revisions. Increasingly,
-version control systems can also serve to host websites, to stream data, and to
+version control systems can also be used to host websites, stream data, and 
 create full-blown publishing platforms. For example, *The Programming
 Historian* journal uses *Jekyll*, a static website generator, and GitHub Pages
 for publishing and distribution. Using that model to create personal academic
-profiles, image galleries, or critical editions is another good way to engage
-the humanities community. Git has the additional benefit of encouraging
-students to take notes and to journal alongside their work. Similar to the
-scientist's lab notebook, the Git journal fixes the flow of ideas and labor,
-helping teams keep track of work and attribution.
+profiles, image galleries, or critical editions, digital humanists can use
+version control systems to have a greater hand in the conditions of their
+academic production. These systems can also influence scholarly practices and
+processes, however: by prompting users for notes with each commit, Git 
+encourages note-taking and journaling throughout the versioning process.
+Finally, multi-user version control can be used to increase transparency in
+academic collaborations. Similar to the scientist's lab notebook, the Git
+journal fixes the flow of ideas and labor by recording the distribution of
+tasks in a collaborative environment, helping teams keep track of work for 
+accurate attribution.
 
 A programming language occupies a central place in computational practice. All
 forms of digitality pass through some form of encoding and automation. Only a
@@ -297,25 +304,32 @@ small step separates text transformations, command line shells, and content
 management systems from a Turing-complete programming language. We often
 "trick" our students into programming by automating simple tasks like word
 substitution from the command line. The same task could then be repeated using
-*Python* or *R*, reinforcing skills learned earlier in the process. Because the
-internet plays such a key role in transforming academic practice, knowing the
-basics of networking: infrastructure, routing, packet switching, protocols,
-security, encryption are also key to higher level activity like preserving free
+*Python* or *R*, reinforcing skills learned earlier in the process while
+building on those skills to go to the next level of complexity. While text
+transformations at the command line are useful for small tasks and for
+pedagogical purposes, most serious computational textual analysis or natural
+language processing will require knowledge of a programming language such as
+Python. Later, we will discuss which tasks are appropriate to the command line
+and which to coding.
+
+Because the internet plays such a key role in transforming academic practice, knowing the
+basics of networking---infrastructure, routing, packet switching, protocols,
+security, encryption---is also key to pursuing higher-level goals like preserving free
 speech online, protecting a journalist's sources, or bypassing censorship
 filters. The care and maintenance of personal document archives---research
-papers, article drafts, and book manuscripts---grows into server management.
-The server is where many of the skills learned earlier come to fruition. The
-running of websites requires a long "stack" of technological components. These
+papers, article drafts, and book manuscripts---leads naturally into server management.
+The server is where many of the skills learned earlier come to fruition. 
+Running websites requires a long "stack" of technological components. These
 are almost impossible to use well without knowledge of the command line, a
-programming language, and computer networks.
+programming language, and networks.
 
 No project is complete without some sense of planning and organization. Project
-management is an important part of computation in the private sector, and, an
-increasingly formalized part of software engineering.  Projects fail and
+management is an important part of computation in the private sector, and it is
+an increasingly formalized part of software engineering.  Projects fail and
 succeed by the measure of their ability to coordinate action across time zones
 and continents. When teaching programming, we ask our students to start with
 "scoping" their projects in plain English first, then to transform these
-technical specifications into pseudocode, which then serves as the basis for
+technical specifications into pseudocode, which finally serves as the basis for
 program design and architecture. We ask our students to submit these documents
 along with code and consider them as important as a functioning program.
 
@@ -325,8 +339,9 @@ secondary to the logical structures that support all higher level activity.
 This may be the most difficult obstacle to tackle. Every word cloud, every
 topic model, and network visualization tool hides a number of assumptions
 driven by sophisticated logic that comes from the fields of statistics and
-computer science. Without training in the methods we are bound to remain mere
-consumers of technology. Critical computing practice, like critical thought,
+computer science. Without training in the methods on which these tools are
+based, we are bound to remain mere consumers of technology rather than active
+participants in its formation. Critical computing practice, like critical thought,
 requires a measure of logical and mathematical literacy.
 
 We do not mean for this list to represent a comprehensive statement about
@@ -337,7 +352,7 @@ competencies. Few people apart from professional computer scientists and
 software engineers would claim mastery over the full stack of what is mentioned
 here. It is much more likely for digital humanists to develop proficiency in
 one or several areas of practice. Yet any one of the above foundational
-competencies have "spillover" effects in "leveling up" the rest of the list.
+competencies have spillover effects that "level up" the rest of the list.
 Our intensive, week-long class can only begin to address a small part of the
 larger, complicated puzzle.
 
