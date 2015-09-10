@@ -1,8 +1,9 @@
 ---
 title: "Coding Fundamentals for Human(s|ists)"
 authors:
-- Dennis Tenen
+- Phillip Polefrone
 - John Simpson
+- Dennis Tenen
 bibliography: main.bib
 
 ---
@@ -47,8 +48,8 @@ It is our firm belief that the teaching of computational principles in the
 humanities must be grounded in the practice of humanities-based research and
 answer to the values held by the academic community. Inspired by a number of
 initiatives advancing a similar philosophy, we refer to this approach as
-"critical computing."[^ln-first] The following ten principles connect key ideas
-in computation to values intrinsic to humanistic inquiry:
+"critical computing."[^ln-first] The following nine principles connect key
+ideas in computation to values intrinsic to humanistic inquiry:
 
 [^ln-first]: We are not the first nor the only instructors to think about
 things this way, nor are we the only ones to be offering a course like this.
@@ -58,7 +59,7 @@ open-access, peer-reviewed suite of tutorials that help humanists learn a wide
 range of digital tools, techniques, and workflows to facilitate their
 research." See also @harrell_toward_2015.
 
-### 1.0 Demystify the black box (as much as possible).
+### 1.1 Demystify the black box (as much as possible).
 
 <!---
 Let's limit these to one paragraph each. We can go into greater detail in later
@@ -76,7 +77,7 @@ much as possible, we would like to reveal the innards of opaque computational
 "black boxes," empowering our students to take control of their everyday
 computational practice.
 
-### 1.5 Target daily, real-world computation.
+### 1.2 Target daily, real-world computation.
 
 Programming classes in the sciences often begin with coding for coding's sake,
 intended an audience inherently interested in logic, math, and engineering. The
@@ -101,7 +102,7 @@ adding, diminish the impact of persuasive writing. The "very" in the previous
 sentence, for example.
 
 
-### 1.1 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
+### 1.3 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
 Researchers, librarians, students, and faculty are faced with a bewildering
 array of software choices. In making the decision to invest time and resources
@@ -109,16 +110,17 @@ into learning a new tool or methodology, we are guided by "Unix Philosphy" and
 by the Free and Open-source Software movement (FOSS). The Unix way of computing
 privileges small, modular pieces of software that "do one thing well"
 [@mcilroy_unix_1978]. Such software can then be chained together with other
-small but powerful tools to achieve complex results. FOSS software works in the
-academic humanities context because free and open access code is available for
-inspection, and therefore, for interpretation, critique, and modification.
-More than anything, we seek out tools that we can understand and, if needed, to
-customize to fit our own particular needs and contexts. When deciding what to
-use and what to teach, we seek out universal tools that underlie a variety of
-computing practices, from library infrastructure, to web design, to data
-science and critical-edition making.
+small but powerful tools to achieve complex results. FOSS software is
+appropriate in the academic humanities context because open access code is
+available for inspection, and therefore, for interpretation, critique, and
+modification. More than anything, we seek out tools that we can understand
+and, if needed, to customize to fit our own particular needs and contexts. When
+deciding what to use and what to teach, we seek out universal tools that
+underlie a variety of computing practices, from library infrastructure, to web
+design, to data science and critical-edition making. Both Python and Unix
+command line interfaces answer the criteria.
 
-### 1.2 Wherever possible store data in human-readable text streams.
+### 1.4 Wherever possible store data in human-readable text streams.
 
 The file formats that we use to store data have serious implications for
 anyone's ability to make use of that data in the future. As the formats chosen
@@ -154,8 +156,7 @@ data format, we ask: does it need special software to render? How long has it
 been around?  and What organization is responsible for maintaining the
 standard?
 
-
-### 1.3 If you have to do something more than ~~once~~ a hundred times, automate.
+### 1.5 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
 good programmer's intuition will be to automate the task. For example, we often
@@ -169,7 +170,7 @@ extensive manual use. As we introduce automated "daemons" that run tasks on our
 behalf, we want to make sure we think through any unintended side-effects:
 technological, personal, and political.
 
-### 1.4 Do it right---*the first time*.
+### 1.6 Do it right---*the first time*.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
 badly, in a haphazard fashion, accumulates technological, intellectual, and
@@ -202,7 +203,7 @@ surveillance.
 It may be appealing at first to hide computational complexity behind "simple"
 visual interfaces. Yet, these interfaces do not share a common visual language
 and they do not transfer well across software platforms. Our colleagues in
-computer science sometimes worry[^ln-observe] that introducing command line
+computer science sometimes worry that introducing command line
 interfaces and raw coding environments may serve to alienate humanists. We
 believe that limited, "dumbed-down" interfaces do even more harm. They further
 alienate an audience that already feels removed from the material contexts of
@@ -211,13 +212,15 @@ students to spend their time well: to learn tools and skills that can support a
 wide variety of activity within diverse cultural contexts. The extra care we
 take in explaining the reasoning behind our technological choices works to
 motivate the students through any initial difficulties of learning how to code
-properly, without artificially hampered and patronizing simplification.
+"the hard way," without shortcuts or artificial limitations.
 
-[^ln-observe]: Mention the CS chair observation [???].
+<!---
+JS: Mention the CS chair observation?
+DT: I don't think we should mention his name. But perhaps a footnote, if you
+can find a way to phrase it.
+--->
 
 ### 1.8 Divide big problems into small, modular components.
-
-[Seems this could be collapsed into 1.2 for the sake of simplicity.]
 
 Our goals in the classroom go beyond the instrumental. The ability to automate
 machines is merely a side effect of programmatic thinking. To learn to think
@@ -228,27 +231,10 @@ recipe---an exercise that we use in our teaching. Similarly, large projects
 from library administration to dissertation writing can benefit from the power
 of programmatic thinking.
 
-### 1.9 Keep poking, get help, take notes, comment, annotate, share, remix, and train others.
-
-[Could we collapse this into 1.0?]
-[Possibly add in the importance of teaching them how to help themselves...]
-
-Finally, and this was noticed by several course observers over the years,
-students in the humanities are sometimes curiously hesitant to explore their
-machines. In the absence of a tinkering upbringing and in the presence of
-cultural divides that regularly reinforce norms like "Those in the Arts and
-Humanities can't do programming, math, science, etc.", they might be worried of
-breaking expensive equipment or losing sensitive data. Demystifying the magical
-black box and learning some habits that prevent irrevocable loss of data
-addresses that fear, encouraging the students to tinker and to explore.
-Researchers at the later stages of their career may be particularly reluctant
-to ask for help or to express their questions in public. Our teaching approach
-therefore encourages shared expertise. We model not being afraid to expose our
-own gaps in knowledge. We ask students to keep copious notes, to annotate their
-code, to share and improve on each other's work. Notes grow into tutorials,
-tutorials into courses and workshops. Eventually, in following these
-principles, we hope for our students to become catalysts of change in their own
-communities of practice.
+<!---
+JS: Seems this could be collapsed into 1.2 for the sake of simplicity
+DT: I tried it, but I think it is a good point to stand on its own.
+--->
 
 ## 2 Digital Humanities Core
 
@@ -439,4 +425,37 @@ Live coding. Conversational programming. Interactive. vs.
 
 These three locations build solid foundations for critical practice in the
 digital humanities. All more advanced stuff rests on these foundations. In
-starting here we dispell anxiety and illusion.
+starting here we dispell anxiety and illusion.[^ln-coauthor]
+
+<!---
+JS: Could we collapse this into 1.0?. Possibly add in the
+importance of teaching them how to help themselves...
+
+DT: Let's move to the conclusion (done).  We'd need to transition into here
+better. Re-word as a conclusion.
+--->
+
+Keep poking, get help, take notes, comment, annotate, share, remix, and train
+others.
+
+Finally, and this noticed by several course observers over the years, students
+in the humanities are sometimes curiously hesitant to explore their machines.
+In the absence of a tinkering upbringing and in the presence of cultural
+divides that regularly reinforce norms like "Those in the Arts and Humanities
+can't do programming, math, science, etc.", they might be worried of breaking
+expensive equipment or losing sensitive data. Demystifying the magical black
+box and learning some habits that prevent irrevocable loss of data addresses
+that fear, encouraging the students to tinker and to explore.  Researchers at
+the later stages of their career may be particularly reluctant to ask for help
+or to express their questions in public. Our teaching approach therefore
+encourages shared expertise. We model not being afraid to expose our own gaps
+in knowledge. We ask students to keep copious notes, to annotate their code, to
+share and improve on each other's work. Notes grow into tutorials, tutorials
+into courses and workshops. Eventually, in following these principles, we hope
+for our students to become catalysts of change in their own communities of
+practice.
+
+[^ln-coauthor]: A note on coathorship: a detailed history of author
+contributions can be found on our GitHub page at
+[https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md](https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md)
+
