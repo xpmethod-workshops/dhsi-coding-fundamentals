@@ -362,7 +362,6 @@ larger, complicated puzzle.
 
 ## 3 Three Locations of Computing
 
-
 <!---
 JS: Our approach owes a small debt to Software Carpentry since this is what I have based a good chunk of the content on the first year and some of this got rolled
 into the second. This is likely the place to acknowledge it.
@@ -515,14 +514,20 @@ syntax + interpreter
 "Munge Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
 
-### 3.2 Text Editor
+### 3.3 Text Editor
 
+Explain the difference between interactive, conversational, exploratory type of programming and
+"saving the conversation" for the future in the text editor.
 
-Live coding. Conversational programming. Interactive. vs.
+Why text editors are important (plain text).
+
+Finish with a chart. When to use interactive programming (data exploration) and
+when to build programs (what is the opposite of interactive. I can help in this
+section.
+
 
 | Interactive Programming           | Text Ed |
 +-----------------------------------|--------------------------+
-
 
 ### Conclusion
 
