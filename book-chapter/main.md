@@ -7,8 +7,6 @@ bibliography: main.bib
 
 ---
 
-## 0 Introduction
-
 We write this chapter in reflection of teaching computing fundamentals in the
 humanities context in general, and more specifically, in the wake of teaching
 two instances of **Computing Foundations for Human(s|ists)** at the Digital
@@ -18,7 +16,7 @@ programming experience, and, as we wrote in the course description, for those
 who would like to understand how programs work by writing a few simple, but
 useful programs of their own.[^ln-courselink] The topics covered included
 working with files and folders at the command line, text stream manipulation
-with Bash Unix Shell, regular expressions, along with Python basics like native
+with Bash Unix shell, regular expressions, along with Python basics like native
 data types, variables, functions, and control structures. At the end of the
 course our students worked on their own and in small groups to create a small
 web scraper, an "essay grader," a comma separated value file manipulator, and a
@@ -31,11 +29,9 @@ rationale behind our teaching philosophy, and, more broadly, to suggest an
 approach to teaching programming in the humanities environment.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
-search text for specified patterns.  In this case it picks out anything
-starting with "Human" and ending in *either* "s" or "ists".  So, it acts as a
-stand-in for both "Humans" and "Humanists".  This little flourish in the title
-is important because it signals a number of the principles that guide the
-course and signal what is to come.
+search text for specified patterns. In this case it picks out anything starting
+with "Human" and ending in *either* "s" or "ists".  So, it acts as a stand-in
+for both "Humans" and "Humanists".
 
 [^ln-courselink]: An archived version of the course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
@@ -71,14 +67,39 @@ sections.
 
 Contemporary computational devices are a fact of daily life. They are involved
 in everything from financial markets, to archival research, and to the way many
-keep in touch with friends and family. Yet, for those without computational
-background, the inner workings of these devices remain a source of mystery and,
+keep in touch with friends and family. Yet, for those without technical
+training, the inner workings of these devices remain a source of mystery and,
 consequently, frustration. Recognizing this, our course targets daily
 computation. We want our students to understand not only the principles of
 programming, but the basics of networking, security, and operating systems. As
 much as possible, we would like to reveal the innards of opaque computational
 "black boxes," empowering our students to take control of their everyday
 computational practice.
+
+### 1.5 Target daily, real-world computation.
+
+Programming classes in the sciences often begin with coding for coding's sake,
+intended an audience inherently interested in logic, math, and engineering. The
+humanities must find its own intrinsic motivations for learning to code, broad
+enough to appeal to the community at large. For this reason, we begin our class
+with exercises that target daily computation and writing related tasks that are
+common to humanities researchers whatever particular research interest they may
+have. We create small "experiments" that address one's writing, for example.
+These include a lab session in which students analyze their own documents for
+commonly over-used "weasel words,"[^ln-weasel] for example. Working with one's
+own documents introduces important concepts like "relative" and "absolute"
+paths, file formats, and small shell utilities like `grep` (used to search
+through text files), `wc` (word count), `sed` (stream editor for text
+transformation), that can later be extended into more advanced concepts in
+system administration or natural language processing. When put
+together, these small utilities form the students' first programs, performing
+tasks like "safely rename all the files in this folder according to
+such-and-such rule," or "keep a daily log of my writing progress."
+
+[^ln-weasel]: Weasel words are words that sound very meaningful, but instead of
+adding, diminish the impact of persuasive writing. The "very" in the previous
+sentence, for example.
+
 
 ### 1.1 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
@@ -133,6 +154,7 @@ data format, we ask: does it need special software to render? How long has it
 been around?  and What organization is responsible for maintaining the
 standard?
 
+
 ### 1.3 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
@@ -162,30 +184,6 @@ their notes regularly. In the social context, lazy practices are unethical
 because they "bank" against the labor of others, in the future, literally
 borrowing someone else's time. Doing things the right way now saves unnecessary
 effort later.
-
-### 1.5 Target daily, real-world computation.
-
-Programming classes in the sciences often begin with coding for coding's sake,
-intended an audience inherently interested in logic, math, and engineering. The
-humanities must find its own intrinsic motivations for learning to code, broad
-enough to appeal to the community at large. For this reason, we begin our class
-with exercises that target daily computation and writing related tasks that are
-common to humanities researchers whatever particular research interest they may
-have. We create small "experiments" that address one's writing, for example.
-These include a lab session in which students analyze their own documents for
-commonly over-used "weasel words,"[^ln-weasel] for example. Working with one's
-own documents introduces important concepts like "relative" and "absolute"
-paths, file formats, and small shell utilities like `grep` (used to search
-through text files), `wc` (word count), `sed` (stream editor for text
-transformation), that can later be extended into more advanced concepts in
-system administration or natural language processing. When put
-together, these small utilities form the students' first programs, performing
-tasks like "safely rename all the files in this folder according to
-such-and-such rule," or "keep a daily log of my writing progress."
-
-[^ln-weasel]: Weasel words are words that sound very meaningful, but instead of
-adding, diminish the impact of persuasive writing. The "very" in the previous
-sentence, for example.
 
 ### 1.7 Bootstrap and time well spent.
 
