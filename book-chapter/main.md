@@ -188,32 +188,36 @@ because they "bank" against the labor of others in the future, saving one's own
 time now at the expense of someone else's later. Doing things the right way the
 first time costs less than making up for it down the line.
 
-### 1.6 Bootstrap and time well spent.
+### 1.6 Bootstrapping and time well spent.
 
 When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
-and extensible software. The command line, for example, useful at first for
-file management and operating system exploration, later becomes an important
-resource for remote server administration, web design, and data science. Skills
-learned in the command line transfer to physical computing, fabrication, web
-scraping, and text analysis. Learning about relative and absolute paths
-locally, eventually helps to explain internet infrastructure, domain names, and
-resource allocation. It leads to Secure Shell and Pretty Good Privacy (PGP),
-both used by activists and journalists to protect their communications from
-surveillance.
+and extensible software---that is, teaching skills and concepts that will have the highest
+impact because they transfer to the greatest number of contexts or tasks. The
+command line, for example, useful at first for file management and operating
+system exploration, later becomes an important resource for remote server
+administration, web design, and data science. Furthermore, the skills learned
+in the process of becoming comfortble on the command line transfer to physical
+computing, fabrication, web scraping, and text analysis. Learning about
+relative and absolute paths locally will make it easier to understand internet
+infrastructure, domain names, and resource allocation. It leads to Secure Shell
+and Pretty Good Privacy (PGP), used by activists and journalists to
+protect their communications from surveillance.
 
-It may be appealing at first to hide computational complexity behind "simple"
-visual interfaces. Yet, these interfaces do not share a common visual language
+With the goal of bootstrapping in mind, one can see the real value of lessons
+that many might eschew for fear that they are too technical or complicated. It
+may be appealing at first to hide computational complexity behind "simple"
+visual interfaces, for example, but these interfaces do not share a common visual language
 and they do not transfer well across software platforms. Our colleagues in
 computer science sometimes worry that introducing command line
-interfaces and raw coding environments may serve to alienate humanists. We
+interfaces and raw coding environments may alienate humanists. We
 believe that limited, "dumbed-down" interfaces do even more harm. They further
-alienate an audience that already feels removed from the material contexts of
+mystify computing to an audience that already feels removed from the material contexts of
 their daily knowledge production. In building the foundations, we want our
 students to spend their time well: to learn tools and skills that can support a
 wide variety of activity within diverse cultural contexts. The extra care we
-take in explaining the reasoning behind our technological choices works to
-motivate the students through any initial difficulties of learning how to code
+take in explaining the reasoning behind our technological choices can motivate
+the students through any initial difficulties of learning how to code
 "the hard way," without shortcuts or artificial limitations.
 
 <!---
