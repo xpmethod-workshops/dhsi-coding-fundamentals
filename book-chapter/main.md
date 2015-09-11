@@ -429,10 +429,7 @@ we will discuss these properties first in terms of the command line and Python:
 
 1. Ubiquity. Command line interfaces are standard across all Unix-derived
 systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
-powering everything from Raspberry Pis to supercomputing clusters. Windows 
-
-
-Both Bash and Python are widely used. Bash,
+powering everything from Raspberry Pis to supercomputing clusters. Similarly, Bash,
 Python, and tools that help write Python code, are available on any system that
 a student of the class is likely to encounter.[^bash-nix-os] Because of their
 versatility, both are used in a wide range of environments by large user
@@ -481,13 +478,64 @@ forward in their learning.
 DT: Giving a short outline here.
 --->
 
-Explain what the command line is. Concentrate more on command line than bash
-specifically. Explain the metaphor of the interpreter.
+The command line interface or command line interpreter (CLI) is one way of
+interacting with your operating system and file system through text-based
+commands. Of course, your computer only really understands binary; an
+*interpreter* is therefore required to make one's commands into something the
+computer can work with. The Unix shell called Bash (Bourne Again Shell) is one
+such interpreter. Most users are more familiar with a graphical user interface (GUI), which is
+what it sounds like: interactions with the computer occur through graphics,
+whether that's an icon, a button, or a scroll bar. The command line is simply a
+text-based way of accomplishing approximately the same thing. CLIs were used
+for decades before GUIs were popularized, and for most people's everyday computing purposes,
+CLIs have fallen largely out of fashion.
 
-Why is it worthwhile to learn? Stress again the universal aspect. All
-computational acitvities involve file manipulation. The command line is the
-basis for file manipulation.
+Supposing that CLIs are therefore obsolete, though, would be a mistake: just as
+things are possible in a GUI that would be unimaginable in a CLI, the command
+line affords its user abilities impossible in a graphical system, especially in
+the context of computation, file management, and textual transformation. Bash
+in particular is also a more universal way of interacting with a computer than
+reliance on a GUI, as it is accessible and standard across \*nix-based operating systems (and
+can be used via emulator in non-\*nix systems). <!---PRP: I think I'm in a little over my head
+here, technical oversight appreciated. Basing this on my knowledge/GNU
+site/other notes in this document--->
 
+Luckily for digital humanists, Bash has powerful built-in tools for file
+manipulation that can be used for many simple but powerful tasks in textual
+transformation. Returning a word count for a file only requires a brief line of
+Bash script:
+
+~~~~
+    wc -w filename.txt
+~~~~
+
+Returning every line of *Moby Dick* that contains the word "whale" is as
+simple:
+
+~~~~
+    grep whale mobydick.txt
+~~~~
+
+Tasks such as finding a file based on certain criteria, downloading data
+online, and networking and security tools like ssh work by similar means.
+Above all, exposure to an interface beyond the GUI lets users outside of the
+closed system of one or two dominant operating systems and a common set of programs
+that determine how one interacts with one's own documents. Command line basics
+give a user more direct access to the file structures: without invasive, often
+proprietary software adding an extra level of mediation between the user and
+the operating system, a greater degree of control over one's own files is
+possible.
+
+Learning the command line is not just a matter of opening up new ways of
+interacting with files, though. In learning command line basics, students
+become familiar with concepts that will establish foundational techniques that
+will be built upon in higher-level contexts, in true bootstrapping style.
+Navigating the file system and organizing files using commands like cd, mv, cp,
+and rm requires practice for students unaccustomed to it, but the grasp of file
+structures this process requires is essential for later tasks like networking
+and programming.
+
+<!---
 Unix prefers plain text input and outputs. Many build-in tools for file
 manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
 common use cases (how many words in this file, find all usages of the word,
@@ -498,7 +546,7 @@ What we usually cover.
 Cover one more advanced use case. Scheduling a data pull. Getting data and
 munging. Twitter bot?
 
-In addition networking and security tools like wget, ssh, pgp.
+In addition networking and security tools like wget, ssh, pgp.--->
 
 <!--- this is probably a footnote -->
 > Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
@@ -511,6 +559,10 @@ by Bash without modification.[^ln-bashlink]
 [^ln-bashlink]: http://www.gnu.org/software/bash/
 
 ### 3.2 Python
+
+As we have begun to explain above, Python is a programming language that has
+attained widespread popularity in part because of the elegant simplicity of its
+syntax and its vast adaptability. 
 
 Same structure as above. 
 
