@@ -375,26 +375,25 @@ interest. With this trend in mind, our approach is to engage the students
 intellectually nstead of offering quick but shallow skills and takeaways as
 motivations. 
 
-For this reason, we begin
-with the "frustration points" of everyday computing that resist quick
-satisfaction while leading into the larger structures and problems of
-computing. In our experience, even
-simple tasks like saving a file from an internet browser is rife with anxiety
-and frustration: Where did that file go? How do I find it again? What type of
-file is it? Modern operating systems conceal such information from
-average users. Yet our users are the type to turn such moments of frustration into
-opportunities for discovery, if they have the means to do so. These
-are students, university faculty, and librarians who approach documents, file
-systems, and datasets as matters of critical importance. The patient curiosity
-that causes them to spend years, if not decades, into acquiring expertise in
-academic disciplines can certainly be turned to the challenge of computation. 
-In our experience, they respond extremely well to the mission of reclaiming the
-material contexts of their daily intellectual practice and learning how to
-control more directly the computers through which they carry out much of their
-research. If they are going to do so, however, the small frustrations and petty
-obstacles have to be understood as windows into the larger, concealed systems
-they work with every day; they also need enough contextual knowledge of the
-system itself to know where to start.
+For this reason, we begin with the "frustration points" of everyday computing
+that resist quick satisfaction while leading into the larger structures and
+problems of computing. In our experience, even simple tasks like saving a file
+from an internet browser is rife with anxiety and frustration: Where did that
+file go? How do I find it again? What type of file is it? Modern operating
+systems conceal such information from average users. Yet our users are the type
+to turn such moments of frustration into opportunities for discovery, if they
+have the means to do so. These are students, university faculty, and librarians
+who approach documents, file systems, and datasets as matters of critical
+importance. The patient curiosity that causes them to spend years, if not
+decades, into acquiring expertise in academic disciplines can certainly be
+turned to the challenge of computation.  In our experience, they respond
+extremely well to the mission of reclaiming the material contexts of their
+daily intellectual practice and learning how to control more directly the
+computers through which they carry out much of their research. If they are
+going to do so, however, the small frustrations and petty obstacles have to be
+understood as windows into the larger, concealed systems they work with every
+day; they also need enough contextual knowledge of the system itself to know
+where to start.
 
 We have identified three "locations" of computing that we think are especially
 fertile grounds on which, first, to gain this necessary knowledge, and second,
@@ -402,14 +401,14 @@ to occasion the intellectual discoveries this knowledge enables. Building on
 the metaphor of the development "environment," a location of computing denotes
 both the interface through which the human engages the machine and the type of
 interaction the interface demands. A location of computing is also a conceptual
-space, though, each with its own logic and set of values. The first of these locations is the Bash
-shell, a Unix shell and a command language for text-based dialogic 
-interaction between the user and the Unix-based operating system and file
-structure. The second is Python, a widely-used modern programming language,
-that, like Bash, privileges simplicity and human readability.[^ln-versionlink]
-The third is the humble-seeming text editor: the most common digital tool of
-humanities scholarship, among the least often considered, but perhaps the most
-important.
+space, though, each with its own logic and set of values. The first of these
+locations is the Bash shell, a Unix shell and a command language for text-based
+dialogic interaction between the user and the Unix-based operating system and
+file structure. The second is Python, a widely-used modern programming
+language, that, like Bash, privileges simplicity and human
+readability.[^ln-versionlink] The third is the humble-seeming text editor: the
+most common digital tool of humanities scholarship, among the least often
+considered, but perhaps the most important.
 
 [^ln-versionlink]: Given that we have looked to Software Carpentry for some of
 the methodology that we employ in the course it should be noted that we do not
@@ -429,11 +428,11 @@ we will discuss these properties first in terms of the command line and Python:
 
 1. Ubiquity. Command line interfaces are standard across all Unix-derived
 systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
-powering everything from Raspberry Pis to supercomputing clusters. Similarly, Bash,
-Python, and tools that help write Python code, are available on any system that
-a student of the class is likely to encounter.[^bash-nix-os] Because of their
-versatility, both are used in a wide range of environments by large user
-communities. This also means that help is widely available.
+powering everything from Raspberry Pis to supercomputing clusters. Similarly,
+Bash, Python, and tools that help write Python code, are available on any
+system that a student of the class is likely to encounter.[^bash-nix-os]
+Because of their versatility, both are used in a wide range of environments by
+large user communities. This also means that help is widely available.
 
 [^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
 are emulators that reproduce its functionality on most systems that a student
@@ -441,12 +440,12 @@ in the class is likely to encounter.
 
 2. Simplicity. The syntax used in both Bash and Python is relatively
 straightforward. In Bash, most tasks can be broken down into a series of
-single-line commands that can be chained together through pipes
-(|) and redirects (> and >>). Python does away with much of the frustrating
-syntax of languages that came before it, saving users from the need to
-keep track of byzantine chains of brackets and other syntactical tangles. The
-elegance of Python's syntax not only aids in learning and retention: it also
-adheres to the ethos of legibility we discuss in our core principles above. 
+single-line commands that can be chained together through pipes (|) and
+redirects (> and >>). Python does away with much of the frustrating syntax of
+languages that came before it, saving users from the need to keep track of
+byzantine chains of brackets and other syntactical tangles. The elegance of
+Python's syntax not only aids in learning and retention: it also adheres to the
+ethos of legibility we discuss in our core principles above. 
 
 3. Power. Bash and Python are powerful enough that, between them, a digital
 humanist is able to realize almost any task imaginable (and possible). They may
@@ -454,23 +453,22 @@ not be the most suitable environments or languages for every task, of course,
 but in combination they form the digital humanist's swiss army knife, allowing
 its user to accomplish most anything that is needed.
 
-4. Durability. As with data structures, we favor tool that are unlikely
-to become obsolete. Neither Bash nor Python are going away anytime soon,
-meaning that solutions written in either will continue to be functional for the
+4. Durability. As with data structures, we favor tool that are unlikely to
+become obsolete. Neither Bash nor Python are going away anytime soon, meaning
+that solutions written in either will continue to be functional for the
 foreseeable future.
 
 5. Hackability. It is relatively straightforward to write one's own
 commands/methods within both Bash and Python *and to see how those that
-currently exist were written*. While this is not something that we cover in
-our courses, the possibility for end users to investigate and expand the
-languages that they are working on is a basic tenet of empowering
-users by unlocking what would otherwise be black boxes---and, therefore,
-inaccessible.
+currently exist were written*. While this is not something that we cover in our
+courses, the possibility for end users to investigate and expand the languages
+that they are working on is a basic tenet of empowering users by unlocking what
+would otherwise be black boxes---and, therefore, inaccessible.
 
 6. Fun. The power, versatility, and relative accessibility of these tools means
 that they are able to be *fun* as well as effective. Both Bash and Python
-invite an interactive methodology that is at once engaging and interesting, drawing students
-forward in their learning.
+invite an interactive methodology that is at once engaging and interesting,
+drawing students forward in their learning.
 
 ### 3.1 Command Line
 
@@ -535,19 +533,6 @@ and rm requires practice for students unaccustomed to it, but the grasp of file
 structures this process requires is essential for later tasks like networking
 and programming.
 
-<!---
-Unix prefers plain text input and outputs. Many build-in tools for file
-manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
-common use cases (how many words in this file, find all usages of the word,
-spotlight-like functionality of searching for files.
-
-What we usually cover.
-
-Cover one more advanced use case. Scheduling a data pull. Getting data and
-munging. Twitter bot?
-
-In addition networking and security tools like wget, ssh, pgp.--->
-
 <!--- this is probably a footnote -->
 > Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
 sh-compatible shell that incorporates useful features from the Korn shell (ksh)
@@ -561,14 +546,39 @@ by Bash without modification.[^ln-bashlink]
 ### 3.2 Python
 
 As we have begun to explain above, Python is a programming language that has
-attained widespread popularity in part because of the elegant simplicity of its
-syntax and its vast adaptability. 
+attained widespread popularity in part because of the simplicity of its syntax
+and its adaptability. Like all programming languages, it has its own syntax,
+control structures, and data structures. What makes Python so powerful for the
+fledgling digital humanist is its modularity. While basic Python includes the
+basic methods of its control structure and for manipulating different types of
+data, more complex and context-specific libraries are included as additional
+modular librariesthat can be imported as needed---CSV manipulation and useful
+statistical methods are accessible through this method.  This modularity is far
+from limited to what comes bundled with Python, though; it also has an
+abundance of user-generated external libraries that.  Since Python's inception,
+its users have been developing additional toolkits that work with Python's
+existing structure and extend it to contexts that the basic language might not
+be equipped to handle. The Natural Language Toolkit (NLTK) is an especially
+extensive and relevant example, supplying prebuilt methods for common natural
+language processing tasks like word tokenization, part of speech tagging, and
+lemmatization. Pandas is similarly essential for a data analyst working in
+Python. A digital humanities curriculum is likely to work with some of these
+libraries early if it is going to be driven by student interest rather than
+methodical and exhaustive coverage of Python basics.
+
+For a student beginning to explore Python and its libraries, sitting down to
+write a program from start to finish will not necessarily be most pedagogically
+effective method. A more forgiving environment for the kinds of questions we
+hope would drive our students---questions like "What would happen if I did
+this?" or "What if I combined these two things?"---is Python's Integrated
+DeveLopment Environment (IDLE). Like the Bash shell, 
 
 Same structure as above. 
 
-1. Explain what it is. 
-control structures + data types + built-in functions + syntax + interpreter
-Why Python
+1. Explain what it is.  
+
+control structures + data types + built-in functions +
+syntax + interpreter Why Python
 
 2. Why.
 
