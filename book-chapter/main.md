@@ -152,7 +152,7 @@ PRP: trimmed for repetitiveness, moved list of qs back to paragraph
 outputs in plain text format, which can be used to store everything from
 personal notes, to article drafts, to huge datasets of metadata. Unix provides
 many powerful utilities that work with plain text. In fact, the notion of human
-readability is even encoded at the operating system level. 
+readability is even encoded at the operating system level.
 
 ### 1.4 If you have to do something more than ~~once~~ a hundred times, automate.
 
@@ -258,7 +258,7 @@ Depending on one's research interests and career path, as a DH practitioner one 
 have some mixture of the following core skills (with examples in parenthesis):
 
 - Text markup (plain text, *Markdown*, *Pandoc*, *TEI*)
-- POSIX command line proficiency (*Bash*, regular expressions)
+- Command line interface proficiency (*Bash*, pipes, regular expressions)
 - Content management (*Jekyll*, *Wordpress*)
 - Version control (*Git*, *GitHub*)
 - Programming language (*Python*, *R*, *JavaScript*)
@@ -277,7 +277,7 @@ into the world of critical computing. Text transformations lead to the
 operating system and the file hierarchy. Tasks like regular backups and desktop
 organization can be used to familiarize students with foundational concepts
 like relative and absolute file paths or the distinction between plain text
-and binary formats. 
+and binary formats.
 
 Our core principle of starting with daily computation also suggests
 covering version control and content management early in the curriculum.
@@ -318,7 +318,7 @@ security, encryption---is also key to pursuing higher-level goals like preservin
 speech online, protecting a journalist's sources, or bypassing censorship
 filters. The care and maintenance of personal document archives---research
 papers, article drafts, and book manuscripts---leads naturally into server management.
-The server is where many of the skills learned earlier come to fruition. 
+The server is where many of the skills learned earlier come to fruition.
 Running websites requires a long "stack" of technological components. These
 are almost impossible to use well without knowledge of the command line, a
 programming language, and networks.
@@ -425,29 +425,14 @@ is what to take out to add this in.
 More directly, there are six properties that these locations embody that make
 them particularly suitable for an introduction to humanities computing class.
 Because the text editor is a more highly variable location than the other two,
-we will discuss these properties first in terms of Bash and Python:
+we will discuss these properties first in terms of the command line and Python:
 
-1. Simplicity. The syntax used in both Bash and Python is relatively
-straightforward. In Bash, most tasks can be broken down into a series of
-single-line commands that can be chained together through pipes
-(|) and redirects (> and >>). Python does away with much of the frustrating
-syntax of languages that came before it, saving users from the need to
-keep track of byzantine chains of brackets and other syntactical tangles. The
-elegance of Python's syntax not only aids in learning and retention: it also
-adheres to the ethos of legibility we discuss in our core principles above. 
+1. Ubiquity. Command line interfaces are standard across all Unix-derived
+systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
+powering everything from Raspberry Pis to supercomputing clusters. Windows 
 
-2. Power. Bash and Python are powerful enough that, between them, a digital
-humanist is able to realize almost any task imaginable (and possible). They may
-not be the most suitable environments or languages for every task, of course,
-but in combination they form the digital humanist's swiss army knife, allowing
-its user to accomplish most anything that is needed.
 
-3. Durability. As with data structures, we favor tool that are unlikely
-to become obsolete. Neither Bash nor Python are going away anytime soon,
-meaning that solutions written in either will continue to be functional for the
-foreseeable future.
-
-4. Universality. Both Bash and Python are widely used. Bash,
+Both Bash and Python are widely used. Bash,
 Python, and tools that help write Python code, are available on any system that
 a student of the class is likely to encounter.[^bash-nix-os] Because of their
 versatility, both are used in a wide range of environments by large user
@@ -456,6 +441,26 @@ communities. This also means that help is widely available.
 [^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
 are emulators that reproduce its functionality on most systems that a student
 in the class is likely to encounter. 
+
+2. Simplicity. The syntax used in both Bash and Python is relatively
+straightforward. In Bash, most tasks can be broken down into a series of
+single-line commands that can be chained together through pipes
+(|) and redirects (> and >>). Python does away with much of the frustrating
+syntax of languages that came before it, saving users from the need to
+keep track of byzantine chains of brackets and other syntactical tangles. The
+elegance of Python's syntax not only aids in learning and retention: it also
+adheres to the ethos of legibility we discuss in our core principles above. 
+
+3. Power. Bash and Python are powerful enough that, between them, a digital
+humanist is able to realize almost any task imaginable (and possible). They may
+not be the most suitable environments or languages for every task, of course,
+but in combination they form the digital humanist's swiss army knife, allowing
+its user to accomplish most anything that is needed.
+
+4. Durability. As with data structures, we favor tool that are unlikely
+to become obsolete. Neither Bash nor Python are going away anytime soon,
+meaning that solutions written in either will continue to be functional for the
+foreseeable future.
 
 5. Hackability. It is relatively straightforward to write one's own
 commands/methods within both Bash and Python *and to see how those that
@@ -516,7 +521,7 @@ Why Python
 2. Why.
 
 3. Easy examples we cover in class (zodiac fortune teller or an choose your own
-adventure excrcise). control structures + data types + built-in functions +
+adventure exercise). control structures + data types + built-in functions +
 syntax + interpreter
 
 3. A glimplse of more advanced possibilities. 
