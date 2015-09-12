@@ -288,7 +288,8 @@ journaling throughout the versioning process. Finally, multi-user version
 control can be used to increase transparency in academic collaborations.
 Similar to the scientist's lab notebook, the Git journal fixes the flow of
 ideas and labor by recording the distribution of tasks in a collaborative
-environment, helping teams keep track of work for accurate attribution.
+environment, helping teams keep track of work for accurate
+attribution.[^ln-versionlink]
 
 A programming language occupies a central place in computational practice. All
 forms of digitality pass through some form of encoding and automation. Only a
@@ -345,8 +346,8 @@ computer scientists and software engineers would claim mastery over the full
 stack of what is mentioned here. It is much more likely for digital humanists
 to develop proficiency in one or several areas of practice. Yet any one of the
 above foundational competencies have spillover effects that "level up" the rest
-of the list.  Our intensive, week-long class can only begin to address a small
-part of the larger, complicated puzzle.
+of the list. An intensive, week-long class, like the one that we teach at
+DHSI, can only begin to address a small part of the larger, complicated puzzle.
 
 ## 3 Three Locations of Computing
 
@@ -359,46 +360,41 @@ DT: No problem. Let's do it in footnotes though.
 --->
 
 We often begin our courses by outlining the above "big picture" principles,
-challenges, and considerations. Programming is difficult, tedioius at times,
-and obscure to those not used to it. The people who do it well often have
-knowledge and experience from beyond the university, such as game mod
-development, that gives them an external challenge or task to pique their
-interest. With this trend in mind, our approach is to engage the students
-intellectually nstead of offering quick but shallow skills and takeaways as
-motivations. 
+challenges, and considerations. Like learning a foreign language, programming
+takes time and patience to master. And as is the case with any difficult skill,
+motivation to practice correlates to chances of long-term success. Developing
+the intellectual motivation to stick with the program is therefore one of our
+paramount goals. For this reason, we begin the course with the "frustration
+points" of everyday computing.  In our experience, even simple tasks like
+saving a file from an internet browser is rife with anxiety and frustration:
+Where did that file go? How do I find it again? What type of file is it? Modern
+operating systems conceal such information from average users.
 
-For this reason, we begin
-with the "frustration points" of everyday computing that resist quick
-satisfaction while leading into the larger structures and problems of
-computing. In our experience, even
-simple tasks like saving a file from an internet browser is rife with anxiety
-and frustration: Where did that file go? How do I find it again? What type of
-file is it? Modern operating systems conceal such information from
-average users. Yet our users are the type to turn such moments of frustration into
-opportunities for discovery, if they have the means to do so. These
-are students, university faculty, and librarians who approach documents, file
-systems, and datasets as matters of critical importance. The patient curiosity
-that causes them to spend years, if not decades, into acquiring expertise in
-academic disciplines can certainly be turned to the challenge of computation. 
-In our experience, they respond extremely well to the mission of reclaiming the
-material contexts of their daily intellectual practice and learning how to
-control more directly the computers through which they carry out much of their
-research. If they are going to do so, however, the small frustrations and petty
-obstacles have to be understood as windows into the larger, concealed systems
-they work with every day; they also need enough contextual knowledge of the
-system itself to know where to start.
+Our task as instructors is to channel that frustration into opportunities for
+discovery. Students, university faculty, and librarians intrinsically approach
+documents, file systems, and datasets as matters of critical importance,
+embodying the fruits of long-standing commitment and hard-earned labor. We can
+therefore harness the patience and care they bring to their research to bare on
+computing fundamentals. In our experience, students respond enthusiastically to
+the mission of reclaiming the material contexts of their daily intellectual
+production.
 
-We have identified three "locations" of computing that we think are especially
-fertile grounds on which, first, to gain this necessary knowledge, and second,
-to occasion the intellectual discoveries this knowledge enables. Building on
-the metaphor of the development "environment," a location of computing denotes
-both the interface through which the human engages the machine and the type of
-interaction the interface demands. A location of computing is also a conceptual
-space, though, each with its own logic and set of values. The first of these locations is the Bash
-shell, a Unix shell and a command language for text-based dialogic 
-interaction between the user and the Unix-based operating system and file
-structure. The second is Python, a widely-used modern programming language,
-that, like Bash, privileges simplicity and human readability.[^ln-versionlink]
+Consequently, we identify three locations as key sites of digital literacy: the
+command line, the text editor, and the language interpreter.
+
+As suggested by the metaphor of software development "environment," a site of
+computation denotes both the interface through which the human engages the
+machine and the type of interaction the interface demands. A site is also a
+conceptual space, though, each with its own logic and set of values.
+
+The first of these locations is the command line, a Unix shell and a command
+language for text-based call-and-response "dialogue" between the user and the
+Unix-based operating system. 
+
+The second is Python, a
+widely-used modern programming language, that, like Bash, privileges simplicity
+and human readability. 
+
 The third is the humble-seeming text editor: the most common digital tool of
 humanities scholarship, among the least often considered, but perhaps the most
 important.
@@ -421,24 +417,24 @@ we will discuss these properties first in terms of the command line and Python:
 
 1. Ubiquity. Command line interfaces are standard across all Unix-derived
 systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
-powering everything from Raspberry Pis to supercomputing clusters. Similarly, Bash,
-Python, and tools that help write Python code, are available on any system that
-a student of the class is likely to encounter.[^bash-nix-os] Because of their
-versatility, both are used in a wide range of environments by large user
-communities. This also means that help is widely available.
+powering everything from Raspberry Pis to supercomputing clusters. Similarly,
+Bash, Python, and tools that help write Python code, are available on any
+system that a student of the class is likely to encounter.[^bash-nix-os]
+Because of their versatility, both are used in a wide range of environments by
+large user communities. This also means that help is widely available.
 
 [^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
 are emulators that reproduce its functionality on most systems that a student
-in the class is likely to encounter. 
+in the class is likely to encounter.
 
 2. Simplicity. The syntax used in both Bash and Python is relatively
 straightforward. In Bash, most tasks can be broken down into a series of
-single-line commands that can be chained together through pipes
-(|) and redirects (> and >>). Python does away with much of the frustrating
-syntax of languages that came before it, saving users from the need to
-keep track of byzantine chains of brackets and other syntactical tangles. The
-elegance of Python's syntax not only aids in learning and retention: it also
-adheres to the ethos of legibility we discuss in our core principles above. 
+single-line commands that can be chained together through pipes (|) and
+redirects (> and >>). Python does away with much of the frustrating syntax of
+languages that came before it, saving users from the need to keep track of
+byzantine chains of brackets and other syntactical tangles. The elegance of
+Python's syntax not only aids in learning and retention: it also adheres to the
+ethos of legibility we discuss in our core principles above. 
 
 3. Power. Bash and Python are powerful enough that, between them, a digital
 humanist is able to realize almost any task imaginable (and possible). They may
@@ -446,23 +442,22 @@ not be the most suitable environments or languages for every task, of course,
 but in combination they form the digital humanist's swiss army knife, allowing
 its user to accomplish most anything that is needed.
 
-4. Durability. As with data structures, we favor tool that are unlikely
-to become obsolete. Neither Bash nor Python are going away anytime soon,
-meaning that solutions written in either will continue to be functional for the
+4. Durability. As with data structures, we favor tool that are unlikely to
+become obsolete. Neither Bash nor Python are going away anytime soon, meaning
+that solutions written in either will continue to be functional for the
 foreseeable future.
 
 5. Hackability. It is relatively straightforward to write one's own
 commands/methods within both Bash and Python *and to see how those that
-currently exist were written*. While this is not something that we cover in
-our courses, the possibility for end users to investigate and expand the
-languages that they are working on is a basic tenet of empowering
-users by unlocking what would otherwise be black boxes---and, therefore,
-inaccessible.
+currently exist were written*. While this is not something that we cover in our
+courses, the possibility for end users to investigate and expand the languages
+that they are working on is a basic tenet of empowering users by unlocking what
+would otherwise be black boxes---and, therefore, inaccessible.
 
 6. Fun. The power, versatility, and relative accessibility of these tools means
 that they are able to be *fun* as well as effective. Both Bash and Python
-invite an interactive methodology that is at once engaging and interesting, drawing students
-forward in their learning.
+invite an interactive methodology that is at once engaging and interesting,
+drawing students forward in their learning.
 
 ### 3.1 Command Line
 
