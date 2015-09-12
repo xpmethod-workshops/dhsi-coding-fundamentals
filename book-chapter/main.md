@@ -349,6 +349,17 @@ above foundational competencies have spillover effects that "level up" the rest
 of the list. An intensive, week-long class, like the one that we teach at
 DHSI, can only begin to address a small part of the larger, complicated puzzle.
 
+[^ln-versionlink]: Given that we have looked to Software Carpentry for some of
+the methodology that we employ in the course it should be noted that we do not
+spend any time on version control via tools such as Git or Mercurial. This was
+done initially so that more time could be spent on programming concepts,
+hands-on coding work, and unpacking the black box that is the command line.
+The importance of version control for efficient and effective coding via
+protecting against loss and enabling collaboration with others is recognized
+and future versions of the course may include it as a consequence. As with all
+training that is already time constrained down to the essentials, the challenge
+is what to take out to add this in.
+
 ## 3 Three Locations of Computing
 
 <!---
@@ -365,7 +376,7 @@ takes time and patience to master. And as is the case with any difficult skill,
 motivation to practice correlates to chances of long-term success. Developing
 the intellectual motivation to stick with the program is therefore one of our
 paramount goals. For this reason, we begin the course with the "frustration
-points" of everyday computing.  In our experience, even simple tasks like
+points" of everyday computing. In our experience, even simple tasks like
 saving a file from an internet browser is rife with anxiety and frustration:
 Where did that file go? How do I find it again? What type of file is it? Modern
 operating systems conceal such information from average users.
@@ -379,36 +390,196 @@ computing fundamentals. In our experience, students respond enthusiastically to
 the mission of reclaiming the material contexts of their daily intellectual
 production.
 
-Consequently, we identify three locations as key sites of digital literacy: the
-command line, the text editor, and the language interpreter.
-
 As suggested by the metaphor of software development "environment," a site of
 computation denotes both the interface through which the human engages the
 machine and the type of interaction the interface demands. A site is also a
 conceptual space, though, each with its own logic and set of values.
+Consequently, we identify three locations as key sites of digital literacy: the
+command line, the language interpreter, and the text editor.
+
+### 3.1 Command Line
 
 The first of these locations is the command line, a Unix shell and a command
 language for text-based call-and-response "dialogue" between the user and the
-Unix-based operating system. 
+Unix-based operating system. On the level of the operating system, all
+operations are in some sense on files. For this reason, the aspiring coder must
+develop a firm grasp of files and folders, along with their corresponding
+manipulation techniques. The command line is where the power user interacts
+with files and folders. Everything from downloading a sample corpus, to writing
+research papers, to debugging code eventually leads to the command line. The
+command line serves as the base of our operations. A new project start with a
+new folder. The completion of the project will often involve the publication
+and the sharing of files across email clients and code repositories. We
+therefore begin and end each session with the command line.
+
+One way to think of the command line is as a powerful alternative to tools like
+*File Explorer* (Windows) and *Finder* (Macintosh). Unlike these popular point
+and click programs, the command line interface (CLI from now on) is a
+text-based, dialog-driven mode of interaction with the operating system. On
+some deeper level, the machine "speaks" in binary code. The command line
+"interprets" English-like commands (in a language called Bash) into binary. In
+this when deleting a file, one can instruct the machine to `rm filename.txt`
+instead of dragging and dropping it to the waste bin. Note that "dropping into
+the waste bin" merely offers a visual metaphor for the underlying bit-wise
+operations. The CLI alternative turns the metaphor into a more exact command
+`rm`, which stands for "remove." Similarly to direct the computer to move a
+file, we would use the `mv` command. Unlike their visual and metaphorical
+counterparts, the Bash commands contain many advanced options, accessible
+through the manual, or `man`. As expected,`man mv` displays the manual pages
+for the move command.
+
+Furthermore, because Bash commands are in themselves a type of a programming
+language, they can be chained together and automated to produce complex
+behavior. Imagine, for example, writing a book or a dissertation in a directory
+that contains several files in plain text format (.txt), each corresponding to a
+chapter. The writer can then use the following script to produce the total
+word count:
+
+```
+wc -w *txt | tail -n 1 | sed 's/[a-z ]//g' >> log.txt
+```
+
+The above "incantation" does four things:
+
+
+1. Count the words in all of the `.txt` files found in the present directory.
+
+    Input:
+
+    ```
+    wc -w *md
+    ```
+    Output:
+
+    ```
+    11717 1-chapter.txt
+    12457 2-chapter.txt
+    13780 3-chapter.txt
+    10542 3-chapter.txt
+    74850 total
+    ```
+
+2. Isolate the total count from the individual file counts.
+
+    Input:
+
+    `tail -n 1`
+
+Output: 
+
+    `74850 total`
+
+3. Remove the word "total" and keep only the number count.
+
+    Input:
+
+    `sed 's/[a-z ]//g'`
+
+    Output:
+
+    `74850`
+
+4. Append the count to the log file.
+
+    `>> log.txt`
+
+
+The vertical line (`|`) and angle bracket (`>>`) allow us to chain the commands
+into a system of pipes and redirects, passing the text output of one operation
+to another. Once saved to disk, this small script can be used to keep a daily
+log of one's writing activity.
+
+Learning the command line is not just a matter of opening up new ways of
+interacting with files, though. In learning command line basics, students
+become familiar with concepts that will establish foundational techniques that
+will be built upon in higher-level contexts, in true bootstrapping style.
+Navigating the file system and organizing files using commands like cd, mv, cp,
+and rm requires practice for students unaccustomed to it, but the grasp of file
+structures this process requires is essential for later tasks like networking
+and programming.
+
+<!---
+Unix prefers plain text input and outputs. Many build-in tools for file
+manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
+common use cases (how many words in this file, find all usages of the word,
+spotlight-like functionality of searching for files.
+
+What we usually cover.
+
+Cover one more advanced use case. Scheduling a data pull. Getting data and
+munging. Twitter bot?
+
+In addition networking and security tools like wget, ssh, pgp.--->
+
+<!--- this is probably a footnote -->
+> Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
+sh-compatible shell that incorporates useful features from the Korn shell (ksh)
+and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO
+9945.2 Shell and Tools standard. It offers functional improvements over sh for
+both programming and interactive use. In addition, most sh scripts can be run
+by Bash without modification.[^ln-bashlink]
+
+[^ln-bashlink]: http://www.gnu.org/software/bash/
+
+### 3.2 Python
 
 The second is Python, a
 widely-used modern programming language, that, like Bash, privileges simplicity
 and human readability. 
 
+As we have begun to explain above, Python is a programming language that has
+attained widespread popularity in part because of the elegant simplicity of its
+syntax and its vast adaptability. 
+
+Same structure as above. 
+
+1. Explain what it is. 
+control structures + data types + built-in functions + syntax + interpreter
+Why Python
+
+2. Why.
+
+3. Easy examples we cover in class (zodiac fortune teller or an choose your own
+adventure exercise). control structures + data types + built-in functions +
+syntax + interpreter
+
+3. A glimplse of more advanced possibilities. 
+
+4. When to use one over the other (see chart)
+
+| When to use Bash                  | When to use Python       |
++-----------------------------------|--------------------------+
+| - automate daily tasks            | - data science           |
+| - manage files & folders          | - app development        |
+| - remote server administration    | - NLTK                   |
+| - data munging[^ln-munge]         | - data visualization     |
+| - quick & dirty text manipulation | - glue code              |
+|                                   | - everything else        |
+
+[^ln-munge]: Data munging is a recursive computer acronym that stands for
+"Munge Until No Good," referring to a series of discrete and potentially
+destructive data transformation steps [@raymond_mung_2004].
+
+### 3.3 Text Editor
+
 The third is the humble-seeming text editor: the most common digital tool of
 humanities scholarship, among the least often considered, but perhaps the most
 important.
 
-[^ln-versionlink]: Given that we have looked to Software Carpentry for some of
-the methodology that we employ in the course it should be noted that we do not
-spend any time on version control via tools such as Git or Mercurial. This was
-done initially so that more time could be spent on programming concepts,
-hands-on coding work, and unpacking the black box that is the command line.
-The importance of version control for efficient and effective coding via
-protecting against loss and enabling collaboration with others is recognized
-and future versions of the course may include it as a consequence. As with all
-training that is already time constrained down to the essentials, the challenge
-is what to take out to add this in.
+Explain the difference between interactive, conversational, exploratory type of programming and
+"saving the conversation" for the future in the text editor.
+
+Why text editors are important (plain text).
+
+Finish with a chart. When to use interactive programming (data exploration) and
+when to build programs (what is the opposite of interactive. I can help in this
+section.
+
+
+| Interactive Programming           | Text Ed |
++-----------------------------------|--------------------------+
+
+### Conclusion
 
 More directly, there are six properties that these locations embody that make
 them particularly suitable for an introduction to humanities computing class.
@@ -458,144 +629,6 @@ would otherwise be black boxes---and, therefore, inaccessible.
 that they are able to be *fun* as well as effective. Both Bash and Python
 invite an interactive methodology that is at once engaging and interesting,
 drawing students forward in their learning.
-
-### 3.1 Command Line
-
-<!---
-DT: Giving a short outline here.
---->
-
-The command line interface or command line interpreter (CLI) is one way of
-interacting with your operating system and file system through text-based
-commands. Of course, your computer only really understands binary; an
-*interpreter* is therefore required to make one's commands into something the
-computer can work with. The Unix shell called Bash (Bourne Again Shell) is one
-such interpreter. Most users are more familiar with a graphical user interface (GUI), which is
-what it sounds like: interactions with the computer occur through graphics,
-whether that's an icon, a button, or a scroll bar. The command line is simply a
-text-based way of accomplishing approximately the same thing. CLIs were used
-for decades before GUIs were popularized, and for most people's everyday computing purposes,
-CLIs have fallen largely out of fashion.
-
-Supposing that CLIs are therefore obsolete, though, would be a mistake: just as
-things are possible in a GUI that would be unimaginable in a CLI, the command
-line affords its user abilities impossible in a graphical system, especially in
-the context of computation, file management, and textual transformation. Bash
-in particular is also a more universal way of interacting with a computer than
-reliance on a GUI, as it is accessible and standard across \*nix-based operating systems (and
-can be used via emulator in non-\*nix systems). <!---PRP: I think I'm in a little over my head
-here, technical oversight appreciated. Basing this on my knowledge/GNU
-site/other notes in this document--->
-
-Luckily for digital humanists, Bash has powerful built-in tools for file
-manipulation that can be used for many simple but powerful tasks in textual
-transformation. Returning a word count for a file only requires a brief line of
-Bash script:
-
-~~~~
-    wc -w filename.txt
-~~~~
-
-Returning every line of *Moby Dick* that contains the word "whale" is as
-simple:
-
-~~~~
-    grep whale mobydick.txt
-~~~~
-
-Tasks such as finding a file based on certain criteria, downloading data
-online, and networking and security tools like ssh work by similar means.
-Above all, exposure to an interface beyond the GUI lets users outside of the
-closed system of one or two dominant operating systems and a common set of programs
-that determine how one interacts with one's own documents. Command line basics
-give a user more direct access to the file structures: without invasive, often
-proprietary software adding an extra level of mediation between the user and
-the operating system, a greater degree of control over one's own files is
-possible.
-
-Learning the command line is not just a matter of opening up new ways of
-interacting with files, though. In learning command line basics, students
-become familiar with concepts that will establish foundational techniques that
-will be built upon in higher-level contexts, in true bootstrapping style.
-Navigating the file system and organizing files using commands like cd, mv, cp,
-and rm requires practice for students unaccustomed to it, but the grasp of file
-structures this process requires is essential for later tasks like networking
-and programming.
-
-<!---
-Unix prefers plain text input and outputs. Many build-in tools for file
-manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
-common use cases (how many words in this file, find all usages of the word,
-spotlight-like functionality of searching for files.
-
-What we usually cover.
-
-Cover one more advanced use case. Scheduling a data pull. Getting data and
-munging. Twitter bot?
-
-In addition networking and security tools like wget, ssh, pgp.--->
-
-<!--- this is probably a footnote -->
-> Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
-sh-compatible shell that incorporates useful features from the Korn shell (ksh)
-and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO
-9945.2 Shell and Tools standard. It offers functional improvements over sh for
-both programming and interactive use. In addition, most sh scripts can be run
-by Bash without modification.[^ln-bashlink]
-
-[^ln-bashlink]: http://www.gnu.org/software/bash/
-
-### 3.2 Python
-
-As we have begun to explain above, Python is a programming language that has
-attained widespread popularity in part because of the elegant simplicity of its
-syntax and its vast adaptability. 
-
-Same structure as above. 
-
-1. Explain what it is. 
-control structures + data types + built-in functions + syntax + interpreter
-Why Python
-
-2. Why.
-
-3. Easy examples we cover in class (zodiac fortune teller or an choose your own
-adventure exercise). control structures + data types + built-in functions +
-syntax + interpreter
-
-3. A glimplse of more advanced possibilities. 
-
-4. When to use one over the other (see chart)
-
-| When to use Bash                  | When to use Python       |
-+-----------------------------------|--------------------------+
-| - automate daily tasks            | - data science           |
-| - manage files & folders          | - app development        |
-| - remote server administration    | - NLTK                   |
-| - data munging[^ln-munge]         | - data visualization     |
-| - quick & dirty text manipulation | - glue code              |
-|                                   | - everything else        |
-
-[^ln-munge]: Data munging is a recursive computer acronym that stands for
-"Munge Until No Good," referring to a series of discrete and potentially
-destructive data transformation steps [@raymond_mung_2004].
-
-### 3.3 Text Editor
-
-Explain the difference between interactive, conversational, exploratory type of programming and
-"saving the conversation" for the future in the text editor.
-
-Why text editors are important (plain text).
-
-Finish with a chart. When to use interactive programming (data exploration) and
-when to build programs (what is the opposite of interactive. I can help in this
-section.
-
-
-| Interactive Programming           | Text Ed |
-+-----------------------------------|--------------------------+
-
-### Conclusion
 
 These three locations build solid foundations for critical practice in the
 digital humanities. All more advanced stuff rests on these foundations. In
