@@ -590,92 +590,58 @@ being hampered by proprietary licenses or restrictions. Several such editors
 answer to our criteria. Among them: *Atom*, *Emacs*, *Leafpad*, *Notepad++*,
 and *Vim*.
 
-Where
-Explain the difference between interactive, conversational, exploratory type of
-programming and "saving the conversation" for the future in the text editor.
+Where conversing directly with *Bash* or *Python* interpreters allows for an
+"interactive" back-and-forth style of programming, the text editor gives a
+measure of permanence to the conversation. When working with data sets we often
+begin with exploratory data analysis at the command line, aimed at
+familiarizing ourselves with the data and at forming intuitions about its
+explanatory potential. Once those intuitions are formed, we can move to writing
+and debugging code in the text editor. The Python interpreter remains open in
+the background to test individual lines of code, before they make it into our
+program.
 
-Why text editors are important (plain text).
+About half way through the session, the students are ready to formulate a
+project of our own. Rather than using pre-canned exercises, we encourage our
+students to formulate small research projects related to their work or research.
+In our last class, a group of librarians built a program to copy selected
+metadata from one `.csv` file to another, while checking for errors in data
+formatting (like a properly formatted date, for example). Another group built
+an automatic essay grader. Yet another analyzed poetry for its similarity to
+Byron. A fourth group wrote a script that automates the downloading of a film
+script corpus.
 
-Finish with a chart. When to use interactive programming (data exploration) and
-when to build programs (what is the opposite of interactive. I can help in this
-section.
+All of these projects begin with a set of step by step instructions in English.
+Thus, a simple essay grader may be expressed as follows:
 
+1. Open and read a file.
+2. Calculate variation of sentence lengths.
+3. Assign a score based on variation.
+4. Calculate a measure of linguistic variety.
+5. Assign a vocabulary score.
+6. Find common spelling mistakes and "weasel words" that are a sign of weak
+writing.
+7. Average the scores to come up with a total grade.
 
-| Interactive Programming           | Text Ed |
-+-----------------------------------|--------------------------+
+In this way, students work alone or in groups to define the scope of their
+program. Once the scope is defined, we works with individual groups to help
+translate the English-language heuristic into workable Python code. Inevitably,
+programs grow more sophisticated. In the above example, students used published
+work to test their grading algorithm. In a longer course, we may introduce
+supervised learning techniques to classify essays for quality based on
+similarity to work that has already been evaluated. The difficulty of the
+project may be adjusted to tailor the length of the course and the level of
+individual expertise. During such free-form "laboratory" sessions we encourage
+students to help each other and to share expertise with their peers.
 
-### Conclusion
+The command line, the Python interpreter, and the text editor provide the
+foundations of critical computing in the humanities. We do not expect all of
+our students to become programmers. But at the very least, they become exposed
+to a powerful problem-solving method and to operating system internals, used
+widely in all aspects of computation from sending email to writing a
+paper.[^ln-coauthor]
 
-More directly, there are six properties that these locations embody that make
-them particularly suitable for an introduction to humanities computing class.
-Because the text editor is a more highly variable location than the other two,
-we will discuss these properties first in terms of the command line and Python:
-
-1. Ubiquity. Command line interfaces are standard across all Unix-derived
-systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
-powering everything from Raspberry Pis to supercomputing clusters. Similarly,
-Bash, Python, and tools that help write Python code, are available on any
-system that a student of the class is likely to encounter.[^bash-nix-os]
-Because of their versatility, both are used in a wide range of environments by
-large user communities. This also means that help is widely available.
-
-[^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
-are emulators that reproduce its functionality on most systems that a student
-in the class is likely to encounter.
-
-2. Simplicity. The syntax used in both Bash and Python is relatively
-straightforward. In Bash, most tasks can be broken down into a series of
-single-line commands that can be chained together through pipes (|) and
-redirects (> and >>). Python does away with much of the frustrating syntax of
-languages that came before it, saving users from the need to keep track of
-byzantine chains of brackets and other syntactical tangles. The elegance of
-Python's syntax not only aids in learning and retention: it also adheres to the
-ethos of legibility we discuss in our core principles above. 
-
-3. Power. Bash and Python are powerful enough that, between them, a digital
-humanist is able to realize almost any task imaginable (and possible). They may
-not be the most suitable environments or languages for every task, of course,
-but in combination they form the digital humanist's swiss army knife, allowing
-its user to accomplish most anything that is needed.
-
-4. Durability. As with data structures, we favor tool that are unlikely to
-become obsolete. Neither Bash nor Python are going away anytime soon, meaning
-that solutions written in either will continue to be functional for the
-foreseeable future.
-
-5. Hackability. It is relatively straightforward to write one's own
-commands/methods within both Bash and Python *and to see how those that
-currently exist were written*. While this is not something that we cover in our
-courses, the possibility for end users to investigate and expand the languages
-that they are working on is a basic tenet of empowering users by unlocking what
-would otherwise be black boxes---and, therefore, inaccessible.
-
-6. Fun. The power, versatility, and relative accessibility of these tools means
-that they are able to be *fun* as well as effective. Both Bash and Python
-invite an interactive methodology that is at once engaging and interesting,
-drawing students forward in their learning.
-
-These three locations build solid foundations for critical practice in the
-digital humanities. All more advanced stuff rests on these foundations. In
-starting here we dispell anxiety and illusion.[^ln-coauthor]
-
-<!---
-JS: Could we collapse this into 1.0?. Possibly add in the
-importance of teaching them how to help themselves...
-
-DT: Let's move to the conclusion (done). We'd need to transition into here
-better. Re-word as a conclusion.
---->
-
-Keep poking, get help, take notes, comment, annotate, share, remix, and train
-others.
-
-Finally, and this noticed by several course observers over the years, students
-in the humanities are sometimes curiously hesitant to explore their machines.
-In the absence of a tinkering upbringing and in the presence of cultural
-divides that regularly reinforce norms like "Those in the Arts and Humanities
-can't do programming, math, science, etc.", they might be worried of breaking
-expensive equipment or losing sensitive data. Demystifying the magical black
+In our experience, students without a technical background are sometimes
+curiously hesitant to explore their machines. Demystifying the magical black
 box and learning some habits that prevent irrevocable loss of data addresses
 that fear, encouraging the students to tinker and to explore. Researchers at
 the later stages of their career may be particularly reluctant to ask for help
@@ -687,7 +653,10 @@ into courses and workshops. Eventually, in following these principles, we hope
 for our students to become catalysts of change in their own communities of
 practice.
 
-[^ln-coauthor]: A note on coathorship: a detailed history of author
-contributions can be found on our GitHub page at
+[^ln-coauthor]: A detailed history of author contributions can be found on our
+GitHub page at
 [https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md](https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md)
 
+[^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
+are emulators that reproduce its functionality on most systems that a student
+in the class is likely to encounter.
