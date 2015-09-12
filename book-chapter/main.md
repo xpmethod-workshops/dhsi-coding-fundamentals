@@ -643,7 +643,7 @@ paper.[^ln-coauthor]
 In our experience, students without a technical background are sometimes
 curiously hesitant to explore their machines. Demystifying the magical black
 box and learning some habits that prevent irrevocable loss of data addresses
-that fear, encouraging the students to tinker and to explore. Researchers at
+that fear, encouraging the students to tinker and to experiment. Researchers at
 the later stages of their career may be particularly reluctant to ask for help
 or to express their questions in public. Our teaching approach therefore
 encourages shared expertise. We model not being afraid to expose our own gaps
