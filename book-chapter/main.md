@@ -509,33 +509,15 @@ P1003.2/ISO 9945.2 Shell and Tools standard. It offers functional improvements
 over sh for both programming and interactive use. In addition, most sh scripts
 can be run by Bash without modification" [@free_software_foundation_gnu_2007].
 
- http://www.gnu.org/software/bash/
-
 ### 3.2 Python
 
-The second is Python, a
-widely-used modern programming language, that, like Bash, privileges simplicity
-and human readability. 
-
-As we have begun to explain above, Python is a programming language that has
-attained widespread popularity in part because of the elegant simplicity of its
-syntax and its vast adaptability. 
-
-Same structure as above. 
-
-1. Explain what it is. 
-control structures + data types + built-in functions + syntax + interpreter
-Why Python
-
-2. Why.
-
-3. Easy examples we cover in class (zodiac fortune teller or an choose your own
-adventure exercise). control structures + data types + built-in functions +
-syntax + interpreter
-
-3. A glimplse of more advanced possibilities. 
-
-4. When to use one over the other (see chart)
+The second of our foundational sites of computing is the Python interpreter.
+Where the command line "translates" from *Bash* into machine code, the *Python*
+interpreter translates from *Python*. *Bash* traces its roots to the late
+1970s. It is a domain-specific command language, desiged specifically to
+interact with the operating system. Its longevity makes it stable and
+ubiquitous. *Python* became popular in the early 2000s. Unlike *Bash*, it is a
+general-purpose, high-level programming language. 
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
@@ -546,18 +528,71 @@ syntax + interpreter
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
+We chose *Python* among other excellent choices (like *R* and *Haskell*) for
+several reasons. First, *Python* is popular. According to the TIOBE language
+popularity index, *Python* holds roughly 3.6% of the market, trailing only
+behind *Java* and C-family languages (*C*, *C++*, *C#*)
+[@tiobe_software_tiobe_2015]. Although detailed statistics by field are not
+available, we infer that in the domain of scientific computing and data science
+*Python* holds the majority share of the market. This is important, because it
+means that learning *Python* is a good investment of time. It can lead to jobs
+outside of academia. Projects using *Python* will also have an easier time
+hiring outside experts, due to the popularity of the language.
+
+The popularity of the language has a secondary, important side-effect. Being a
+general-purpose language, it has been adapted to a wide variety of contexts,
+from machine learning to web application development. The *Python* ecosystem
+consequently offers a rich variety of software libraries. Most tasks needed to
+perform academic research or library administration have likely been addressed
+in an existing framework and are available widely for reuse. The student can
+therefore apply skills learned in one area of reseach to another, without loss
+of expertise or productivity.
+
+Finally, besides being popular and flexible *Python* is a human-friendly
+language. Human-readability is one of its stated aims. Python Enchancement
+Proposal 20 (PEP20), known as the "Zen of Python" reads [@smith_pep_2015]:
+
+```
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+```
+
+We feel that in priveleging code legibiliyty, *Python* philosophy fits well
+with the values of humanistic inquiry. The human-friendly readability of the
+language on the technical level reflects on the social level. The Python
+Software Foundation, an organization "devoted to advancing open source
+technology related to the Python programming language," publishes a Diversity
+statement and maintains a mailing list devoted to the topic. The community
+fosters initiatives like Pyladies, "an international mentorship group with a
+focus on helping more women become active participants and leaders in the
+Python open-source community," and Minorities in Python Conference (held in
+June 2015, in San Francisco).
+
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
 
 ### 3.3 Text Editor
 
-The third is the humble-seeming text editor: the most common digital tool of
-humanities scholarship, among the least often considered, but perhaps the most
-important.
+The humble text editor gives space to the third and possibly most important
+site of computing in the digital humanities. It is important because besides
+supporting programming it also supports writing in general. For this reason, we
+ask our students to reevaluate their relationship with consumer-grade tools
+like Microsoft Word and Google Docs. To write code we need a *plain text*
+editor, which does not add any hidden formatting characters to our program
+instructions. We need also an editor that we can modify and extend, without
+being hampered by proprietary licenses or restrictions. Several such editors
+answer to our criteria. Among them: *Atom*, *Emacs*, *Leafpad*, *Notepad++*,
+and *Vim*.
 
-Explain the difference between interactive, conversational, exploratory type of programming and
-"saving the conversation" for the future in the text editor.
+Where
+Explain the difference between interactive, conversational, exploratory type of
+programming and "saving the conversation" for the future in the text editor.
 
 Why text editors are important (plain text).
 
