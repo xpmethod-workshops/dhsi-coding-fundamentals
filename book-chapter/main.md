@@ -417,7 +417,7 @@ One way to think of the command line is as a powerful alternative to tools like
 and click programs, the command line interface (CLI from now on) is a
 text-based, dialog-driven mode of interaction with the operating system. On
 some deeper level, the machine "speaks" in binary code. The command line
-"interprets" English-like commands (in a language called Bash) into binary. In
+"interprets" English-like commands (in a language called Bash)[^ln-bash] into binary. In
 this when deleting a file, one can instruct the machine to `rm filename.txt`
 instead of dragging and dropping it to the waste bin. Note that "dropping into
 the waste bin" merely offers a visual metaphor for the underlying bit-wise
@@ -436,7 +436,7 @@ chapter. The writer can then use the following script to produce the total
 word count:
 
 ```
-wc -w *txt | tail -n 1 | sed 's/[a-z ]//g' >> log.txt
+wc -w ~/user/documents/book/*txt | tail -n 1 | sed 's/[a-z ]//g' >> log.txt
 ```
 
 The above "incantation" does four things:
@@ -465,7 +465,7 @@ The above "incantation" does four things:
 
     `tail -n 1`
 
-Output: 
+Output:
 
     `74850 total`
 
@@ -486,40 +486,30 @@ Output:
 
 The vertical line (`|`) and angle bracket (`>>`) allow us to chain the commands
 into a system of pipes and redirects, passing the text output of one operation
-to another. Once saved to disk, this small script can be used to keep a daily
-log of one's writing activity.
+to another. Once saved to disk, this small script can be set to run
+automatically at a predetermined time interval and used to keep a daily log of
+one's writing activity.
 
 Learning the command line is not just a matter of opening up new ways of
 interacting with files, though. In learning command line basics, students
 become familiar with concepts that will establish foundational techniques that
-will be built upon in higher-level contexts, in true bootstrapping style.
-Navigating the file system and organizing files using commands like cd, mv, cp,
-and rm requires practice for students unaccustomed to it, but the grasp of file
-structures this process requires is essential for later tasks like networking
-and programming.
+will be built upon in higher-level contexts, in true bootstrapping style. The
+above exercise can be used to discuss the difference between relative and
+absolute file pats (`~/usr/documents/book/*txt` vs.
+`/usr/documents/book/*txt`). It contains the basics of regular expressions
+(`[a-z ]`). And because the output of `wc -w` is a string, the excercise can be
+used as the basis for string manupalation and later data normalization and
+rudimentary natrual language processing. Finally, such excercises can lead to
+the basics of remote server management, networking, security, and encryption.
 
-<!---
-Unix prefers plain text input and outputs. Many build-in tools for file
-manipulation. Cover a few examples like `wc`, `grep`, and `find` answerting to
-common use cases (how many words in this file, find all usages of the word,
-spotlight-like functionality of searching for files.
+[^ln-bash]: "Bash is the GNU Project's shell. Bash is the Bourne Again SHell.
+Bash is an sh-compatible shell that incorporates useful features from the Korn
+shell (ksh) and C shell (csh). It is intended to conform to the IEEE POSIX
+P1003.2/ISO 9945.2 Shell and Tools standard. It offers functional improvements
+over sh for both programming and interactive use. In addition, most sh scripts
+can be run by Bash without modification" [@free_software_foundation_gnu_2007].
 
-What we usually cover.
-
-Cover one more advanced use case. Scheduling a data pull. Getting data and
-munging. Twitter bot?
-
-In addition networking and security tools like wget, ssh, pgp.--->
-
-<!--- this is probably a footnote -->
-> Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
-sh-compatible shell that incorporates useful features from the Korn shell (ksh)
-and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO
-9945.2 Shell and Tools standard. It offers functional improvements over sh for
-both programming and interactive use. In addition, most sh scripts can be run
-by Bash without modification.[^ln-bashlink]
-
-[^ln-bashlink]: http://www.gnu.org/software/bash/
+ http://www.gnu.org/software/bash/
 
 ### 3.2 Python
 
