@@ -288,7 +288,8 @@ journaling throughout the versioning process. Finally, multi-user version
 control can be used to increase transparency in academic collaborations.
 Similar to the scientist's lab notebook, the Git journal fixes the flow of
 ideas and labor by recording the distribution of tasks in a collaborative
-environment, helping teams keep track of work for accurate attribution.
+environment, helping teams keep track of work for accurate
+attribution.[^ln-versionlink]
 
 A programming language occupies a central place in computational practice. All
 forms of digitality pass through some form of encoding and automation. Only a
@@ -345,62 +346,8 @@ computer scientists and software engineers would claim mastery over the full
 stack of what is mentioned here. It is much more likely for digital humanists
 to develop proficiency in one or several areas of practice. Yet any one of the
 above foundational competencies have spillover effects that "level up" the rest
-of the list.  Our intensive, week-long class can only begin to address a small
-part of the larger, complicated puzzle.
-
-## 3 Three Locations of Computing
-
-<!---
-JS: Our approach owes a small debt to Software Carpentry since this is what I
-have based a good chunk of the content on the first year and some of this got
-rolled
-into the second. This is likely the place to acknowledge it.
-DT: No problem. Let's do it in footnotes though.
---->
-
-We often begin our courses by outlining the above "big picture" principles,
-challenges, and considerations. Programming is difficult, tedioius at times,
-and obscure to those not used to it. The people who do it well often have
-knowledge and experience from beyond the university, such as game mod
-development, that gives them an external challenge or task to pique their
-interest. With this trend in mind, our approach is to engage the students
-intellectually nstead of offering quick but shallow skills and takeaways as
-motivations. 
-
-For this reason, we begin with the "frustration points" of everyday computing
-that resist quick satisfaction while leading into the larger structures and
-problems of computing. In our experience, even simple tasks like saving a file
-from an internet browser is rife with anxiety and frustration: Where did that
-file go? How do I find it again? What type of file is it? Modern operating
-systems conceal such information from average users. Yet our users are the type
-to turn such moments of frustration into opportunities for discovery, if they
-have the means to do so. These are students, university faculty, and librarians
-who approach documents, file systems, and datasets as matters of critical
-importance. The patient curiosity that causes them to spend years, if not
-decades, into acquiring expertise in academic disciplines can certainly be
-turned to the challenge of computation.  In our experience, they respond
-extremely well to the mission of reclaiming the material contexts of their
-daily intellectual practice and learning how to control more directly the
-computers through which they carry out much of their research. If they are
-going to do so, however, the small frustrations and petty obstacles have to be
-understood as windows into the larger, concealed systems they work with every
-day; they also need enough contextual knowledge of the system itself to know
-where to start.
-
-We have identified three "locations" of computing that we think are especially
-fertile grounds on which, first, to gain this necessary knowledge, and second,
-to occasion the intellectual discoveries this knowledge enables. Building on
-the metaphor of the development "environment," a location of computing denotes
-both the interface through which the human engages the machine and the type of
-interaction the interface demands. A location of computing is also a conceptual
-space, though, each with its own logic and set of values. The first of these
-locations is the Bash shell, a Unix shell and a command language for text-based
-dialogic interaction between the user and the Unix-based operating system and
-file structure. The second is Python, a widely-used modern programming
-language, that, like Bash, privileges simplicity and human
-readability.[^ln-versionlink] The third is the humble-seeming text editor: the
-most common digital tool of humanities scholarship, among the least often
-considered, but perhaps the most important.
+of the list. An intensive, week-long class, like the one that we teach at
+DHSI, can only begin to address a small part of the larger, complicated puzzle.
 
 [^ln-versionlink]: Given that we have looked to Software Carpentry for some of
 the methodology that we employ in the course it should be noted that we do not
@@ -413,174 +360,164 @@ and future versions of the course may include it as a consequence. As with all
 training that is already time constrained down to the essentials, the challenge
 is what to take out to add this in.
 
-More directly, there are six properties that these locations embody that make
-them particularly suitable for an introduction to humanities computing class.
-Because the text editor is a more highly variable location than the other two,
-we will discuss these properties first in terms of the command line and Python:
+## 3 Three Locations of Computing
 
-1. Ubiquity. Command line interfaces are standard across all Unix-derived
-systems, which includes Linux, Mac OS, Chrome OS, Android, and many others
-powering everything from Raspberry Pis to supercomputing clusters. Similarly,
-Bash, Python, and tools that help write Python code, are available on any
-system that a student of the class is likely to encounter.[^bash-nix-os]
-Because of their versatility, both are used in a wide range of environments by
-large user communities. This also means that help is widely available.
+<!---
+JS: Our approach owes a small debt to Software Carpentry since this is what I
+have based a good chunk of the content on the first year and some of this got
+rolled
+into the second. This is likely the place to acknowledge it.
+DT: No problem. Let's do it in footnotes though.
+--->
 
-[^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
-are emulators that reproduce its functionality on most systems that a student
-in the class is likely to encounter. 
+We often begin our courses by outlining the above "big picture" principles,
+challenges, and considerations. Like learning a foreign language, programming
+takes time and patience to master. And as is the case with any difficult skill,
+motivation to practice correlates to chances of long-term success. Developing
+the intellectual motivation to stick with the program is therefore one of our
+paramount goals. For this reason, we begin the course with the "frustration
+points" of everyday computing. In our experience, even simple tasks like
+saving a file from an internet browser is rife with anxiety and frustration:
+Where did that file go? How do I find it again? What type of file is it? Modern
+operating systems conceal such information from average users.
 
-2. Simplicity. The syntax used in both Bash and Python is relatively
-straightforward. In Bash, most tasks can be broken down into a series of
-single-line commands that can be chained together through pipes (|) and
-redirects (> and >>). Python does away with much of the frustrating syntax of
-languages that came before it, saving users from the need to keep track of
-byzantine chains of brackets and other syntactical tangles. The elegance of
-Python's syntax not only aids in learning and retention: it also adheres to the
-ethos of legibility we discuss in our core principles above. 
+Our task as instructors is to channel that frustration into opportunities for
+discovery. Students, university faculty, and librarians intrinsically approach
+documents, file systems, and datasets as matters of critical importance,
+embodying the fruits of long-standing commitment and hard-earned labor. We can
+therefore harness the patience and care they bring to their research to bare on
+computing fundamentals. In our experience, students respond enthusiastically to
+the mission of reclaiming the material contexts of their daily intellectual
+production.
 
-3. Power. Bash and Python are powerful enough that, between them, a digital
-humanist is able to realize almost any task imaginable (and possible). They may
-not be the most suitable environments or languages for every task, of course,
-but in combination they form the digital humanist's swiss army knife, allowing
-its user to accomplish most anything that is needed.
-
-4. Durability. As with data structures, we favor tool that are unlikely to
-become obsolete. Neither Bash nor Python are going away anytime soon, meaning
-that solutions written in either will continue to be functional for the
-foreseeable future.
-
-5. Hackability. It is relatively straightforward to write one's own
-commands/methods within both Bash and Python *and to see how those that
-currently exist were written*. While this is not something that we cover in our
-courses, the possibility for end users to investigate and expand the languages
-that they are working on is a basic tenet of empowering users by unlocking what
-would otherwise be black boxes---and, therefore, inaccessible.
-
-6. Fun. The power, versatility, and relative accessibility of these tools means
-that they are able to be *fun* as well as effective. Both Bash and Python
-invite an interactive methodology that is at once engaging and interesting,
-drawing students forward in their learning.
+As suggested by the metaphor of software development "environment," a site of
+computation denotes both the interface through which the human engages the
+machine and the type of interaction the interface demands. A site is also a
+conceptual space, though, each with its own logic and set of values.
+Consequently, we identify three locations as key sites of digital literacy: the
+command line, the language interpreter, and the text editor.
 
 ### 3.1 Command Line
 
-<!---
-DT: Giving a short outline here.
---->
+The first of these locations is the command line, a Unix shell and a command
+language for text-based call-and-response "dialogue" between the user and the
+Unix-based operating system. On the level of the operating system, all
+operations are in some sense on files. For this reason, the aspiring coder must
+develop a firm grasp of files and folders, along with their corresponding
+manipulation techniques. The command line is where the power user interacts
+with files and folders. Everything from downloading a sample corpus, to writing
+research papers, to debugging code eventually leads to the command line. The
+command line serves as the base of our operations. A new project starts with a
+new folder. The completion of the project will often involve the publication
+and the sharing of files across email clients and code repositories. We
+therefore begin and end each session with the command line.
 
-The command line interface or command line interpreter (CLI) is one way of
-interacting with your operating system and file system through text-based
-commands. Of course, your computer only really understands binary; an
-*interpreter* is therefore required to make one's commands into something the
-computer can work with. The Unix shell called Bash (Bourne Again Shell) is one
-such interpreter. Most users are more familiar with a graphical user interface (GUI), which is
-what it sounds like: interactions with the computer occur through graphics,
-whether that's an icon, a button, or a scroll bar. The command line is simply a
-text-based way of accomplishing approximately the same thing. CLIs were used
-for decades before GUIs were popularized, and for most people's everyday computing purposes,
-CLIs have fallen largely out of fashion.
+One way to think of the command line is as a powerful alternative to tools like
+*File Explorer* (Windows) and *Finder* (Macintosh). Unlike these popular point
+and click programs, the command line interface (CLI from now on) is a
+text-based, dialog-driven mode of interaction with the operating system. On
+some deeper level, the machine "speaks" in binary code. The command line
+"interprets" English-like commands (in a language called Bash)[^ln-bash] into binary.
+When deleting a file, for example, one instructs the machine to `rm filename.txt`
+instead of dragging and dropping it into the trash folder. Note that "dropping into
+the trash folder" merely offers a visual metaphor for the underlying bit-wise
+operations. The CLI alternative turns the metaphor into a more exact command
+`rm`, which stands for "remove." Similarly to direct the computer to move a
+file, we would use the `mv` command. Unlike their visual and metaphorical
+counterparts, the Bash commands contain many advanced options, accessible
+through the manual, or `man`. As expected,`man mv` displays the manual pages
+for the move command.
 
-Supposing that CLIs are therefore obsolete, though, would be a mistake: just as
-things are possible in a GUI that would be unimaginable in a CLI, the command
-line affords its user abilities impossible in a graphical system, especially in
-the context of computation, file management, and textual transformation. Bash
-in particular is also a more universal way of interacting with a computer than
-reliance on a GUI, as it is accessible and standard across \*nix-based operating systems (and
-can be used via emulator in non-\*nix systems). <!---PRP: I think I'm in a little over my head
-here, technical oversight appreciated. Basing this on my knowledge/GNU
-site/other notes in this document--->
+Furthermore, because Bash commands are in themselves a type of a programming
+language, they can be chained together and automated to produce complex
+behavior. Imagine, for example, writing a book or a dissertation in a directory
+that contains several files in plain text format (.txt), each corresponding to a
+chapter. The writer can then use the following script to produce the total
+word count:
 
-Luckily for digital humanists, Bash has powerful built-in tools for file
-manipulation that can be used for many simple but powerful tasks in textual
-transformation. Returning a word count for a file only requires a brief line of
-Bash script:
+```
+wc -w ~/user/documents/book/*txt | tail -n 1 | sed 's/[a-z ]//g' >> log.txt
+```
 
-~~~~
-    wc -w filename.txt
-~~~~
+The above "incantation" does four things:
 
-Returning every line of *Moby Dick* that contains the word "whale" is as
-simple:
 
-~~~~
-    grep whale mobydick.txt
-~~~~
+1. Count the words in all of the `.txt` files found in the present directory.
 
-Tasks such as finding a file based on certain criteria, downloading data
-online, and networking and security tools like ssh work by similar means.
-Above all, exposure to an interface beyond the GUI lets users outside of the
-closed system of one or two dominant operating systems and a common set of programs
-that determine how one interacts with one's own documents. Command line basics
-give a user more direct access to the file structures: without invasive, often
-proprietary software adding an extra level of mediation between the user and
-the operating system, a greater degree of control over one's own files is
-possible.
+    Input:
+
+    ```
+    wc -w *md
+    ```
+    Output:
+
+    ```
+    11717 1-chapter.txt
+    12457 2-chapter.txt
+    13780 3-chapter.txt
+    10542 3-chapter.txt
+    74850 total
+    ```
+
+2. Isolate the total count from the individual file counts.
+
+    Input:
+
+    `tail -n 1`
+
+Output:
+
+    `74850 total`
+
+3. Remove the word "total" and keep only the number count.
+
+    Input:
+
+    `sed 's/[a-z ]//g'`
+
+    Output:
+
+    `74850`
+
+4. Append the count to the log file.
+
+    `>> log.txt`
+
+
+The vertical line (`|`) and angle bracket (`>>`) allow us to chain the commands
+into a system of pipes and redirects, passing the text output of one operation
+to another. Once saved to disk, this small script can be set to run
+automatically at a predetermined time interval and used to keep a daily log of
+one's writing activity.
 
 Learning the command line is not just a matter of opening up new ways of
 interacting with files, though. In learning command line basics, students
 become familiar with concepts that will establish foundational techniques that
-will be built upon in higher-level contexts, in true bootstrapping style.
-Navigating the file system and organizing files using commands like cd, mv, cp,
-and rm requires practice for students unaccustomed to it, but the grasp of file
-structures this process requires is essential for later tasks like networking
-and programming.
+will be built upon in higher-level contexts, in true bootstrapping style. The
+above exercise can be used to discuss the difference between relative and
+absolute file pats (`~/usr/documents/book/*txt` vs.
+`/usr/documents/book/*txt`). It contains the basics of regular expressions
+(`[a-z ]`). And because the output of `wc -w` is a string, the excercise can be
+used as the basis for string manupalation and later data normalization and
+rudimentary natrual language processing. Finally, such excercises can lead to
+the basics of remote server management, networking, security, and encryption.
 
-<!--- this is probably a footnote -->
-> Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is an
-sh-compatible shell that incorporates useful features from the Korn shell (ksh)
-and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO
-9945.2 Shell and Tools standard. It offers functional improvements over sh for
-both programming and interactive use. In addition, most sh scripts can be run
-by Bash without modification.[^ln-bashlink]
-
-[^ln-bashlink]: http://www.gnu.org/software/bash/
+[^ln-bash]: "Bash is the GNU Project's shell. Bash is the Bourne Again SHell.
+Bash is an sh-compatible shell that incorporates useful features from the Korn
+shell (ksh) and C shell (csh). It is intended to conform to the IEEE POSIX
+P1003.2/ISO 9945.2 Shell and Tools standard. It offers functional improvements
+over sh for both programming and interactive use. In addition, most sh scripts
+can be run by Bash without modification" [@free_software_foundation_gnu_2007].
 
 ### 3.2 Python
 
-As we have begun to explain above, Python is a programming language that has
-attained widespread popularity in part because of the simplicity of its syntax
-and its adaptability. Like all programming languages, it has its own syntax,
-control structures, and data structures. What makes Python so powerful for the
-fledgling digital humanist is its modularity. While basic Python includes the
-basic methods of its control structure and for manipulating different types of
-data, more complex and context-specific libraries are included as additional
-modular librariesthat can be imported as needed---CSV manipulation and useful
-statistical methods are accessible through this method.  This modularity is far
-from limited to what comes bundled with Python, though; it also has an
-abundance of user-generated external libraries that.  Since Python's inception,
-its users have been developing additional toolkits that work with Python's
-existing structure and extend it to contexts that the basic language might not
-be equipped to handle. The Natural Language Toolkit (NLTK) is an especially
-extensive and relevant example, supplying prebuilt methods for common natural
-language processing tasks like word tokenization, part of speech tagging, and
-lemmatization. Pandas is similarly essential for a data analyst working in
-Python. A digital humanities curriculum is likely to work with some of these
-libraries early if it is going to be driven by student interest rather than
-methodical and exhaustive coverage of Python basics.
-
-For a student beginning to explore Python and its libraries, sitting down to
-write a program from start to finish will not necessarily be most pedagogically
-effective method. A more forgiving environment for the kinds of questions we
-hope would drive our students---questions like "What would happen if I did
-this?" or "What if I combined these two things?"---is Python's Integrated
-DeveLopment Environment (IDLE). Like the Bash shell, 
-
-Same structure as above. 
-
-1. Explain what it is.  
-
-control structures + data types + built-in functions +
-syntax + interpreter Why Python
-
-2. Why.
-
-3. Easy examples we cover in class (zodiac fortune teller or an choose your own
-adventure exercise). control structures + data types + built-in functions +
-syntax + interpreter
-
-3. A glimplse of more advanced possibilities. 
-
-4. When to use one over the other (see chart)
+The second of our foundational sites of computing is the Python interpreter.
+Where the command line "translates" from *Bash* into machine code, the *Python*
+interpreter translates from *Python*. *Bash* traces its roots to the late
+1970s. It is a domain-specific command language, desiged specifically to
+interact with the operating system. Its longevity makes it stable and
+ubiquitous. *Python* became popular in the early 2000s. Unlike *Bash*, it is a
+general-purpose, high-level programming language. 
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
@@ -591,50 +528,122 @@ syntax + interpreter
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
+We chose *Python* among other excellent choices (like *R* and *Haskell*) for
+several reasons. First, *Python* is popular. According to the TIOBE language
+popularity index, *Python* holds roughly 3.6% of the market, trailing only
+behind *Java* and C-family languages (*C*, *C++*, *C#*)
+[@tiobe_software_tiobe_2015]. Although detailed statistics by field are not
+available, we infer that in the domain of scientific computing and data science
+*Python* holds the majority share of the market. This is important, because it
+means that learning *Python* is a good investment of time. It can lead to jobs
+outside of academia. Projects using *Python* will also have an easier time
+hiring outside experts, due to the popularity of the language.
+
+The popularity of the language has a secondary, important side-effect. Being a
+general-purpose language, it has been adapted to a wide variety of contexts,
+from machine learning to web application development. The *Python* ecosystem
+consequently offers a rich variety of software libraries. Most tasks needed to
+perform academic research or library administration have likely been addressed
+in an existing framework and are available widely for reuse. The student can
+therefore apply skills learned in one area of reseach to another, without loss
+of expertise or productivity.
+
+Finally, besides being popular and flexible *Python* is a human-friendly
+language. Human-readability is one of its stated aims. Python Enchancement
+Proposal 20 (PEP20), known as the "Zen of Python" reads [@smith_pep_2015]:
+
+```
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+```
+
+We feel that in priveleging code legibiliyty, *Python* philosophy fits well
+with the values of humanistic inquiry. The human-friendly readability of the
+language on the technical level reflects on the social level. The Python
+Software Foundation, an organization "devoted to advancing open source
+technology related to the Python programming language," publishes a Diversity
+statement and maintains a mailing list devoted to the topic. The community
+fosters initiatives like Pyladies, "an international mentorship group with a
+focus on helping more women become active participants and leaders in the
+Python open-source community," and Minorities in Python Conference (held in
+June 2015, in San Francisco).
+
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
 
 ### 3.3 Text Editor
 
-Explain the difference between interactive, conversational, exploratory type of programming and
-"saving the conversation" for the future in the text editor.
+The humble text editor gives space to the third and possibly most important
+site of computing in the digital humanities. It is important because besides
+supporting programming it also supports writing in general. For this reason, we
+ask our students to reevaluate their relationship with consumer-grade tools
+like Microsoft Word and Google Docs. To write code we need a *plain text*
+editor, which does not add any hidden formatting characters to our program
+instructions. We need also an editor that we can modify and extend, without
+being hampered by proprietary licenses or restrictions. Several such editors
+answer to our criteria. Among them: *Atom*, *Emacs*, *Leafpad*, *Notepad++*,
+and *Vim*.
 
-Why text editors are important (plain text).
+Where conversing directly with *Bash* or *Python* interpreters allows for an
+"interactive" back-and-forth style of programming, the text editor gives a
+measure of permanence to the conversation. When working with data sets we often
+begin with exploratory data analysis at the command line, aimed at
+familiarizing ourselves with the data and at forming intuitions about its
+explanatory potential. Once those intuitions are formed, we can move to writing
+and debugging code in the text editor. The Python interpreter remains open in
+the background to test individual lines of code, before they make it into our
+program.
 
-Finish with a chart. When to use interactive programming (data exploration) and
-when to build programs (what is the opposite of interactive. I can help in this
-section.
+About half way through the session, the students are ready to formulate a
+project of our own. Rather than using pre-canned exercises, we encourage our
+students to formulate small research projects related to their work or research.
+In our last class, a group of librarians built a program to copy selected
+metadata from one `.csv` file to another, while checking for errors in data
+formatting (like a properly formatted date, for example). Another group built
+an automatic essay grader. Yet another analyzed poetry for its similarity to
+Byron. A fourth group wrote a script that automates the downloading of a film
+script corpus.
 
+All of these projects begin with a set of step by step instructions in English.
+Thus, a simple essay grader may be expressed as follows:
 
-| Interactive Programming           | Text Ed |
-+-----------------------------------|--------------------------+
+1. Open and read a file.
+2. Calculate variation of sentence lengths.
+3. Assign a score based on variation.
+4. Calculate a measure of linguistic variety.
+5. Assign a vocabulary score.
+6. Find common spelling mistakes and "weasel words" that are a sign of weak
+writing.
+7. Average the scores to come up with a total grade.
 
-### Conclusion
+In this way, students work alone or in groups to define the scope of their
+program. Once the scope is defined, we works with individual groups to help
+translate the English-language heuristic into workable Python code. Inevitably,
+programs grow more sophisticated. In the above example, students used published
+work to test their grading algorithm. In a longer course, we may introduce
+supervised learning techniques to classify essays for quality based on
+similarity to work that has already been evaluated. The difficulty of the
+project may be adjusted to tailor the length of the course and the level of
+individual expertise. During such free-form "laboratory" sessions we encourage
+students to help each other and to share expertise with their peers.
 
-These three locations build solid foundations for critical practice in the
-digital humanities. All more advanced stuff rests on these foundations. In
-starting here we dispell anxiety and illusion.[^ln-coauthor]
+The command line, the Python interpreter, and the text editor provide the
+foundations of critical computing in the humanities. We do not expect all of
+our students to become programmers. But at the very least, they become exposed
+to a powerful problem-solving method and to operating system internals, used
+widely in all aspects of computation from sending email to writing a
+paper.[^ln-coauthor]
 
-<!---
-JS: Could we collapse this into 1.0?. Possibly add in the
-importance of teaching them how to help themselves...
-
-DT: Let's move to the conclusion (done). We'd need to transition into here
-better. Re-word as a conclusion.
---->
-
-Keep poking, get help, take notes, comment, annotate, share, remix, and train
-others.
-
-Finally, and this noticed by several course observers over the years, students
-in the humanities are sometimes curiously hesitant to explore their machines.
-In the absence of a tinkering upbringing and in the presence of cultural
-divides that regularly reinforce norms like "Those in the Arts and Humanities
-can't do programming, math, science, etc.", they might be worried of breaking
-expensive equipment or losing sensitive data. Demystifying the magical black
+In our experience, students without a technical background are sometimes
+curiously hesitant to explore their machines. Demystifying the magical black
 box and learning some habits that prevent irrevocable loss of data addresses
-that fear, encouraging the students to tinker and to explore. Researchers at
+that fear, encouraging the students to tinker and to experiment. Researchers at
 the later stages of their career may be particularly reluctant to ask for help
 or to express their questions in public. Our teaching approach therefore
 encourages shared expertise. We model not being afraid to expose our own gaps
@@ -644,7 +653,10 @@ into courses and workshops. Eventually, in following these principles, we hope
 for our students to become catalysts of change in their own communities of
 practice.
 
-[^ln-coauthor]: A note on coathorship: a detailed history of author
-contributions can be found on our GitHub page at
+[^ln-coauthor]: A detailed history of author contributions can be found on our
+GitHub page at
 [https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md](https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md)
 
+[^bash-nix-os]: While Bash is confined to \*nix-style operating systems there
+are emulators that reproduce its functionality on most systems that a student
+in the class is likely to encounter.
