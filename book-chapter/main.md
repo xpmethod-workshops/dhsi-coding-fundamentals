@@ -515,15 +515,15 @@ can be run by Bash without modification" [@free_software_foundation_gnu_2007].
 The second of our foundational sites of computing is the Python interpreter.
 Where the command line "translates" from *Bash* into machine code, the *Python*
 interpreter translates from *Python*. *Bash* traces its roots to the late
-1970s. It is a domain-specific command language, desiged specifically to
+1970s. It is a domain-specific command language, designed specifically to
 interact with the operating system. Its longevity makes it stable and
 ubiquitous. *Python* became popular in the early 2000s. Unlike *Bash*, it is a
 general-purpose, high-level programming language. 
 
 | When to use Bash                  | When to use Python       |
 +-----------------------------------|--------------------------+
-| - automate daily tasks            | - data science           |
-| - manage files & folders          | - app development        |
+| - to automate daily tasks         | - data science           |
+| - to manage files & folders       | - app development        |
 | - remote server administration    | - NLTK                   |
 | - data munging[^ln-munge]         | - data visualization     |
 | - quick & dirty text manipulation | - glue code              |
@@ -537,20 +537,20 @@ behind *Java* and C-family languages (*C*, *C++*, *C#*)
 available, we infer that in the domain of scientific computing and data science
 *Python* holds the majority share of the market. This is important, because it
 means that learning *Python* is a good investment of time. It can lead to jobs
-outside of academia. Projects using *Python* will also have an easier time
-hiring outside experts, due to the popularity of the language.
+outside of academia, and projects using *Python* will have an easier time
+hiring outside experts due to the popularity of the language.
 
-The popularity of the language has a secondary, important side-effect. Being a
-general-purpose language, it has been adapted to a wide variety of contexts,
-from machine learning to web application development. The *Python* ecosystem
-consequently offers a rich variety of software libraries. Most tasks needed to
-perform academic research or library administration have likely been addressed
-in an existing framework and are available widely for reuse. The student can
-therefore apply skills learned in one area of reseach to another, without loss
-of expertise or productivity.
+*Python*'s popularity has an important side-effect. Being a general-purpose
+language, it has been adapted to a wide variety of contexts, from machine
+learning to web application development. The larger *Python* framework
+consequently offers a rich variety of software libraries and toolkits. Most
+tasks needed to perform academic research or library administration have likely
+been addressed in an existing library and are available for use. The student
+can therefore apply skills learned in one area of research to another, without
+loss of expertise or productivity.
 
-Finally, besides being popular and flexible *Python* is a human-friendly
-language. Human-readability is one of its stated aims. Python Enchancement
+Finally, besides being popular and flexible, *Python* is a human-friendly
+language. Human-readability is one of its stated aims. the Python Enhancement
 Proposal 20 (PEP20), known as the "Zen of Python" reads [@smith_pep_2015]:
 
 ```
@@ -563,16 +563,17 @@ Sparse is better than dense.
 Readability counts.
 ```
 
-We feel that in priveleging code legibiliyty, *Python* philosophy fits well
+We feel that in privileging code legibility, the *Python* philosophy fits well
 with the values of humanistic inquiry. The human-friendly readability of the
-language on the technical level reflects on the social level. The Python
-Software Foundation, an organization "devoted to advancing open source
-technology related to the Python programming language," publishes a Diversity
-statement and maintains a mailing list devoted to the topic. The community
-fosters initiatives like Pyladies, "an international mentorship group with a
-focus on helping more women become active participants and leaders in the
-Python open-source community," and Minorities in Python Conference (held in
-June 2015, in San Francisco).
+language on the technical level reflects its possibilities on the social level:
+legibility can translate to accessibility across communities and in groups too
+often under-represented in programming circles. The Python Software Foundation,
+an organization "devoted to advancing open source technology related to the
+Python programming language," publishes a diversity statement and maintains a
+mailing list devoted to the topic. The community fosters initiatives like
+Pyladies, "an international mentorship group with a focus on helping more women
+become active participants and leaders in the Python open-source community,"
+and the Minorities in Python Conference (held in June 2015, in San Francisco).
 
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
@@ -580,12 +581,12 @@ destructive data transformation steps [@raymond_mung_2004].
 
 ### 3.3 Text Editor
 
-The humble text editor gives space to the third and possibly most important
-site of computing in the digital humanities. It is important because besides
-supporting programming it also supports writing in general. For this reason, we
-ask our students to reevaluate their relationship with consumer-grade tools
-like Microsoft Word and Google Docs. To write code we need a *plain text*
-editor, which does not add any hidden formatting characters to our program
+The humble text editor is the third and possibly most important site of
+computing in the digital humanities: in addition to supporting
+programming, the right text editor can enhance writing in general. For this reason, we ask our
+students to reevaluate their relationship with consumer-grade tools like
+Microsoft Word and Google Docs. To write code we need a *plain text* editor,
+which does not add any hidden formatting characters to our program
 instructions. We need also an editor that we can modify and extend, without
 being hampered by proprietary licenses or restrictions. Several such editors
 answer to our criteria. Among them: *Atom*, *Emacs*, *Leafpad*, *Notepad++*,
