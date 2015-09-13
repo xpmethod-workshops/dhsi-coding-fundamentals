@@ -1,9 +1,9 @@
 ---
 title: "Coding Fundamentals for Human(s|ists)"
 authors:
-- Phillip Polefrone
 - John Simpson
 - Dennis Tenen
+- Phillip R. Polefrone
 bibliography: main.bib
 
 ---
@@ -12,20 +12,20 @@ We write this chapter as a general reflection on teaching computing
 fundamentals in the humanities context, and more specifically in the wake of
 teaching *Computing Foundations for Human(s|ists)* at the Digital Humanities
 Summer Institute (DHSI), University of Victoria and *Computing in Context* at
-Columbia university.[^ln-titlelink] These courses were intended for humanities
+Columbia University.[^ln-titlelink] These courses were intended for humanities
 researchers with no previous programming experience who wanted to learn how
 programs work by writing a few simple, useful programs of their
 own.[^ln-courselink] The topics covered included working with files and folders
 at the command line, text-stream manipulation with GNU Bash, regular
 expressions, and Python basics like native data types, variables, functions,
-and control structures. At the end of the course, our students worked on their
-own and in small groups to create a small web scraper, an "essay grader," a
-comma-separated value file manipulator, and a program that evaluates poetry
+and control structures. At the end of the DHSI course, our students worked on
+their own and in small groups to create a small web scraper, an "essay grader,"
+a comma-separated value file manipulator, and a program that evaluates poetry
 based on its measure of similarity to Byron's.
 
 Our aim in this chapter is not to recapitulate the experience of teaching (we
 would not have the space to do it here, in any case), but to reveal some of the
-core principles that went into making the course, to talk about the rationale
+core principles that went into making the courses, to talk about the rationale
 behind our teaching philosophy, and, more broadly, to suggest an approach to
 teaching programming in the humanities environment.
 
@@ -34,13 +34,13 @@ search text for specified patterns. In this case it picks out anything starting
 with "Human" and ending in *either* "s" or "ists". So, it acts as a stand-in
 for both "Humans" and "Humanists".
 
-[^ln-courselink]: An archived version of the course can be accessed at
+[^ln-courselink]: An archived version of the DHSI course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
 <!---
 JS: Should we say something about coding vs programming here?
 DT: I don't have strong feelings about the distinction. Up to you.
-PRP: Skipping for now---seems like the intro does what it needs to without the
+PRP: Skipping for now---seems like the intro does what it needs to without this
 distinction
 --->
 
@@ -51,7 +51,7 @@ must be grounded in the practices of humanities research and answer to the
 values held by that academic community. Inspired by a number of initiatives
 advancing a similar philosophy, we refer to this approach as "critical
 computing."[^ln-first] The following eight principles connect key ideas in
-computation to values intrinsic to humanistic inquiry:
+computation with values intrinsic to humanistic inquiry:
 
 [^ln-first]: We are not the first nor the only instructors to think about
 digital pedagogy this way, nor are we the only ones to be offering a course
@@ -71,40 +71,41 @@ consequently, frustration. Recognizing this, our courses target the underlying
 structure of tools that many rely on for their daily computation, teaching our
 students how these tools work (and not just how to use them). Beyond the
 principles of programming, we want our students to understand the basics of
-networking, security, and operating systems. By revealing the innards of
-opaque computational "black boxes," we hope to empower our students to take
-control of their everyday computational practice.
+networking, security, and operating systems. By revealing the innards of opaque
+computational "black boxes," we hope to empower our students to take control of
+their everyday digital practice.
 
 The most universal daily computing task of the humanities, regardless of
-research interest, is writing. Our first step in addressing daily humanistic
-computing in the classroom, then, is to create small "experiments" that address
-a student's own writing. These might include a lab session in which students
-analyze their own documents for commonly over-used "weasel words,"[^ln-weasel]
-for example. Working with one's own documents introduces important
-concepts---like "relative" and "absolute" paths, file formats, character
-encoding, and small shell utilities like `grep` (used to search through text
-files), `wc` (word count), or `sed` (stream editor for text
-transformation)---that can later be extended into more advanced concepts in
-system administration or natural language processing. Short exercises in
-text-based programming can be put together to form the students' first
-programs, performing tasks like "safely rename all the files in this folder
-according to such-and-such rule," or "keep a daily log of my writing progress."
+research interest, is writing. In response to this importance, our first step
+in addressing daily humanistic computing in the classroom is to create small
+"experiments" that address a student's own writing habits. These exercises
+might include a lab session in which students analyze their own documents for
+commonly overused "weasel words,"[^ln-weasel] for example. Working with one's
+own documents introduces important technical concepts---like "relative" and
+"absolute" paths, file formats, character encoding, and small shell utilities
+like `grep` (used to search through text files), `wc` (word count), or `sed`
+(stream editor for text transformation)---that can later be extended into more
+advanced concepts in system administration or natural language processing.
+Short exercises in text-based programming can be put together to form the
+students' first programs, performing tasks like "safely rename all the files in
+this folder according to such-and-such rule," or "keep a daily log of my
+writing progress."
 
-[^ln-weasel]: Weasel words are words that sound very meaningful, but instead of
-adding, diminish the impact of persuasive writing. The "very" in the previous
-sentence, for example.
+[^ln-weasel]: Weasel words are words that sound very meaningful, but diminish
+instead of adding to the impact of persuasive writing. The "very" in the
+previous sentence, for example, is a weasel word.
 
 ### 1.2 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
 
 Researchers, librarians, students, and faculty are faced with a bewildering
-array of software choices. In making the decision to invest time and resources
+array of software choices. In deciding whether to invest time and resources
 into learning a new tool or methodology, we are guided by "Unix Philosophy" and
 the free software movement. The Unix philosophy of computing prioritizes small,
 modular pieces of software that "do one thing well" [@mcilroy_unix_1978]. Such
 software can then be chained together with other small but powerful tools to
 achieve complex results. Free software, besides being cost effective ("free as
 in beer"), also opens the tool itself to humanistic inquiry. Code is said to be
-free whet it is available for inspection, interpretation, critique, and
+"free" when it is available for inspection, interpretation, critique, and
 modification. It is, in the words of Richard Stallman, "free as in speech"
 [@stallman_why_2007]. Above all, we seek out universal tools that we can
 understand and, where needed, customize to fit our own particular needs and
@@ -128,14 +129,14 @@ tends toward opacity, it becomes increasingly difficult for new programmers to
 read during development and for others to draw on files in that format in the
 future. The number and complexity of file formats relates closely to the
 proliferation of closed tools and platforms: arcane file formats inhibit access
-to their contents as raw data or, for that matter, any platform but the one for
-which it is intended. The danger of a single-platform format is most acutely
-felt by archivists faced with preserving short-lived data structures meant for
-obsolete platforms of the recent past. For humanists who rarely work with truly
-large datasets or collections, the risk of rapid obsolescence offsets any
+to a file's contents as raw data or, for that matter, on any platform but the
+one for which it was intended. The danger of a single-platform format is most
+acutely felt by archivists faced with preserving short-lived data structures
+meant for obsolete platforms. For humanists who rarely work with truly large
+datasets or collections, the risk of rapid obsolescence offsets any
 hypothetical gains in speed or performance offered by a new note-taking
 platform, a needlessly complex database, or a constantly upgrading proprietary
-text editor.[^ln-plain] When selecting a data format, we ask: does it need
+text editor.[^ln-plain] When selecting a data format, we ask: Does it need
 special software to render? How long has it been around? and What organization
 is responsible for maintaining the standard?
 
@@ -152,46 +153,49 @@ machines is merely a side effect of algorithmic, analytical thinking. To learn
 to think like a programmer is useful in many contexts: it involves dividing
 big, complex, and seemingly intractable problems into small, modular, solvable
 components. Writing a grant proposal, for example, a book, or a dissertation
-may initially seem like a daunting and onerous task. Progress can be made once
-it is divided into small, doable steps: like explaining a recipe for making a
-cake (an exercise we use in the classroom).
+may initially seem like a daunting and onerous task, but progress can be made
+once it is divided into small, doable steps, as though it were a recipe for
+making a cake (an exercise we use in the classroom).
 
 <!---
 JS: Seems this could be collapsed into 1.2 for the sake of simplicity
 DT: I tried it, but I think it is a good point to stand on its own.
 DT: What do you guys think of the order?
+PRP: I like it. Starting with broader principles and moving into more technical
+standards seems effective to me.
 --->
+
 ### 1.6 If you have to do something more than ~~once~~ a hundred times, automate.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
 good programmer's intuition will be to automate the task. For example, we often
 use the `rsync` command to back up our documents; however, after a few months
-of running it manually, the user can delegate that task to the built-in
-scheduler called `cron`. Humanists may not have the same automating impulse,
-but they can save just as much time with automation as anyone. As the daily
-computing tasks of humanists are considered in these terms, inefficiencies and
-causes of unnecessary repetition can be eliminated. The saying normally goes
-that if you do it more than *once*, automate. One must know, however, exactly
-*what* to automate. When backing up your files, do you want to back up the
-whole system or a few select folders?  How often should the backup script run?
-The answers become apparent only after extensive manual use. As we introduce
-automated "daemons" that run tasks on our behalf, we want to make sure we think
-through any unintended side-effects: technological, personal, and political.
+of running it manually, we can delegate that task to the built-in scheduler
+called `cron`. Humanists may not have the same automating impulse, but they can
+save just as much time with automation. As the daily computing tasks of
+humanists are considered in these terms, inefficiencies and causes of
+unnecessary repetition can be eliminated. The saying normally goes that if you
+do it more than *once*, automate. You have to know, however, exactly *what* to
+automate. When backing up your files, do you want to back up the whole system
+or a few select folders?  How often should the backup script run?  The answers
+become apparent only after extensive manual use. As we introduce automated
+"daemons" that run tasks on our behalf, we want to make sure we think through
+any unintended side-effects, be they technological, personal, or political.
 
 ### 1.7 Do it right---*the first time*.
 
 Although programmers are lazy, they are lazy in the right way. Doing things
-badly, in a haphazard fashion, accumulates technological, intellectual, and
-eventually an ethical debt to oneself and one's community. Code comments (or
+badly or in a haphazard fashion accumulates technological, intellectual, and
+eventually an ethical debt to yourself and your community. Code comments (or
 the lack of them) are a common site of egregious laziness: it is easy to skip
-documenting one's code or document insufficiently. "It just works, why bother?"
-However, a piece of code that makes perfect sense today may seem impenetrable
-tomorrow. Without comments, time needs to be spent to recreate the reasoning
-behind the original implementation. Similarly, we advise our students against
-simply cutting and pasting code snippets from our tutorials. We want them to
-follow our thinking, to annotate, and to review their notes regularly. In the
-social context, lazy practices are unethical because they "bank" against the
-labor of others in the future, saving one's own time now at the expense of
+documenting your code or to document insufficiently. "It just works, why
+bother?" However, a piece of code that makes perfect sense today may seem
+impenetrable tomorrow. Without comments, time needs to be spent to recreate the
+reasoning behind the original implementation. Similarly, we advise our students
+against simply cutting and pasting code snippets from our tutorials. We want
+them to follow our thinking, to annotate, and to review their notes regularly.
+In the social context, lazy practices are unethical because they "bank" against
+the labor of others in the future, saving one's own time now at the expense of
 someone else's later. Doing things the right way the first time costs less than
 making up for it down the line.
 
@@ -199,33 +203,34 @@ making up for it down the line.
 
 When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
-and extensible software---that is, teaching skills and concepts that will have
-the highest impact because they transfer to the greatest number of contexts or
-tasks. The command line, for example, useful at first for file management and
-operating system exploration, later becomes an important resource for remote
-server administration, web design, and data science. Furthermore, the skills
-learned in the process of becoming comfortble on the command line transfer to
-physical computing, fabrication, web scraping, and text analysis. Learning
-about relative and absolute paths locally will make it easier to understand
-internet infrastructure, domain names, and resource allocation. It leads to
-Secure Shell and Pretty Good Privacy (PGP), used by activists and journalists
-to protect their communications from surveillance.
+and extensible software. In other words, we privilege skills and concepts that
+will have the highest impact in the long run by transferring to the greatest
+number of contexts or tasks. The command line, for example, useful at first for
+file management and operating system exploration, later becomes an important
+resource for remote server administration, web design, and data science.
+Furthermore, the skills learned in the process of becoming comfortable on the
+command line transfer to physical computing, fabrication, web scraping, and
+text analysis. Learning about relative and absolute paths locally will make it
+easier to understand internet infrastructure, domain names, and resource
+allocation. It leads to Secure Shell and Pretty Good Privacy (PGP), used by
+activists and journalists to protect their communications from surveillance.
 
 With the goal of bootstrapping in mind, one can see the real value of lessons
 that many might eschew for fear that they are too technical or complicated. It
 may be appealing at first to hide computational complexity behind "simple"
-visual interfaces, for example, but these interfaces do not share a common
-visual language and they do not transfer well across software platforms. Our
-colleagues in computer science sometimes worry that introducing command line
-interfaces and raw coding environments may alienate humanists. We believe that
-limited, "dumbed-down" interfaces do even more harm. They further mystify
-computing to an audience that already feels removed from the material contexts
-of their daily knowledge production. In building the foundations, we want our
-students to spend their time well: to learn tools and skills that can support a
-wide variety of activity within diverse cultural contexts. The extra care we
-take in explaining the reasoning behind our technological choices can motivate
-the students through any initial difficulties of learning how to code "the hard
-way," without shortcuts or artificial limitations.
+visual interfaces, but these interfaces do not share a common visual language;
+the labor of learning one interface therefore does not not transfer well across
+other software platforms. Our colleagues in computer science sometimes worry
+that introducing command line interfaces and raw coding environments may
+alienate humanists. We believe that limited, "dumbed-down" interfaces do even
+more harm, further mystifying computing to an audience that already feels
+removed from the material contexts of their daily knowledge production. In
+building the foundations, we want our students to spend their time well: to
+learn tools and skills that can support a wide variety of activity within
+diverse cultural contexts. The extra care we take in explaining the reasoning
+behind our technological choices can motivate the students through any initial
+difficulties of learning how to code "the hard way," without shortcuts or
+artificial limitations.
 
 <!---
 JS: Mention the CS chair observation?
@@ -236,9 +241,9 @@ can find a way to phrase it.
 
 ## 2 Digital Humanities Core
 
-Programming can involve long stretches of frustration (Why does this not work?)
-punctuated by the short bursts of elation that come with accomplishing
-something difficult (It works!). Rather than allowing students to view their
+Programming can involve long stretches of frustration ("Why does this not
+work?") punctuated by the short bursts of elation that come with accomplishing
+something difficult ("It works!"). Rather than allowing students to view their
 initial lack of results as failures, we attempt to channel feelings of
 hindrance into a practice of problem solving and discovery, related to
 similarly difficult but more familiar tasks of archival research and long-form
@@ -301,9 +306,9 @@ reinforcing skills learned earlier in the process while building on those
 skills to go to the next level of complexity. While text transformations at the
 command line are useful for small tasks and for pedagogical purposes, most
 serious computational textual analysis or natural language processing will
-require knowledge of a programming language such as Python, R, or Haskell.
-Later, we will discuss which tasks are appropriate to the command line and
-which to coding.
+require knowledge of a programming language such as Python, R, or Haskell.  In
+the next section, we will discuss which tasks are appropriate to the command
+line and which to coding.
 
 Because the internet plays such a key role in transforming academic practice,
 knowing the basics of networking---infrastructure, routing, packet switching,
@@ -330,7 +335,7 @@ Finally, programming fundamentally involves a measure of algorithmic thinking.
 On some abstract level, the specific languages, tools, and implementations are
 secondary to the logical structures that support all higher level activity.
 This may be the most difficult obstacle to tackle. Every word cloud, every
-topic model, and network visualization tool hides a number of assumptions
+topic model, and every network visualization tool hides a number of assumptions
 driven by sophisticated logic that comes from the fields of statistics and
 computer science. Without training in the methods on which these tools are
 based, we are bound to remain mere consumers of technology rather than active
@@ -346,8 +351,8 @@ computer scientists and software engineers would claim mastery over the full
 stack of what is mentioned here. It is much more likely for digital humanists
 to develop proficiency in one or several areas of practice. Yet any one of the
 above foundational competencies have spillover effects that "level up" the rest
-of the list. An intensive, week-long class, like the one that we teach at
-DHSI, can only begin to address a small part of the larger, complicated puzzle.
+of the list. An intensive, week-long class, like the one that we teach at DHSI,
+can only begin to address a small part of the larger, more complicated puzzle.
 
 [^ln-versionlink]: Given that we have looked to Software Carpentry for some of
 the methodology that we employ in the course it should be noted that we do not
