@@ -44,7 +44,7 @@ PRP: Skipping for now---seems like the intro does what it needs to without this
 distinction
 --->
 
-## 1 Critical Computing in the Humanities, Core Principles
+## 1 Critical Computing in the Humanities
 
 It is our firm belief that teaching computational principles in the humanities
 must be grounded in the practices of humanities research and answer to the
@@ -354,17 +354,6 @@ above foundational competencies have spillover effects that "level up" the rest
 of the list. An intensive, week-long class, like the one that we teach at DHSI,
 can only begin to address a small part of the larger, more complicated puzzle.
 
-[^ln-versionlink]: Given that we have looked to Software Carpentry for some of
-the methodology that we employ in the course it should be noted that we do not
-spend any time on version control via tools such as Git or Mercurial. This was
-done initially so that more time could be spent on programming concepts,
-hands-on coding work, and unpacking the black box that is the command line.
-The importance of version control for efficient and effective coding via
-protecting against loss and enabling collaboration with others is recognized
-and future versions of the course may include it as a consequence. As with all
-training that is already time constrained down to the essentials, the challenge
-is what to take out to add this in.
-
 ## 3 Three Locations of Computing
 
 <!---
@@ -462,7 +451,7 @@ The above "incantation" tells the computer to do four things:
     12457 2-chapter.txt
     13780 3-chapter.txt
     10542 3-chapter.txt
-    74850 total
+    48496 total
     ```
 
 2. Isolate the total count from the individual file counts.
@@ -523,16 +512,17 @@ interpreter translates from *Python*. *Bash* traces its roots to the late
 1970s. It is a domain-specific command language, designed specifically to
 interact with the operating system. Its longevity makes it stable and
 ubiquitous. *Python* became popular in the early 2000s. Unlike *Bash*, it is a
-general-purpose, high-level programming language. 
+general-purpose, high-level programming language.
 
-| When to use Bash                  | When to use Python       |
-+-----------------------------------|--------------------------+
-| - to automate daily tasks         | - data science           |
-| - to manage files & folders       | - app development        |
-| - remote server administration    | - NLTK                   |
-| - data munging[^ln-munge]         | - data visualization     |
-| - quick & dirty text manipulation | - glue code              |
-|                                   | - everything else        |
+| When to use Bash                  | When to use Python              |
++-----------------------------------|---------------------------------+
+| - automate daily tasks            | - data science                  |
+| - manage files & folders          | - app development               |
+| - remote server administration    | - natural language processing   |
+| - data munging[^ln-munge]         | - data visualization            |
+| - quick & dirty text manipulation | - web scraping                  |
+|                                   | - corpus analysis               |
+|                                   | - everything else               |
 
 We chose *Python* among other excellent choices (like *R* and *Haskell*) for
 several reasons. First, *Python* is popular. According to the TIOBE language
