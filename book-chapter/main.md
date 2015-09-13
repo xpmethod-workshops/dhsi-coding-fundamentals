@@ -376,21 +376,22 @@ takes time and patience to master. And as is the case with any difficult skill,
 motivation to practice correlates to chances of long-term success. Developing
 the intellectual motivation to stick with the program is therefore one of our
 paramount goals. For this reason, we begin the course with the "frustration
-points" of everyday computing. In our experience, even simple tasks like
-saving a file from an internet browser is rife with anxiety and frustration:
-Where did that file go? How do I find it again? What type of file is it? Modern
-operating systems conceal such information from average users.
+points" of everyday computing. In our experience, even simple tasks like saving
+a file from an internet browser can be rife with anxiety and frustration for
+many students: Where did that file go? How do I find it again? What type of
+file is it? Modern operating systems conceal such information from average
+users.
 
 Our task as instructors is to channel that frustration into opportunities for
 discovery. Students, university faculty, and librarians intrinsically approach
 documents, file systems, and datasets as matters of critical importance,
-embodying the fruits of long-standing commitment and hard-earned labor. We can
-therefore harness the patience and care they bring to their research to bare on
-computing fundamentals. In our experience, students respond enthusiastically to
-the mission of reclaiming the material contexts of their daily intellectual
-production.
+embodying the fruits of long-standing commitments and intellectual labor. We
+can harness the patience and care they bring to their research and help them
+extend it to computing fundamentals. In our experience, students respond
+enthusiastically to the mission of reclaiming the material contexts of their
+daily intellectual production.
 
-As suggested by the metaphor of software development "environment," a site of
+As suggested by the metaphor of a software development "environment," a site of
 computation denotes both the interface through which the human engages the
 machine and the type of interaction the interface demands. A site is also a
 conceptual space, though, each with its own logic and set of values.
@@ -400,33 +401,33 @@ command line, the language interpreter, and the text editor.
 ### 3.1 Command Line
 
 The first of these locations is the command line, a Unix shell and a command
-language for text-based call-and-response "dialogue" between the user and the
+language for text-based, call-and-response "dialogue" between the user and the
 Unix-based operating system. On the level of the operating system, all
-operations are in some sense on files. For this reason, the aspiring coder must
-develop a firm grasp of files and folders, along with their corresponding
-manipulation techniques. The command line is where the power user interacts
-with files and folders. Everything from downloading a sample corpus, to writing
-research papers, to debugging code eventually leads to the command line. The
-command line serves as the base of our operations. A new project starts with a
-new folder. The completion of the project will often involve the publication
-and the sharing of files across email clients and code repositories. We
-therefore begin and end each session with the command line.
+operations are in some sense performed on files. The aspiring coder must
+therefore develop a firm grasp of what files and folders really *are* along
+with corresponding techniques used to manipulate them. The command line is
+where the power user interacts with files and folders. Everything from
+downloading a sample corpus, to writing research papers, to debugging code
+eventually leads to the command line. We thus embrace it and take it as the
+base of our operations: a new project starts with a new folder, and its
+completion and publication often involves sharing files across email clients
+and code repositories. 
 
 One way to think of the command line is as a powerful alternative to tools like
-*File Explorer* (Windows) and *Finder* (Macintosh). Unlike these popular point
-and click programs, the command line interface (CLI from now on) is a
+*File Explorer* (Windows) and *Finder* (Macintosh). Unlike these popular
+point-and-click programs, the command line interface (CLI from now on) is a
 text-based, dialog-driven mode of interaction with the operating system. On
 some deeper level, the machine "speaks" in binary code. The command line
-"interprets" English-like commands (in a language called Bash)[^ln-bash] into binary.
-When deleting a file, for example, one instructs the machine to `rm filename.txt`
-instead of dragging and dropping it into the trash folder. Note that "dropping into
-the trash folder" merely offers a visual metaphor for the underlying bit-wise
-operations. The CLI alternative turns the metaphor into a more exact command
-`rm`, which stands for "remove." Similarly to direct the computer to move a
-file, we would use the `mv` command. Unlike their visual and metaphorical
-counterparts, the Bash commands contain many advanced options, accessible
-through the manual, or `man`. As expected,`man mv` displays the manual pages
-for the move command.
+"interprets" English-like commands (in a language called Bash)[^ln-bash] into
+binary. When deleting a file, for example, one instructs the machine to `rm
+filename.txt` instead of dragging and dropping it into the trash folder. Note
+that "dropping into the trash folder" merely offers a visual metaphor for the
+underlying bitwise operations. The CLI alternative turns the metaphor into a
+more exact command `rm`, which stands for "remove." Similarly, to direct the
+computer to move a file, we would use the `mv` command. Unlike their visual and
+metaphorical counterparts, the Bash commands contain many advanced options,
+which are explained in the manual accessible through the `man` command. In this
+example, `man mv` displays the manual pages for the move command.
 
 Furthermore, because Bash commands are in themselves a type of a programming
 language, they can be chained together and automated to produce complex
@@ -439,7 +440,7 @@ word count:
 wc -w ~/user/documents/book/*txt | tail -n 1 | sed 's/[a-z ]//g' >> log.txt
 ```
 
-The above "incantation" does four things:
+The above "incantation" tells the computer to do four things:
 
 
 1. Count the words in all of the `.txt` files found in the present directory.
@@ -447,7 +448,7 @@ The above "incantation" does four things:
     Input:
 
     ```
-    wc -w *md
+    wc -w *txt
     ```
     Output:
 
@@ -465,7 +466,7 @@ The above "incantation" does four things:
 
     `tail -n 1`
 
-Output:
+    Output:
 
     `74850 total`
 
@@ -486,21 +487,21 @@ Output:
 
 The vertical line (`|`) and angle bracket (`>>`) allow us to chain the commands
 into a system of pipes and redirects, passing the text output of one operation
-to another. Once saved to disk, this small script can be set to run
+on to the next one. Once saved to disk, this small script can be set to run
 automatically at a predetermined time interval and used to keep a daily log of
 one's writing activity.
 
 Learning the command line is not just a matter of opening up new ways of
 interacting with files, though. In learning command line basics, students
-become familiar with concepts that will establish foundational techniques that
-will be built upon in higher-level contexts, in true bootstrapping style. The
-above exercise can be used to discuss the difference between relative and
-absolute file pats (`~/usr/documents/book/*txt` vs.
-`/usr/documents/book/*txt`). It contains the basics of regular expressions
-(`[a-z ]`). And because the output of `wc -w` is a string, the excercise can be
-used as the basis for string manupalation and later data normalization and
-rudimentary natrual language processing. Finally, such excercises can lead to
-the basics of remote server management, networking, security, and encryption.
+become familiar with foundational concepts and techniques that will be built
+upon in higher-level contexts, in true bootstrapping style. The above exercise
+can be used to discuss the difference between relative and absolute file paths
+(`~/usr/documents/book/*txt` vs.  `/usr/documents/book/*txt`). It contains the
+basics of regular expressions (`[a-z ]`). And because the output of `wc -w` is
+a string, the exercise can be used as the basis for string manipulation and,
+later, data normalization and rudimentary natural language processing. Finally,
+such exercises can lead to the basics of remote server management, networking,
+security, and encryption.
 
 [^ln-bash]: "Bash is the GNU Project's shell. Bash is the Bourne Again SHell.
 Bash is an sh-compatible shell that incorporates useful features from the Korn
