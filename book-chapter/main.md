@@ -294,7 +294,7 @@ control can be used to increase transparency in academic collaborations.
 Similar to the scientist's lab notebook, the Git journal fixes the flow of
 ideas and labor by recording the distribution of tasks in a collaborative
 environment, helping teams keep track of work for accurate
-attribution.[^ln-versionlink]
+attribution.
 
 A programming language occupies a central place in computational practice. All
 forms of digitality pass through some form of encoding and automation. Only a
@@ -515,7 +515,7 @@ ubiquitous. *Python* became popular in the early 2000s. Unlike *Bash*, it is a
 general-purpose, high-level programming language.
 
 | When to use Bash                  | When to use Python              |
-+-----------------------------------|---------------------------------+
+|:----------------------------------|:--------------------------------|
 | - automate daily tasks            | - data science                  |
 | - manage files & folders          | - app development               |
 | - remote server administration    | - natural language processing   |
