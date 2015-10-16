@@ -1,11 +1,10 @@
 ---
-title: "Coding Fundamentals for Human(s|ists)"
+title: "On Coding in the Humanities"
 authors:
 - John Simpson
 - Dennis Tenen
 - Phillip R. Polefrone
 bibliography: main.bib
-
 ---
 
 We write this chapter as a general reflection on teaching computing
@@ -15,19 +14,32 @@ Summer Institute (DHSI), University of Victoria and *Computing in Context* at
 Columbia University.[^ln-titlelink] These courses were intended for humanities
 researchers with no previous programming experience who wanted to learn how
 programs work by writing a few simple, useful programs of their
-own.[^ln-courselink] The topics covered included working with files and folders
-at the command line, text-stream manipulation with GNU Bash, regular
-expressions, and Python basics like native data types, variables, functions,
-and control structures. At the end of the DHSI course, our students worked on
-their own and in small groups to create a small web scraper, an "essay grader,"
-a comma-separated value file manipulator, and a program that evaluates poetry
-based on its measure of similarity to Byron's.
+own.[^ln-courselink] The syllabus was designed to foster a type of "digital
+literacy" that goes beyond using prepackaged tools and software and into the
+fundamental skills required to develop methods of one's own. To that end, the
+topics covered included working with files and folders at the command line,
+regular expressions, and Python basics like native data types, variables,
+functions, and control structures. Most humanists experience a certain amount
+of discomfort merely scanning a list of foundational concepts like this, but
+they can be taught quickly and to great effect. At the end of the DHSI course,
+our students worked on their own and in small groups to create a small web
+scraper, an "essay grader," a comma-separated value file manipulator, and a
+program that evaluates poetry based on its measure of similarity to Byron's.
 
 Our aim in this chapter is not to recapitulate the experience of teaching (we
 would not have the space to do it here, in any case), but to reveal some of the
 core principles that went into making the courses, to talk about the rationale
 behind our teaching philosophy, and, more broadly, to suggest an approach to
 teaching programming in the humanities environment.
+
+We will elaborate these principles in three sections. "Critical Computing in
+the Humanities" describes the main principles of our critical computing
+philosophy, which are premised on extending rather than replacing the values of
+humanistic inquiry. In the second section, "Digital Humanities Core," these
+principles lead us to a list of core skills for the practicing digital
+humanist. We conclude with a section that details the "Three Locations of
+Computing" that are the most important sites of a digital humanist's
+work.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
 search text for specified patterns. In this case it picks out anything starting
@@ -37,13 +49,6 @@ for both "Humans" and "Humanists".
 [^ln-courselink]: An archived version of the DHSI course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-<!---
-JS: Should we say something about coding vs programming here?
-DT: I don't have strong feelings about the distinction. Up to you.
-PRP: Skipping for now---seems like the intro does what it needs to without this
-distinction
---->
-
 ## 1 Critical Computing in the Humanities
 
 It is our firm belief that teaching computational principles in the humanities
@@ -52,6 +57,16 @@ values held by that academic community. Inspired by a number of initiatives
 advancing a similar philosophy, we refer to this approach as "critical
 computing."[^ln-first] The following eight principles connect key ideas in
 computation with values intrinsic to humanistic inquiry:
+
+1. Target daily computation
+2. Use few, free, small, simple, universal, and powerful tools that you can hack
+    and understand
+3. Privilege human legibility
+4. Store data in human-readable text streams
+5. Divide big problems into small, modular components (algorithmic thinking)
+6. If you have to do something more than ~~once~~ a hundred times, automate
+7. Do it right---*the first time*
+8. Bootstrapping and time well spent
 
 [^ln-first]: We are not the first nor the only instructors to think about
 digital pedagogy this way, nor are we the only ones to be offering a course
@@ -356,14 +371,6 @@ can only begin to address a small part of the larger, more complicated puzzle.
 
 ## 3 Three Locations of Computing
 
-<!---
-JS: Our approach owes a small debt to Software Carpentry since this is what I
-have based a good chunk of the content on the first year and some of this got
-rolled
-into the second. This is likely the place to acknowledge it.
-DT: No problem. Let's do it in footnotes though.
---->
-
 We often begin our courses by outlining the above "big picture" principles,
 challenges, and considerations. Like learning a foreign language, programming
 takes time and patience to master. And as is the case with any difficult skill,
@@ -651,6 +658,19 @@ to a powerful problem-solving method and to operating system internals used
 widely in all aspects of computation, from sending email to writing a
 paper.[^ln-coauthor]
 
+##Conclusion
+
+We have proposed a model of teaching and learning coding in the humanities that
+we believe can form a basis for a great number of courses in many different
+areas and in just as many universities. By developing the principles of
+critical computing in a manner designed to extend the existing values of the
+humanities, we have outlined an ethos that can be furthered in the classroom.
+By applying these principles as a digital humanities "core," we have suggested
+a means of realizing them in a curriculum. And by identifying the three major
+locations of humanities computing, we have directed the fledgling digital
+humanist (or the teacher of fledgling digital humanists) to some starting
+points.
+
 In our experience, students without a technical background are sometimes
 curiously hesitant to explore their machines. Demystifying the magical black
 box and learning some habits that prevent irrevocable loss of data addresses
@@ -663,6 +683,20 @@ notes, to annotate their code, to share and improve on each other's work. Notes
 grow into tutorials, tutorials into courses and workshops. Eventually, in
 following these principles, we hope for our students to become catalysts of
 change in their own communities of practice.
+
+##Further Reading
+
+- [DH Notes](https://github.com/denten/dhnotes/wiki)
+- [Think Python](http://www.greenteapress.com/thinkpython/)
+- [NLTK Book](http://www.nltk.org/book/)
+- [Unix and Linux: Visual QuickStart
+    Guide](http://www.amazon.com/Unix-Linux-Visual-QuickStart-Edition/dp/0321997549)
+- Python on
+    [Lynda.com](http://www.lynda.com/Python-training-tutorials/415-0.html)
+- [tutorials][2]
+- [DHnotes][3]
+- [TAPoR](http://www.tapor.ca/)
+- [The Programming Historian](http://http://programminghistorian.org)
 
 [^ln-coauthor]: A detailed history of author contributions can be found on our
 GitHub page at
