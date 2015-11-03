@@ -1,9 +1,9 @@
 ---
 title: "On Coding in the Humanities"
 authors:
+- Phillip R. Polefrone
 - John Simpson
 - Dennis Tenen
-- Phillip R. Polefrone
 bibliography: main.bib
 ---
 
@@ -16,15 +16,18 @@ researchers with no previous programming experience who wanted to learn how
 programs work by writing a few simple, useful programs of their
 own.[^ln-courselink] The syllabus was designed to foster a type of "digital
 literacy" that goes beyond using prepackaged tools and software and into the
-fundamental skills required to develop methods of one's own. To that end, the
-topics covered included working with files and folders at the command line,
-regular expressions, and Python basics like native data types, variables,
-functions, and control structures. Most humanists experience a certain amount
-of discomfort merely scanning a list of foundational concepts like this, but
-they can be taught quickly and to great effect. At the end of the DHSI course,
-our students worked on their own and in small groups to create a small web
-scraper, an "essay grader," a comma-separated value file manipulator, and a
-program that evaluates poetry based on its measure of similarity to Byron's.
+foundational skills that can support further self-guided exploration and
+intellectual growth.
+
+To these ends, the topics covered in our classes included working with files
+and folders, advanced searching through large collections of texts,
+algorithmic thinking, data manipulation, and text analysis. The tools we used
+were few and simple: the command line interface included in most modern
+computers, the ubiquitous and powerful Python programming language, and a text
+editor. By the end of course, our students worked on their own and in small
+groups to create a small web scraper, an "essay grader," a comma-separated
+value file manipulator, and a program that evaluates poetry based on its
+measure of similarity to Byron.
 
 Our aim in this chapter is not to recapitulate the experience of teaching (we
 would not have the space to do it here, in any case), but to reveal some of the
@@ -33,13 +36,22 @@ behind our teaching philosophy, and, more broadly, to suggest an approach to
 teaching programming in the humanities environment.
 
 We will elaborate these principles in three sections. "Critical Computing in
-the Humanities" describes the main principles of our critical computing
-philosophy, which are premised on extending rather than replacing the values of
-humanistic inquiry. In the second section, "Digital Humanities Core," these
-principles lead us to a list of core skills for the practicing digital
-humanist. We conclude with a section that details the "Three Locations of
-Computing" that are the most important sites of a digital humanist's
-work.
+the Humanities" describes the main principles behind our approach to
+computation in the humanities, which is premised on extending rather than
+replacing the values of humanistic inquiry. In the second section, "Digital
+Humanities Core," these principles lead us to a list of core skills for the
+practicing digital humanist. These are meant to be neither totalizing nor
+exhaustive. Rather, we outline several necessary prerequisites for needed to
+advance the great variety of work in the field. We conclude with a section
+that details the "Three Locations of Computing," which orient the reader to
+three significant sites of computation: the command line, the text editor, and
+the Python programming language interpreter.
+
+Ultimately, our essay gives three authors' unified take on the questions: "What
+do I need to learn to prepare myself for research in the Digital Humanities
+and Computational Culture Studies and Why?" Our answers should be used as
+guidelines, not dogma, and could help contribute to the broader conversation
+about curricular development, certification, and student and faculty training.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
 search text for specified patterns. In this case it picks out anything starting
@@ -252,7 +264,6 @@ JS: Mention the CS chair observation?
 DT: I don't think we should mention his name. But perhaps a footnote, if you
 can find a way to phrase it.
 --->
-
 
 ## 2 Digital Humanities Core
 
@@ -658,31 +669,6 @@ to a powerful problem-solving method and to operating system internals used
 widely in all aspects of computation, from sending email to writing a
 paper.[^ln-coauthor]
 
-##Conclusion
-
-We have proposed a model of teaching and learning coding in the humanities that
-we believe can form a basis for a great number of courses in many different
-areas and in just as many universities. By developing the principles of
-critical computing in a manner designed to extend the existing values of the
-humanities, we have outlined an ethos that can be furthered in the classroom.
-By applying these principles as a digital humanities "core," we have suggested
-a means of realizing them in a curriculum. And by identifying the three major
-locations of humanities computing, we have directed the fledgling digital
-humanist (or the teacher of fledgling digital humanists) to some starting
-points.
-
-In our experience, students without a technical background are sometimes
-curiously hesitant to explore their machines. Demystifying the magical black
-box and learning some habits that prevent irrevocable loss of data addresses
-that fear, encouraging the students to tinker and experiment. Researchers in
-the later stages of their career may be particularly reluctant to ask for help
-or to express their questions in public. Our teaching approach therefore
-encourages sharing expertise. As instructors, we model this ethos by not being
-afraid to expose our own gaps in knowledge. We ask students to keep copious
-notes, to annotate their code, to share and improve on each other's work. Notes
-grow into tutorials, tutorials into courses and workshops. Eventually, in
-following these principles, we hope for our students to become catalysts of
-change in their own communities of practice.
 
 ##Further Reading
 
