@@ -29,29 +29,28 @@ groups to create a small web scraper, an "essay grader," a comma-separated
 value file manipulator, and a program that evaluates poetry based on its
 measure of similarity to Byron.
 
-Our aim in this chapter is not to recapitulate the experience of teaching (we
-would not have the space to do it here, in any case), but to reveal some of the
-core principles that went into making the courses, to talk about the rationale
-behind our teaching philosophy, and, more broadly, to suggest an approach to
-teaching programming in the humanities environment.
+Our aim in this chapter is not to recapitulate the experience of teaching, but
+to reveal some of the core principles that went into making the courses: to
+talk about the rationale behind our teaching philosophy, and, more broadly, to
+suggest an approach to teaching programming in the humanities.
 
-We will elaborate these principles in three sections. "Critical Computing in
-the Humanities" describes the main principles behind our approach to
-computation in the humanities, which is premised on extending rather than
-replacing the values of humanistic inquiry. In the second section, "Digital
-Humanities Core," these principles lead us to a list of core skills for the
-practicing digital humanist. These are meant to be neither totalizing nor
-exhaustive. Rather, we outline several necessary prerequisites for needed to
+We will elaborate on the above principles in three sections. "Critical
+Computing in the Humanities" describes the ideas behind our approach to
+computation, which is premised on extending rather than replacing
+long-standing critical practices of humanistic inquiry. In the second section,
+"Digital Humanities Core," these ideas lead us to a list of core skills for
+the practicing digital humanist. These are meant to be neither totalizing nor
+exhaustive. Rather, we outline several necessary prerequisites needed to
 advance the great variety of work in the field. We conclude with a section
 that details the "Three Locations of Computing," which orient the reader to
 three significant sites of computation: the command line, the text editor, and
-the Python programming language interpreter.
+the programming language interpreter.
 
-Ultimately, our essay gives three authors' unified take on the questions: "What
-do I need to learn to prepare myself for research in the Digital Humanities
-and Computational Culture Studies and Why?" Our answers should be used as
-guidelines, not dogma, and could help contribute to the broader conversation
-about curricular development, certification, and student and faculty training.
+Ultimately, our essay gives the authors' unified take on the skills and
+competencies required to advance research in the digital humanities and
+computational culture studies. The outlined program should be used as a
+guideline, not dogma. We hope it contributes to the broader conversation about
+curricular development, certification, and student and faculty training.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
 search text for specified patterns. In this case it picks out anything starting
@@ -63,22 +62,30 @@ http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dh
 
 ## 1 Critical Computing in the Humanities
 
-It is our firm belief that teaching computational principles in the humanities
-must be grounded in the practices of humanities research and answer to the
-values held by that academic community. Inspired by a number of initiatives
-advancing a similar philosophy, we refer to this approach as "critical
-computing."[^ln-first] The following eight principles connect key ideas in
-computation with values intrinsic to humanistic inquiry:
+Computational methodologies can complement the rich history of research in the
+humanities. But to take hold, quantitative approaches to the study of culture
+must be adapted to more closely align to extant ideals and practices. Inspired
+by a number of initiatives advancing a similar philosophy, we refer to this
+approach as "critical computing."[^ln-first] The following seven propositions
+will connect technological preferences with values intrinsic to humanistic
+inquiry:
 
-1. Target daily computation
-2. Use few, free, small, simple, universal, and powerful tools that you can hack
-    and understand
-3. Privilege human legibility
-4. Store data in human-readable text streams
-5. Divide big problems into small, modular components (algorithmic thinking)
-6. If you have to do something more than ~~once~~ a hundred times, automate
-7. Do it right---*the first time*
-8. Bootstrapping and time well spent
+1. Target daily computation.
+
+2. Use few, free, small, universal, and powerful tools that you can
+alter and understand.
+
+3. Privilege simplicity and human legibility over complexity and machine
+efficiency.
+
+4. The What? and the Why? should come before the How? Research objectives
+determine the appropriate tools and methodologies.
+
+5. Invest in sustainable technologies that benefit the community.
+
+6. Divide big problems into small, modular components.
+
+7. Automate mundane tasks.
 
 [^ln-first]: We are not the first nor the only instructors to think about
 digital pedagogy this way, nor are we the only ones to be offering a course
