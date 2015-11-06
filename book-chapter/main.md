@@ -70,7 +70,7 @@ approach as "critical computing."[^ln-first] The following seven propositions
 will connect technological preferences with values intrinsic to humanistic
 inquiry:
 
-1. Target daily computation.
+1. Demystify daily computation.
 
 2. Use few, free, small, universal, and powerful tools that you can
 alter and understand.
@@ -85,7 +85,8 @@ determine the appropriate tools and methodologies.
 
 6. Divide big problems into small, modular components.
 
-7. Automate mundane tasks.
+7. Be "lazy" by automating mundane tasks, but do it right by commenting your
+code, taking notes, and sharing with others.
 
 [^ln-first]: We are not the first nor the only instructors to think about
 digital pedagogy this way, nor are we the only ones to be offering a course
@@ -95,7 +96,7 @@ Historian* is "an online, open-access, peer-reviewed suite of tutorials that
 help humanists learn a wide range of digital tools, techniques, and workflows
 to facilitate their research." See also @harrell_toward_2015.
 
-### 1.1 Target daily computation.
+### 1.1 Demystify daily computation
 
 Contemporary computational devices are a foundation of daily life. They are
 involved in everything from financial markets, to archival research, to the way
@@ -129,111 +130,24 @@ writing progress."
 instead of adding to the impact of persuasive writing. The "very" in the
 previous sentence, for example, is a weasel word.
 
-### 1.2 Use few, free, small, simple, universal, and powerful tools that you can hack and understand.
+### 1.2 Use few, free, small, universal, and powerful tools that you can alter and understand.
 
 Researchers, librarians, students, and faculty are faced with a bewildering
 array of software choices. In deciding whether to invest time and resources
-into learning a new tool or methodology, we are guided by "Unix Philosophy" and
-the free software movement. The Unix philosophy of computing prioritizes small,
-modular pieces of software that "do one thing well" [@mcilroy_unix_1978]. Such
-software can then be chained together with other small but powerful tools to
-achieve complex results. Free software, besides being cost effective ("free as
-in beer"), also opens the tool itself to humanistic inquiry. Code is said to be
-"free" when it is available for inspection, interpretation, critique, and
-modification. It is, in the words of Richard Stallman, "free as in speech"
+into learning a new tool or methodology, we are inspired by the free software
+movement in general and the Unix operating system philosophy in particular.
+The Unix philosophy of computing prioritizes small, modular pieces of software
+that "do one thing well" [@mcilroy_unix_1978]. Such software can then be
+chained together with other small but powerful tools to achieve complex
+results. Free software, besides being cost effective ("free as in beer"), also
+opens the tool itself to humanistic inquiry. Code is said to be "free" when it
+is available for inspection, interpretation, critique, and modification. It
+is, in the words of Richard Stallman, "free as in speech"
 [@stallman_why_2007]. Above all, we seek out universal tools that we can
 understand and, where needed, customize to fit our own particular needs and
 contexts. These tools can be applied in diverse contexts like library
 infrastructure, web design, data science, and the production of critical
 editions.
-
-### 1.3 Privilege human legibility.
-
-Whenever possible we privilege legibility and longevity over terseness of
-expression, cleverness, or performance. We begin by having our students
-describe their program, step by step, in language natural to them and to their
-task. Pseudocode in plain English becomes the basis for well documented
-programs and readable code that can be easily maintained or adapted.
-
-### 1.4 Store data in human-readable text streams.
-
-The file formats we use to store data have serious implications for anyone's
-ability to make use of that data in the future. As a format's underlying code
-tends toward opacity, it becomes increasingly difficult for new programmers to
-read during development and for others to draw on files in that format in the
-future. The number and complexity of file formats relates closely to the
-proliferation of closed tools and platforms: arcane file formats inhibit access
-to a file's contents as raw data or, for that matter, on any platform but the
-one for which it was intended. The danger of a single-platform format is most
-acutely felt by archivists faced with preserving short-lived data structures
-meant for obsolete platforms. For humanists who rarely work with truly large
-datasets or collections, the risk of rapid obsolescence offsets any
-hypothetical gains in speed or performance offered by a new note-taking
-platform, a needlessly complex database, or a constantly upgrading proprietary
-text editor.[^ln-plain] When selecting a data format, we ask: Does it need
-special software to render? How long has it been around? and What organization
-is responsible for maintaining the standard?
-
-[^ln-plain]: Conveniently for us, the Unix philosophy privileges inputs and
-outputs in plain text format, which can be used to store everything from
-personal notes, to article drafts, to huge datasets of metadata. Unix provides
-many powerful utilities that work with plain text. In fact, the notion of human
-readability is even encoded at the operating system level.
-
-### 1.5 Divide big problems into small, modular components (algorithmic thinking).
-
-Our goals in the classroom go beyond the instrumental. The ability to automate
-machines is merely a side effect of algorithmic, analytical thinking. To learn
-to think like a programmer is useful in many contexts: it involves dividing
-big, complex, and seemingly intractable problems into small, modular, solvable
-components. Writing a grant proposal, for example, a book, or a dissertation
-may initially seem like a daunting and onerous task, but progress can be made
-once it is divided into small, doable steps, as though it were a recipe for
-making a cake (an exercise we use in the classroom).
-
-<!---
-JS: Seems this could be collapsed into 1.2 for the sake of simplicity
-DT: I tried it, but I think it is a good point to stand on its own.
-DT: What do you guys think of the order?
-PRP: I like it. Starting with broader principles and moving into more technical
-standards seems effective to me.
---->
-
-### 1.6 If you have to do something more than ~~once~~ a hundred times, automate.
-
-Programmers are smart and lazy. After doing a task more than a few times, a
-good programmer's intuition will be to automate the task. For example, we often
-use the `rsync` command to back up our documents; however, after a few months
-of running it manually, we can delegate that task to the built-in scheduler
-called `cron`. Humanists may not have the same automating impulse, but they can
-save just as much time with automation. As the daily computing tasks of
-humanists are considered in these terms, inefficiencies and causes of
-unnecessary repetition can be eliminated. The saying normally goes that if you
-do it more than *once*, automate. You have to know, however, exactly *what* to
-automate. When backing up your files, do you want to back up the whole system
-or a few select folders?  How often should the backup script run?  The answers
-become apparent only after extensive manual use. As we introduce automated
-"daemons" that run tasks on our behalf, we want to make sure we think through
-any unintended side-effects, be they technological, personal, or political.
-
-### 1.7 Do it right---*the first time*.
-
-Although programmers are lazy, they are lazy in the right way. Doing things
-badly or in a haphazard fashion accumulates technological, intellectual, and
-eventually an ethical debt to yourself and your community. Code comments (or
-the lack of them) are a common site of egregious laziness: it is easy to skip
-documenting your code or to document insufficiently. "It just works, why
-bother?" However, a piece of code that makes perfect sense today may seem
-impenetrable tomorrow. Without comments, time needs to be spent to recreate the
-reasoning behind the original implementation. Similarly, we advise our students
-against simply cutting and pasting code snippets from our tutorials. We want
-them to follow our thinking, to annotate, and to review their notes regularly.
-In the social context, lazy practices are unethical because they "bank" against
-the labor of others in the future, saving one's own time now at the expense of
-someone else's later. Doing things the right way the first time costs less than
-making up for it down the line.
-
-### 1.8 Bootstrapping and time well spent.
 
 When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
@@ -265,6 +179,87 @@ diverse cultural contexts. The extra care we take in explaining the reasoning
 behind our technological choices can motivate the students through any initial
 difficulties of learning how to code "the hard way," without shortcuts or
 artificial limitations.
+
+### 1.3 Privilege simplicity and human legibility over complexity and machine efficiency.
+
+Whenever possible we privilege legibility and longevity over terseness of
+expression, cleverness, or performance. We begin by having our students
+describe their program, step by step, in language natural to them and to their
+task. Pseudocode in plain English becomes the basis for well documented
+programs and readable code that can be easily maintained or adapted.
+
+The file formats we use to store data have serious implications for anyone's
+ability to make use of that data in the future. As a format's underlying code
+tends toward opacity, it becomes increasingly difficult for new programmers to
+read during development and for others to draw on files in that format in the
+future. The number and complexity of file formats relates closely to the
+proliferation of closed tools and platforms: arcane file formats inhibit access
+to a file's contents as raw data or, for that matter, on any platform but the
+one for which it was intended. The danger of a single-platform format is most
+acutely felt by archivists faced with preserving short-lived data structures
+meant for obsolete platforms. For humanists who rarely work with truly large
+datasets or collections, the risk of rapid obsolescence offsets any
+hypothetical gains in speed or performance offered by a new note-taking
+platform, a needlessly complex database, or a constantly upgrading proprietary
+text editor.[^ln-plain] When selecting a data format, we ask: Does it need
+special software to render? How long has it been around? and What organization
+is responsible for maintaining the standard?
+
+[^ln-plain]: Conveniently for us, the Unix philosophy privileges inputs and
+outputs in plain text format, which can be used to store everything from
+personal notes, to article drafts, to huge datasets of metadata. Unix provides
+many powerful utilities that work with plain text. In fact, the notion of human
+readability is even encoded at the operating system level.
+
+### 1. Ideas are more important than tools
+
+The What? and the Why? should come before the How? Research objectives
+determine the appropriate tools and methodologies.
+
+### 1.6 Divide big problems into small, modular components.
+
+Our goals in the classroom go beyond the instrumental. The ability to automate
+machines is merely a side effect of algorithmic, analytical thinking. To learn
+to think like a programmer is useful in many contexts: it involves dividing
+big, complex, and seemingly intractable problems into small, modular, solvable
+components. Writing a grant proposal, for example, a book, or a dissertation
+may initially seem like a daunting and onerous task, but progress can be made
+once it is divided into small, doable steps, as though it were a recipe for
+making a cake (an exercise we use in the classroom).
+
+### 1.7 Be "lazy" by automating mundane tasks, but do it right by commenting your
+code, taking notes, and sharing with others.
+
+Programmers are smart and lazy. After doing a task more than a few times, a
+good programmer's intuition will be to automate the task. For example, we often
+use the `rsync` command to back up our documents; however, after a few months
+of running it manually, we can delegate that task to the built-in scheduler
+called `cron`. Humanists may not have the same automating impulse, but they can
+save just as much time with automation. As the daily computing tasks of
+humanists are considered in these terms, inefficiencies and causes of
+unnecessary repetition can be eliminated. The saying normally goes that if you
+do it more than *once*, automate. You have to know, however, exactly *what* to
+automate. When backing up your files, do you want to back up the whole system
+or a few select folders?  How often should the backup script run?  The answers
+become apparent only after extensive manual use. As we introduce automated
+"daemons" that run tasks on our behalf, we want to make sure we think through
+any unintended side-effects, be they technological, personal, or political.
+
+Although programmers are lazy, they are lazy in the right way. Doing things
+badly or in a haphazard fashion accumulates technological, intellectual, and
+eventually an ethical debt to yourself and your community. Code comments (or
+the lack of them) are a common site of egregious laziness: it is easy to skip
+documenting your code or to document insufficiently. "It just works, why
+bother?" However, a piece of code that makes perfect sense today may seem
+impenetrable tomorrow. Without comments, time needs to be spent to recreate the
+reasoning behind the original implementation. Similarly, we advise our students
+against simply cutting and pasting code snippets from our tutorials. We want
+them to follow our thinking, to annotate, and to review their notes regularly.
+In the social context, lazy practices are unethical because they "bank" against
+the labor of others in the future, saving one's own time now at the expense of
+someone else's later. Doing things the right way the first time costs less than
+making up for it down the line.
+
 
 <!---
 JS: Mention the CS chair observation?
