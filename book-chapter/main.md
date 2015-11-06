@@ -66,7 +66,7 @@ Computational methodologies can complement the rich history of research in the
 humanities. But to take hold, quantitative approaches to the study of culture
 must be adapted to more closely align to extant ideals and practices. Inspired
 by a number of initiatives advancing a similar philosophy, we refer to this
-approach as "critical computing."[^ln-first] The following seven propositions
+approach as "critical computing."[^ln-first] The following six propositions
 will connect technological preferences with values intrinsic to humanistic
 inquiry:
 
@@ -78,14 +78,12 @@ alter and understand.
 3. Privilege simplicity and human legibility over complexity and machine
 efficiency.
 
-4. The What? and the Why? should come before the How? Research objectives
-determine the appropriate tools and methodologies.
+4. Identify research objectives prior to selecting the appropriate tools and
+methodologies.
 
-5. Invest in sustainable technologies that benefit the community.
+5. Divide big problems into small, modular components.
 
-6. Divide big problems into small, modular components.
-
-7. Be "lazy" by automating mundane tasks, but do it right by commenting your
+6. Be "lazy" by automating mundane tasks, but do it right by commenting your
 code, taking notes, and sharing with others.
 
 [^ln-first]: We are not the first nor the only instructors to think about
@@ -99,32 +97,32 @@ to facilitate their research." See also @harrell_toward_2015.
 ### 1.1 Demystify daily computation
 
 Contemporary computational devices are a foundation of daily life. They are
-involved in everything from financial markets, to archival research, to the way
-many keep in touch with friends and family. Yet for those without technical
-training, the inner workings of these devices remain a source of mystery and,
-consequently, frustration. Recognizing this, our courses target the underlying
-structure of tools that many rely on for their daily computation, teaching our
-students how these tools work (and not just how to use them). Beyond the
-principles of programming, we want our students to understand the basics of
-networking, security, and operating systems. By revealing the innards of opaque
-computational "black boxes," we hope to empower our students to take control of
-their everyday digital practice.
+involved in everything from financial markets, to archival research, to the
+way many keep in touch with friends and family. Yet for those without
+technical training, the inner workings of these devices remain a source of
+mystery and, consequently, frustration. Recognizing this, our courses target
+the underlying structure of tools that many rely on for their daily
+computation, teaching our students how these tools work (and not just how to
+use them). Beyond the principles of programming, we want our students to
+understand the basics of networking, system administration, and project
+management. By revealing the innards of opaque computational "black boxes," we
+hope to empower our students to take control of their everyday digital
+practice.
 
 The most universal daily computing task of the humanities, regardless of
-research interest, is writing. In response to this importance, our first step
-in addressing daily humanistic computing in the classroom is to create small
-"experiments" that address a student's own writing habits. These exercises
-might include a lab session in which students analyze their own documents for
-commonly overused "weasel words,"[^ln-weasel] for example. Working with one's
-own documents introduces important technical concepts---like "relative" and
-"absolute" paths, file formats, character encoding, and small shell utilities
-like `grep` (used to search through text files), `wc` (word count), or `sed`
-(stream editor for text transformation)---that can later be extended into more
-advanced concepts in system administration or natural language processing.
-Short exercises in text-based programming can be put together to form the
-students' first programs, performing tasks like "safely rename all the files in
-this folder according to such-and-such rule," or "keep a daily log of my
-writing progress."
+research interest, is writing. For this reason, we often begin our classes by
+creating small "experiments" that address our students' own writing habits.
+Such exercises might include a lab session in which students analyze their own
+documents for commonly overused "weasel words,"[^ln-weasel] for example.
+Working with one's own documents introduces important technical
+concepts---like "relative" and "absolute" paths, file formats, character
+encoding, and small shell utilities like `grep` (used to search through text
+files), `wc` (word count), or `sed` (stream editor for text
+transformation)---that can later be extended into more advanced concepts in
+data manipulation or natural language processing. Short text-manipulation
+exercises form the students' first programs, performing tasks like "safely
+rename all the files in this folder according to such-and-such rule," or "keep
+a daily log of my writing progress."
 
 [^ln-weasel]: Weasel words are words that sound very meaningful, but diminish
 instead of adding to the impact of persuasive writing. The "very" in the
@@ -140,9 +138,9 @@ The Unix philosophy of computing prioritizes small, modular pieces of software
 that "do one thing well" [@mcilroy_unix_1978]. Such software can then be
 chained together with other small but powerful tools to achieve complex
 results. Free software, besides being cost effective ("free as in beer"), also
-opens the tool itself to humanistic inquiry. Code is said to be "free" when it
-is available for inspection, interpretation, critique, and modification. It
-is, in the words of Richard Stallman, "free as in speech"
+makes the tool itself available to inspection, interpretation, revision, and
+ultimately critique. Transparency and the ability to modify code to suit one's
+own interests is what makes code "free free as in speech"
 [@stallman_why_2007]. Above all, we seek out universal tools that we can
 understand and, where needed, customize to fit our own particular needs and
 contexts. These tools can be applied in diverse contexts like library
@@ -153,23 +151,63 @@ When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
 and extensible software. In other words, we privilege skills and concepts that
 will have the highest impact in the long run by transferring to the greatest
-number of contexts or tasks. The command line, for example, useful at first for
-file management and operating system exploration, later becomes an important
-resource for remote server administration, web design, and data science.
-Furthermore, the skills learned in the process of becoming comfortable on the
-command line transfer to physical computing, fabrication, web scraping, and
-text analysis. Learning about relative and absolute paths locally will make it
-easier to understand internet infrastructure, domain names, and resource
-allocation. It leads to Secure Shell and Pretty Good Privacy (PGP), used by
-activists and journalists to protect their communications from surveillance.
+number of contexts or tasks. The command line, for example, useful at first
+for file management and operating system exploration, later becomes an
+important resource for remote server administration, web design, and data
+science.  Furthermore, the skills learned in the process of becoming
+comfortable on the command line transfer to physical computing, fabrication,
+web scraping, and text analysis. Learning about relative and absolute paths
+locally will make it easier to understand internet infrastructure, domain
+names, and resource allocation. It leads to the ability to administer servers
+remotely and to encrypt one's communications---skills needed for journalists,
+activists, librarians, and scholars alike.
 
-With the goal of bootstrapping in mind, one can see the real value of lessons
-that many might eschew for fear that they are too technical or complicated. It
-may be appealing at first to hide computational complexity behind "simple"
-visual interfaces, but these interfaces do not share a common visual language;
-the labor of learning one interface therefore does not not transfer well across
-other software platforms. Our colleagues in computer science sometimes worry
-that introducing command line interfaces and raw coding environments may
+### 1.3 Privilege simplicity and human legibility over complexity and machine efficiency.
+
+Whenever possible we privilege simplicity and human legibility over complexity
+and machine performance. The tools and file formats that we use in research
+and information management have serious implications for the long-term health
+of the academic ecosystem. The ubiquitous use of Microsoft Word and Adobe
+Acrobat file formats, for example, makes it difficult to publish, archive, and
+to gather insight even from our own published work. As humanists begin to
+adopt the use of complex tools and databases, complexity becomes even more of
+a barrier to knowledge sharing.
+
+In considering new tools and methodologies humanists who rarely work with
+truly large data would to well to weigh the risk of rapid obsolescence of
+closed systems against any hypothetical gains in speed or performance offered
+by a new note-taking platform, database system, or a proprietary text
+editor.[^ln-plain] When selecting a data format for storage, we ask: Does it
+need special software to render? How long has it been around? and What
+organization is responsible for maintaining the standard?
+
+Simplicity should not be confused with simple-mindedness. As with clarity in
+writing, clarity in computation comes from painstaking mastery of method and
+technique. Such mastery is fundamentally difficult, but it is to be preferred
+to shortcuts that sacrifice clarity for "ease" of use. The student just
+entering the field of digital humanities and computational culture studies
+faces the choice of learning to program machines universally, or learning
+multiple, fragmentary, non-cohesive, and non-standard tools that have limited
+salience outside of the classroom. While promising ease of use the arbitrary
+nature of such limitations add complexity in the long run. They limit our
+ability to talk to other computationally-minded disciplines and to compete for
+jobs at the private market.
+
+[^ln-plain]: The Unix philosophy privileges inputs and outputs in plain text
+format, which can be used to store everything from personal notes, to article
+drafts, to huge datasets of metadata. Unix provides many powerful utilities
+that work with plain text. In fact, the notion of human readability is even
+encoded at the operating system level.
+
+The non-transparent nature of many popular file tools and file storage formats
+extracts a heavy toll on our community. Each tool that we add to our "tool
+chain" increases the cognitive burden of training, support, and peer review.
+
+It may be appealing at first to hide computational internals behind "simple"
+visual interfaces. Yet these interfaces do not share a common visual language;
+the labor of learning one interface therefore does not not transfer well
+across other software platforms. Our colleagues in computer science sometimes
+worry that introducing command line interfaces and raw coding environments may
 alienate humanists. We believe that limited, "dumbed-down" interfaces do even
 more harm, further mystifying computing to an audience that already feels
 removed from the material contexts of their daily knowledge production. In
@@ -180,55 +218,41 @@ behind our technological choices can motivate the students through any initial
 difficulties of learning how to code "the hard way," without shortcuts or
 artificial limitations.
 
-### 1.3 Privilege simplicity and human legibility over complexity and machine efficiency.
+### 1.4 Identify research objectives prior to selecting the appropriate tools and methodologies.
 
-Whenever possible we privilege legibility and longevity over terseness of
-expression, cleverness, or performance. We begin by having our students
-describe their program, step by step, in language natural to them and to their
-task. Pseudocode in plain English becomes the basis for well documented
-programs and readable code that can be easily maintained or adapted.
+Because the tools that we teach are universal, we are able to better tailor
+our courses to the diverse needs of our students. In formulating their
+research objectives, beginners often make the mistake of starting with the
+tool. In this way someone may describe their interests as "using topic
+modeling on a corpus of nineteenth century literature." To this we reply: To
+what ends?  Clearly articulated research objectives suggest appropriate tool
+and methodologies, and not the other way around. Thus the question of "genre
+formation in the ninetieth century," for example, is what could lead to the
+use of topic modeling, where the study of narrative would perhaps be better
+served by other means, like event detection or automatic plot summarization.
+Our goal therefore is to give the students a glimpse of a rich and variegated
+toolkit that could help advance a variety of research objectives.
 
-The file formats we use to store data have serious implications for anyone's
-ability to make use of that data in the future. As a format's underlying code
-tends toward opacity, it becomes increasingly difficult for new programmers to
-read during development and for others to draw on files in that format in the
-future. The number and complexity of file formats relates closely to the
-proliferation of closed tools and platforms: arcane file formats inhibit access
-to a file's contents as raw data or, for that matter, on any platform but the
-one for which it was intended. The danger of a single-platform format is most
-acutely felt by archivists faced with preserving short-lived data structures
-meant for obsolete platforms. For humanists who rarely work with truly large
-datasets or collections, the risk of rapid obsolescence offsets any
-hypothetical gains in speed or performance offered by a new note-taking
-platform, a needlessly complex database, or a constantly upgrading proprietary
-text editor.[^ln-plain] When selecting a data format, we ask: Does it need
-special software to render? How long has it been around? and What organization
-is responsible for maintaining the standard?
-
-[^ln-plain]: Conveniently for us, the Unix philosophy privileges inputs and
-outputs in plain text format, which can be used to store everything from
-personal notes, to article drafts, to huge datasets of metadata. Unix provides
-many powerful utilities that work with plain text. In fact, the notion of human
-readability is even encoded at the operating system level.
-
-### 1. Ideas are more important than tools
-
-The What? and the Why? should come before the How? Research objectives
-determine the appropriate tools and methodologies.
-
-### 1.6 Divide big problems into small, modular components.
+### 1.5 Divide big problems into small, modular components.
 
 Our goals in the classroom go beyond the instrumental. The ability to automate
 machines is merely a side effect of algorithmic, analytical thinking. To learn
 to think like a programmer is useful in many contexts: it involves dividing
 big, complex, and seemingly intractable problems into small, modular, solvable
 components. Writing a grant proposal, for example, a book, or a dissertation
-may initially seem like a daunting and onerous task, but progress can be made
-once it is divided into small, doable steps, as though it were a recipe for
-making a cake (an exercise we use in the classroom).
+may initially seem like a daunting and onerous task. Progress can be made once
+it is divided into small, doable steps, as though it were a recipe for making
+a cake (an exercise we use in the classroom). Our coding exercises therefore
+often begin by having our students describe their research objectives, step by
+step, in language natural to them and to their task.
 
-### 1.7 Be "lazy" by automating mundane tasks, but do it right by commenting your
-code, taking notes, and sharing with others.
+### 1.6 Be "lazy" by automating mundane tasks, but do it right by commenting your code, taking notes, and sharing with others.
+
+Pseudocode in plain English becomes the basis for well documented programs and
+readable code. Modular and well documented code does a service to the
+community: it is a pleasure to maintain and it communicates the purpose of the
+program clearly. It teaches others just as it allows them to further adept the
+codebase to suit their own needs, to further share and to remix.
 
 Programmers are smart and lazy. After doing a task more than a few times, a
 good programmer's intuition will be to automate the task. For example, we often
