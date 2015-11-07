@@ -1,5 +1,5 @@
 ---
-title: "On Coding in the Humanities"
+title: "Critical Computing in the Humanities"
 authors:
 - Phillip R. Polefrone
 - John Simpson
@@ -22,8 +22,8 @@ intellectual growth.
 
 To these ends, the topics covered in our classes included working with files
 and folders, advanced searching through large collections of texts,
-algorithmic thinking, data manipulation, and text analysis. The tools we used
-were few and simple: the command line interface included in most modern
+algorithmic thinking, data manipulation, and text analysis. The tools we use
+are few and simple: the command line interface included in most modern
 computers, the ubiquitous and powerful Python programming language, and a text
 editor. By the end of course, our students worked on their own and in small
 groups to create a small web scraper, an "essay grader," a comma-separated
@@ -71,7 +71,7 @@ approach as "critical computing."[^ln-first] The following seven propositions
 will connect technological preferences with values intrinsic to humanistic
 inquiry:
 
-1. Demystify daily computation.
+1. Demystify everyday computation.
 
 2. Use few, free, small, universal, and powerful tools that you can
 alter and understand.
@@ -97,7 +97,7 @@ Historian* is "an online, open-access, peer-reviewed suite of tutorials that
 help humanists learn a wide range of digital tools, techniques, and workflows
 to facilitate their research." See also @harrell_toward_2015.
 
-### 1.1 Demystify daily computation
+### 1.1 Demystify everyday computation
 
 Contemporary computational devices are a foundation of daily life. They are
 involved in everything from financial markets, to archival research, to the
@@ -306,114 +306,139 @@ Programming can involve long stretches of frustration ("Why does this not
 work?") punctuated by the short bursts of elation that come with accomplishing
 something difficult ("It works!"). Rather than allowing students to view their
 initial lack of results as failures, we attempt to channel feelings of
-hindrance into a practice of problem solving and discovery, related to
-similarly difficult but more familiar tasks of archival research and long-form
-analytical writing. Just like writing, coding falls on a spectrum of
-proficiency that constitutes a small but foundational part of a larger,
-variegated skill set.
+hindrance into a discipline of problem solving and discovery. The "difficulty"
+of coding can be made more productive when related to the analogous and more
+familiar challenges associated with archival research, academic writing, and
+foreign language acquisition. Understood in such a broader context, coding
+constitutes a small but foundational part of a larger, variegated academic
+skill set.
 
-Depending on one's research interests and career path, as a DH practitioner one
-will have some mixture of the following core skills (with examples in
-parenthesis):
+Depending on one's research interests and career path, a DH practitioner will
+need to acquire a subset of the following core skills (with examples of
+particular technologies in parenthesis):
 
 - Text markup (plain text, *Markdown*, *Pandoc*, *TEI*)
 - Command line interface proficiency (*Bash*, pipes, regular expressions)
 - Content management (*Jekyll*, *Wordpress*)
 - Version control (*Git*, *GitHub*)
 - Programming language (*Python*, *R*, *JavaScript*)
-- Networking (SSH, VPN, hosting)
-- Security (PGP)
-- System administration (*AWS*, *Linux*, *Apache*, *MySql*)
+- Networking (cloud computing, Virtual Private Networks)
+- Security (Pretty Good Privacy, Secure Socket Shell)
+- System administration (*Linux*, *Apache*, *MySql*)
 - Project management (*GitHub Issues*, *BaseCamp*)
+- Design (data visualization, typography, user experience)
 - Probability, statistics, and algorithms
-
-Computational practice in the humanities begins with text. Whatever our home
-discipline, we are all involved in the reading and writing of texts. It is
-natural, then, to commence training with textual transformations: to understand
-how text is produced and where it resides physically, on the machine. Learning
-to author in a markup language like HTML or Markdown is often a first step into
-the world of critical computing. Text transformations lead to the operating
-system and the file hierarchy. Tasks like regular backups and desktop
-organization can be used to familiarize students with foundational concepts
-like relative and absolute file paths or the distinction between plain text and
-binary formats.
-
-Our core principle of starting with daily computation also suggests covering
-version control and content management early in the curriculum. Although not an
-easy subject, version control comes naturally to a community used to thinking
-about drafts, manuscripts, and revisions. Increasingly, version control systems
-can also be used to host websites, stream data, and create full-blown
-publishing platforms. For example, *The Programming Historian* journal uses
-*Jekyll*, a static website generator, and GitHub Pages for publishing and
-distribution. Using that model to create personal academic profiles, image
-galleries, or critical editions, digital humanists can use version control
-systems to have a greater hand in the conditions of their academic production.
-These systems can also influence scholarly practices and processes: by
-prompting users for notes with each commit, Git encourages note-taking and
-journaling throughout the versioning process. Finally, multi-user version
-control can be used to increase transparency in academic collaborations.
-Similar to the scientist's lab notebook, the Git journal fixes the flow of
-ideas and labor by recording the distribution of tasks in a collaborative
-environment, helping teams keep track of work for accurate
-attribution.
-
-A programming language occupies a central place in computational practice. All
-forms of digitality pass through some form of encoding and automation. Only a
-small step separates text transformations, command line shells, and content
-management systems from a programming language. We often "trick" our students
-into programming by automating simple tasks like word substitution from the
-command line. The same task could then be repeated using *Python* or *R*,
-reinforcing skills learned earlier in the process while building on those
-skills to go to the next level of complexity. While text transformations at the
-command line are useful for small tasks and for pedagogical purposes, most
-serious computational textual analysis or natural language processing will
-require knowledge of a programming language such as Python, R, or Haskell.  In
-the next section, we will discuss which tasks are appropriate to the command
-line and which to coding.
-
-Because the internet plays such a key role in transforming academic practice,
-knowing the basics of networking---infrastructure, routing, packet switching,
-protocols, security, encryption---is also key to pursuing higher-level goals
-like preserving free speech online, protecting a journalist's sources, or
-bypassing censorship filters. The care and maintenance of personal document
-archives---research papers, article drafts, and book manuscripts---leads
-naturally into server management. The server is where many of the skills
-learned earlier come to fruition. Running websites requires a long "stack" of
-technological components. These are almost impossible to use well without
-knowledge of the command line, a programming language, and networks.
-
-No project is complete without some sense of planning and organization. Project
-management is an important part of computation in the private sector, and it is
-an increasingly formalized part of software engineering. Projects fail and
-succeed by the measure of their ability to coordinate action across time zones
-and continents. When teaching programming, we ask our students to start with
-"scoping" their projects in plain English first, then to transform these
-technical specifications into pseudocode, which finally serves as the basis for
-program design and architecture. We ask our students to submit these documents
-along with code and consider them as important as a functioning program.
-
-Finally, programming fundamentally involves a measure of algorithmic thinking.
-On some abstract level, the specific languages, tools, and implementations are
-secondary to the logical structures that support all higher level activity.
-This may be the most difficult obstacle to tackle. Every word cloud, every
-topic model, and every network visualization tool hides a number of assumptions
-driven by sophisticated logic that comes from the fields of statistics and
-computer science. Without training in the methods on which these tools are
-based, we are bound to remain mere consumers of technology rather than active
-participants in its formation. Critical computing practice, like critical
-thought, requires a measure of logical and mathematical literacy.
 
 We do not mean for this list to represent a comprehensive statement about
 computation in the humanities. Rather, we would argue that most projects,
 however large or small, employ at least *some* aspects from the above "dream
 list." The ubiquity of these modular components is what classifies them as
-"core" or "foundational" competencies. Few people apart from professional
-computer scientists and software engineers would claim mastery over the full
-stack of what is mentioned here. It is much more likely for digital humanists
-to develop proficiency in one or several areas of practice. Yet any one of the
-above foundational competencies have spillover effects that "level up" the rest
-of the list. An intensive, week-long class, like the one that we teach at DHSI,
-can only begin to address a small part of the larger, more complicated puzzle.
+"core" or "foundational" competencies. Few people *including* computer
+scientists and software engineers would claim mastery over the full range of
+skills we have represented above. Rather, individual practitioners are likely
+to develop proficiency in one or several areas of expertise. An expert in
+digital publishing for example will have drastically different requirements
+from someone interested in geographic information systems or computational
+methods.
+
+Critical computing in the humanities begins with text. Whatever our home
+discipline, we are all involved in the reading and writing of texts. Text
+gives us intrinsic motivation to explore our own computer environments: to
+understand how documents are produced and where they reside physically within
+the machine. Learning to author documents in a markup language like HTML or
+Markdown naturally leads to more advanced topics like the basics of operating
+systems, file system hierarchy standards, and version control. Mundane but
+necessary academic skills like regular file backup, bibliographic management,
+and the organization of research materials, can be used to familiarize
+students with foundational concepts like relative and absolute file paths or
+the distinction between plain text and binary formats.
+
+The core principle of demystifying everyday computation leads to the topic of
+content management and version control early in the curriculum. Although not
+an simple subject, version control comes naturally to a community used to
+thinking about drafts, manuscripts, and revisions. Increasingly, version
+control systems are used to host websites, share data, and to publish. For
+example, the editors of *The Programming Historian* use GitHub, a version
+control system, to publish and to distribute their journal. The team behind
+*Project Gitenberg* "leverages the power of the Git version control system and
+the collaborative potential of Github to make books more open." As of 2015,
+*Gitenberg* hosts more than 43,000 books. Using a similar model to create
+personal academic profiles, compile image galleries, or edit critical
+editions, our students learn while experimenting with aspects of academic
+production directly relevant to their careers. Furthermore, version control
+systems improve the quality of academic collaboration. Git and similar tools
+act as powerful research notebooks. They encourage all researchers involved to
+keep meticulous notes, which make it possible to document the flow ideas and
+labor and to attribute work fairly. For these reason we encourage the use
+version control early on and expect such systems to play an increasing role in
+academic evaluation.
+
+A programming language occupies a central place in computational practice. All
+forms of digitality pass through some form of encoding and automation. Only a
+small step separates text manipulation at the command line using simple shell
+scripts from more advanced research-oriented programming languages like
+*Python*, *R*, and *Haskell*. We often "trick" our students into programming
+by automating simple tasks like word counting and file management at the
+command line. Thus small tasks like "create a directory," "move a file,"
+"count all words in this directory" can eventually grow into text analysis.
+
+Because the internet plays such a key role in transforming academic practice,
+knowing the basics of networking---infrastructure, routing, packet switching,
+protocols, security, and encryption---is also key to pursuing higher-level
+goals like preserving free speech online, protecting a journalist's sources,
+or bypassing censorship filters, particularly in places where politics and
+geography impinge on intellectual freedom. The care and maintenance of
+personal document archives---research papers, article drafts, and book
+manuscripts---naturally leads into server management. The server is where many
+of the skills learned earlier come to fruition. Running websites requires a
+long "stack" of technological components. Advanced technologies "in the stack"
+like the Apache HTTP server, MySQL relational database management system, and
+the PHP programming language are difficult (if not impossible) to master
+without prior knowledge of the command line, networking, and programming
+fundamentals.
+
+No project is complete without some sense of planning and organization.
+Project management is an important part of computation in the private sector,
+and it is an increasingly formalized part of software engineering. Projects
+succeed and fail by the measure of their ability to coordinate action across
+differences in time, temperament, and geography. When teaching programming, we
+ask our students to start with "scoping" their projects in plain English
+first, then to transform these technical specifications into pseudocode, which
+finally serves as the basis for program design and architecture. We ask our
+students to submit these documents along with code and consider them an
+essential part of the project's output. In addition to getting better results,
+attention to project management prepares our students for working in groups
+outside of academia.
+
+Because computational projects in the digital humanities often involve the
+creation of public-facing tools and archives, they necessarily overlap with
+the fields of data visualization, and graphic, user interface, and user
+experience design. Johanna Drucker has been a powerful voice in urging our
+community to encounter design both in practice and as an object of study
+[CITE]. The disciplines of human-computer interaction and human factor
+engineering hold exciting possibilities for a productive collaboration between
+schools of engineering and the humanities.
+
+Finally, programming fundamentally involves a measure of algorithmic thought
+and statistical reasoning. Without logic there can be no computation.
+Ultimately, the art of programming involves the ability to think
+algorithmically, to atomize complexity into discrete programmable steps, to
+formalize intuition, and to build models. Logic and statistical reasoning
+underlie every word cloud, every topic model, and every network visualization
+tool. Critical computing practice, like critical thought, requires access to
+deep structure. Those who aspire to become active and equal participants in
+the formation of computational knowledge (rather than mere passive recipients
+of tools and methodologies developed elsewhere) must at some point confront
+the established standards for training required for quantitative work in any
+field.
+
+Although nobody can hope to cover all of the above elements in a single class,
+the 
+
+above foundational competencies have spillover effects that "level up" the
+rest of the list. An intensive, week-long class, like the one that we teach at
+DHSI, can only begin to address a small part of the larger, more complicated
+puzzle.
 
 ## 3 Three Locations of Computing
 
