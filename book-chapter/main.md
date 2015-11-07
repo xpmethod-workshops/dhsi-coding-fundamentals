@@ -493,17 +493,20 @@ leads to the command line. We therefore embrace it from the beginning of the
 course. It forms the base of our operations.
 
 On the level of hardware the machine "speaks" in binary code. The command line
-"interprets" English-like commands (in a language called Unix Shell)[^ln-shell]
-into binary. When deleting a file, for example, one instructs the machine to
-`rm filename.txt` instead of dragging and dropping it into the trash folder.
-Note that "dropping into the trash folder" merely offers a visual metaphor for
-the underlying bitwise operations.  The CLI alternative turns the metaphor
-into a more exact command `rm`, which stands for "remove." Similarly, to
-direct the computer to move a file, we would use the `mv` command. Unlike
-their visual and metaphorical counterparts, the Bash commands contain many
-advanced options, which are explained in the manual accessible through the
-`man` command. In this example, `man mv` displays the manual pages for the
-move command.
+"interprets" English-like commands (in a language called Unix
+Shell)[^ln-shell] into binary. When deleting a file, for example, one
+instructs the machine to `rm filename.txt` instead of dragging and dropping it
+into the trash folder, as one would using a graphical user interface. Note
+that "dropping into the trash folder" merely offers a visual metaphor for the
+underlying bitwise operations. The CLI alternative turns the metaphor into a
+more exact command `rm`, which stands for "remove." Similarly, to direct the
+computer to move a file, we would use the `mv` command. Unlike their visual
+and metaphorical counterparts, the Bash commands contain many advanced
+options, which are explained in the manual accessible through the `man`
+command. In this example, `man mv` displays the manual pages for the move
+command.
+
+[^ln-shell]: @bourne_unix_1978
 
 Furthermore, because Bash commands are in themselves a type of a programming
 language, they can be chained together and automated to produce complex
@@ -726,20 +729,20 @@ to a powerful problem-solving method and to operating system internals used
 widely in all aspects of computation, from sending email to writing a
 paper.[^ln-coauthor]
 
+## Further Reading
 
-##Further Reading
-
+- @kernighan_d_2011
+- @janssens_data_2014
 - [DH Notes](https://github.com/denten/dhnotes/wiki)
-- [Think Python](http://www.greenteapress.com/thinkpython/)
-- [NLTK Book](http://www.nltk.org/book/)
-- [Unix and Linux: Visual QuickStart
-    Guide](http://www.amazon.com/Unix-Linux-Visual-QuickStart-Edition/dp/0321997549)
-- Python on
-    [Lynda.com](http://www.lynda.com/Python-training-tutorials/415-0.html)
-- [tutorials][2]
-- [DHnotes][3]
-- [TAPoR](http://www.tapor.ca/)
+- @manning_foundations_1999
+- @bird_natural_2009
+- @petzold_code:_2000
+- @chacon_pro_2014
+- [Project Jupyter](https://github.com/jupyter)
+- [PyLadies](https://github.com/pyladies)
+- [Python Software Foundation](https://www.python.org/psf/)
 - [The Programming Historian](http://http://programminghistorian.org)
+- @dawney_think_2015
 
 [^ln-coauthor]: A detailed history of author contributions can be found on our
 GitHub page at
