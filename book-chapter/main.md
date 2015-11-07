@@ -432,13 +432,16 @@ of tools and methodologies developed elsewhere) must at some point confront
 the established standards for training required for quantitative work in any
 field.
 
-Although nobody can hope to cover all of the above elements in a single class,
-the 
-
-above foundational competencies have spillover effects that "level up" the
-rest of the list. An intensive, week-long class, like the one that we teach at
-DHSI, can only begin to address a small part of the larger, more complicated
-puzzle.
+An intensive, week-long class, like the one that we teach at DHSI, can only
+begin to address a small portion of the skills required to run a successful
+project in the digital humanities. A diverse team of practitioners with
+complementary expertise will likely comprise any given digital humanities
+project. For this reason, in our teaching, we concentrate on the following
+"three locations of computing," which support nearly all aspects of
+specialization represented above. Some familiarity with a text editor, the
+command line, and a programming language improves general digital literacy,
+useful to the librarian, the information scientist, and the computational
+humanist alike.
 
 ## 3 Three Locations of Computing
 
