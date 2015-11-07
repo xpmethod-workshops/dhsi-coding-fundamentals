@@ -477,34 +477,29 @@ the text editor.
 
 ### 3.1 Command Line Interface
 
-All operations on the level of the operating system are in some sense
-performed on files. A new project starts with a new folder, a grant proposal
-with a new document. The completion of the project and the submittal of the
-grant proposal essentially involve the transmission of files across email
-clients and code repositories. The aspiring coder must therefore develop a
-firm grasp of the file system topography. The command line presents one of the
-oldest and most empowered ways of interacting if the machine. Despite its
-retro appearances, the modern command line offers an intuitive, text based,
-"call and response" style of machine programming consistent across a
-remarkable variety of platforms: from mobile phones to supercomputers. The
-power user manipulates files at the command line. Everything from downloading
-a sample corpus, to writing a research paper, to debugging code eventually
-leads to the command line. We therefore embrace it from the beginning of the
-course. It forms the base of our operations.
+Because all interaction with the machine on the level of the operating system
+is in some sense an operation of files, the aspiring coder must develop a firm
+grasp of the file system topography. Despite its retro appearances, the modern
+command line offers an intuitive, text based, "call and response" style of
+machine programming consistent across a remarkable variety of platforms: from
+mobile phones to supercomputers. Everything from downloading a sample corpus,
+to writing a research paper, to debugging code eventually leads to the command
+line. We therefore embrace it from the beginning of the course. It forms the
+basis of our operations.
 
-On the level of hardware the machine "speaks" in binary code. The command line
-"interprets" English-like commands (in a language called Unix
-Shell)[^ln-shell] into binary. When deleting a file, for example, one
-instructs the machine to `rm filename.txt` instead of dragging and dropping it
-into the trash folder, as one would using a graphical user interface. Note
-that "dropping into the trash folder" merely offers a visual metaphor for the
-underlying bitwise operations. The CLI alternative turns the metaphor into a
-more exact command `rm`, which stands for "remove." Similarly, to direct the
-computer to move a file, we would use the `mv` command. Unlike their visual
-and metaphorical counterparts, the Bash commands contain many advanced
-options, which are explained in the manual accessible through the `man`
-command. In this example, `man mv` displays the manual pages for the move
-command.
+On the level of hardware, the machine "speaks" in binary code. The command
+line "interprets" or translates English language-like commands (in a language
+called Unix Shell)[^ln-shell] into binary code. When deleting a file, for
+example, one instructs the machine to `rm filename.txt` instead of dragging
+and dropping it into the trash folder, as one would using a graphical user
+interface. Note that "dropping into the trash folder" merely offers a visual
+metaphor for the underlying bitwise operations.  The CLI alternative turns the
+metaphor into a more exact command `rm`, which stands for "remove." Similarly,
+to direct the computer to move a file, we would use the `mv` command. Unlike
+their visual and metaphorical counterparts, the Bash commands contain many
+advanced options, which are explained in the manual accessible through the
+`man` command. In this example, `man mv` displays the manual pages for the
+move command.
 
 [^ln-shell]: @bourne_unix_1978
 
@@ -734,6 +729,7 @@ paper.[^ln-coauthor]
 - @kernighan_d_2011
 - @janssens_data_2014
 - [DH Notes](https://github.com/denten/dhnotes/wiki)
+- [Digital Humanities Research Portal](https://www.computecanada.ca/research-portal/digital-humanities-working-group/), Compute Canada
 - @manning_foundations_1999
 - @bird_natural_2009
 - @petzold_code:_2000
