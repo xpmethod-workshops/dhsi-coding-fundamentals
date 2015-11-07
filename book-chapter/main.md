@@ -113,8 +113,8 @@ hope to empower our students to take control of their everyday digital
 practice.
 
 The most universal daily computing task of the humanities, regardless of
-research interest, is writing. For this reason, we often begin our classes by
-creating small "experiments" that address our students' own writing habits.
+research interest, is writing. For this reason, we structure our early classes
+by creating small "experiments" that address our students' own writing habits.
 Such exercises might include a lab session in which students analyze their own
 documents for commonly overused "weasel words,"[^ln-weasel] for example.
 Working with one's own documents introduces important technical
@@ -447,37 +447,45 @@ humanist alike.
 
 We often begin our courses by outlining the above "big picture" principles,
 challenges, and considerations. Like learning a foreign language, programming
-takes time and patience to master. And as is the case with any difficult skill,
-motivation to practice correlates to chances of long-term success. Developing
-the intellectual motivation to stick with the program is therefore one of our
-paramount goals. For this reason, we begin the course with the "frustration
-points" of everyday computing. In our experience, even simple tasks like saving
-a file from an internet browser can be rife with anxiety and frustration for
-many students: Where did that file go? How do I find it again? What type of
-file is it? Modern operating systems conceal such information from average
-users.
+takes time and patience to master. And as is the case with any difficult
+skill, motivation to practice best correlates to chances of long-term success.
+Developing the intellectual motivations to stick with the program is therefore
+one of our paramount goals. For this reason, we strive to address the common
+"frustration points" of everyday computing. In our experience, even simple
+tasks like downloading an online file can be rife with anxiety for many
+students: Where did that file go? How do I find it again?  What type of file
+is it? Is it safe to open it? Modern operating systems conceal the details
+needed to make informed decisions from the average user. Practitioners
+interested in fields like information science, critical software studies,
+platform studies, game theory, or media archeology must learn to extend their
+inquiry beyond the available surfaces.
 
-Our task as instructors is to channel that frustration into opportunities for
-discovery. Students, university faculty, and librarians intrinsically approach
-documents, file systems, and datasets as matters of critical importance,
-embodying the fruits of long-standing commitments and intellectual labor. We
-can harness the patience and care they bring to their research and help them
-extend it to computing fundamentals. In our experience, students respond
-enthusiastically to the mission of reclaiming the material contexts of their
-daily intellectual production.
+Our task as instructors is to reveal the hidden mechanics of computation.
+Moments of apprehension can be turned into opportunities for discovery.
+Students, university faculty, and librarians naturally approach documents,
+file systems, and datasets as matters of critical importance. Such artifacts
+preserve much precious intellectual labor. For this reason, in our experience,
+students respond enthusiastically to the mission of reclaiming the material
+contexts of their daily intellectual production.
 
-As suggested by the metaphor of a software development "environment," a site of
-computation denotes both the interface through which the human engages the
-machine and the type of interaction the interface demands. A site is also a
-conceptual space, though, each with its own logic and set of values.
-Consequently, we identify three locations as key sites of digital literacy: the
-command line, the language interpreter, and the text editor.
+As suggested by the metaphor of the software development "environment," a site
+of computation denotes an interface through which humans engage with machines.
+A site is also a conceptual space, containing a logic or a grammar of
+interaction. We find three such sites in searching for the universal grounds
+of general digital literacy: the command line, the language interpreter, and
+the text editor.
 
-### 3.1 Command Line
+### 3.1 Command Line Interface
 
-The first of these locations is the command line, a Unix shell and a command
-language for text-based, call-and-response "dialogue" between the user and the
-Unix-based operating system. On the level of the operating system, all
+One of the oldest and most powerful ways of interacting with the machine is
+the command line. Despite its retro appearances, the modern command line
+offers a flexible, text based, "call and response" style of machine
+programming consistent across a remarkable variety of platforms: from mobile
+phones to supercomputers.
+
+The first of these locations is the command line. The command Unix shell and a
+command language for text-based, call-and-response "dialogue" between the user
+and the Unix-based operating system. On the level of the operating system, all
 operations are in some sense performed on files. The aspiring coder must
 therefore develop a firm grasp of what files and folders really *are* along
 with corresponding techniques used to manipulate them. The command line is
