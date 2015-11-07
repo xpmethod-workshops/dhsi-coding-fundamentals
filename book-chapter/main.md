@@ -477,40 +477,33 @@ the text editor.
 
 ### 3.1 Command Line Interface
 
-One of the oldest and most powerful ways of interacting with the machine is
-the command line. Despite its retro appearances, the modern command line
-offers a flexible, text based, "call and response" style of machine
-programming consistent across a remarkable variety of platforms: from mobile
-phones to supercomputers.
+All operations on the level of the operating system are in some sense
+performed on files. A new project starts with a new folder, a grant proposal
+with a new document. The completion of the project and the submittal of the
+grant proposal essentially involve the transmission of files across email
+clients and code repositories. The aspiring coder must therefore develop a
+firm grasp of the file system topography. The command line presents one of the
+oldest and most empowered ways of interacting if the machine. Despite its
+retro appearances, the modern command line offers an intuitive, text based,
+"call and response" style of machine programming consistent across a
+remarkable variety of platforms: from mobile phones to supercomputers. The
+power user manipulates files at the command line. Everything from downloading
+a sample corpus, to writing a research paper, to debugging code eventually
+leads to the command line. We therefore embrace it from the beginning of the
+course. It forms the base of our operations.
 
-The first of these locations is the command line. The command Unix shell and a
-command language for text-based, call-and-response "dialogue" between the user
-and the Unix-based operating system. On the level of the operating system, all
-operations are in some sense performed on files. The aspiring coder must
-therefore develop a firm grasp of what files and folders really *are* along
-with corresponding techniques used to manipulate them. The command line is
-where the power user interacts with files and folders. Everything from
-downloading a sample corpus, to writing research papers, to debugging code
-eventually leads to the command line. We thus embrace it and take it as the
-base of our operations: a new project starts with a new folder, and its
-completion and publication often involves sharing files across email clients
-and code repositories. 
-
-One way to think of the command line is as a powerful alternative to tools like
-*File Explorer* (Windows) and *Finder* (Macintosh). Unlike these popular
-point-and-click programs, the command line interface (CLI from now on) is a
-text-based, dialog-driven mode of interaction with the operating system. On
-some deeper level, the machine "speaks" in binary code. The command line
-"interprets" English-like commands (in a language called Bash)[^ln-bash] into
-binary. When deleting a file, for example, one instructs the machine to `rm
-filename.txt` instead of dragging and dropping it into the trash folder. Note
-that "dropping into the trash folder" merely offers a visual metaphor for the
-underlying bitwise operations. The CLI alternative turns the metaphor into a
-more exact command `rm`, which stands for "remove." Similarly, to direct the
-computer to move a file, we would use the `mv` command. Unlike their visual and
-metaphorical counterparts, the Bash commands contain many advanced options,
-which are explained in the manual accessible through the `man` command. In this
-example, `man mv` displays the manual pages for the move command.
+On the level of hardware the machine "speaks" in binary code. The command line
+"interprets" English-like commands (in a language called Unix Shell)[^ln-shell]
+into binary. When deleting a file, for example, one instructs the machine to
+`rm filename.txt` instead of dragging and dropping it into the trash folder.
+Note that "dropping into the trash folder" merely offers a visual metaphor for
+the underlying bitwise operations.  The CLI alternative turns the metaphor
+into a more exact command `rm`, which stands for "remove." Similarly, to
+direct the computer to move a file, we would use the `mv` command. Unlike
+their visual and metaphorical counterparts, the Bash commands contain many
+advanced options, which are explained in the manual accessible through the
+`man` command. In this example, `man mv` displays the manual pages for the
+move command.
 
 Furthermore, because Bash commands are in themselves a type of a programming
 language, they can be chained together and automated to produce complex
@@ -585,13 +578,6 @@ a string, the exercise can be used as the basis for string manipulation and,
 later, data normalization and rudimentary natural language processing. Finally,
 such exercises can lead to the basics of remote server management, networking,
 security, and encryption.
-
-[^ln-bash]: "Bash is the GNU Project's shell. Bash is the Bourne Again SHell.
-Bash is an sh-compatible shell that incorporates useful features from the Korn
-shell (ksh) and C shell (csh). It is intended to conform to the IEEE POSIX
-P1003.2/ISO 9945.2 Shell and Tools standard. It offers functional improvements
-over sh for both programming and interactive use. In addition, most sh scripts
-can be run by Bash without modification" [@free_software_foundation_gnu_2007].
 
 ### 3.2 Python
 
