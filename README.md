@@ -75,7 +75,7 @@ activities in the afternoon that will push further into text manipulation in a U
 |                                   | - everything else        |
 
 
-[9]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
+[9]: https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
 [10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
 [11]: https://github.com/denten/dhnotes/blob/master/python/python-1.md
 [12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
