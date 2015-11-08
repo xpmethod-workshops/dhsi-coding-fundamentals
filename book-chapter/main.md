@@ -618,78 +618,110 @@ analysis.
 
 Let us refactor the same code we used to explore Melville's *Moby Dick* in
 *Shell* into *Python*. As before, feel free to follow along online or on your
-machine. Do not worry if you do not understand all the code yet. We cover this
-material over the course of the week. For now the examples here should give
-the reader a general feel for the difference between *Shell* scripting and
-*Python* programming. These examples feature many of the basic elements of
-*Python* grammar, logic, and control structures.
+machine. Do not worry if you do not understand all the code yet. In our class,
+we cover this material over the course of the week. For now the examples here
+should give the reader a general feel *Python* programming: grammar, logic,
+and control structures.
 
 <!---
 Phil, please double check each line in iPython
 --->
 
-- Find the whales
+Let's begin by finding all the whales and substituting them for chicken, just for
+fun.
 
 ```
 # open file and read contents into a list of lines
 # mimics the shell behavior in the previous example
 with open('moby.txt', 'r') as f:
     lines = f.read().splitlines()
+```
 
-# this will take a few seconds!
-print(lines)
+Unlike *Shell*, *Python* is a object-oriented language. Just like everything
+in the Unix world is a file, everything in the *Python* world is an object.
+Objects have methods associated with them them. You can imagine an object of
+the type "dog" for example to have methods like "sit" and "fetch." And object
+of the type "cat" to have methods like "hide" and "hunt." Methods often return
+other objects. Thus we may expect the method `dog.fetch()` to return an object
+of the type `toy`. Note that the parenthesis help differentiate the method
+from the object itself: one is a verb the other a noun.
 
-# find all the whales
+But the built-in *Python* objects are limited to just a few primitive types
+like string, integer, and list. The type of data manipulation we show here
+depends on knowing what type of object we are working with at all times. When
+we first open `moby.txt` we "stuff" it into an object of type *file* that we
+call, arbitrary, `f`. File objects have useful methods like `read()` which
+returns an object of type *string*. Strings have the helpful ability to parse
+themselves into a list of lines, based on the presence of hidden new line
+characters. `splitlines()` returns a list of strings then, which we assign to a
+an arbitrarily named variable `list`. Because `splitlines()` returns lists,
+Python attempts to do the right thing by making the `lines` contain of type
+*list*.
+
+To check the type of the object we can run `type(lines)`. `print(lines)` will
+show the contents of our list container. Let us now try to replace all whales
+with chickens, just for fun:
+
+```
+# replace whale for chicken in every line and print results
 for line in lines:
     if 'whale' in line:
-        print(line)
-
+        print(line.replace('whale', 'chicken'))
 ```
 
-- Substitute whale for chicken and print, just for fun
+Note that although we have not explained control structures like `for` and
+`if`, their use is pretty intuitive. The Pythonic `for line in line` is not
+too far from the English "for every line in lines". The next line says do
+something if the word "whale" is in the line. Where `lines` is a *list* each
+individual member of the list is again an object of type *string*. Like dogs
+and cats strings can do things by having methods attached to them.  The method
+`replace()` does works as expected. Unlike blank methods like `splitlines()`,
+the `replace()` methods takes two arguments: first the word to be replaced,
+and second, the replacement word. Such details can be found in the Python
+documentation and become more familiar with time.
 
-```
-for line in lines:
-    if 'whale' in line:
-        replaced = line.replace('whale', 'chicken')
-        print replaced
-```
+We now come to an operation central to any text analysis. To count the unique
+words as we did before, we need to divide up each line into words:
 
-- Remove punctuation, new line characters and make everything lower case
+- Split each line into words (tokenize), strip punctuation, make lower case
+  and count unique words (types).
 
 ```
 from string import punctuation
-
-# create a list object to store the stripped text
-moby_clean_lines = []
-
-# strip new line characters and punctuation and make lower case
-```
-for line in lines:
-    moby_clean_lines.append(line.rstrip().translate(None, punctuation).lower())
-
-```
-# split each line into words (tokenize) and count unique words (types)
-# display most common types at the end
-
-```
 from collections import Counter
 
 tokens = []
 
-for line in moby_clean_lines:
+for line in lines:
     for word in line.split():
-        tokens.append(word)
+        tokens.append(word.strip(punctuation).lower())
 
+# display 100 most common types
 types = Counter(tokens)
-types.most_common()
+types.most_common(100)
 ```
+
+Conveniently for us, *Python* strings have the method `split()`. First we
+import some helpful libraries that contains some of the logic that we need to
+perform our operations. Then we declare an empty list and give it an arbitrary
+name, `tokens`. We then iterate over each line, and over each word in the
+line. Once the word is stripped of punctuation (another neat trick given to
+use by the built-in *Python* functionality) and converted to lower case, we
+append it to our list of words. The only thing that remains is to count unique
+word types with `Counter()`, another built-in and to print the most common
+words in the novel using the available `most_common()` method. Note that even
+without any preparation, the logic above is readily apparent. Python built-in
+functions sound like English. They are easy to read and therefore easy to
+share with others and to maintain.
 
 Of course the above code could be written in a more concise way. At time we
 opted for code that is more verbose but also for more expressive. The reader
 can perhaps already tell that while *Python* is more wordy, it offers many
 more built-in features than *Shell*. This would be even more apparent if we
-were operating with images or binary formats instead of plain text files.
+were operating with images or binary formats instead of plain text files. For
+a quick count of words in a novel we may initially opt to the Unix shell. As
+our models and logic grow more complex, we are likely to begin writing in
+*Python*.
 
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
