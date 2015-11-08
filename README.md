@@ -75,7 +75,7 @@ activities in the afternoon that will push further into text manipulation in a U
 |                                   | - everything else        |
 
 
-[9]: https://github.com/denten/dhnotes/blob/master/cli-basics/109-text.md
+[9]: https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
 [10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
 [11]: https://github.com/denten/dhnotes/blob/master/python/python-1.md
 [12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
@@ -182,16 +182,20 @@ according to the AuthorName_FilmTitle.html conventionhh
 
 ## Where to go from here?
 
+- [What a well-informed person ought to know
+about computers and communications](http://dl.acm.org/citation.cfm?id=2380975) by Brian Kirnighan
+- [Data Science at the Command Line](http://datascienceatthecommandline.com/) by Jeroen Jannsens
 - [DH Notes](https://github.com/denten/dhnotes/wiki)
-- [Think Python](http://www.greenteapress.com/thinkpython/)
-- [NLTK Book](http://www.nltk.org/book/)
-- [Unix and Linux: Visual QuickStart
-  Guide](http://www.amazon.com/Unix-Linux-Visual-QuickStart-Edition/dp/0321997549)
-- Python on
-  [Lynda.com](http://www.lynda.com/Python-training-tutorials/415-0.html)
-- [tutorials][2]
-- [DHnotes][3]
-- [TAPoR](http://www.tapor.ca/)
+- [Digital Humanities Research Portal](https://www.computecanada.ca/research-portal/digital-humanities-working-group/), Compute Canada
+- [Foundations of Statistical Natural Language Processing](http://nlp.stanford.edu/fsnlp/) by Chris Manning and Hinrich Schütze
+- [Natural Language Processing with Python](http://www.nltk.org/book/) by  Steven Bird, Ewan Klein, and Edward Loper
+- [CODE
+The Hidden Language of Computer Hardware and Software](http://www.charlespetzold.com/code/) by Charles Petzold 
+- [Project Jupyter](https://github.com/jupyter)
+- [PyLadies](https://github.com/pyladies)
+- [Python Software Foundation](https://www.python.org/psf/)
+- [The Programming Historian](http://http://programminghistorian.org)
+- [Think Python: How to Think Like a Computer Scientist](by Allen B. Downey) by Allen B. Downey
 
 [1]: https://piazza.com/class/ia5h507lfcr47d 
 
