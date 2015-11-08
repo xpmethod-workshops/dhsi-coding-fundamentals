@@ -680,11 +680,17 @@ the `replace()` methods takes two arguments: first the word to be replaced,
 and second, the replacement word. Such details can be found in the Python
 documentation and become more familiar with time.
 
-We now come to an operation central to any text analysis. To count the unique
-words as we did before, we need to divide up each line into words:
-
-- Split each line into words (tokenize), strip punctuation, make lower case
-  and count unique words (types).
+In conclusion, we come to an operation central to any text analysis. To count
+the unique words as we did before, we need to divide up each line into words.
+We can then get rid of punctuation, make everything lower case to avoid
+duplication, and create a list of all words found in the novel. The list of
+all words is commonly referred to as "tokens" where the list of unique words
+gives us the "types". The type--token distinction is incredibly useful in
+stylistic analysis, for example. It can be used to build more complex models
+about the quality of writing for example, or about the age range of the
+intended audience. We expect sophisticated prose for adults to exhibit a high
+token-to-type ration. Children's literature uses a more limited vocabulary
+that repeats more often, giving us a lower ratio value.
 
 ```
 from string import punctuation
