@@ -61,7 +61,7 @@ for both "Humans" and "Humanists".
 [^ln-courselink]: An archived version of the DHSI course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
 
-## 1 Critical Computing in the Humanities
+## 1 Critical Computing Principles
 
 Computational methodologies can complement the rich history of research in the
 humanities. But to take hold, quantitative approaches to the study of culture
@@ -220,8 +220,9 @@ broad support from the scientific computing community and in the private
 sector. It is administered by a non-profit organization, which has articulated
 a clear diversity statement, has elected a trans woman to its board of
 directors in 2015, and routinely sponsors efforts, like PyLadies and
-PyCaribbean, which increase participation from publics traditionally
-underrepresented in the technology sector.
+PyCaribbean, and the Minorities in Python Conference. Such efforts increase
+participation from publics traditionally underrepresented in the technology
+sector.
 
 [^ln-pep]: Python Enhancement Proposal 20 reads: "Simple is better than
 complex. Complex is better than complicated Sparse is better than dense.
@@ -481,11 +482,11 @@ Because all interaction with the machine on the level of the operating system
 is in some sense an operation of files, the aspiring coder must develop a firm
 grasp of the file system topography. Despite its retro appearances, the modern
 command line offers an intuitive, text based, "call and response" style of
-machine programming consistent across a remarkable variety of platforms: from
-mobile phones to supercomputers. Everything from downloading a sample corpus,
-to writing a research paper, to debugging code eventually leads to the command
-line. We therefore embrace it from the beginning of the course. It forms the
-basis of our operations.
+"terminal" programming consistent across a remarkable variety of platforms:
+from mobile phones to supercomputers. Everything from downloading a sample
+corpus, to writing a research paper, to debugging code eventually leads to the
+command line. We therefore embrace it from the beginning of the course. It
+forms the basis of our operations.
 
 On the level of hardware, the machine "speaks" in binary code. The command
 line "interprets" or translates English language-like commands (in a language
@@ -493,101 +494,98 @@ called Unix Shell)[^ln-shell] into binary code. When deleting a file, for
 example, one instructs the machine to `rm filename.txt` instead of dragging
 and dropping it into the trash folder, as one would using a graphical user
 interface. Note that "dropping into the trash folder" merely offers a visual
-metaphor for the underlying bitwise operations.  The CLI alternative turns the
-metaphor into a more exact command `rm`, which stands for "remove." Similarly,
-to direct the computer to move a file, we would use the `mv` command. Unlike
-their visual and metaphorical counterparts, the Bash commands contain many
-advanced options, which are explained in the manual accessible through the
-`man` command. In this example, `man mv` displays the manual pages for the
-move command.
+metaphor for the underlying bitwise operations. The terminal command
+transforms the metaphor into the more exact command, `rm`, which stands for
+"remove." Similarly, to direct the computer to move a file, we would use the
+`mv` or "move" command. Unlike their visual and metaphorical counterparts, the
+shell commands contain many advanced options, not amenable to visual metaphor.
+The `man` command accesses the manual. Thus, `man mv` displays the manual
+pages for the move command.
 
 [^ln-shell]: @bourne_unix_1978
 
-Furthermore, because Bash commands are in themselves a type of a programming
-language, they can be chained together and automated to produce complex
-behavior. Imagine, for example, writing a book or a dissertation in a directory
-that contains several files in plain text format (.txt), each corresponding to a
-chapter. The writer can then use the following script to produce the total
-word count:
+Furthermore, because shell commands are in themselves a type of a programming
+language, they can be chained together to produce a kind of an "incantation"
+or a script. The script can then be used to automate system administration of
+data analysis tasks. Just to give the reader an example of a command line
+script we will briefly examine the following lines of code, which ultimately
+give us a frequency counts for each word in Herman Melville's *Moby Dick*.
+Download the [plain text version of the
+novel](http://www.gutenberg.org/cache/epub/2701/pg2701.txt) from Project
+Gutenberg and save as `moby.txt` to follow along.[^ln1-online-supplement] 
+
+We encourage the reader to follow along with these exercise by opening their
+terminal window and using the `man` command to learn about each of the steps
+involved. For example, `man grep` will show the manual pages for the `grep`
+utility. More detailed explanations of each step can be found online at the
+publishers site.
+
+<!---
+Ray, there will be two exercises like these that we would like to publish
+online using iPython Notebooks. Please insert the correct link above, when you
+have it.
+--->
+
+<!---
+Phil, please test all code on a Mac
+--->
+
+- Find the whale.
+
+`grep "whale" moby.txt`
+
+- Substitute whale for chicken globally.
+
+`cat moby.txt | sed 's/whale/chicken/g' > chicken.txt`
+
+- See what happened to the whales.
+
+`grep "chicken" moby.txt`
+
+- Remove punctuation.
+
+`cat file.txt | tr -d "[:punct:]" > moby-nopunct.txt`
+
+- translate all upper case into lower
+
+`cat moby-nopunct.txt | tr '[:upper:]' '[:lower:]' > moby-clean.txt`
+
+- sort by word frequency
 
 ```
-wc -w ~/user/documents/book/*txt | tail -n 1 | sed 's/[a-z ]//g' >> log.txt
+cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -k1 > file_wc.txt (Mac)
 ```
 
-The above "incantation" tells the computer to do four things:
-
-
-1. Count the words in all of the `.txt` files found in the present directory.
-
-    Input:
-
-    ```
-    wc -w *txt
-    ```
-    Output:
-
-    ```
-    11717 1-chapter.txt
-    12457 2-chapter.txt
-    13780 3-chapter.txt
-    10542 3-chapter.txt
-    48496 total
-    ```
-
-2. Isolate the total count from the individual file counts.
-
-    Input:
-
-    `tail -n 1`
-
-    Output:
-
-    `74850 total`
-
-3. Remove the word "total" and keep only the number count.
-
-    Input:
-
-    `sed 's/[a-z ]//g'`
-
-    Output:
-
-    `74850`
-
-4. Append the count to the log file.
-
-    `>> log.txt`
-
-
-The vertical line (`|`) and angle bracket (`>>`) allow us to chain the commands
+We include the above examples to give the reader a compelling example of what
+is possible at the command line. The online exercises accompanying the present
+volume will give detailed explanation of the commands involved. For now, note
+that shell scripting encourages the "data flow" style of text processing.
+Vertical lines (`|`) and angle brackets (`>>`) allow us to chain the commands
 into a system of pipes and redirects, passing the text output of one operation
-on to the next one. Once saved to disk, this small script can be set to run
-automatically at a predetermined time interval and used to keep a daily log of
-one's writing activity.
+on to the next one. Once saved to disk, these small scripts can be be used to
+preform text transformations and frequency counts on any file.
 
-Learning the command line is not just a matter of opening up new ways of
-interacting with files, though. In learning command line basics, students
-become familiar with foundational concepts and techniques that will be built
-upon in higher-level contexts, in true bootstrapping style. The above exercise
-can be used to discuss the difference between relative and absolute file paths
-(`~/usr/documents/book/*txt` vs.  `/usr/documents/book/*txt`). It contains the
-basics of regular expressions (`[a-z ]`). And because the output of `wc -w` is
-a string, the exercise can be used as the basis for string manipulation and,
-later, data normalization and rudimentary natural language processing. Finally,
-such exercises can lead to the basics of remote server management, networking,
-security, and encryption.
+Learning the command line is not just a matter interacting with files.  With
+time it becomes possible to use commands like `wc` and `sed` to perform
+sophisticated data cleaning and text analysis operations. The above exercise
+also introduces the difference between relative and absolute file paths
+(`~/usr/documents/book/*.txt` vs.  `/usr/documents/book/*.txt`). It contains
+the basics of regular expressions (`[a-z ]`). Finally, the exercise can lead
+to the basics of remote server management, debugging, networking, security,
+and encryption.
 
 ### 3.2 Python
 
 The second of our foundational sites of computing is the Python interpreter.
-Where the command line "translates" from *Bash* into machine code, the *Python*
-interpreter translates from *Python*. *Bash* traces its roots to the late
-1970s. It is a domain-specific command language, designed specifically to
-interact with the operating system. Its longevity makes it stable and
-ubiquitous. *Python* became popular in the early 2000s. Unlike *Bash*, it is a
-general-purpose, high-level programming language.
+Where the command line "translates" from shell into machine code, the *Python*
+interpreter translates from the *Python* language. Shell traces its roots to
+the late 1970s. It is a domain-specific command language, designed
+specifically to interact with the operating system. Its longevity makes it
+stable and ubiquitous. *Python* became popular in the early 2000s. Unlike
+*Shell*, it is a general-purpose, high-level programming language. Like
+*Shell* it privileges human readability, which fits with our principles.
 
-| When to use Bash                  | When to use Python              |
+| When to use Shell                 | When to use Python              |
 |:----------------------------------|:--------------------------------|
 | - automate daily tasks            | - data science                  |
 | - manage files & folders          | - app development               |
@@ -602,47 +600,93 @@ several reasons. First, *Python* is popular. According to the TIOBE language
 popularity index, *Python* holds roughly 3.6% of the market, trailing only
 behind *Java* and C-family languages (*C*, *C++*, *C#*)
 [@tiobe_software_tiobe_2015]. Although detailed statistics by field are not
-available, we infer that in the domain of scientific computing and data science
-*Python* holds the majority share of the market. This is important, because it
-means that learning *Python* is a good investment of time. It can lead to jobs
-outside of academia, and projects using *Python* will have an easier time
-hiring outside experts due to the popularity of the language.
+available, we infer that in the domain of scientific computing and data
+science *Python* holds the majority share of the market. This is important,
+because it means that learning *Python* is a good investment of time. It can
+lead to jobs outside of academia. Projects using *Python* will have an easier
+finding collaborators than those using a less popular language.
 
 *Python*'s popularity has an important side-effect. Being a general-purpose
-language, it has been adapted to a wide variety of contexts, from machine
-learning to web application development. The larger *Python* framework
-consequently offers a rich variety of software libraries and toolkits. Most
-tasks needed to perform academic research or library administration have likely
-been addressed in an existing library and are available for use. The student
-can therefore apply skills learned in one area of research to another, without
-loss of expertise or productivity.
+language, it has been adapted into a wide variety of contexts, from machine
+learning to web application development. The community packages common design
+patterns for any given application into ready-made "building blocks." In
+aggregate, such building blocks comprise domain-specific software libraries,
+widely available for reuse. The *Python* ecosystem consequently offers a rich
+variety of software libraries and toolkits. For example, the Natural Language
+Toolkit contains libraries that perform many common tasks needed for text
+analysis.
 
-Finally, besides being popular and flexible, *Python* is a human-friendly
-language. Human-readability is one of its stated aims. the Python Enhancement
-Proposal 20 (PEP20), known as the "Zen of Python" reads [@smith_pep_2015]:
+Let us refactor the same code we used to explore Melville's *Moby Dick* in
+*Shell* into *Python*. As before, feel free to follow along online or on your
+machine. For this exercise we recommend the reader use 
+
+<!---
+Phil, please double check each line in iPython
+--->
+
+- Find the whales
 
 ```
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
+# open file and read contents into a list of lines
+# mimics the shell behavior in the previous example
+with open('moby.txt', 'r') as f:
+    lines = f.read().splitlines()
+
+# this will take a few seconds!
+print(lines)
+
+# find all the whales
+for line in lines:
+    if 'whale' in line:
+        print(line)
+
 ```
 
-We feel that in privileging code legibility, the *Python* philosophy fits well
-with the values of humanistic inquiry. The human-friendly readability of the
-language on the technical level reflects its possibilities on the social level:
-legibility can translate to accessibility across communities and in groups too
-often under-represented in programming circles. The Python Software Foundation,
-an organization "devoted to advancing open source technology related to the
-Python programming language," publishes a diversity statement and maintains a
-mailing list devoted to the topic. The community fosters initiatives like
-Pyladies, "an international mentorship group with a focus on helping more women
-become active participants and leaders in the Python open-source community,"
-and the Minorities in Python Conference (held in June 2015, in San Francisco).
+- Substitute whale for chicken globally.
 
+```
+for line in lines:
+    line.replace('whale', 'chicken')
+```
+
+- See what happened to the whales.
+
+```
+for line in lines:
+    if 'chicken' in line:
+        print(line)
+```
+
+- Remove punctuation.
+
+```
+from string import punctuation
+
+# make a set object containing all the punctuation characters
+exclude = set(punctuation)
+
+# read the file into a string object
+with open('moby.txt', 'r') as f:
+    text = f.read().splitlines()
+
+# strip punctuation
+for line in lines:
+line = ''.join(ch for ch in s if ch not in exclude)
+```
+
+# 
+
+- translate all upper case into lower
+
+`cat moby-nopunct.txt | tr '[:upper:]' '[:lower:]' > moby-clean.txt`
+
+- sort by word frequency
+
+with file = open('file.txt', 'w') :
+  file.write(filedata)`
+```
+cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -k1 > file_wc.txt (Mac)
+```
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
@@ -660,16 +704,17 @@ extend without being hampered by proprietary licenses or restrictions. Many
 text editors meet our criteria. Among them are *Atom*, *Emacs*, *Leafpad*,
 *Notepad++*, and *Vim*.
 
-Where conversing directly with *Bash* or *Python* interpreters allows for an
+Where conversing directly with *Shell* or *Python* interpreters allows for an
 "interactive," back-and-forth style of programming, the text editor gives a
-measure of permanence to the conversation. When working with data sets we often
-begin with exploratory data analysis at the command line, aimed at
+measure of permanence to the conversation. When working with data sets we
+often begin with exploratory data analysis at the command line, aimed at
 familiarizing ourselves with the data and at forming intuitions about its
-explanatory potential. Once those intuitions are formed, we can move to writing
-and debugging code in the text editor that will test those intuitions against
-the dataset as a whole. The Python interpreter remains open in the background
-to test individual lines of code before they make it into our program, but the
-text editor makes these projects portable, durable, and scalable.
+explanatory potential. Once those intuitions are formed, we can move to
+writing and debugging code in the text editor that will test those intuitions
+against the dataset as a whole. The Python interpreter remains open in the
+background to test individual lines of code before they make it into our
+program, but the text editor makes these projects portable, durable, and
+scalable.
 
 About halfway through the session, the students are ready to formulate a
 project of their own. Rather than using prepackaged exercises, we encourage our
