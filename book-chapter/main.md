@@ -530,40 +530,34 @@ have it.
 Phil, please test all code on a Mac
 --->
 
-- Find the whale.
-
-`grep "whale" moby.txt`
-
-- Substitute whale for chicken globally.
-
-`cat moby.txt | sed 's/whale/chicken/g' > chicken.txt`
-
-- See what happened to the whales.
-
-`grep "chicken" moby.txt`
-
-- Remove punctuation.
-
-`cat file.txt | tr -d "[:punct:]" > moby-nopunct.txt`
-
-- translate all upper case into lower
-
-`cat moby-nopunct.txt | tr '[:upper:]' '[:lower:]' > moby-clean.txt`
-
-- sort by word frequency
-
 ```
+# find the whale
+grep "whale" moby.txt
+
+# substitute whale for chicken globally
+cat moby.txt | sed 's/whale/chicken/g' > chicken.txt
+
+# see what happened to the whales
+grep "chicken" moby.txt
+
+# remove punctuation.
+cat file.txt | tr -d "[:punct:]" > moby-nopunct.txt
+
+# translate all upper case into lower
+cat moby-nopunct.txt | tr '[:upper:]' '[:lower:]' > moby-clean.txt
+
+# sort by word frequency
 cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -k1 > file_wc.txt (Mac)
 ```
 
-We include the above examples to give the reader a compelling example of what
-is possible at the command line. The online exercises accompanying the present
-volume will give detailed explanation of the commands involved. For now, note
-that shell scripting encourages the "data flow" style of text processing.
-Vertical lines (`|`) and angle brackets (`>>`) allow us to chain the commands
-into a system of pipes and redirects, passing the text output of one operation
-on to the next one. Once saved to disk, these small scripts can be be used to
-preform text transformations and frequency counts on any file.
+We include the above examples to give the reader a compelling example of
+possibilities at the command line. The online exercises accompanying the
+present volume will give detailed explanation of the commands involved. For
+now, note that shell scripting encourages the "data flow" style of text
+processing.  Vertical lines (`|`) and angle brackets (`>>`) allow us to chain
+the commands into a system of pipes and redirects, passing the text output of
+one operation on to the next one. Once saved to disk, these small scripts can
+be be used to preform text transformations and frequency counts on any file.
 
 Learning the command line is not just a matter interacting with files.  With
 time it becomes possible to use commands like `wc` and `sed` to perform
