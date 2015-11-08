@@ -618,7 +618,11 @@ analysis.
 
 Let us refactor the same code we used to explore Melville's *Moby Dick* in
 *Shell* into *Python*. As before, feel free to follow along online or on your
-machine. For this exercise we recommend the reader use 
+machine. Do not worry if you do not understand all the code yet. We cover this
+material over the course of the week. For now the examples here should give
+the reader a general feel for the difference between *Shell* scripting and
+*Python* programming. These examples feature many of the basic elements of
+*Python* grammar, logic, and control structures.
 
 <!---
 Phil, please double check each line in iPython
@@ -642,55 +646,51 @@ for line in lines:
 
 ```
 
-- Substitute whale for chicken globally.
+- Substitute whale for chicken and print, just for fun
 
 ```
 for line in lines:
-    line.replace('whale', 'chicken')
+    if 'whale' in line:
+        replaced = line.replace('whale', 'chicken')
+        print replaced
 ```
 
-- See what happened to the whales.
-
-```
-for line in lines:
-    if 'chicken' in line:
-        print(line)
-```
-
-- Remove punctuation.
+- Remove punctuation, new line characters and make everything lower case
 
 ```
 from string import punctuation
 
-# make a set object containing all the punctuation characters
-exclude = set(punctuation)
+# create a list object to store the stripped text
+moby_clean_lines = []
 
-# read the file into a string object
-with open('moby.txt', 'r') as f:
-    text = f.read().splitlines()
+# strip new line characters and punctuation and make lower case
+```
+for line in lines:
+    moby_clean_lines.append(line.rstrip().translate(None, punctuation).lower())
 
-# strip punctuation
-for ch in text:
-    if ch in exclude:
-        text.join(ch)
+```
+# split each line into words (tokenize) and count unique words (types)
+# display most common types at the end
 
-# a way to do it using list comprehensions
-stripped = ''.join(ch for ch in text if ch not in exclude)
+```
+from collections import Counter
+
+tokens = []
+
+for line in moby_clean_lines:
+    for word in line.split():
+        tokens.append(word)
+
+types = Counter(tokens)
+types.most_common()
 ```
 
-# 
+Of course the above code could be written in a more concise way. At time we
+opted for code that is more verbose but also for more expressive. The reader
+can perhaps already tell that while *Python* is more wordy, it offers many
+more built-in features than *Shell*. This would be even more apparent if we
+were operating with images or binary formats instead of plain text files.
 
-- translate all upper case into lower
-
-`cat moby-nopunct.txt | tr '[:upper:]' '[:lower:]' > moby-clean.txt`
-
-- sort by word frequency
-
-with file = open('file.txt', 'w') :
-  file.write(filedata)`
-```
-cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -k1 > file_wc.txt (Mac)
-```
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
 "Munge Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
