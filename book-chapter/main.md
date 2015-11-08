@@ -736,27 +736,29 @@ destructive data transformation steps [@raymond_mung_2004].
 ### 3.3 Text Editor
 
 The humble text editor is the third and possibly most important site of
-computing in the digital humanities: in addition to supporting programming, the
-right text editor can make useful interventions in the writing process in
-general. For this reason, we ask our students to reevaluate their relationship
-with consumer-grade tools like Microsoft Word and Google Docs. To write code we
-need a *plain text* editor that does not add any hidden formatting characters
-to our program instructions. We also need an editor that we can modify and
-extend without being hampered by proprietary licenses or restrictions. Many
-text editors meet our criteria. Among them are *Atom*, *Emacs*, *Leafpad*,
-*Notepad++*, and *Vim*.
+computing in the digital humanities. In addition to supporting programming,
+the text editor mediates our research and publication practices. For this
+reason, we ask our students to reevaluate their relationship with tools like
+Microsoft Word and Google Docs. These often fail to meet our community's
+criteria for usability and they do not align well with our values. At the very
+least, to write code we need a *plain text* editor that does not add any
+hidden formatting characters to our program instructions. We also need an
+editor that we can modify and extend without being hampered by proprietary
+licenses or restrictions. Many text editors meet these criteria. Among them
+are *Atom*, *Emacs*, *Leafpad*, *Notepad++*, and *Vim*.
 
-Where conversing directly with *Shell* or *Python* interpreters allows for an
-"interactive," back-and-forth style of programming, the text editor gives a
-measure of permanence to the conversation. When working with data sets we
-often begin with exploratory data analysis at the command line, aimed at
-familiarizing ourselves with the data and at forming intuitions about its
-explanatory potential. Once those intuitions are formed, we can move to
-writing and debugging code in the text editor that will test those intuitions
-against the dataset as a whole. The Python interpreter remains open in the
-background to test individual lines of code before they make it into our
-program, but the text editor makes these projects portable, durable, and
-scalable.
+Where conversing directly with at the command prompts or with the *Python*
+interpreters allow for an "interactive," back-and-forth dialog style of
+programming, the text editor gives a measure of permanence to the
+conversation. When working with data sets we often begin with exploratory data
+analysis at the command line, aimed at familiarizing ourselves with the data
+and at forming intuitions about its explanatory potential. Once those
+intuitions are formed, we can move to writing and debugging code in the text
+editor. The code helps describe our formal models. It lets us test our
+intuitions against the dataset as a whole. The Python interpreter and the
+shell remain open in the background. We will use them them to manage our files
+and to test snippets of code. But the text editor is where we can begin to
+think algorithmically. It is where our projects gain a more permanent shape.
 
 About halfway through the session, the students are ready to formulate a
 project of their own. Rather than using prepackaged exercises, we encourage our
@@ -771,45 +773,58 @@ film script corpus.
 All of these projects begin with a set of step-by-step instructions in English.
 Thus, a simple essay grader may be expressed as follows:
 
-1. Open and read a file.
-2. Calculate variation of sentence lengths.
-3. Assign a score based on variation.
-4. Calculate a measure of linguistic variety.
-5. Assign a vocabulary score.
-6. Find common spelling mistakes and "weasel words" that are a sign of weak
+```
+# Open and read a file.
+
+# Calculate variation of sentence lengths.
+
+# Assign a score based on variation.
+
+# Calculate a measure of linguistic variety.
+
+# Assign a vocabulary score.
+
+# Find common spelling mistakes and "weasel words" that are a sign of weak
 writing.
-7. Average the scores to come up with a total grade.
+
+# Average the scores to come up with a total grade.
+```
+Once formalized, we can begin to convert the logic from the English language
+pseudo-code into Python, expanding and filling in the code under the comments.
 
 In this way, students work alone or in groups to define the scope of their
-program. Beginning with this step also institutes another type of code
-legibility, the legibility of value-driven heuristics. In another recent course
-at Columbia University, students building an automatic essay-grader had to
-explain and defend the basis of their grading criteria. In doing so, they
-revealed their own values as writers and initiated a spirited debate about
-algorithmic judgments of clarity and style. Some students focused on limiting
-sentence length while others privileged linguistic variety. Other students
-unabashedly established their metrics based on their own stylistic traits,
-assuming that they would be implicitly doing so anyway. Revealing the basis of
-these judgments in the classroom can spur discussion, but it also facilitates
-transparency in the final program.
+program. At this stage, we can already begin a critical discussion about the
+models implicit in the proposed program. For example, does the above logic for
+an essay "grader" accurately capture what we mean by "writing well" or
+"writing poorly?" Is it enough to reduce notions of value to "a measure of
+linguistic variety?" What can we do to make our model more robust and to make
+it better correspond to our native intuitions about literary value? In another
+recent course at Columbia University, students building an automatic
+essay-grader had to explain and defend the basis of their grading criteria. In
+doing so, they confronted their own implicit criteria for good writing and
+initiated a spirited debate about algorithmic judgments of clarity and style.
+Some students focused on finding rich vocabularies. Others looked for for
+variation in sentence and paragraph length. In this way, we use the algorithm
+to challenge extant critical models and intuitions.
 
 When the scope and logic of the program have been determined, we work with
 individual groups to help translate the English-language heuristic into
 workable Python code. Inevitably, the programs grow more sophisticated. In the
-above example, students used published work to test their grading algorithm. In
-a longer course, we may have introduced supervised learning techniques to
-classify essays for quality based on similarity to work that has already been
-evaluated.The difficulty of the project may be tailored to the length of the
-course and the level of individual expertise. During such free-form
-"laboratory" sessions we encourage students to help each other and to share
-expertise with their peers.
+above example, students used published work to test their grading algorithm.
+It was interesting to see how Ernest Hemingway fared against David Foster
+Wallace, for example. In a longer course, we may have introduced supervised
+learning techniques to classify essays for quality based on similarity to work
+that has already been evaluated. The difficulty of any specific project may be
+tailored to the length of the course and to the level of individual expertise.
+During such free-form "laboratory" sessions we encourage students to help each
+other and to share expertise with their peers.
 
 The command line, the Python interpreter, and the text editor provide the
 foundations of critical computing in the humanities. We do not expect all of
 our students to become programmers. But at the very least, they become exposed
 to a powerful problem-solving method and to operating system internals used
-widely in all aspects of computation, from sending email to writing a
-paper.[^ln-coauthor]
+widely in all aspects of computation, from sending email to writing 
+papers.[^ln-coauthor]
 
 ## Further Reading
 
