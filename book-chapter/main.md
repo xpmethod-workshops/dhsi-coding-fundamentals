@@ -670,8 +670,12 @@ with open('moby.txt', 'r') as f:
     text = f.read().splitlines()
 
 # strip punctuation
-for line in lines:
-line = ''.join(ch for ch in s if ch not in exclude)
+for ch in text:
+    if ch in exclude:
+        text.join(ch)
+
+# a way to do it using list comprehensions
+stripped = ''.join(ch for ch in text if ch not in exclude)
 ```
 
 # 
