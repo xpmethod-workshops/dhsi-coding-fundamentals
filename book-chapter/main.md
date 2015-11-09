@@ -543,11 +543,16 @@ grep "chicken" chicken.txt
 # remove punctuation.
 cat moby.txt | tr -d "[:punct:]" > moby-nopunct.txt
 
+# check if it worked
+tail moby-nopunct.txt
+
 # translate all upper case into lower
 cat moby-nopunct.txt | tr '[:upper:]' '[:lower:]' > moby-clean.txt
+tail moby-clean.txt
 
 # sort by word frequency
-cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -k1 > file_wc.txt (Mac)
+cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -k1 > word-count.txt (Mac)
+head word-count.txt
 ```
 
 We include the above examples to give the reader a compelling example of
