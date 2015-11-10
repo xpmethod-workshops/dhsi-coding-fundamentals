@@ -354,26 +354,26 @@ formats. Familiarity with Bash and regular expressions extend competency on the
 command line to text manipulation methods.
 
 The core principle of demystifying everyday computation leads to the topic of
-**content management** and **version control** early in the curriculum. Although not a
-simple subject, version control comes naturally to a community used to thinking
-about drafts, manuscripts, and revisions. Increasingly, version control systems
-are also serving as content management systems used to host websites, share
-data, and publish. For example, the editors of *The Programming Historian*
-use GitHub, a version control system, to publish and to distribute their
-journal. The team behind *Project GITenberg* "leverages the power of the Git
-version control system and the collaborative potential of Github to make books
-more open." As of 2015, *GITenberg* hosts more than 43,000 books. Using a
-similar model to create personal academic profiles, compile image galleries, or
-edit critical editions, our students learn while experimenting with aspects of
-academic production directly relevant to their careers. Furthermore, version
-control systems improve the quality of academic collaboration. Git and similar
-tools act as powerful research notebooks. They encourage all researchers
-involved to keep meticulous notes, which make it possible to document the flow
-ideas and labor and to attribute work fairly. For these reason we encourage the
-use version control early on and expect such systems to play an increasing role
-in academic evaluation.
+**content management** and **version control** early in the curriculum.
+Although not a simple subject, version control comes naturally to a community
+used to thinking about drafts, manuscripts, and revisions. Increasingly,
+version control systems are also serving as content management systems used to
+host websites, share data, and publish. For example, the editors of *The
+Programming Historian* use GitHub, a version control system, to publish and to
+distribute their journal. The team behind *Project GITenberg* "leverages the
+power of the Git version control system and the collaborative potential of
+Github to make books more open." As of 2015, *GITenberg* hosts more than 43,000
+books[@hellman_project_2012]. Using a similar model to create personal academic
+profiles, compile image galleries, or edit critical editions, our students
+learn while experimenting with aspects of academic production directly relevant
+to their careers. Furthermore, version control systems improve the quality of
+academic collaboration. Git and similar tools act as powerful research
+notebooks. They encourage all researchers involved to keep meticulous notes,
+which make it possible to document the flow ideas and labor and to attribute
+work fairly. For these reason we encourage the use version control early on and
+expect such systems to play an increasing role in academic evaluation.
 
-A programming language occupies a central place in computational practice. All
+A **programming language** occupies a central place in computational practice. All
 forms of digitality pass through some form of encoding and automation. Only a
 small step separates text manipulation at the command line using simple shell
 scripts from more advanced research-oriented programming languages like
@@ -383,54 +383,57 @@ command line. Thus small tasks like "create a directory," "move a file,"
 "count all words in this directory" can eventually grow into text analysis.
 
 Because the internet plays such a key role in transforming academic practice,
-knowing the basics of networking---infrastructure, routing, packet switching,
-protocols, security, and encryption---is also key to pursuing higher-level
-goals like preserving free speech online, protecting a journalist's sources,
-or bypassing censorship filters, particularly in places where politics and
-geography impinge on intellectual freedom. The care and maintenance of
-personal document archives---research papers, article drafts, and book
-manuscripts---naturally leads into server management. The server is where many
-of the skills learned earlier come to fruition. Running websites requires a
-long "stack" of technological components. Advanced technologies "in the stack"
-like the Apache HTTP server, MySQL relational database management system, and
-the PHP programming language are difficult (if not impossible) to master
-without prior knowledge of the command line, networking, and programming
-fundamentals.
+knowing the basics of **networking** and network **security**---infrastructure,
+routing, packet switching, protocols, and encryption---is also key to pursuing
+higher-level goals like preserving free speech online, protecting a
+journalist's sources, or bypassing censorship filters, particularly in places
+where politics and geography impinge on intellectual freedom. The care and
+maintenance of personal document archives---research papers, article drafts,
+and book manuscripts---naturally leads into server management. The server is
+where many of the skills learned earlier come to fruition. Running websites
+requires a long "stack" of technological components. Advanced **system
+administration** technologies "in the stack" like the Apache HTTP server, MySQL
+relational database management system, and the PHP programming language are
+difficult (if not impossible) to master without prior knowledge of the command
+line, networking, and programming fundamentals.
 
 No project is complete without some sense of planning and organization.
-Project management is an important part of computation in the private sector,
-and it is an increasingly formalized part of software engineering. Projects
-succeed and fail by the measure of their ability to coordinate action across
-differences in time, temperament, and geography. When teaching programming, we
-ask our students to start with "scoping" their projects in plain English
-first, then to transform these technical specifications into pseudocode, which
-finally serves as the basis for program design and architecture. We ask our
-students to submit these documents along with code and consider them an
-essential part of the project's output. In addition to getting better results,
-attention to project management prepares our students for working in groups
-outside of academia.
+**Project management** is an important part of computation in the private
+sector, and it is an increasingly formalized part of software engineering.
+Projects succeed and fail by the measure of their ability to coordinate action
+across differences in time, temperament, and geography. When teaching
+programming, we ask our students to start with "scoping" their projects in
+plain English first, then to transform these technical specifications into
+pseudocode, which finally serves as the basis for program design and
+architecture. We ask our students to submit these documents along with code and
+consider them an essential part of the project's output. In addition to getting
+better results, attention to project management prepares our students for
+working in groups outside of academia.
 
 Because computational projects in the digital humanities often involve the
-creation of public-facing tools and archives, they necessarily overlap with
-the fields of data visualization, and graphic, user interface, and user
-experience design. Johanna Drucker has been a powerful voice in urging our
-community to encounter design both in practice and as an object of study
-[CITE]. The disciplines of human-computer interaction and human factor
-engineering hold exciting possibilities for a productive collaboration between
-schools of engineering and the humanities.
+creation of public-facing tools and archives, they necessarily overlap with the
+disciplines of **design**, such as data visualization, graphical user
+interfaces, and user experience design. Johanna Drucker has been a powerful
+voice in urging our community to encounter design both in practice and as an
+object of study.[^ln-drucker] The disciplines of human-computer interaction and human
+factor engineering hold exciting possibilities for a productive collaboration
+between schools of engineering and the humanities.
 
-Finally, programming fundamentally involves a measure of algorithmic thought
-and statistical reasoning. Without logic there can be no computation.
-Ultimately, the art of programming involves the ability to think
-algorithmically, to atomize complexity into discrete programmable steps, to
-formalize intuition, and to build models. Logic and statistical reasoning
-underlie every word cloud, every topic model, and every network visualization
-tool. Critical computing practice, like critical thought, requires access to
-deep structure. Those who aspire to become active and equal participants in
-the formation of computational knowledge (rather than mere passive recipients
-of tools and methodologies developed elsewhere) must at some point confront
-the established standards for training required for quantitative work in any
-field.
+[^ln-drucker]: See, for example, her work with Emily McVarish on *Graphic
+Design History* (@drucker_graphic_2012).
+
+Finally, programming fundamentally involves a measure of **probabilistic
+reasoning, statistical methods, and algorithmic thinking**. Without logic there
+can be no computation. Ultimately, the art of programming involves the ability
+to think algorithmically, to atomize complexity into discrete programmable
+steps, to formalize intuition, and to build models. Logic and statistical
+reasoning underlie every word cloud, every topic model, and every network
+visualization tool. Critical computing practice, like critical thought,
+requires access to deep structure. Those who aspire to become active and equal
+participants in the formation of computational knowledge (rather than mere
+passive recipients of tools and methodologies developed elsewhere) must at some
+point confront the established standards for training required for quantitative
+work in any field.
 
 An intensive, week-long class, like the one that we teach at DHSI, can only
 begin to address a small portion of the skills required to run a successful
