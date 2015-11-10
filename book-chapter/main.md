@@ -100,32 +100,30 @@ to facilitate their research." See also @harrell_toward_2015.
 ### 1.1 Demystify everyday computation
 
 Contemporary computational devices are a foundation of daily life. They are
-involved in everything from financial markets, to archival research, to the
-way many keep in touch with friends and family. Yet for those without
-technical training, the inner workings of these devices remain a source of
-mystery and, consequently, frustration. Recognizing this, our courses target
-the underlying structure of tools that many rely on for their daily
-computation, teaching our students how these tools work (and not just how to
-use them). Beyond the principles of programming, we want our students to
-understand the basics of networking, system administration, and project
-management. By revealing the innards of opaque computational "black boxes," we
-hope to empower our students to take control of their everyday digital
-practice.
+involved in everything from financial markets, to archival research, to the way
+many keep in touch with friends and family. Yet for those without technical
+training, the inner workings of these devices remain a source of mystery and,
+consequently, frustration. Recognizing this, our courses target the underlying
+structure of tools that many rely on for their daily computation, teaching our
+students how these tools work (and not just how to use them). Beyond the
+principles of programming, we want our students to understand the basics of
+networking, system administration, and project management. By revealing the
+innards of opaque computational "black boxes," we hope to empower our students
+to take control of their everyday digital practice.
 
 The most universal daily computing task of the humanities, regardless of
 research interest, is writing. For this reason, we structure our early classes
 by creating small "experiments" that address our students' own writing habits.
 Such exercises might include a lab session in which students analyze their own
 documents for commonly overused "weasel words,"[^ln-weasel] for example.
-Working with one's own documents introduces important technical
-concepts---like "relative" and "absolute" paths, file formats, character
-encoding, and small shell utilities like `grep` (used to search through text
-files), `wc` (word count), or `sed` (stream editor for text
-transformation)---that can later be extended into more advanced concepts in
-data manipulation or natural language processing. Short text-manipulation
-exercises form the students' first programs, performing tasks like "safely
-rename all the files in this folder according to such-and-such rule," or "keep
-a daily log of my writing progress."
+Working with one's own documents introduces important technical concepts like
+"relative" and "absolute" paths, file formats, character encoding, and small
+shell utilities like `grep` (used to search through text files), `wc` (word
+count), or `sed` (stream editor for text transformation). These concepts can
+later be extended into more advanced techniques in data manipulation or natural
+language processing. Short text-manipulation exercises form the students' first
+programs, performing tasks like "safely rename all the files in this folder
+according to such-and-such rule," or "keep a daily log of my writing progress."
 
 [^ln-weasel]: Weasel words are words that sound very meaningful, but diminish
 instead of adding to the impact of persuasive writing. The "very" in the
@@ -143,7 +141,7 @@ chained together with other small but powerful tools to achieve complex
 results. Free software, besides being cost effective ("free as in beer"), also
 makes the tool itself available to inspection, interpretation, revision, and
 ultimately critique. Transparency and the ability to modify code to suit one's
-own needs is what makes code "free free as in speech" [@stallman_why_2007].
+own needs is what makes code "free as in speech" [@stallman_why_2007].
 Above all, we seek out universal tools that we can understand and, where
 needed, customize to fit our own particular applications. These tools can be
 applied in diverse contexts like library infrastructure, web design, data
@@ -153,20 +151,20 @@ When thinking of what to teach or where to invest our time, we look for
 "bootstrapping" effects that come from using powerful, universally available,
 and extensible software. In other words, we privilege skills and concepts that
 will have the highest impact in the long run by transferring to the greatest
-number of contexts or tasks. The command line, for example, useful at first to
-manage files, later becomes an important resource for data gathering, cleanup,
-and analysis. Learning about relative and absolute paths locally makes it
-easier to understand networking protocols and uniform resource locators
-(URLs). It leads to the ability to administer servers remotely and to encrypt
-one's communications---skills needed for journalists, activists, librarians,
-and scholars alike.
+number of contexts or tasks. The command line, for example, is useful at first
+to manage files, and later becomes an important resource for data gathering,
+cleanup, and analysis. Learning about relative and absolute paths locally makes
+it easier to understand networking protocols and uniform resource locators
+(URLs). Familiarity with the command line leads to the ability to administer
+servers remotely and to encrypt one's communications---skills needed for
+journalists, activists, librarians, and scholars alike.
 
 ### 1.3 Privilege simplicity and human legibility over complexity and machine efficiency.
 
 Whenever possible we privilege simplicity and human legibility over complexity
-and machine performance. The tools and file formats that we use in our
-research and archival efforts have serious implications for the long-term
-health of the academic ecosystem. The ubiquitous use of Microsoft Word and
+and machine performance. The tools and file formats that we use in our research
+and archival efforts have serious implications for the long-term accessibility
+of academic knowledge and resources. The ubiquitous use of Microsoft Word and
 Adobe Acrobat file formats, for example, makes it difficult to publish, store,
 and to gather insight even from our own published work. As humanists begin to
 adopt the use of complex tools and databases, needless complexity becomes even
@@ -176,15 +174,15 @@ Simplicity should not be confused with simple-mindedness. As with clarity in
 writing, clarity in computation comes from painstaking mastery of method and
 technique. Such mastery is fundamentally difficult, but it is to be preferred
 to shortcuts that sacrifice clarity for illusory "ease" of use. The student
-just entering the field of digital humanities and computational culture
-studies faces the choice of learning to program machines universally, or
-learning multiple, fragmentary, and non-standardized tools that have limited
-salience outside of the classroom. The proliferation of tools that obscure
-fundamental concepts as to avoid "scaring" beginners adds complexity in the
-long run. Opaque and artificially hampered tools disempower an audience
-otherwise eager to take on new intellectual challenges. Their use prevents us
-from communicating with other computationally-minded disciplines and from
-competing meaningfully in the wider job market.
+just entering the field of digital humanities and computational culture studies
+faces the choice of learning to program machines universally, or learning
+multiple, fragmentary, and non-standardized tools that have limited salience
+outside of the classroom. The proliferation of tools that obscure fundamental
+concepts in order to avoid "scaring" beginners adds complexity in the long run.
+Opaque and artificially hampered tools disfranchise an audience otherwise eager
+to take on new intellectual challenges. Their use prevents us from
+communicating with other computationally-minded disciplines and from competing
+meaningfully in the wider job market.
 
 ### 1.4 Invest in technologies that align with the values of our community.
 
@@ -192,28 +190,28 @@ The non-transparent nature of many popular file tools and file storage formats
 extracts a heavy toll on our community. Each tool that we add to our "tool
 chain" increases the cognitive burden of training, support, and peer review.
 
-It may be appealing at first to hide computational internals behind "simple"
-visual interfaces. Yet these interfaces do not share a common visual language;
-the labor of learning one interface therefore does not not transfer well
-across other software platforms. Our colleagues in computer science sometimes
-worry that introducing command line interfaces and raw coding environments may
-alienate humanists. We believe that limited, "dumbed-down" interfaces do even
-more harm, further mystifying computing to an audience that already feels
-removed from the material contexts of their daily knowledge production. In
-building the foundations, we want our students to spend their time well: to
-learn tools and skills that can support a wide variety of activity within
-diverse cultural contexts. The extra care we take in explaining the reasoning
-behind our technological choices can motivate the students through any initial
-difficulties of learning how to code "the hard way," without shortcuts or
-artificial limitations.
+It may be appealing at first to hide computational internals behind
+"user-friendly" visual interfaces. Yet these interfaces do not share a common
+visual language; the labor of learning one interface therefore does not not
+transfer well across other software platforms. Our colleagues in computer
+science sometimes worry that introducing command line interfaces and raw coding
+environments may alienate humanists. We believe that limited, "dumbed-down"
+interfaces do even more harm, further mystifying computing to an audience that
+already feels removed from the material contexts of their daily knowledge
+production. In building the foundations, we want our students to spend their
+time well: to learn tools and skills that can support a wide variety of
+activity within diverse cultural contexts. The extra care we take in explaining
+the reasoning behind our technological choices can motivate the students
+through any initial difficulties of learning how to code "the hard way,"
+without shortcuts or artificial limitations.
 
-In considering new tools and methodologies humanists who rarely work with
-truly large data would to well to weigh the risk of rapid obsolescence of
-closed systems against any hypothetical gains in speed or performance offered
-by a new note-taking platform, database system, or a proprietary text
+In considering new tools and methodologies humanists who rarely work with truly
+large datasets would do well to weigh the risk of rapid obsolescence against
+any hypothetical gains in speed or performance offered by closed systems like a
+new note-taking platform, database system, or a proprietary text
 editor.[^ln-plain] When selecting a tool or a data format for storage, we ask:
-Does it need special software to render? How long has it been around?  Does
-the community that support it align with our values? Our choice of the Python
+Does it need special software to render? How long has it been around?  Does the
+community that support it align with our values? Our choice of the Python
 programming language, for example, was guided by the fact that Python encodes
 simplify and human readability into technical specifications.[^ln-pep] It has
 broad support from the scientific computing community and in the private
@@ -222,7 +220,7 @@ a clear diversity statement, has elected a trans woman to its board of
 directors in 2015, and routinely sponsors efforts, like PyLadies and
 PyCaribbean, and the Minorities in Python Conference. Such efforts increase
 participation from publics traditionally underrepresented in the technology
-sector.
+sector.[^ln-diversity]
 
 [^ln-pep]: Python Enhancement Proposal 20 reads: "Simple is better than
 complex. Complex is better than complicated Sparse is better than dense.
@@ -233,6 +231,8 @@ format, which can be used to store everything from personal notes, to article
 drafts, to huge datasets of metadata. Unix provides many powerful utilities
 that work with plain text. In fact, the notion of human readability is even
 encoded at the operating system level.
+
+[^ln-diversity]: @pythonsoftwarefoundation @
 
 ### 1.5 Identify research objectives prior to selecting the appropriate tools and methodologies.
 
