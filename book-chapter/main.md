@@ -71,9 +71,9 @@ approach as "critical computing."[^ln-first] The following seven propositions
 will connect technological preferences with values intrinsic to humanistic
 inquiry:
 
-1. Demystify everyday computation.
+#. Demystify everyday computation.
 
-2. Use few, free, small, universal, and powerful tools that you can
+#. Use few, free, small, universal, and powerful tools that you can
 alter and understand.
 
 3. Privilege simplicity and human legibility over complexity and machine
@@ -512,7 +512,7 @@ accesses the manual. Thus, `man mv` displays the manual pages for the move
 command.
 
 [^ln-shell]: See S. R. Bourne's overview for more detail on the Unix shell
-[@bourne_unix_1978].
+@bourne_unix_1978.
 
 Furthermore, because shell commands are in themselves a type of a programming
 language, they can be chained together to produce a "script," or short program.
@@ -695,15 +695,15 @@ cats, strings can do things, as they have methods attached to them. The method
 be replaced, and second, the replacement word. Such details can be found in the
 Python documentation and become more familiar with time.
 
-In conclusion, we come to an operation central to any text analysis. To count
-the unique words as we did before, we need to divide up each line into words.
-We can then get rid of punctuation, make everything lower case to avoid
-duplication, and create a list of all words found in the novel. The list of all
-words is commonly referred to as "tokens" where the list of unique words gives
-us the "types". The type--token distinction is incredibly useful in stylistic
-analysis, for example. It can be used to build more complex models about the
-quality of writing for example, or about the age range of the intended
-audience. We expect sophisticated prose for adults to exhibit a high
+In conclusion, we come to an operation central to any computational text
+analysis. To count the unique words as we did before, we need to divide up each
+line into words. We can then get rid of punctuation, make everything lower case
+to avoid duplication, and create a list of all words found in the novel.  The
+list of all words is commonly referred to as "tokens" where the list of unique
+words gives us the "types." The type--token distinction is incredibly useful in
+stylistic analysis, for example. It can be used to build more complex models
+about the quality of writing for example, or about the age range of the
+intended audience. We expect sophisticated prose by adults to exhibit a high
 token-to-type ration. Children's literature uses a more limited vocabulary that
 repeats more often, giving us a lower ratio value.
 
@@ -713,6 +713,9 @@ from collections import Counter
 
 tokens = []
 
+# split each line into a list of words
+# remove punctuation and make each word lowercase
+# append "cleaned" words to the list "tokens"
 for line in lines:
     for word in line.split():
         tokens.append(word.strip(punctuation).lower())
@@ -725,65 +728,64 @@ types.most_common(100)
 Conveniently for us, *Python* strings have the method `split()`. First we
 import some helpful libraries that contains some of the logic that we need to
 perform our operations. Then we declare an empty list and give it an arbitrary
-name, `tokens`. We then iterate over each line, and over each word in the
-line. Once the word is stripped of punctuation (another neat trick given to
-use by the built-in *Python* functionality) and converted to lower case, we
-append it to our list of words. The only thing that remains is to count unique
-word types with `Counter()`, another built-in and to print the most common
-words in the novel using the available `most_common()` method. Note that even
-without any preparation, the logic above is readily apparent. Python built-in
-functions sound like English. They are easy to read and therefore easy to
-share with others and to maintain.
+name, `tokens`. We then iterate over each line, and after that over each word
+in the line. Once the word has been stripped of punctuation (another neat trick
+given to us by the built-in *Python* functionality) and converted to lower
+case, we append it to our list of words. The only thing that remains is to
+count unique word types with `Counter()`, the second method we imported, and to
+print the most common words in the novel using the available `most_common()`
+method. Note that even without any preparation, the logic of the code above is
+readily apparent. Python's built-in functions sound like English. They are easy
+to read and therefore easy to share and maintain.
 
-Of course the above code could be written in a more concise way. At time we
-opted for code that is more verbose but also for more expressive. The reader
-can perhaps already tell that while *Python* is more wordy, it offers many
-more built-in features than *Shell*. This would be even more apparent if we
-were operating with images or binary formats instead of plain text files. For
-a quick count of words in a novel we may initially opt to the Unix shell. As
-our models and logic grow more complex, we are likely to begin writing in
-*Python*.
+Of course, the above code could be written in a more concise way. We opted for
+code that is more verbose but also for more expressive. The reader can perhaps
+already tell that while *Python* is wordier, it offers many more built-in
+features than *Shell*. This would be even more apparent if we were working with
+images or binary formats instead of plain text files. For a quick count of
+words in a novel, we may initially opt to use the Unix shell. As our models and
+logic grow more complex, though, we are likely to begin writing in *Python*.
 
 [^ln-munge]: Data munging is a recursive computer acronym that stands for
-"Munge Until No Good," referring to a series of discrete and potentially
+"Mung Until No Good," referring to a series of discrete and potentially
 destructive data transformation steps [@raymond_mung_2004].
 
 ### 3.3 Text Editor
 
 The humble text editor is the third and possibly most important site of
-computing in the digital humanities. In addition to supporting programming,
-the text editor mediates our research and publication practices. For this
-reason, we ask our students to reevaluate their relationship with tools like
-Microsoft Word and Google Docs. These often fail to meet our community's
-criteria for usability and they do not align well with our values. At the very
-least, to write code we need a *plain text* editor that does not add any
-hidden formatting characters to our program instructions. We also need an
-editor that we can modify and extend without being hampered by proprietary
-licenses or restrictions. Many text editors meet these criteria. Among them
-are *Atom*, *Emacs*, *Leafpad*, *Notepad++*, and *Vim*.
+computing in the digital humanities. In addition to supporting programming, the
+text editor mediates our research and publication practices. For this reason,
+we ask our students to reevaluate their relationship with tools like Microsoft
+Word and Google Docs. These often fail to meet our community's criteria for
+usability and they do not align well with humanistic values. At the very least,
+to write code we need a *plain text* editor that does not add any hidden
+formatting characters to our code. We also need an editor that we can modify
+and extend without being hampered by proprietary licenses or restrictions. Many
+text editors meet these criteria. Among them are *Atom*, *Emacs*, *Leafpad*,
+*Notepad++*, and *Vim*.
 
-Where conversing directly with at the command prompts or with the *Python*
-interpreters allow for an "interactive," back-and-forth dialog style of
-programming, the text editor gives a measure of permanence to the
-conversation. When working with data sets we often begin with exploratory data
-analysis at the command line, aimed at familiarizing ourselves with the data
-and at forming intuitions about its explanatory potential. Once those
-intuitions are formed, we can move to writing and debugging code in the text
-editor. The code helps describe our formal models. It lets us test our
-intuitions against the dataset as a whole. The Python interpreter and the
-shell remain open in the background. We will use them them to manage our files
-and to test snippets of code. But the text editor is where we can begin to
-think algorithmically. It is where our projects gain a more permanent shape.
+Where command prompts and *Python* interpreters allow for an "interactive,"
+back-and-forth dialog style of programming that happens in real time, the text
+editor gives a measure of permanence to the conversation. When working with
+data sets, we often begin with exploratory data analysis at the command line or
+an interactive Python interpreter to familiarize ourselves with the data and
+form intuitions about its explanatory potential. Once those intuitions are
+formed, we can move to writing and debugging code in the text editor. The code
+helps describe our formal models. It lets us test our intuitions against the
+dataset as a whole. The Python interpreter and the shell remain open in the
+background. We will use them them to manage our files and to test snippets of
+code. But the text editor is where we can begin to think algorithmically. It is
+where our projects gain a more permanent shape.
 
 About halfway through the session, the students are ready to formulate a
 project of their own. Rather than using prepackaged exercises, we encourage our
 students to formulate small research projects related to their own work or
-research.  In our last class, a group of librarians built a program to copy
+interests. In our last class, a group of librarians built a program to copy
 selected metadata from one `.csv` file to another while checking for errors in
-data formatting (like a properly formatted date, for example). Another group
+data formatting (like an improperly formatted date, for example). Another group
 built an automatic essay grader. Yet another analyzed poetry for its similarity
-to Byron. A fourth group wrote a script that automates the downloading of a
-film script corpus.
+to Byron. A fourth group wrote a script that automates the download of a film
+script corpus.
 
 All of these projects begin with a set of step-by-step instructions in English.
 Thus, a simple essay grader may be expressed as follows:
@@ -799,28 +801,27 @@ Thus, a simple essay grader may be expressed as follows:
 
 # Assign a vocabulary score.
 
-# Find common spelling mistakes and "weasel words" that are a sign of weak
-writing.
+# Find common spelling mistakes and "weasel words."
 
 # Average the scores to come up with a total grade.
 ```
 Once formalized, we can begin to convert the logic from the English language
-pseudo-code into Python, expanding and filling in the code under the comments.
+pseudocode into Python, expanding and filling in the code under the comments.
 
-In this way, students work alone or in groups to define the scope of their
-program. At this stage, we can already begin a critical discussion about the
+Using this process, students work alone or in groups to define the scope of
+their program. Even at this stage we can begin a critical discussion about the
 models implicit in the proposed program. For example, does the above logic for
-an essay "grader" accurately capture what we mean by "writing well" or
-"writing poorly?" Is it enough to reduce notions of value to "a measure of
-linguistic variety?" What can we do to make our model more robust and to make
-it better correspond to our native intuitions about literary value? In another
-recent course at Columbia University, students building an automatic
-essay-grader had to explain and defend the basis of their grading criteria. In
-doing so, they confronted their own implicit criteria for good writing and
-initiated a spirited debate about algorithmic judgments of clarity and style.
-Some students focused on finding rich vocabularies. Others looked for for
-variation in sentence and paragraph length. In this way, we use the algorithm
-to challenge extant critical models and intuitions.
+an essay "grader" accurately capture what we mean by "writing well" or "writing
+poorly?" Is it enough to reduce notions of value to "a measure of linguistic
+variety?" What can we do to make our model more robust and to make it better
+correspond to our native intuitions about literary value? In another recent
+course at Columbia University, students building an automatic essay-grader had
+to explain and defend the basis of their grading criteria. In doing so, they
+confronted their own implicit criteria for good writing and initiated a
+spirited debate about algorithmic judgments of clarity and style. Some students
+rewarded rich vocabularies. Others looked for variation in sentence and
+paragraph length. In this way, we use the algorithm to challenge intuitions
+about academic writing.
 
 When the scope and logic of the program have been determined, we work with
 individual groups to help translate the English-language heuristic into

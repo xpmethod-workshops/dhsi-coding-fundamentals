@@ -25,7 +25,7 @@ while getopts ":d:p:m:" opt; do
   case $opt in
     d)
       echo "printing $target.docx to print-plates/" >&2
-      pandoc --filter pandoc-citeproc --csl csl/mla-note.csl -So \
+      pandoc --filter pandoc-citeproc --data-dir=print-plates/ --csl csl/mla-note.csl -So \
           print-plates/"$target".docx "$source"
       ;;
     p)
