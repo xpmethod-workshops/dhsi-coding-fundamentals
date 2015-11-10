@@ -218,9 +218,8 @@ broad support from the scientific computing community and in the private
 sector. It is administered by a non-profit organization, which has articulated
 a clear diversity statement, has elected a trans woman to its board of
 directors in 2015, and routinely sponsors efforts, like PyLadies and
-PyCaribbean, and the Minorities in Python Conference. Such efforts increase
-participation from publics traditionally underrepresented in the technology
-sector.[^ln-diversity]
+PyCaribbean. Such efforts increase participation from publics traditionally
+underrepresented in the technology sector.[^ln-diversity]
 
 [^ln-pep]: Python Enhancement Proposal 20 reads: "Simple is better than
 complex. Complex is better than complicated Sparse is better than dense.
@@ -232,22 +231,26 @@ drafts, to huge datasets of metadata. Unix provides many powerful utilities
 that work with plain text. In fact, the notion of human readability is even
 encoded at the operating system level.
 
-[^ln-diversity]: @pythonsoftwarefoundation @
+[^ln-diversity]: See @python_software_foundation_diversity_2015,
+@python_software_foundation_psf_2015, and
+@python_software_foundation_python_2001 for further detail on the Python
+Software foundation and its initiatives.
+
 
 ### 1.5 Identify research objectives prior to selecting the appropriate tools and methodologies.
 
-Because the tools that we teach are universal, we are able to better tailor
-our courses to the diverse needs of our students. In formulating their
-research objectives, beginners often make the mistake of starting with the
-tool. In this way someone may describe their interests as "using topic
-modeling on a corpus of nineteenth century literature." To this we reply: To
-what ends?  Clearly articulated research objectives suggest appropriate tool
-and methodologies, and not the other way around. Thus the question of "genre
-formation in the ninetieth century," for example, is what could lead to the
-use of topic modeling, where the study of narrative would perhaps be better
-served by other means, like event detection or automatic plot summarization.
-Our goal therefore is to give the students a glimpse of a rich and variegated
-toolkit that could help advance a variety of research objectives.
+Because the tools that we teach are universal, we are able to better tailor our
+courses to the diverse needs of our students. In formulating their research
+objectives, beginners often make the mistake of starting with the tool. In this
+way someone may describe their interests as "using topic modeling on a corpus
+of nineteenth century literature." To this we reply: To what ends? Clearly
+articulated research objectives suggest appropriate tools and methodologies,
+and not the other way around. Thus the question of "genre formation in the
+ninetieth century," for example, might lead to the use of topic modeling, while
+the study of narrative would perhaps be better served by other means, like
+event detection or automatic plot summarization. Our goal therefore is to give
+the students a glimpse of a rich and variegated toolkit that could help advance
+a variety of research objectives.
 
 ### 1.6 Divide big problems into small, modular components.
 
@@ -267,7 +270,7 @@ step, in language natural to them and to their task.
 Pseudocode in plain English becomes the basis for well documented programs and
 readable code. Modular and well documented code does a service to the
 community: it is a pleasure to maintain and it communicates the purpose of the
-program clearly. It teaches others just as it allows them to further adept the
+program clearly. It teaches others just as it allows them to further adapt the
 codebase to suit their own needs, to further share and to remix.
 
 Good programmers are lazy in the right way. After doing a task more than a few
@@ -282,24 +285,19 @@ Although programmers are lazy, they are lazy in the right way. Doing things
 badly or in a haphazard fashion accumulates technological, intellectual, and
 eventually an ethical debt owed to ourselves and to our peers. Code comments
 (or the lack of them) are a common site of egregious laziness: it is easy to
-skip documenting your code or to document insufficiently. It just works, one
-might say, why bother? However, a piece of code that makes perfect sense today
-may seem impenetrable tomorrow. Without comments code becomes difficult to
-alter and to maintain. For these reasons we advise our students against simply
+skip documenting your code or to document insufficiently. Since it just works,
+one might say, why bother? However, a piece of code that makes perfect sense
+today may seem impenetrable tomorrow. Without comments, code becomes difficult
+to alter and maintain. For these reasons we advise our students against simply
 cutting and pasting code snippets from our (or anyone else's) tutorials. We
 want them to think independently, to annotate, and to review their notes. In
 the broader academic context, lazy practices are unethical because they "bank"
-against the labor of others in the future. They make research more difficult
-to share and to replicate.
-
-<!---
-JS: Mention the CS chair observation?
-DT: I don't think we should mention his name. But perhaps a footnote, if you
-can find a way to phrase it.
---->
+against the labor of others in the future. They make research more difficult to
+share and to replicate.
 
 [^ln-caleb]: The public GitHub code repository of W. Caleb McDaniel, a
-historian at Rice University, is exemplary in this regard.
+historian at Rice University, is exemplary in this regard
+(@mcdaniel_wcaleb_2015).
 
 ## 2 Digital Humanities Core
 
@@ -310,7 +308,7 @@ initial lack of results as failures, we attempt to channel feelings of
 hindrance into a discipline of problem solving and discovery. The "difficulty"
 of coding can be made more productive when related to the analogous and more
 familiar challenges associated with archival research, academic writing, and
-foreign language acquisition. Understood in such a broader context, coding
+foreign language acquisition. Understood in this broader context, coding
 constitutes a small but foundational part of a larger, variegated academic
 skill set.
 
@@ -334,45 +332,46 @@ We do not mean for this list to represent a comprehensive statement about
 computation in the humanities. Rather, we would argue that most projects,
 however large or small, employ at least *some* aspects from the above "dream
 list." The ubiquity of these modular components is what classifies them as
-"core" or "foundational" competencies. Few people *including* computer
-scientists and software engineers would claim mastery over the full range of
-skills we have represented above. Rather, individual practitioners are likely
-to develop proficiency in one or several areas of expertise. An expert in
-digital publishing for example will have drastically different requirements
-from someone interested in geographic information systems or computational
-methods.
+"core" or "foundational" competencies. Few people, *including* computer
+scientists and software engineers, would claim mastery over the full range of
+skills we have delineated above. Rather, individual practitioners are likely to
+develop proficiency in one or several areas of expertise. An expert in digital
+publishing, for example, will have drastically different requirements from
+someone interested in geographic information systems or computational methods.
 
 Critical computing in the humanities begins with text. Whatever our home
-discipline, we are all involved in the reading and writing of texts. Text
-gives us intrinsic motivation to explore our own computer environments: to
-understand how documents are produced and where they reside physically within
-the machine. Learning to author documents in a markup language like HTML or
+discipline, we are all involved in the reading and writing of texts. Text gives
+us intrinsic motivation to explore our own computer environments: to understand
+how documents are produced and where they reside physically within the machine.
+Learning to author documents in a **text markup** language like HTML or
 Markdown naturally leads to more advanced topics like the basics of operating
-systems, file system hierarchy standards, and version control. Mundane but
-necessary academic skills like regular file backup, bibliographic management,
-and the organization of research materials, can be used to familiarize
-students with foundational concepts like relative and absolute file paths or
-the distinction between plain text and binary formats.
+systems, file system hierarchy standards, and version control. For many of
+these competencies, familiarity with the **command line** is a prerequisite.
+Using the command line for mundane but necessary academic skills like regular
+file backup can familiarize students with foundational concepts like relative
+and absolute file paths or the distinction between plain text and binary
+formats. Familiarity with Bash and regular expressions extend competency on the
+command line to text manipulation methods.
 
 The core principle of demystifying everyday computation leads to the topic of
-content management and version control early in the curriculum. Although not
-an simple subject, version control comes naturally to a community used to
-thinking about drafts, manuscripts, and revisions. Increasingly, version
-control systems are used to host websites, share data, and to publish. For
-example, the editors of *The Programming Historian* use GitHub, a version
-control system, to publish and to distribute their journal. The team behind
-*Project Gitenberg* "leverages the power of the Git version control system and
-the collaborative potential of Github to make books more open." As of 2015,
-*Gitenberg* hosts more than 43,000 books. Using a similar model to create
-personal academic profiles, compile image galleries, or edit critical
-editions, our students learn while experimenting with aspects of academic
-production directly relevant to their careers. Furthermore, version control
-systems improve the quality of academic collaboration. Git and similar tools
-act as powerful research notebooks. They encourage all researchers involved to
-keep meticulous notes, which make it possible to document the flow ideas and
-labor and to attribute work fairly. For these reason we encourage the use
-version control early on and expect such systems to play an increasing role in
-academic evaluation.
+**content management** and **version control** early in the curriculum. Although not a
+simple subject, version control comes naturally to a community used to thinking
+about drafts, manuscripts, and revisions. Increasingly, version control systems
+are also serving as content management systems used to host websites, share
+data, and publish. For example, the editors of *The Programming Historian*
+use GitHub, a version control system, to publish and to distribute their
+journal. The team behind *Project GITenberg* "leverages the power of the Git
+version control system and the collaborative potential of Github to make books
+more open." As of 2015, *GITenberg* hosts more than 43,000 books. Using a
+similar model to create personal academic profiles, compile image galleries, or
+edit critical editions, our students learn while experimenting with aspects of
+academic production directly relevant to their careers. Furthermore, version
+control systems improve the quality of academic collaboration. Git and similar
+tools act as powerful research notebooks. They encourage all researchers
+involved to keep meticulous notes, which make it possible to document the flow
+ideas and labor and to attribute work fairly. For these reason we encourage the
+use version control early on and expect such systems to play an increasing role
+in academic evaluation.
 
 A programming language occupies a central place in computational practice. All
 forms of digitality pass through some form of encoding and automation. Only a
