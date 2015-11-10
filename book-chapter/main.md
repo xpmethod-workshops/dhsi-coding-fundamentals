@@ -450,69 +450,77 @@ humanist alike.
 
 We often begin our courses by outlining the above "big picture" principles,
 challenges, and considerations. Like learning a foreign language, programming
-takes time and patience to master. And as is the case with any difficult
-skill, motivation to practice best correlates to chances of long-term success.
-Developing the intellectual motivations to stick with the program is therefore
-one of our paramount goals. For this reason, we strive to address the common
-"frustration points" of everyday computing. In our experience, even simple
-tasks like downloading an online file can be rife with anxiety for many
-students: Where did that file go? How do I find it again?  What type of file
-is it? Is it safe to open it? Modern operating systems conceal the details
-needed to make informed decisions from the average user. Practitioners
+takes time and patience to master. And as is the case with any difficult skill,
+motivation to observe "best practices" correlates to chances of long-term
+success. Developing the intellectual motivations to stick with the program is
+therefore one of our paramount goals. For this reason, we strive to address the
+common "frustration points" of everyday computing. In our experience, even
+simple tasks like downloading an online file can be rife with anxiety for many
+students: *Where did that file go? How do I find it again?  What type of file
+is it? Is it safe to open it?* Modern operating systems conceal from the
+average user the details needed to make informed decisions. Practitioners
 interested in fields like information science, critical software studies,
-platform studies, game theory, or media archeology must learn to extend their
-inquiry beyond the available surfaces.
+platform studies, video game studies, or media archeology must learn to extend
+their inquiry beyond the available surfaces.
 
 Our task as instructors is to reveal the hidden mechanics of computation.
 Moments of apprehension can be turned into opportunities for discovery.
-Students, university faculty, and librarians naturally approach documents,
-file systems, and datasets as matters of critical importance. Such artifacts
-preserve much precious intellectual labor. For this reason, in our experience,
-students respond enthusiastically to the mission of reclaiming the material
-contexts of their daily intellectual production.
+Students, university faculty, and librarians naturally approach documents, file
+systems, and datasets as matters of critical importance. Such artifacts
+preserve much precious intellectual labor. In our experience, students respond
+enthusiastically to the mission of reclaiming these material contexts of their
+daily intellectual production.
 
 As suggested by the metaphor of the software development "environment," a site
 of computation denotes an interface through which humans engage with machines.
-A site is also a conceptual space, containing a logic or a grammar of
-interaction. We find three such sites in searching for the universal grounds
-of general digital literacy: the command line, the language interpreter, and
-the text editor.
+A "site" is also a conceptual space, containing a logic or a grammar of
+interaction. We find three such sites in searching for the universal grounds of
+general digital literacy: the command line, the language interpreter, and the
+text editor.
 
 ### 3.1 Command Line Interface
 
 Because all interaction with the machine on the level of the operating system
 is in some sense an operation of files, the aspiring coder must develop a firm
 grasp of the file system topography. Despite its retro appearances, the modern
-command line offers an intuitive, text based, "call and response" style of
-"terminal" programming consistent across a remarkable variety of platforms:
-from mobile phones to supercomputers. Everything from downloading a sample
-corpus, to writing a research paper, to debugging code eventually leads to the
-command line. We therefore embrace it from the beginning of the course. It
-forms the basis of our operations.
+command line offers an intuitive, text-based, "call and response" style of
+interaction with the file system consistent across a remarkable variety of
+platforms, from mobile phones to supercomputers, using the "terminal" or
+terminal emulator.[^ln-terminal] Everything from downloading a sample corpus,
+to writing a research paper, to debugging code eventually leads to the command
+line. We therefore embrace it from the beginning of the course as the basis of
+our operations.
 
-On the level of hardware, the machine "speaks" in binary code. The command
-line "interprets" or translates English language-like commands (in a language
-called Unix Shell)[^ln-shell] into binary code. When deleting a file, for
-example, one instructs the machine to `rm filename.txt` instead of dragging
-and dropping it into the trash folder, as one would using a graphical user
-interface. Note that "dropping into the trash folder" merely offers a visual
-metaphor for the underlying bitwise operations. The terminal command
-transforms the metaphor into the more exact command, `rm`, which stands for
-"remove." Similarly, to direct the computer to move a file, we would use the
-`mv` or "move" command. Unlike their visual and metaphorical counterparts, the
-shell commands contain many advanced options, not amenable to visual metaphor.
-The `man` command accesses the manual. Thus, `man mv` displays the manual
-pages for the move command.
+[^ln-terminal]: While some platforms default to a text-based command line (the
+"terminal), most modern graphical machines use a "terminal emulator" to achieve
+the same results: Windows, Mac, and Linux have built-in terminal emulators and
+support many third-party applications that serve the same function. 
 
-[^ln-shell]: @bourne_unix_1978
+The command line is merely one way among several to communicate with a machine.
+On the level of hardware, the machine "speaks" in binary code. It "interprets"
+or translates English language-like commands (in a language called Unix
+Shell)[^ln-shell] into binary code. When deleting a file, for example, one
+instructs the machine to `rm filename.txt` instead of dragging and dropping it
+into the trash folder, as one would using a graphical user interface. Note that
+"dropping into the trash folder" merely offers a visual metaphor for the
+underlying bitwise operations. The terminal command transforms the metaphor
+into the more exact command, `rm`, which stands for "remove." Similarly, to
+direct the computer to move a file, we would use the `mv` or "move" command.
+Unlike their visual and metaphorical counterparts, the shell commands contain
+many advanced options, not amenable to visual metaphor.  The `man` command
+accesses the manual. Thus, `man mv` displays the manual pages for the move
+command.
+
+[^ln-shell]: See S. R. Bourne's overview for more detail on the Unix shell
+[@bourne_unix_1978].
 
 Furthermore, because shell commands are in themselves a type of a programming
-language, they can be chained together to produce a kind of an "incantation"
-or a script. The script can then be used to automate system administration of
-data analysis tasks. Just to give the reader an example of a command line
-script we will briefly examine the following lines of code, which ultimately
-give us a frequency counts for each word in Herman Melville's *Moby Dick*.
-Download the [plain text version of the
+language, they can be chained together to produce a "script," or short program.
+The script can then be used to automate system administration of data analysis
+tasks. Just to give the reader an example of a command line script we will
+briefly examine the following lines of code, which ultimately give us a
+frequency counts for each word in Herman Melville's *Moby Dick*.  Download the
+[plain text version of the
 novel](http://www.gutenberg.org/cache/epub/2701/pg2701.txt) from Project
 Gutenberg and save as `moby.txt` to follow along.[^ln1-online-supplement] 
 
@@ -530,6 +538,8 @@ have it.
 
 <!---
 Phil, please test all code on a Mac
+PRP: confirmed, but we should consider using a cleaned copy of Moby Dick with
+the Gutenberg front/endmatter removed
 --->
 
 ```
@@ -555,36 +565,38 @@ tail moby-clean.txt
 # sort by word frequency
 cat moby-clean.txt | sed 's/[[:space:]]/\'$'\n/g' | sort | uniq -c | sort -gr -k1 > word-count.txt
 head word-count.txt
+
 ```
 
 We include the above examples to give the reader a compelling example of
 possibilities at the command line. The online exercises accompanying the
 present volume will give detailed explanation of the commands involved. For
 now, note that shell scripting encourages the "data flow" style of text
-processing.  Vertical lines (`|`) and angle brackets (`>>`) allow us to chain
+processing.  Vertical lines (`|`) and angle brackets (`>`) allow us to chain
 the commands into a system of pipes and redirects, passing the text output of
 one operation on to the next one. Once saved to disk, these small scripts can
-be be used to preform text transformations and frequency counts on any file.
+be be used to perform text transformations and frequency counts on any file.
 
 Learning the command line is not just a matter interacting with files.  With
 time it becomes possible to use commands like `wc` and `sed` to perform
 sophisticated data cleaning and text analysis operations. The above exercise
 also introduces the difference between relative and absolute file paths
-(`~/usr/documents/book/*.txt` vs.  `/usr/documents/book/*.txt`). It contains
-the basics of regular expressions (`[a-z ]`). Finally, the exercise can lead
-to the basics of remote server management, debugging, networking, security,
-and encryption.
+(`documents/book/*.txt` vs.  `/usr/documents/book/*.txt`). It contains the
+basics of regular expressions (`[a-z ]`). Finally, the exercise can lead to the
+basics of remote server management, debugging, networking, security, and
+encryption.
 
 ### 3.2 Python
 
 The second of our foundational sites of computing is the Python interpreter.
 Where the command line "translates" from shell into machine code, the *Python*
-interpreter translates from the *Python* language. Shell traces its roots to
-the late 1970s. It is a domain-specific command language, designed
-specifically to interact with the operating system. Its longevity makes it
-stable and ubiquitous. *Python* became popular in the early 2000s. Unlike
-*Shell*, it is a general-purpose, high-level programming language. Like
-*Shell* it privileges human readability, which fits with our principles.
+interpreter translates from the *Python* language. Shell is a domain-specific
+command language, designed specifically to interact with the operating system.
+It traces its roots to the late 1970s, and this longevity makes it stable and
+ubiquitous. *Python*, on the other hand, was introduced in the early '90s and
+became popular in the early 2000s [@lutz_programming_1996]. Unlike *Shell*, it is a general-purpose,
+high-level programming language. Like *Shell*, it privileges human readability,
+which fits with our principles.
 
 | When to use Shell                 | When to use Python              |
 |:----------------------------------|:--------------------------------|
@@ -601,28 +613,30 @@ several reasons. First, *Python* is popular. According to the TIOBE language
 popularity index, *Python* holds roughly 3.6% of the market, trailing only
 behind *Java* and C-family languages (*C*, *C++*, *C#*)
 [@tiobe_software_tiobe_2015]. Although detailed statistics by field are not
-available, we infer that in the domain of scientific computing and data
-science *Python* holds the majority share of the market. This is important,
-because it means that learning *Python* is a good investment of time. It can
-lead to jobs outside of academia. Projects using *Python* will have an easier
+available, we infer that in the domain of scientific computing and data science
+*Python* holds the majority share of the market. This is important, because it
+means that learning *Python* is a good investment of time. It can lead to jobs
+inside and outside of academia, and projects using *Python* will have an easier
 finding collaborators than those using a less popular language.
 
 *Python*'s popularity has an important side-effect. Being a general-purpose
 language, it has been adapted into a wide variety of contexts, from machine
-learning to web application development. The community packages common design
-patterns for any given application into ready-made "building blocks." In
+learning to web application development. The Python community packages common
+design patterns for any given application into ready-made "building blocks." In
 aggregate, such building blocks comprise domain-specific software libraries,
-widely available for reuse. The *Python* ecosystem consequently offers a rich
-variety of software libraries and toolkits. For example, the Natural Language
-Toolkit contains libraries that perform many common tasks needed for text
-analysis.
+widely available for reuse. *Python* is consequently comprised of much more
+than the packages that are bundled in a fresh installation of the interpreter:
+it also includes the rich variety of software libraries and toolkits that it
+interacts with. For example, the Natural Language Toolkit contains libraries
+that perform many common tasks needed for text analysis.
 
-Let us refactor the same code we used to explore Melville's *Moby Dick* in
+Let us translate the same code we used to explore Melville's *Moby Dick* in
 *Shell* into *Python*. As before, feel free to follow along online or on your
 machine. Do not worry if you do not understand all the code yet. In our class,
 we cover this material over the course of the week. For now the examples here
-should give the reader a general feel *Python* programming: grammar, logic,
-and control structures.
+should give the reader a general feel *Python* programming: grammar, logic, and
+control structures. (Note: This example uses Python 3. Installations of
+Python 2.x should omit parenthesis for `print` commands.)
 
 <!---
 Phil, please double check each line in iPython
@@ -638,26 +652,26 @@ with open('moby.txt', 'r') as f:
     lines = f.read().splitlines()
 ```
 
-Unlike *Shell*, *Python* is a object-oriented language. Just like everything
-in the Unix world is a file, everything in the *Python* world is an object.
+Unlike *Shell*, *Python* is a object-oriented language. Just as everything in
+the Unix world is a file, everything in the *Python* world is an object.
 Objects have methods associated with them them. You can imagine an object of
-the type "dog" for example to have methods like "sit" and "fetch." And object
+the type "dog," for example, to have methods like "sit" and "fetch." And object
 of the type "cat" to have methods like "hide" and "hunt." Methods often return
 other objects. Thus we may expect the method `dog.fetch()` to return an object
-of the type `toy`. Note that the parenthesis help differentiate the method
-from the object itself: one is a verb the other a noun.
+of the type `toy`. Note that the parenthesis help differentiate the method from
+the object itself: one is a verb, the other a noun.
 
 But the built-in *Python* objects are limited to just a few primitive types
 like string, integer, and list. The type of data manipulation we show here
 depends on knowing what type of object we are working with at all times. When
 we first open `moby.txt` we "stuff" it into an object of type *file* that we
-call, arbitrary, `f`. File objects have useful methods like `read()` which
-returns an object of type *string*. Strings have the helpful ability to parse
-themselves into a list of lines, based on the presence of hidden new line
-characters. `splitlines()` returns a list of strings then, which we assign to a
-an arbitrarily named variable `list`. Because `splitlines()` returns lists,
-Python attempts to do the right thing by making the `lines` contain of type
-*list*.
+call, arbitrarily, `f`. File objects have useful methods like `read()` which
+returns an object of type *string*. Strings have the helpful ability to arrange
+themselves into lines, which are delineated by hidden newline characters.
+`splitlines()` uses this feature of the string to return a *list* of strings,
+which we can assign to an arbitrarily named variable `lines`. Because
+`splitlines()` returns lists, Python attempts to do the right thing by making
+the `lines` of the type *list*.
 
 To check the type of the object we can run `type(lines)`. `print(lines)` will
 show the contents of our list container. Let us now try to replace all whales
@@ -671,27 +685,27 @@ for line in lines:
 ```
 
 Note that although we have not explained control structures like `for` and
-`if`, their use is pretty intuitive. The Pythonic `for line in line` is not
-too far from the English "for every line in lines". The next line says do
-something if the word "whale" is in the line. Where `lines` is a *list* each
-individual member of the list is again an object of type *string*. Like dogs
-and cats strings can do things by having methods attached to them.  The method
-`replace()` does works as expected. Unlike blank methods like `splitlines()`,
-the `replace()` methods takes two arguments: first the word to be replaced,
-and second, the replacement word. Such details can be found in the Python
-documentation and become more familiar with time.
+`if`, their use is pretty intuitive. The Pythonic `for line in line` is not too
+far from the English "for every line in lines". The next line says to do
+something if the word "whale" is in the line. Where `lines` is a *list*, each
+individual member of the list is an object of type *string*. Like dogs and
+cats, strings can do things, as they have methods attached to them. The method
+`replace()` works as expected. Unlike self-contained methods like
+`splitlines()`, the `replace()` methods takes two arguments: first, the word to
+be replaced, and second, the replacement word. Such details can be found in the
+Python documentation and become more familiar with time.
 
 In conclusion, we come to an operation central to any text analysis. To count
 the unique words as we did before, we need to divide up each line into words.
 We can then get rid of punctuation, make everything lower case to avoid
-duplication, and create a list of all words found in the novel. The list of
-all words is commonly referred to as "tokens" where the list of unique words
-gives us the "types". The type--token distinction is incredibly useful in
-stylistic analysis, for example. It can be used to build more complex models
-about the quality of writing for example, or about the age range of the
-intended audience. We expect sophisticated prose for adults to exhibit a high
-token-to-type ration. Children's literature uses a more limited vocabulary
-that repeats more often, giving us a lower ratio value.
+duplication, and create a list of all words found in the novel. The list of all
+words is commonly referred to as "tokens" where the list of unique words gives
+us the "types". The type--token distinction is incredibly useful in stylistic
+analysis, for example. It can be used to build more complex models about the
+quality of writing for example, or about the age range of the intended
+audience. We expect sophisticated prose for adults to exhibit a high
+token-to-type ration. Children's literature uses a more limited vocabulary that
+repeats more often, giving us a lower ratio value.
 
 ```
 from string import punctuation
