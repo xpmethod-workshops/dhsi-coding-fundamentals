@@ -71,21 +71,15 @@ approach as "critical computing."[^ln-first] The following seven propositions
 will connect technological preferences with values intrinsic to humanistic
 inquiry:
 
-#. Demystify everyday computation.
-
-#. Use few, free, small, universal, and powerful tools that you can
+1. Demystify everyday computation.
+2. Use few, free, small, universal, and powerful tools that you can
 alter and understand.
-
 3. Privilege simplicity and human legibility over complexity and machine
 efficiency.
-
 4. Invest in technologies that align with the values of our community.
-
 5. Identify research objectives prior to selecting the appropriate tools and
 methodologies.
-
 6. Divide big problems into small, modular components.
-
 7. Be "lazy" by automating mundane tasks, but do it right by commenting your
 code, taking notes, and sharing with others.
 
@@ -512,7 +506,7 @@ accesses the manual. Thus, `man mv` displays the manual pages for the move
 command.
 
 [^ln-shell]: See S. R. Bourne's overview for more detail on the Unix shell
-@bourne_unix_1978.
+[@bourne_unix_1978].
 
 Furthermore, because shell commands are in themselves a type of a programming
 language, they can be chained together to produce a "script," or short program.
@@ -861,4 +855,6 @@ papers.[^ln-coauthor]
 [^ln-coauthor]: A detailed history of author contributions can be found on our
 GitHub page at
 [https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md](https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md)
+
+## References
 
