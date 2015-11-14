@@ -54,9 +54,7 @@ guideline, not dogma. We hope it contributes to the broader conversation about
 curricular development, certification, and student and faculty training.
 
 [^ln-titlelink]: "Human(s|ists)" is actually a regular expression, a way to
-search text for specified patterns. In this case it picks out anything starting
-with "Human" and ending in *either* "s" or "ists". So, it acts as a stand-in
-for both "Humans" and "Humanists".
+search text for specified patterns. In this case it picks out anything starting with "Human" and ending in *either* "s" or "ists". So, it acts as a stand-in for both "Humans" and "Humanists".
 
 [^ln-courselink]: An archived version of the DHSI course can be accessed at
 http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dhsi-coding-fundamentals/blob/master/README.md
@@ -65,7 +63,7 @@ http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dh
 
 Computational methodologies can complement the rich history of research in the
 humanities. But to take hold, quantitative approaches to the study of culture
-must be adapted to more closely align to extant ideals and practices. Inspired
+must be adapted to more closely aligned to extant ideals and practices. Inspired
 by a number of initiatives advancing a similar philosophy, we refer to this
 approach as "critical computing."[^ln-first] The following seven propositions
 will connect technological preferences with values intrinsic to humanistic
@@ -85,11 +83,11 @@ code, taking notes, and sharing with others.
 
 [^ln-first]: We are not the first nor the only instructors to think about
 digital pedagogy this way, nor are we the only ones to be offering a course
-based on these principles.  Software Carpentry, for example, has been
+based on these principles.  *Software Carpentry*, for example, has been
 advocating a similar approach since its inception. Similarly, the *Programming
 Historian* is "an online, open-access, peer-reviewed suite of tutorials that
 help humanists learn a wide range of digital tools, techniques, and workflows
-to facilitate their research." See also @harrell_toward_2015.
+to facilitate their research." See also @harrell_toward_2015.  Ultimately we are hopeful that we are able to approximate the sort of "soup to nuts" approach advocated by Theodore Nelson in *Computers Lib / Dream Machines* [@nelson_computers_1974].
 
 ### 1.1 Demystify everyday computation
 
@@ -267,7 +265,7 @@ community: it is a pleasure to maintain and it communicates the purpose of the
 program clearly. It teaches others just as it allows them to further adapt the
 codebase to suit their own needs, to further share and to remix.
 
-Good programmers are lazy in the right way. After doing a task more than a few
+Good programmers are *lazy in the right way*. After doing a task more than a few
 times, a programmer's intuition will be to automate the task. For example, we
 often use the `rsync` command to back up our documents; however, after a few
 months of running it manually, we can delegate that task to the built-in
@@ -275,8 +273,7 @@ scheduler called `cron`. Similar strategies can be used to improve
 bibliographic management, manuscript preparation, and research and editorial
 workflows.[^ln-caleb]
 
-Although programmers are lazy, they are lazy in the right way. Doing things
-badly or in a haphazard fashion accumulates technological, intellectual, and
+Doing things badly or in a haphazard fashion accumulates technological, intellectual, and
 eventually an ethical debt owed to ourselves and to our peers. Code comments
 (or the lack of them) are a common site of egregious laziness: it is easy to
 skip documenting your code or to document insufficiently. Since it just works,
@@ -356,7 +353,7 @@ host websites, share data, and publish. For example, the editors of *The
 Programming Historian* use GitHub, a version control system, to publish and to
 distribute their journal. The team behind *Project GITenberg* "leverages the
 power of the Git version control system and the collaborative potential of
-Github to make books more open." As of 2015, *GITenberg* hosts more than 43,000
+Github to make books more open." [^ln-gutenberg] As of 2015, *GITenberg* hosts more than 43,000
 books[@hellman_project_2012]. Using a similar model to create personal academic
 profiles, compile image galleries, or edit critical editions, our students
 learn while experimenting with aspects of academic production directly relevant
@@ -440,6 +437,8 @@ command line, and a programming language improves general digital literacy,
 useful to the librarian, the information scientist, and the computational
 humanist alike.
 
+[^ln-gutenberg]: The name *Project GITenberg* is a playful nod to *Project Gutenberg* (http://www.gutenberg.org/) a website that has been influential the sharing of out of copyright works online but which does not make edits done to its resources transparent.
+
 ## 3 Three Locations of Computing
 
 We often begin our courses by outlining the above "big picture" principles,
@@ -487,7 +486,7 @@ our operations.
 
 [^ln-terminal]: While some platforms default to a text-based command line (the
 "terminal), most modern graphical machines use a "terminal emulator" to achieve
-the same results: Windows, Mac, and Linux have built-in terminal emulators and
+the same results: Windows, Mac, and Linux systems either have built-in terminal emulators or
 support many third-party applications that serve the same function. 
 
 The command line is merely one way among several to communicate with a machine.
@@ -606,7 +605,7 @@ We chose *Python* among other excellent choices (like *R* and *Haskell*) for
 several reasons. First, *Python* is popular. According to the TIOBE language
 popularity index, *Python* holds roughly 3.6% of the market, trailing only
 behind *Java* and C-family languages (*C*, *C++*, *C#*)
-[@tiobe_software_tiobe_2015]. Although detailed statistics by field are not
+[@tiobe_software_tiobe_2015], all of which are significantly more difficult to learn and more complicated to implement. Although detailed statistics by field are not
 available, we infer that in the domain of scientific computing and data science
 *Python* holds the majority share of the market. This is important, because it
 means that learning *Python* is a good investment of time. It can lead to jobs
@@ -851,10 +850,10 @@ papers.[^ln-coauthor]
 - [Python Software Foundation](https://www.python.org/psf/)
 - [The Programming Historian](http://http://programminghistorian.org)
 - @dawney_think_2015
+- @nelson_computers_1974
 
 [^ln-coauthor]: A detailed history of author contributions can be found on our
 GitHub page at
 [https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md](https://github.com/denten-workshops/dhsi-coding-fundamentals/commits/master/book-chapter/main.md)
 
 ## References
-
