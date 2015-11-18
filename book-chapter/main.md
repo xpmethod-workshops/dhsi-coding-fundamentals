@@ -63,11 +63,10 @@ http://web.archive.org/web/20150614161609/https://github.com/denten-workshops/dh
 
 Computational methodologies can complement the rich history of research in the
 humanities. But to take hold, quantitative approaches to the study of culture
-must be adapted to more closely aligned to extant ideals and practices. Inspired
-by a number of initiatives advancing a similar philosophy, we refer to this
-approach as "critical computing."[^ln-first] The following seven propositions
-will connect technological preferences with values intrinsic to humanistic
-inquiry:
+must align with extant ideals and practices. Inspired by a number of
+initiatives advancing a similar philosophy, we refer to this approach as
+"critical computing."[^ln-first] The following seven propositions will connect
+technological preferences with values intrinsic to humanistic inquiry:
 
 1. Demystify everyday computation.
 2. Use few, free, small, universal, and powerful tools that you can
@@ -87,7 +86,7 @@ based on these principles.  *Software Carpentry*, for example, has been
 advocating a similar approach since its inception. Similarly, the *Programming
 Historian* is "an online, open-access, peer-reviewed suite of tutorials that
 help humanists learn a wide range of digital tools, techniques, and workflows
-to facilitate their research." See also @harrell_toward_2015.  Ultimately we are hopeful that we are able to approximate the sort of "soup to nuts" approach advocated by Theodore Nelson in *Computers Lib / Dream Machines* [@nelson_computers_1974].
+to facilitate their research." See also @harrell_toward_2015.  Ultimately we are hopeful that we are able to approximate the sort of "soup to nuts" approach advocated by Theodore Nelson in *Computers Lib / Dream Machines* [@nelson_computer_1974].
 
 ### 1.1 Demystify everyday computation
 
@@ -850,7 +849,7 @@ papers.[^ln-coauthor]
 - [Python Software Foundation](https://www.python.org/psf/)
 - [The Programming Historian](http://http://programminghistorian.org)
 - @dawney_think_2015
-- @nelson_computers_1974
+- @nelson_computer_1974
 
 [^ln-coauthor]: A detailed history of author contributions can be found on our
 GitHub page at
