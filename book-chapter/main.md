@@ -1,6 +1,6 @@
 ---
 title: "Critical Computing in the Humanities"
-authors:
+author:
 - Phillip R. Polefrone
 - John Simpson
 - Dennis Tenen
