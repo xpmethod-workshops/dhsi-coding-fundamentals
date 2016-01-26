@@ -600,6 +600,8 @@ which fits with our principles.
 |                                   | - corpus analysis               |
 |                                   | - everything else               |
 
+Table: Common uses of Python and Shell languages.
+
 We chose *Python* among other excellent choices (like *R* and *Haskell*) for
 several reasons. First, *Python* is popular. According to the TIOBE language
 popularity index, *Python* holds roughly 3.6% of the market, trailing only
