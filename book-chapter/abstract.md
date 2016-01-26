@@ -1,16 +1,13 @@
-In this chapter we elaborates a set of values, principles, and best practices
-for digital humanities researchers and educators. We begin by describing a set
-of core principles that guides our practice and methods. These principles
-forward the values of humanistic inquiry, privileging transparency,
-legibility, and critical engagement with the tools we use. At the same time,
-they incorporate the ethos of the open source movement: the contents of a
-digital humanist's toolkit should be modular, hackable, and universal. In the
-next section, we outline a list of core competencies for the digital
-humanities, including text markup, the command line, and programming
-languages. Not all of these skills will be necessary for every DH
-practitioner, but most large projects will require some engagement with each
-area. Finally, we discuss three essential locations of critical computing: the
-command line, Python, and a plain text editor. By “location,” we mean a site
-of engagement with the machine, a unique interface with its own corresponding
-affordances. By offering exercises for each of these locations, we introduce
-the possibilities of each one for practice and pedagogy. 
+Our aim in this chapter is to reveal some of the core principles motivating
+the teaching of computing fundamentals in the humanities context. We divide
+the text into three sections. "Critical Computing in the Humanities" describes
+the ideas behind our approach to computation, which is premised on extending
+rather than replacing long-standing critical practices of humanistic inquiry.
+In the second section, "Digital Humanities Core," these ideas lead us to a
+list of core skills for the practicing digital humanist. Here, we outline
+several necessary prerequisites needed to advance the great variety of work in
+the field. We conclude with a section that details the "Three Locations of
+Computing," which orient the reader to three significant sites of computation:
+the command line, the text editor, and the programming language interpreter.
+Short exercises introduce the reader to the possibilities for teaching and
+research at each site.
