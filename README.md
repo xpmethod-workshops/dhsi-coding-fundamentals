@@ -18,15 +18,15 @@ the emphasis will be on understanding how computer programmers think so that
 participants will be able to at least participate in high-level conceptual
 discussions in the future with more confidence. These general concepts will be
 reinforced and illustrated with hands-on development of simple programs that
-can be used to help with text-based research and analysis right away. The
-language used for most of the course will be Python because of its gentle
-syntax and powerful extensions. Using the command-line interface and regular
+can be used to help with text-based research and analysis right away. 
+
+The programming language used for most of the course will be Python because of its gentle syntax and powerful extensions. Using the command-line interface and regular
 expressions will also be emphasized. We will also spend some time taking
 glimpses at what is happening in the other DHSI courses to understand how
 reading and writing programming code goes well beyond what we touch on in this
 class.
 
-[![Join the class discussion at https://gitter.im/denten-workshops/dhsi-coding-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denten-workshops/dhsi-coding-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the class discussion at https://gitter.im/denten-workshops/dhsi-coding-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denten-workshops/dhsi-coding-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) **I think this link needs to change**
 
 ## Day 1 (4hr)
 
@@ -34,36 +34,36 @@ class.
   - Introductions
   - Overview of week
   - [Course Philosophy][6]
-  - [Why command line?][7]
+  - [Why command line?][7] **Broken Link**
   - Why Python?
 
 - Working Demo: Introduction to Terminal (John)
-  - Cheatsheet
-  - Regex
-  - Simple problems using the cheatsheet
+	- Basic functionality
+	- Working with text files
+	- Scripting
+	- Simple problems using the cheatsheet
 
-[6]: https://github.com/denten-workshops/dh-core#philosophy
-[7]: https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md
-
-- More [CLI basics][8].
+- More [CLI basics][8]. **Broken Link**
 - Lab: [Hunting the Whale][5]. (Dennis)
 
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
 [5]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md
+[6]: https://github.com/denten-workshops/dh-core#philosophy
+[7]: https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md
 [8]:https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md#table-of-contents
 
-Intro to the Terminal. Terminal in the morning via a cheatsheet, a bit of a live 
-demo, and then some problems that they can use the cheatsheet to solve.  Use of lab
-activities in the afternoon that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
+After introductions we will spend the morning working with the terminal, via an interactive 
+demo, and some problems that participants can use the cheatsheet to solve interspersed with building a Bash Script.  Use of lab activities in the afternoon
+that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
 
 ## Day 2 (6hr)
 
-- [Text Manipulation at the Command Line][9] w/Dennis
-- Exercise 1: Automate Moby
-- [Anatomy of a Bash program][10]
-- [Python 1][11]
-- [Python 2][12]
-- [Python 3][13]
+- [Text Manipulation at the Command Line][9] (Dennis) **Broken Link**
+- Exercise 1: Automate Moby (Dennis)
+- [Anatomy of a Bash program][10] (Dennis) **Broken Link**
+- [Python 1][11] (Dennis) **Broken Link**
+- [Python 2][12] (Dennis) **Broken Link**
+- [Python 3][13] (Dennis) **Broken Link**
 
 | When to use Bash?                 | When to use Python       |
 ------------------------------------|--------------------------|
@@ -81,9 +81,9 @@ activities in the afternoon that will push further into text manipulation in a U
 [12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
 [13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
 
-- Building the [Zodiac][14] w/ John
+- Building the [Zodiac][14] (John)
 
-[14]: https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
+[14]: https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
@@ -91,50 +91,54 @@ concepts.  Following this will be a small set of activities using python solely
 in the terminal to give a sense of how these concepts are implemented
 generally.  The second part of the morning will include a live coding demo
 using python in the terminal and a text editor in a separate window to show how
-to build an simple tool (Previously this was a Chinese zodiac symbol that
-participants will be able to follow along with. See the zodiac folder for these
-steps).  This provides two essential things: observation of an actual coding
-process and a set of templates that they can draw on for the rest of the course
-(and afterwards).
+to build an simple tool that will report the corresponding symbol of the Chinese
+Zodiac for a given input year that participants will be able to follow along with. 
+See the zodiac folder for these steps.  This provides two essential things:
 
-The afternoon will have them carrying out a lab assignment to further hone
-their skills.
+1. observation of an actual coding process
+2. a generic template demonstarting the core features of many programs that can be drawn on for the rest of the course and into the future.
 
 ## Day 3 (6hr)
 
-- Building the [Zodiac][14] II
-- Project brainstorm
+- Completing building the [Zodiac][14] (John)
+- Reading and annotating Python code (Dennis & John)
+- Project brainstorm and initial planning (Dennis & John)
+
+We will complete any remaining steps from the Zodiac tool demo and then move to an activity where the participants are given working code examples and asked to add comments to these.  This exercise will help participants understand the structure of programs better while underscoring the importance of commenting code in the first place.
+
+Today we will also move from a command line + text editor environment for programming to the Jupyter Notebook environment that is provided within the Anaconda install.
+
+In the afternoon participants will begin planning their project for Day four and five.
+
 
 ## Day 4 (6hr)
 
-- Guest Speaker (reflections from DHSI 2014 class graduate)
+The bulk of today will be spent by participants in teams developing the projects that they began planning the day before.  Participants will also be introduced to an *Integrated Development Environment (IDE)*, so there will be three options for how to develop a program:
 
-- Two approaches to coding environments.  
-`IDE = interpreter + text editor + file browser`
+1. Command line + text editor
+2. Jupyter notebooks
+3. [PyCharm](https://www.jetbrains.com/pycharm/) (a Python specific IDE)
 
-Two approaches:
-
-1. all rolled into one ([PyCharm](https://www.jetbrains.com/pycharm/))
-
-2. ipython (interpreter) + vim (text editor) + command line (manage files)
-
-There is no wrong answer here. Chose tools that are 
-[FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal,
+There is no wrong answer here. Try to choose tools that are 
+[FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal, and
 extensible.
 
-- A day in the life. What can be done with Python?
+It is hoped that we will have a Guest Speaker (reflections from DHSI 2014 class graduate) but this has not yet been confirmed. **Do we have someone for this year?**
 
-  - LitClock Twitter Bot ([project
+Some time will be spent on an activity we call *Code from real life*, which will highlight some project that actually use Python in sophisticated ways, including:
+
+- LitClock Twitter Bot ([project
     page](http://xpmethod.plaintext.in/public-discourse/litclock.html),
 [twitter account](https://twitter.com/litclock),
 [code](https://github.com/dhcolumbia/litclock/blob/master/cron-bot.py),
 [data](https://github.com/dhcolumbia/litclock/blob/master/tweets.csv))
-  - [Science
+- [Science
     Surveyor](http://xpmethod.plaintext.in/public-discourse/surveyor.html)
-  - [HuViz](http://alpha.orlando.dev.semandra.com/)- Alpha of the Orlando/CWRC
-    Graph / Ontology Viewer Old Bailey Data Warehouse Interface, a tool
-prototype for mining a copy of the Old Bailey database held on a special server
-http://analytics.artsrn.ualberta.ca/digging2data/ 
+- [HuViz](http://alpha.orlando.dev.semandra.com/) - Alpha of the Orlando/CWRC
+    Graph / Ontology Viewer 
+- [Old Bailey Data Warehouse Interface](http://analytics.artsrn.ualberta.ca/digging2data/) - a tool prototype for mining a copy of the Old Bailey database held on a special server.
+- [Time slider and map of Canadian Libraries and Archives](http://cwrc.ca/rsc-src/) - Students in *this class* used Python with regular expressions to extract the addresses of 2009 libraries/archivs from a PDF.
+ 
 
 - 1hr write a short 1-2 paragraph description of your project. Concentrate on
 the goals of the *what* you are trying to accomplish, not the technical
@@ -158,8 +162,9 @@ CSV and RegEx mini tutorials
 
 **9:30 - 11:30am**
 
-Reevaluate the scope of your project. Cut out inessential functionality. We are trying to get to
-a "minimally viable" prototype stage. Take notes via code comments throughout.
+Reevaluate the scope of your project. Cut out inessential functionality. We are 
+trying to get to a "minimally viable" prototype stage. Take notes via code comments 
+throughout.
 
 **11:3 - noon**
 
