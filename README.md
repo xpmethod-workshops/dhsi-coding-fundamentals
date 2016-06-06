@@ -55,12 +55,9 @@ comfortable with the conversational, call and response style of programming.
   - [1.2.7](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md)
     Basic Text Manipulation
 
-- 1.3 Coding with John: A Simple Scraper with `Curl` and `RegEx`
-  Given a page URL download the HTML
+- 1.3 Coding with John: [Hunting the Whale](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/blob/master/CLI/CommandLineWalkThrough.md)
 
 - 1.4 Code Review: Prosecheck
-
-- 1.5 Lab: [Hunting the Whale]()
 
 ## Day 2: Python I (6hr)
 
