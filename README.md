@@ -29,41 +29,35 @@ this class.
 ## Day 1: Shell (4.5hr)
 
 We will spend the day working with the terminal, learning the basics of the
-file system, data flow programming, and text manipulation.
+file system, data flow programming, and text manipulation. The goal is to get
+comfortable with the conversational, call and response style of programming.
 
-via an interactive demo,
-and some problems that participants can use the cheatsheet to solve
-interspersed with building a Shell script. Use of lab activities in the
-afternoon that will push further into text manipulation in a Unix environment
-that is akin to what they might actually do with materials.
-
-- Welcome
-  - Introductions
-  - Overview of week
-  - [Course
+- 1.1 Welcome
+  - 1.1.1 Introductions
+  - 1.1.2 Overview of week
+  - 1.1.3 [Course
     Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
-  - [Why command
+  - 1.1.4 [Why command
     line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
 
-- Intro to Shell
-  - [001](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md)
+- 1.2 Intro to Shell
+  - [1.2.1] Plain text
+  - [1.2.2](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md)
     Finding your way
-  - [002](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md)
+  - [1.2.3](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md)
     Files & Folders
-  - [003](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/104-pipes.md)
+  - [1.2.4](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/104-pipes.md)
     Pipes and redirects
-  - [004](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/106-filters.md)
+  - [1.2.5](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/106-filters.md)
     Filters
-  - [005](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md)
+  - [1.2.6](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md)
     Basic Text Manipulation
 
-- Labs
-  - [Weasel Words]()
-  - [Type to Token Ratio]()
+- 1.3 Coding with John: A Simple Scraper with `Curl` and `RegEx`
 
+- 1.4 Code Review: Prosecheck
 
-[4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
-[8]:https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md#table-of-contents
+- 1.5 Lab: [Hunting the Whale]()
 
 ## Day 2: Python I (6hr)
 
@@ -76,20 +70,24 @@ that is akin to what they might actually do with materials.
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
-- [006][11] Types & Variables
-- [007[12] Control Structures
-- [008][13] Lists & other Iterables
-- [
+- Intro to Python
+    - [006][6] Types & Variables
+    - [007][7] Control Structures
+    - [008][8] Lists and Other Iterables
+    - [009][9] Functions
+    - [010][10] Libraries: TextBlob
 
-[9]: https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
-[10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
-[11]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
-[12]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
-[13]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-3.md
+[6]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
+[7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
+[8]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-3.md
+[9]:
+[10]:
 
-- Building the [Zodiac][14]
+- Coding with John: Essay Grader
 
-[14]: https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
+- Code Review: RikersBot
+
+- Lab: [Animal Contexts] [11]
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
