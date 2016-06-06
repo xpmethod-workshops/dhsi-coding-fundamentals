@@ -398,7 +398,7 @@ It has replaced every space with a newline character ("\n").
 	
 *or*
 
-	$ cat MobyDick.txt > tr ' ' '\n' | grep -w whale | wc -l
+	$ cat MobyDick.txt | tr ' ' '\n' | grep -w whale | wc -l
 
 >**Question:** How can this be modified to search for any word on all the files in a directory?
 
