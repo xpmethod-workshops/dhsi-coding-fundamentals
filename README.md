@@ -34,7 +34,7 @@ comfortable with the conversational, call and response style of programming.
 
 - 1.1 Welcome
   - 1.1.1 Introductions, resources
-  - 1.1.2 Overview of week
+  - 1.1.2 Goals, Schedule
   - 1.1.3 [Course
     Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
   - 1.1.4 [Why command
