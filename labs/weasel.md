@@ -1,4 +1,4 @@
-# Lab I
+# Weasel Words Shell Experiment
 
 Brian Garner, of Garner's Modern American Usage, defines a Weasel Word as:
 
