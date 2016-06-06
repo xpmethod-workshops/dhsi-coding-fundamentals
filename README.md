@@ -33,7 +33,7 @@ file system, data flow programming, and text manipulation. The goal is to get
 comfortable with the conversational, call and response style of programming.
 
 - 1.1 Welcome
-  - 1.1.1 Introductions
+  - 1.1.1 Introductions, resources
   - 1.1.2 Overview of week
   - 1.1.3 [Course
     Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
@@ -41,7 +41,7 @@ comfortable with the conversational, call and response style of programming.
     line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
 
 - 1.2 Intro to Shell
-  - [1.2.1] Plain text
+  - 1.2.1 Plain text
   - [1.2.2](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md)
     Finding your way
   - [1.2.3](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md)
@@ -70,12 +70,12 @@ comfortable with the conversational, call and response style of programming.
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
-- Intro to Python
-    - [006][6] Types & Variables
-    - [007][7] Control Structures
-    - [008][8] Lists and Other Iterables
-    - [009][9] Functions
-    - [010][10] Libraries: TextBlob
+- 2.1 Intro to Python
+    - [2.1.1][6] Types & Variables
+    - [2.1.2][7] Control Structures
+    - [2.1.3][8] Lists and Other Iterables
+    - [2.1.4][9] Functions
+    - [2.1.5][10] Libraries: TextBlob
 
 [6]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
 [7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
@@ -83,11 +83,11 @@ comfortable with the conversational, call and response style of programming.
 [9]:
 [10]:
 
-- Coding with John: Essay Grader
+- 2.2 Coding with John: Essay Grader
 
-- Code Review: RikersBot
+- 2.3 Code Review: RikersBot
 
-- Lab: [Animal Contexts] [11]
+- 2.4 Lab: [Animal Contexts] [11]
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
@@ -101,13 +101,15 @@ along with.  See the zodiac folder for these steps.  This provides two
 essential things:
 
 1. observation of an actual coding process
-2. a generic template demonstarting the core features of many programs that can be drawn on for the rest of the course and into the future.
+2. a generic template demonstrating the core features of many programs that can be drawn on for the rest of the course and into the future.
 
 ## Day 3 (6hr)
 
-- Completing building the [Zodiac][14] (John)
-- Reading and annotating Python code (Dennis & John)
-- Project brainstorm and initial planning (Dennis & John)
+- 3.1 Completing building the [Zodiac][14]
+
+- 3.2 Thinking Like a Programmer: From Comments to Code
+
+- 3.3 Project brainstorm and initial planning
 
 We will complete any remaining steps from the Zodiac tool demo and then move
 to an activity where the participants are given working code examples and
@@ -124,7 +126,10 @@ and five.
 
 ## Day 4 (6hr)
 
-The bulk of today will be spent by participants in teams developing the projects that they began planning the day before.  Participants will also be introduced to an *Integrated Development Environment (IDE)*, so there will be three options for how to develop a program:
+The bulk of today will be spent by participants in teams developing the
+projects that they began planning the day before. Participants will also be
+introduced to an *Integrated Development Environment (IDE)*, so there will be
+three options for how to develop a program:
 
 1. Command line + text editor
 2. Jupyter notebooks
@@ -133,23 +138,6 @@ The bulk of today will be spent by participants in teams developing the projects
 There is no wrong answer here. Try to choose tools that are 
 [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software), universal, and
 extensible.
-
-It is hoped that we will have a Guest Speaker (reflections from DHSI 2014 class graduate) but this has not yet been confirmed. **Do we have someone for this year?**
-
-Some time will be spent on an activity we call *Code from real life*, which will highlight some project that actually use Python in sophisticated ways, including:
-
-- LitClock Twitter Bot ([project
-    page](http://xpmethod.plaintext.in/public-discourse/litclock.html),
-[twitter account](https://twitter.com/litclock),
-[code](https://github.com/dhcolumbia/litclock/blob/master/cron-bot.py),
-[data](https://github.com/dhcolumbia/litclock/blob/master/tweets.csv))
-- [Science
-    Surveyor](http://xpmethod.plaintext.in/public-discourse/surveyor.html)
-- [HuViz](http://alpha.orlando.dev.semandra.com/) - Alpha of the Orlando/CWRC
-    Graph / Ontology Viewer 
-- [Old Bailey Data Warehouse Interface](http://analytics.artsrn.ualberta.ca/digging2data/) - a tool prototype for mining a copy of the Old Bailey database held on a special server.
-- [Time slider and map of Canadian Libraries and Archives](http://cwrc.ca/rsc-src/) - Students in *this class* used Python with regular expressions to extract the addresses of 2009 libraries/archivs from a PDF.
- 
 
 - 1hr write a short 1-2 paragraph description of your project. Concentrate on
 the goals of the *what* you are trying to accomplish, not the technical
@@ -162,10 +150,6 @@ the project. For example a simple project description may be:
 
 - 1hr translate or "formalize" your goals into a series of step by step
 instructions in pseudocode.
-
-- [NLTK
-mini tutorial](https://github.com/denten/dhnotes/blob/master/python/python-4.md),
-CSV and RegEx mini tutorials
 
 - project work for the rest of the day
 
