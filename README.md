@@ -26,33 +26,29 @@ glimpses at what is happening in the other DHSI courses to understand how
 reading and writing programming code goes well beyond what we touch on in this
 class.
 
-## Day 1 (4hr)
+## Day 1 (4.5hr)
 
 - Welcome (John & Dennis)
   - Introductions
   - Overview of week
-  - [Course Philosophy][6]
-  - [Why command line?][7] **Broken Link**
+  - [Course Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
+  - [Why command line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
   - Why Python?
 
-- Working Demo: Introduction to Terminal (John)
-	- Basic functionality
-	- Working with text files
-	- Scripting
-	- Simple problems using the cheatsheet
+- Who are Shell, Terminal, Command Line, Interpreter  (John & Dennis)
+  - [001](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md) Finding your way
+  - [002](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md) Files & Folders
+  - [003](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/104-pipes.md) Pipes and redirects
+  - [004](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/106-filters.md) Filters
+  - [005](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md) Text Manipulation
 
-- More [CLI basics][8]. **Broken Link**
-- Lab: [Hunting the Whale][5]. (Dennis)
+**Lab:** [Hunting the Whale](https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md)
 
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
-[5]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md
-[6]: https://github.com/denten-workshops/dh-core#philosophy
-[7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md
 [8]:https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md#table-of-contents
 
 After introductions we will spend the morning working with the terminal, via an interactive 
-demo, and some problems that participants can use the cheatsheet to solve interspersed with building a Bash Script.  Use of lab activities in the afternoon
-that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
+demo, and some problems that participants can use the cheatsheet to solve interspersed with building a Shell Script.  Use of lab activities in the afternoon that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
 
 ## Day 2 (6hr)
 
@@ -63,7 +59,7 @@ that will push further into text manipulation in a Unix environment that is akin
 - [Python 2][12] (Dennis) **Broken Link**
 - [Python 3][13] (Dennis) **Broken Link**
 
-| When to use Bash?                 | When to use Python       |
+| When to use Shell?                | When to use Python       |
 ------------------------------------|--------------------------|
 | - automate daily tasks            | - data science           |
 | - manage files & folders          | - app development        |
