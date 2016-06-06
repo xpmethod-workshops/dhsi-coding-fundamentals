@@ -26,8 +26,6 @@ glimpses at what is happening in the other DHSI courses to understand how
 reading and writing programming code goes well beyond what we touch on in this
 class.
 
-[![Join the class discussion at https://gitter.im/denten-workshops/dhsi-coding-fundamentals](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denten-workshops/dhsi-coding-fundamentals?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) **I think this link needs to change**
-
 ## Day 1 (4hr)
 
 - Welcome (John & Dennis)
@@ -49,8 +47,8 @@ class.
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
 [5]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md
 [6]: https://github.com/denten-workshops/dh-core#philosophy
-[7]: https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md
-[8]:https://github.com/xpmethod/dhnotes/blob/master/command-line/000-cli.md#table-of-contents
+[7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md
+[8]:https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md#table-of-contents
 
 After introductions we will spend the morning working with the terminal, via an interactive 
 demo, and some problems that participants can use the cheatsheet to solve interspersed with building a Bash Script.  Use of lab activities in the afternoon
