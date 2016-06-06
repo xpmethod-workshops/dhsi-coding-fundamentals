@@ -41,7 +41,8 @@ comfortable with the conversational, call and response style of programming.
     line?
 
 - 1.2 Intro to Shell
-  - 1.2.1 Plain text
+  - [1.2.1](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
+    Conversing in Plain Text
   - [1.2.2](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md)
     Finding your way
   - [1.2.3](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md)
