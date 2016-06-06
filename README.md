@@ -57,7 +57,7 @@ comfortable with the conversational, call and response style of programming.
 - 1.3 Coding with John: [Hunting the Whale](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/blob/master/CLI/CommandLineWalkThrough.md)  
 Simple Scripting and Regular Expressions
 
-- 1.4 Code Review: Prosecheck
+- 1.4 Code Review: [Prosecheck](https://github.com/xpmethod/prosecheck)
 
 - 1.5 Concluding Remarks, Preparing for Tomorrow
 
@@ -72,7 +72,7 @@ Simple Scripting and Regular Expressions
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
-- 2.1 Intro to Python
+- 2.1 Intro to Python (iPython)
     - [2.1.1][6] Types & Variables
     - [2.1.2][7] Control Structures
     - [2.1.3][8] Lists and Other Iterables
@@ -85,11 +85,10 @@ Simple Scripting and Regular Expressions
 [9]:
 [10]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-4.md
 
-- 2.2 Coding with John: Zodiac
+- 2.2 Coding with John: Zodiac (Text Editor)
 
-- 2.3 Code Review: RikersBot
-
-- 2.4 Lab: [Animal Contexts] [11]
+- 2.3 Code Review:
+[RikersBot](https://github.com/xpmethod/rikersbot/blob/master/rikersbot.py)
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
@@ -107,7 +106,7 @@ essential things:
 
 ## Day 3: Python II (6hr)
 
-- 3.1 Lab: Essay Grader
+- 3.1 Lab: Essay Grader Handout
 
 - 3.2 Thinking Like a Programmer: From Comments to Code
 
@@ -167,22 +166,11 @@ throughout.
 
 Concluding remarks. Showcase and Plenary meeting after.
 
-
-
 ## Project Code Share
 
-- [imsdb scraper](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/imsdb)
+Projects will go here.
 
-> reads a provided CSV file containing the names, authors, and URLs of film
-scripts from an online database, downloads each of them and names the file
-according to the AuthorName_FilmTitle.html conventionhh
-
-- [the extractors](https://github.com/denten-workshops/dhsi-coding-fundamentals/tree/master/code-samples/extractors)
-
-> this program takes an HTML file and extracts only the part containing the
-> film script then strips out all HTML code and saves it as a .txt file
-
-## Where to go from here?
+## Next Steps
 
 - [What a well-informed person ought to know
 about computers and communications](http://dl.acm.org/citation.cfm?id=2380975) by Brian Kirnighan
