@@ -35,7 +35,7 @@ class.
   - [Why command line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
   - Why Python?
 
-- Who are Shell, Terminal, Command Line, Interpreter  (John & Dennis)
+- Shell, Terminal, Command Line, Interpreter  (John & Dennis)
   - [001](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md) Finding your way
   - [002](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md) Files & Folders
   - [003](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/104-pipes.md) Pipes and redirects
