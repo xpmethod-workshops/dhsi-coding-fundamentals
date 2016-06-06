@@ -59,6 +59,8 @@ Simple Scripting and Regular Expressions
 
 - 1.4 Code Review: Prosecheck
 
+- 1.5 Concluding Remarks, Preparing for Tomorrow
+
 ## Day 2: Python I (6hr)
 
 | When to use Shell?                | When to use Python       |
