@@ -35,8 +35,7 @@ comfortable with the conversational, call and response style of programming.
 - 1.1 Welcome
   - 1.1.1 Introductions, resources
   - 1.1.2 Goals, Schedule
-  - [1.1.3](https://github.com/denten-workshops/dh-core#philosophy) Course
-    Philosophy
+  - [1.1.3](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/blob/master/book-chapter/main.md#1-critical-computing-principles) Course Philosophy
   - [1.1.4](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md) Why command
     line?
 
