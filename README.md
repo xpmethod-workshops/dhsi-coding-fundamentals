@@ -1,9 +1,7 @@
 ---
-
 what: Computing Fundamentals for Human(s|ists)
 where: University of Victoria, BC
 when: Summer 2016
-
 ---
 
 [John Simpson](https://twitter.com/symulation)  
@@ -12,52 +10,62 @@ when: Summer 2016
 ## Class Description
 
 This course is intended for humanities-based researchers with no programming
-background whatsoever who would like to understand how programs work behind the
-scenes by writing some simple but useful programs of their own. Over the week
-the emphasis will be on understanding how computer programmers think so that
-participants will be able to at least participate in high-level conceptual
-discussions in the future with more confidence. These general concepts will be
-reinforced and illustrated with hands-on development of simple programs that
-can be used to help with text-based research and analysis right away. 
+background whatsoever who would like to understand how programs work behind
+the scenes by writing some simple but useful programs of their own. Over the
+week the emphasis will be on understanding how computer programmers think so
+that participants will be able to at least participate in high-level
+conceptual discussions in the future with more confidence. These general
+concepts will be reinforced and illustrated with hands-on development of
+simple programs that can be used to help with text-based research and analysis
+right away.
 
-The programming language used for most of the course will be Python because of its gentle syntax and powerful extensions. Using the command-line interface and regular
-expressions will also be emphasized. We will also spend some time taking
-glimpses at what is happening in the other DHSI courses to understand how
-reading and writing programming code goes well beyond what we touch on in this
-class.
+The programming language used for most of the course will be Python because of
+its gentle syntax and powerful extensions. Using the command-line interface
+and regular expressions will also be emphasized. We will also spend some time
+taking glimpses at what is happening in the other DHSI courses to understand
+how reading and writing programming code goes well beyond what we touch on in
+this class.
 
-## Day 1 (4.5hr)
+## Day 1: Shell (4.5hr)
 
-- Welcome (John & Dennis)
+We will spend the day working with the terminal, learning the basics of the
+file system, data flow programming, and text manipulation.
+
+via an interactive demo,
+and some problems that participants can use the cheatsheet to solve
+interspersed with building a Shell script. Use of lab activities in the
+afternoon that will push further into text manipulation in a Unix environment
+that is akin to what they might actually do with materials.
+
+- Welcome
   - Introductions
   - Overview of week
-  - [Course Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
-  - [Why command line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
-  - Why Python?
+  - [Course
+    Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
+  - [Why command
+    line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
 
-- Shell, Terminal, Command Line, Interpreter  (John & Dennis)
-  - [001](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md) Finding your way
-  - [002](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md) Files & Folders
-  - [003](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/104-pipes.md) Pipes and redirects
-  - [004](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/106-filters.md) Filters
-  - [005](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md) Text Manipulation
+- Intro to Shell
+  - [001](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/101-gps.md)
+    Finding your way
+  - [002](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/102-files.md)
+    Files & Folders
+  - [003](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/104-pipes.md)
+    Pipes and redirects
+  - [004](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/106-filters.md)
+    Filters
+  - [005](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md)
+    Basic Text Manipulation
 
-**Lab:** [Hunting the Whale](https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/whale.md)
+- Labs
+  - [Weasel Words]()
+  - [Type to Token Ratio]()
+
 
 [4]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/labs/weasel.md
 [8]:https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md#table-of-contents
 
-After introductions we will spend the morning working with the terminal, via an interactive 
-demo, and some problems that participants can use the cheatsheet to solve interspersed with building a Shell Script.  Use of lab activities in the afternoon that will push further into text manipulation in a Unix environment that is akin to what they might actually do with materials.
-
-## Day 2 (6hr)
-
-- [Text Manipulation at the Command Line][9] (Dennis) **Broken Link**
-- Exercise 1: Automate Moby (Dennis)
-- [Anatomy of a Bash program][10] (Dennis) **Broken Link**
-- [Python 1][11] (Dennis) **Broken Link**
-- [Python 2][12] (Dennis) **Broken Link**
-- [Python 3][13] (Dennis) **Broken Link**
+## Day 2: Python I (6hr)
 
 | When to use Shell?                | When to use Python       |
 ------------------------------------|--------------------------|
@@ -68,26 +76,31 @@ demo, and some problems that participants can use the cheatsheet to solve inters
 | - quick & dirty text manipulation | - glue code              |
 |                                   | - everything else        |
 
+- [006][11] Types & Variables
+- [007[12] Control Structures
+- [008][13] Lists & other Iterables
+- [
 
 [9]: https://github.com/xpmethod/dhnotes/blob/master/command-line/109-text.md
 [10]: https://github.com/denten-courses/dhsi-coding-fundamentals/blob/master/write-log.sh
-[11]: https://github.com/denten/dhnotes/blob/master/python/python-1.md
-[12]: https://github.com/denten/dhnotes/blob/master/python/python-2.md
-[13]: https://github.com/denten/dhnotes/blob/master/python/python-3.md
+[11]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
+[12]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
+[13]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-3.md
 
-- Building the [Zodiac][14] (John)
+- Building the [Zodiac][14]
 
 [14]: https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac
 
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
-concepts.  Following this will be a small set of activities using python solely
+concepts. Following this will be a small set of activities using python solely
 in the terminal to give a sense of how these concepts are implemented
 generally.  The second part of the morning will include a live coding demo
-using python in the terminal and a text editor in a separate window to show how
-to build an simple tool that will report the corresponding symbol of the Chinese
-Zodiac for a given input year that participants will be able to follow along with. 
-See the zodiac folder for these steps.  This provides two essential things:
+using python in the terminal and a text editor in a separate window to show
+how to build an simple tool that will report the corresponding symbol of the
+Chinese Zodiac for a given input year that participants will be able to follow
+along with.  See the zodiac folder for these steps.  This provides two
+essential things:
 
 1. observation of an actual coding process
 2. a generic template demonstarting the core features of many programs that can be drawn on for the rest of the course and into the future.
@@ -98,12 +111,18 @@ See the zodiac folder for these steps.  This provides two essential things:
 - Reading and annotating Python code (Dennis & John)
 - Project brainstorm and initial planning (Dennis & John)
 
-We will complete any remaining steps from the Zodiac tool demo and then move to an activity where the participants are given working code examples and asked to add comments to these.  This exercise will help participants understand the structure of programs better while underscoring the importance of commenting code in the first place.
+We will complete any remaining steps from the Zodiac tool demo and then move
+to an activity where the participants are given working code examples and
+asked to add comments to these.  This exercise will help participants
+understand the structure of programs better while underscoring the importance
+of commenting code in the first place.
 
-Today we will also move from a command line + text editor environment for programming to the Jupyter Notebook environment that is provided within the Anaconda install.
+Today we will also move from a command line + text editor environment for
+programming to the Jupyter Notebook environment that is provided within the
+Anaconda install.
 
-In the afternoon participants will begin planning their project for Day four and five.
-
+In the afternoon participants will begin planning their project for Day four
+and five.
 
 ## Day 4 (6hr)
 
