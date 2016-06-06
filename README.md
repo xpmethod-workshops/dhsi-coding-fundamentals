@@ -103,7 +103,7 @@ essential things:
 1. observation of an actual coding process
 2. a generic template demonstrating the core features of many programs that can be drawn on for the rest of the course and into the future.
 
-## Day 3 (6hr)
+## Day 3: Python II (6hr)
 
 - 3.1 Completing building the [Zodiac][14]
 
@@ -124,7 +124,7 @@ Anaconda install.
 In the afternoon participants will begin planning their project for Day four
 and five.
 
-## Day 4 (6hr)
+## Day 4: Individual Projects (6hr)
 
 The bulk of today will be spent by participants in teams developing the
 projects that they began planning the day before. Participants will also be
@@ -153,7 +153,7 @@ instructions in pseudocode.
 
 - project work for the rest of the day
 
-## Day 5 (3h)
+## Day 5: Race to Finish (3h)
 
 **9:30 - 11:30am**
 
