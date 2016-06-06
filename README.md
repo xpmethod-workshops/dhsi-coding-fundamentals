@@ -40,6 +40,15 @@ comfortable with the conversational, call and response style of programming.
   - [1.1.5](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md) Why command
     line?
 
+| When to use Shell?                | When to use Python       |
+------------------------------------|--------------------------|
+| - automate daily tasks            | - data science           |
+| - manage files & folders          | - app development        |
+| - remote server admin             | - NLTK                   |
+| - data munging                    | - data visualization     |
+| - quick & dirty text manipulation | - glue code              |
+|                                   | - everything else        |
+
 - 1.2 Intro to Shell
   - [1.2.1](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/100-plain-text.md)
     Conversing in Plain Text
@@ -62,15 +71,6 @@ Simple Scripting and Regular Expressions
 - 1.5 Concluding Remarks, Preparing for Tomorrow
 
 ## Day 2: Python I (6hr)
-
-| When to use Shell?                | When to use Python       |
-------------------------------------|--------------------------|
-| - automate daily tasks            | - data science           |
-| - manage files & folders          | - app development        |
-| - remote server admin             | - NLTK                   |
-| - data munging                    | - data visualization     |
-| - quick & dirty text manipulation | - glue code              |
-|                                   | - everything else        |
 
 - 2.1 Intro to Python (iPython)
     - [2.1.1][6] Types & Variables
