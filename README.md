@@ -83,7 +83,7 @@ Simple Scripting and Regular Expressions
 [9]:
 [10]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-4.md
 
-- 2.2 Coding with John: Essay Grader
+- 2.2 Coding with John: Zodiac
 
 - 2.3 Code Review: RikersBot
 
@@ -105,7 +105,7 @@ essential things:
 
 ## Day 3: Python II (6hr)
 
-- 3.1 Completing building the [Zodiac][14]
+- 3.1 Lab: Essay Grader
 
 - 3.2 Thinking Like a Programmer: From Comments to Code
 
