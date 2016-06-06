@@ -51,11 +51,11 @@ comfortable with the conversational, call and response style of programming.
     Pipes and redirects
   - [1.2.5](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/106-filters.md)
     Filters
-  - [1.2.7] Regular Expressions
   - [1.2.7](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/109-text.md)
     Basic Text Manipulation
 
-- 1.3 Coding with John: [Hunting the Whale](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/blob/master/CLI/CommandLineWalkThrough.md)
+- 1.3 Coding with John: [Hunting the Whale](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/blob/master/CLI/CommandLineWalkThrough.md)  
+Simple Scripting and Regular Expressions
 
 - 1.4 Code Review: Prosecheck
 
