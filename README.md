@@ -35,10 +35,10 @@ comfortable with the conversational, call and response style of programming.
 - 1.1 Welcome
   - 1.1.1 Introductions, resources
   - 1.1.2 Goals, Schedule
-  - 1.1.3 [Course
-    Philosophy](https://github.com/denten-workshops/dh-core#philosophy)
-  - 1.1.4 [Why command
-    line?](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md)
+  - [1.1.3](https://github.com/denten-workshops/dh-core#philosophy) Course
+    Philosophy
+  - [1.1.4](https://github.com/dh-notes/dhnotes/blob/master/tutorials/command-line/000-cli.md) Why command
+    line?
 
 - 1.2 Intro to Shell
   - 1.2.1 Plain text
@@ -75,13 +75,13 @@ comfortable with the conversational, call and response style of programming.
     - [2.1.2][7] Control Structures
     - [2.1.3][8] Lists and Other Iterables
     - [2.1.4][9] Functions
-    - [2.1.5][10] Libraries: TextBlob
+    - [2.1.5][10] Strings with TextBlob
 
 [6]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
 [7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
 [8]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-3.md
 [9]:
-[10]:
+[10]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-4.md
 
 - 2.2 Coding with John: Essay Grader
 
