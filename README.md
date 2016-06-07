@@ -75,9 +75,10 @@ Simple Scripting and Regular Expressions
 - 2.1 Intro to Python (iPython)
     - 2.1.0 What makes a programming languaage? Environment. Why Python?
     - [2.1.1][6] Types & Variables
-    - [2.1.2][7] Control Structures
     - [2.1.3][8] Lists and Other Iterables
-    - [2.1.4][9] Strings
+    - [2.1.4][9] More Strings
+    - [2.1.5][11] A foray into PEP 8
+    - [2.1.2][7] Control Structures
     - [2.1.5][10] Your Turn: Better Whales
 
 [6]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
@@ -85,6 +86,7 @@ Simple Scripting and Regular Expressions
 [8]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-3.md
 [9]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-4.md
 [10]: https://github.com/denten-courses/computing-context/blob/master/experiments/2-experiment/better-hunting.md
+[11]: https://www.python.org/dev/peps/pep-0008/
 
 - 2.2 Coding with John: Zodiac (Text Editor)
 
