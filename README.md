@@ -82,8 +82,8 @@ Simple Scripting and Regular Expressions
 [6]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
 [7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
 [8]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-3.md
-[9]:
-[10]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-4.md
+[9]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-4.md
+[10]: https://github.com/denten-courses/computing-context/blob/master/experiments/2-experiment/better-hunting.md
 
 - 2.2 Coding with John: Zodiac (Text Editor)
 
