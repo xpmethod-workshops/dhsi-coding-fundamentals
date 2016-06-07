@@ -73,6 +73,7 @@ Simple Scripting and Regular Expressions
 ## Day 2: Python I (6hr)
 
 - 2.1 Intro to Python (iPython)
+-   - 2.1.0 What makes a programming language and why Python?
     - [2.1.1][6] Types & Variables
     - [2.1.2][7] Control Structures
     - [2.1.3][8] Lists and Other Iterables
