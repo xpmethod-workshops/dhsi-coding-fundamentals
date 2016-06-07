@@ -76,8 +76,8 @@ Simple Scripting and Regular Expressions
     - [2.1.1][6] Types & Variables
     - [2.1.2][7] Control Structures
     - [2.1.3][8] Lists and Other Iterables
-    - [2.1.4][9] Functions
-    - [2.1.5][10] Strings with TextBlob
+    - [2.1.4][9] Strings
+    - [2.1.5][10] Your Turn: Better Whales
 
 [6]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-1.md
 [7]: https://github.com/dh-notes/dhnotes/blob/master/tutorials/python/python-2.md
