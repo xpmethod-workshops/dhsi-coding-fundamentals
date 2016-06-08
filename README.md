@@ -104,7 +104,7 @@ essential things:
 
 ## Day 3: Python II (6hr)
 
-- 2.2 Coding with John: [Zodiac](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac)
+- 2.2 Coding with John: [Zodiac](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac).  We will be using the shell and a text editor for this session.  If you are using windows then it will make sense to use the command prompt rather than MobaXterm because it will give you easier access to the Anaconda installs of Python.  You can use many of your Bash Shell commands in the Windows Command Prompt but you'll find a crash course [HERE](http://www.cs.princeton.edu/courses/archive/spr05/cos126/cmd-prompt.html).
 
 - 2.3 Code Review:
 [RikersBot](https://github.com/xpmethod/rikersbot/blob/master/rikersbot.py)
