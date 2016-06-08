@@ -88,11 +88,6 @@ Simple Scripting and Regular Expressions
 [10]: https://github.com/denten-courses/computing-context/blob/master/experiments/2-experiment/better-hunting.md
 [11]: https://www.python.org/dev/peps/pep-0008/
 
-- 2.2 Coding with John: Zodiac (Text Editor)
-
-- 2.3 Code Review:
-[RikersBot](https://github.com/xpmethod/rikersbot/blob/master/rikersbot.py)
-
 Light lecture in the morning that builds on experiences the day before,
 focusing on the mindset of a programmer and important high-level programming
 concepts. Following this will be a small set of activities using python solely
@@ -108,6 +103,13 @@ essential things:
 2. a generic template demonstrating the core features of many programs that can be drawn on for the rest of the course and into the future.
 
 ## Day 3: Python II (6hr)
+
+- 2.2 Coding with John: [Zodiac](https://github.com/xpmethod-workshops/dhsi-coding-fundamentals/tree/master/python-live-code/zodiac)
+
+- 2.3 Code Review:
+[RikersBot](https://github.com/xpmethod/rikersbot/blob/master/rikersbot.py)
+
+- 2.4 Code Annotation/Templates.  [Version with small data files]() (98.7MB, GitHub). [Version with full data files](https://owncloud.westgrid.ca/index.php/s/V3OkC0uCbTU20Oh) (2.4GB, Compute Canada's OwnCloud)
 
 - 3.1 Lab: Essay Grader Handout
 
